@@ -1,0 +1,18 @@
+#+TITLE: Projects I created or maintained
+#+AUTHOR: KDr2
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_HOME: ../index.html
+#+HTML_LINK_UP: ../index.html
+
+Here is some projects created/maintained by me:
+
+- [[file:redis-leveldb.org][Redis-Leveldb]]
+- [[file:moochine.org][Moochine]]
+- [[file:sb-fastcgi.org][SB-FastCGI]]
+- [[file:cl-fastcgi.org][CL-FastCGI]]
+
+And you may [[http://github.com/KDr2][find more things on my GitHub page]].
+
+#+INCLUDE: ../include/ga.org

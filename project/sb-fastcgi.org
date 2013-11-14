@@ -1,0 +1,190 @@
+#+TITLE: SB-FastCGI
+#+AUTHOR: KDr2
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_HOME: ../index.html
+#+HTML_LINK_UP: index.html
+
+* Introduction
+
+sb-fastcgi is a Common Lisp fastcgi API toolkit for SBCL, It contains
+a group of low-level API's which like the c API of fastcgi, a group of
+fcgi-server implementations, and a high-level wsgi style interface.
+
+You can get it from https://github.com/KDr2/sb-fastcgi.
+
+If you want use sb-fastcgi on some other Common Lisp implementations
+rather than SBCL, you can refer to [[file:cl-fastcgi.org][CL-FastCGI]].
+
+* Getting Start
+
+Frist, install SBCL and sb-fastcgi asdf-package. Then get a shared
+object of fastcgi, usually named libfcgi.so.*, You can get it by
+installing the package *libfcgi-dev* in your box(e.g. =apt-get
+install libfcgi-dev= on Debian), after doing that, the shared
+object can be found at */usr/lib/libfcgi.so*.
+
+Now, you need load the asdf-package and the libfcgi.so:
+
+  #+BEGIN_SRC lisp
+    ;;; A1. load sb-fascgi asdf
+    (asdf:operate 'asdf:load-op 'sb-fastcgi)
+    ;;; A2. load libfcgi.so
+    (sb-fastcgi:load-libfcgi "/usr/lib/libfcgi.so.0.0.0")    
+  #+END_SRC
+
+* Low-Level API's
+
+sb-fastcgi provides a group of low-level API's corresponding to the
+c-API of fastcgi, see the list below:
+
+ - fcgx-init
+ - fcgx-init-request
+ - fcgx-accept
+ - fcgx-finish
+ - fcgx-puts
+ - fcgx-read
+ - fcgx-read-all
+ - fcgx-getparam
+ - fcgx-getenv
+
+Usually you need not use the first four functions (fcgx-init /
+fcgx-init-request / fcgx-accept / fcgx-finish), there are some
+fcgi-server implementations in sb-fastcgi(will be demonstrated in next
+section), you can use these implementations rather than use the first
+four functions in the list above.
+
+The last five functions (fcgx-puts / fcgx-read / fcgx-read-all/
+fcgx-getparam / fcgx-getenv) is very useful :
+
+  - *fcgx-puts* is for writting content to a http-response, e.g. use 
+    =(fcgx-puts req "CONETNT")= to write the string "CONTENT" to the 
+    http-response corresponding to http-request =req=.
+
+  - *fcgx-read(-all)* is for reading data from the input stream of the 
+    http-request. usually, you must use it to get the POST data.
+
+  - *fcgx-getparam* is for getting parameter from the http-request
+    header, e.g. =(fcgx-getparam req "QUERY_STRING")= will return
+    the QUERY_STRING of the http-request =req=.
+
+  - *fcgx-getenv*  is like fcgx-getparam, =(fcgx-getenv req)= return
+    all the headers/parameters of the http-request =req=, in a
+    assoc-list format. 
+
+
+* Write a FCGI-APP
+
+In this section we will finish our first FCGI-APP with sb-fastcgi.
+
+First we write a function called =simple-app=, which has one
+argument(the http-request), in this function, we use *fcgx-puts* to
+write a simple string to the http-response:
+
+  #+BEGIN_SRC lisp
+    (defun simple-app (req)
+      (let ((c (format nil "Content-Type: text/plain
+    
+      Hello, I am a fcgi-program using Common-Lisp")))
+        (sb-fastcgi:fcgx-puts req c)))  
+  #+END_SRC
+
+Then we can run this simple-app:
+  #+BEGIN_SRC lisp
+    (sb-fastcgi:simple-server #'simple-app)  
+  #+END_SRC
+
+the simple-server runs the simple-app on stdin, so you can integrate
+it with apache via mod_fastcgi, or use spawn-fcgi to run it on a
+listening socket.
+
+There are four fcgi-server implementations in sb-fastcgi now:
+
+  #+BEGIN_SRC lisp
+    (sb-fastcgi:simple-server #'simple-app)
+    (sb-fastcgi:simple-server-threaded #'simple-app)
+    (sb-fastcgi:socket-server #'simple-app)
+    (sb-fastcgi:socket-server-threaded #'simple-app)    
+  #+END_SRC
+
+  - the implementations with the prefix "simple-" runs on stdin.
+  - the implementations with the prefix "socket-" runs on a
+    inet-socket or a unix-domain-socket.
+  - the implementations with the postfix "-threaded" runs in
+    multi-thread mode. 
+
+See =sb-fastcgi/test.lisp= for more examples.
+
+
+* The WSGI Style API
+
+If you do not know WSGI, get to know it first, and then see this
+example:
+ 
+  #+BEGIN_SRC lisp
+    ;;; C1. app using WSGI-style interface
+    (defun wsgi-app (env start-response)
+      (funcall start-response "200 OK" '(("X-author" . "Who?")
+                                         ("Content-Type" . "text/html")))
+      (list "ENV (show in alist format): <br>" env))
+    
+    ;;; C2. run app above on 0.0.0.0:9000 (by default)
+    (defun run-app-1 ()
+      (sb-fastcgi:socket-server-threaded
+       (sb-fastcgi:make-serve-function #'wsgi-app)
+       :inet-addr "0.0.0.0"
+       :port 9000))
+    
+  #+END_SRC
+
+  - the function =wsgi-app= defined a wsgi-style app
+  - the function call =(sb-fastcgi:make-serve-function #'wsgi-app)=
+    convert the =wsgi-app= to a fcgi-app-function in sb-fastcgi. 
+  - use =sb-fastcgi:socket-server-threaded= to run the
+    fcgi-app-function we just get in the last step.
+
+
+The wsgi-app can be nested:
+  #+BEGIN_SRC lisp
+    ;;; C4. a nested WSGI-style app example
+    (defun wsgi-app2 (app)
+      (lambda (env start-response)
+        (let ((content-0 (funcall app env start-response))) ; call outter app
+          ;;reset X-author in headers
+          (funcall start-response nil '(("X-author" . "KDr2!")))
+          (append '("Prefix <br/>")  content-0 '("<br/>Postfix")))))
+    
+    ;;; C5. run (test-app1 test-app2) nested app
+    (defun run-app-2 ()
+      (sb-fastcgi:socket-server-threaded
+       (sb-fastcgi:make-serve-function (wsgi-app2 #'wsgi-app))
+       :inet-addr "0.0.0.0"
+       :port 9000))
+    
+  #+END_SRC
+
+  - the function =wsgi-app2= accept a wsgi-style-app in its argument,
+    and return a new wsgi-style-app. In =wsgi-app2= you can change the
+    reponse headers, filter or translate the response body...
+  - run the nested wsgi-style-app.
+
+Nested wsgi-style-app make you webapp like an onion, and you can
+add/remove a layer from it conveniently, use sb-fastcgi's WSGI-Style
+API you can build/run your webapp or webapp-framework easily.
+
+See =sb-fastcgi/test.lisp= for more examples.
+
+
+* Bug Report
+ - on github : https://github.com/KDr2/sb-fastcgi
+ - email me  : killy.draw< =@= >gmail.com
+
+
+#+INCLUDE: ../include/ga.org
+
+* Share This Page
+#+INCLUDE: ../include/sharethis.org
+
+* Discuss and Comment
+#+INCLUDE: ../include/disqus.org

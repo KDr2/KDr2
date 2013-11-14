@@ -1,0 +1,267 @@
+/*******************************************************************************
+ * @author: Hsiaw-yih, KDr2
+ * @version: 1.0
+ * Licence: CC
+ * About:
+ *  Hsiaw-yih wrote this file for KDr2.
+ *
+ ******************************************************************************/
+body {
+    background: #fff;
+    color: #839496;
+    /* font: 14px/1.7 sans-serif; */
+    font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
+    margin: 5% 15% 8%;
+    min-width: 600px;
+    background: none repeat scroll 0 0 #FDF6E3;
+}
+
+#org-div-home-and-up {
+    float: right;
+}
+
+body .nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background: white;
+  border-bottom: 1px solid #D2D2D2;
+}
+
+body .nav ul {
+  list-style: none;
+  margin: 0;
+}
+body .nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+body .nav ul li a {
+  line-height: 46px;
+  display: inline-block;
+  color: #4E93D6;
+  padding: 0 20px;
+  border-radius: 0;
+}
+body .nav ul li a:hover {
+  color: white;
+  text-decoration: none;
+  background: #4E93D6;
+}
+
+body .nav ul .search {
+  line-height: 46px;
+  display: inline-block;
+  padding: 0 20px;
+  float: right;
+}
+
+body .nav ul .search input {
+    border: 1px solid #4E93D6;
+}
+
+body .nav ul .search .button {
+    color: white;
+    background: #4E93D6;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #4E93D6;
+    padding: 1em 0 15px;
+    text-align: left;
+    border-bottom: 1px solid #4E93D6;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 1em 0 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+h3 {
+    font-size: 1.5em;
+    padding: 0.5em 0 10px;
+    border-bottom: 1px solid #eee;
+}
+h1, h2, h3 {
+    line-height: 1.4;
+}
+
+h2 span, h3 span, h4 span {
+    color: #4E93D6;
+    font-weight: lighter;
+}
+
+.todo, .deadline {
+    color: red;
+}
+.todo, .done,
+.tag span {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal;
+}
+.todo {
+    background-color: #e14344;
+}
+.done {
+    background-color: #009d6f;
+}
+h3 .todo, h3 .done {
+    font-size: 0.75em;
+}
+
+.tag {
+    float: right;
+}
+.tag span {
+    background-color: #ccc;
+    color: #000;
+    margin-left: 0.3em;
+}
+
+.timestamp {
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black;
+    background-color: #ccc;
+    border: solid 1px #aaa;
+}
+
+.content {
+    background-color: #fff;
+}
+
+h1.title {
+    text-align: left;
+}
+
+.target {
+    background-color: lavender;
+}
+
+.menu {
+    color: #666;
+}
+
+.menu a:link {
+    color: #888;
+}
+.menu a:active {
+    color: #888;
+}
+.menu a:visited {
+    color: #888;
+}
+
+a:link, a:visited {
+    color: #4e93d6;
+}
+a:active {
+    color: #4e93d6;
+}
+
+img { align: center; }
+
+pre {
+    background-color: #333;
+    border: #ddd solid 2px;
+    color: #fff;
+    font: 14px/1.5 monospace;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+th {
+	vertical-align: top;
+	border: 1px solid #e2e2e2;
+}
+
+td {
+	vertical-align: top;
+	border: 1px solid #e2e2e2;
+}
+
+#postamble {
+	font-size: 12px;
+	color: #666;
+	text-align: right;
+	border-top: #ccc solid 1px;
+	margin-top: 2em;
+	padding-top: 1em;
+}
+#postamble p {
+	margin: 0 1em;
+}
+
+#table-of-contents {
+    font-size: 9pt;
+    position: fixed;
+    right: 0em;
+    top: 46px;
+    background: white;
+    border: #ccc solid;
+    border-width: 0 0 1px 1px;
+    /* ensure doesn't flow off the screen when expanded */
+    max-height: 80%;    
+    overflow: auto;
+    z-index: 200;
+}
+
+#table-of-contents h2 {
+    color: #4E93D6;
+    font-size: 10pt;    
+    font-weight: bold;
+    padding: 0.05em 0.5em 0.5em;
+    border-bottom: none;
+}
+
+#table-of-contents ul {
+    margin-left: 14pt;
+    margin-bottom: 10pt;
+    padding: 0
+}
+
+#table-of-contents li {
+    padding: 0;
+    margin: 1px;
+    list-style: none;
+}
+
+#table-of-contents ul>:first-child {
+    color: blue;
+}
+
+#table-of-contents #text-table-of-contents {
+    display: none;
+    text-align: left;
+}
+
+#table-of-contents:hover #text-table-of-contents {
+    display: block;
+    padding: 0.5em;
+    margin-top: -1.5em;
+}
+
+code {
+    display: inline-block;
+    background-color: #cce;
+    padding: 2px 5px;
+    border-radius: 2px;    
+    line-height: normal;
+}

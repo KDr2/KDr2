@@ -1,0 +1,57 @@
+#+TITLE: CL-FastCGI
+#+AUTHOR: KDr2
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_HOME: ../index.html
+#+HTML_LINK_UP: index.html
+
+* Introduction
+
+CL-FastCGI is a generic version of [[file:sb-fastcgi.org][SB-FastCGI]], targeting to run on
+mostly Common Lisp implementation. 
+
+You can get it from https://github.com/KDr2/cl-fastcgi.
+
+CL-FastCGI's API is exactly the same as [[file:sb-fastcgi.org][SB-FastCGI]]'s.
+
+* Differences between  [[file:sb-fastcgi.org][SB-FastCGI]].
+
+** SB-FastCGI
+   - Supports SBCL only.
+   - No third-party packages dependences.
+   - Supports unix-domain-socket/inet-socket/stdin
+   - Multithreaded fastcgi server.
+
+** CL-FastCGI
+   - Targeting to running on all Common Lisp implementation. And now 
+     supports:
+     - SBCL
+     - CMUCL
+     - CLISP
+     - Clozure CL
+     - LispWorks
+     - ECL
+   - Depends on *cffi* and *usocket*
+   - Unix-domain-socket is unsupported.
+   - Multithreaded fastcgi server is unsupported(You can run it in
+     multi-processes mode). 
+
+* Which to Use?
+
+If you use SBCL, I recommend you select SB-FastCGI, and package
+SB-FastCGI has a nickname =cl-fastcgi=, so you can change SB-FastCGI
+to cl-fastcgi or change back easily, without code modifications.
+
+* Bug Report
+  - on github : https://github.com/KDr2/cl-fastcgi
+  - email me  : killy.draw< =@= >gmail.com
+
+
+#+INCLUDE: ../include/ga.org
+
+* Share This Page
+#+INCLUDE: ../include/sharethis.org
+
+* Discuss and Comment
+#+INCLUDE: ../include/disqus.org

@@ -1,0 +1,4 @@
+#!/bin/sh
+# -*- sh -*-
+BASENAME=`dirname $0`/..
+rsync -avr $BASENAME/output/ kdr2@kdr2.com:kdr2.com/
