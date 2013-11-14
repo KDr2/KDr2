@@ -1,0 +1,14 @@
+*.pyc
+*.o
+*.cmx
+*.cmi
+*.cmo
+*.omc
+.omakedb*
+*.opt
+*.run
+.DS_*
+
+data/*.db
+data/*.xml
+build/
