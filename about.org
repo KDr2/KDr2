@@ -1,4 +1,5 @@
 #+TITLE: About this site and me
+# -*- mode: org; mode: auto-fill -*-
 #+AUTHOR: KDr2
 #+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -8,9 +9,24 @@
 
 
 * About This Site
+  I use this site to record, write, post things formally, please refer
+  to http://kdr2.net for other trival things.
+
+  This site is built with emacs and org-mode, and some other tools,
+  here is list:
+  - Emacs: http://www.gnu.org/software/emacs/
+  - Org-Mode: http://orgmode.org/
+  - Disqus: http://disqus.com/
+  - ShareThis: http://www.sharethis.com/
+  - Google Analytics: http://www.google.com/analytics/
+
+  You can find my org mode configuration at
+  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
+  and the source of this site at https://github.com/KDr2/kdr2-on-web.
+
+  By the way, this site has two domain names: [[http://kdr2.com][kdr2.com]] and  [[http://mindniche.com][mindniche.com]].
 
 * About Me
-
 ** Contact
    - Location: XI'AN, SHANNXI, China
    - skype : data:text/plain;base64,emh1b3Fs
