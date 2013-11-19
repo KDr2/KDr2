@@ -31,6 +31,16 @@ body .nav {
   border-bottom: 1px solid #D2D2D2;
 }
 
+body .nav #site-name {
+  margin: 0;
+  padding: 0 20px;
+  display: inline-block;
+  line-height: 46px;
+  font-weight: bold;
+  color: white;
+  background: #4E93D6;
+}
+
 body .nav ul {
   list-style: none;
   margin: 0;
