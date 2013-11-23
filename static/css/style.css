@@ -268,10 +268,21 @@ td {
     margin-top: -1.5em;
 }
 
+
 code {
     display: inline-block;
     background-color: #cce;
-    padding: 2px 5px;
-    border-radius: 2px;    
+    padding: 1px 5px;
+    border-radius: 3px;
     line-height: normal;
+}
+
+.footdef sup {
+    vertical-align: baseline;
+    font-size: inherit;
+}
+
+.footpara {
+    margin: 7px;
+    display: inline;
 }
