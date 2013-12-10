@@ -1,5 +1,5 @@
+# -*- mode: org; mode: auto-fill; -*-
 #+TITLE: About this site and me
-# -*- mode: org; mode: auto-fill -*-
 #+AUTHOR: KDr2
 #+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -12,8 +12,8 @@
   I use this site to record, write, post things formally, please refer
   to http://kdr2.net for other trival things.
 
-  This site is built with emacs and org-mode, and some other tools,
-  here is list:
+  This site is built with emacs and org-mode, and some other tools in
+  the following list:
   - Emacs: http://www.gnu.org/software/emacs/
   - Org-Mode: http://orgmode.org/
   - Disqus: http://disqus.com/

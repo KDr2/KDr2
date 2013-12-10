@@ -1,3 +1,4 @@
+# -*- mode: org; mode: auto-fill -*-
 #+TITLE: KDr2.com
 #+AUTHOR: KDr2
 #+OPTIONS: toc:nil

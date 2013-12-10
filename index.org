@@ -1,3 +1,4 @@
+# -*- mode: org; mode: auto-fill -*-
 #+TITLE: Mind Niche
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
@@ -11,7 +12,6 @@
 
 And this is my simple web site(again :D). It's
 still under building and below is the things which are ready:
-
 
 - [[file:project/index.org][Projects]]
 
