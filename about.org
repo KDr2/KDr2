@@ -32,6 +32,7 @@
    - skype : data:text/plain;base64,emh1b3Fs
    - Email : data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=
    - CellPhone : +86 0b10111010 05532 0x0636
+   - [[file:schedule.org][My Schedule]]
    - [[http://n.kdr2.net/ask][Ask me anything on Tumblr]]
 
 #+INCLUDE: include/ga.org
