@@ -7,7 +7,6 @@
 #+HTML_LINK_UP: index.html
 #+HTML_LINK_HOME: index.html
 
-
 * About This Site
   I use this site to record, write, post things formally, please refer
   to http://kdr2.net for other trival things.
@@ -23,8 +22,6 @@
   You can find my org mode configuration at
   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
   and the source of this site at https://github.com/KDr2/kdr2-on-web.
-
-  By the way, this site has two domain names: [[http://kdr2.com][kdr2.com]] and  [[http://mindniche.com][mindniche.com]].
 
 * About Me
 ** Contact
