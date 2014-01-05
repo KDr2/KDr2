@@ -3,6 +3,13 @@
 #+AUTHOR: KDr2
 #+OPTIONS: toc:nil
 
+* R5RS Features List
+  :PROPERTIES:
+  :CUSTOM_ID: r5rs-features
+  :PUBDATE:  <2014-01-05 Sun 13:43>
+  :END:
+  [[file:tech/lisp/r5rs-features.org][R^{5}RS Features List]]
+
 * My site kdr2.com is built with orgmode now
   :PROPERTIES:
   :CUSTOM_ID: kdr2-com-with-orgmode

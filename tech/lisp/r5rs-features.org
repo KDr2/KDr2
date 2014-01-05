@@ -1,0 +1,265 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: R5RS Features
+#+AUTHOR: KDr2
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+#+HTML_LINK_HOME: ../../index.html
+#+HTML_LINK_UP: ../index.html
+
+* Definitions
+  - define
+  - define-syntax
+
+* Expressions
+** Primitive Expressions
+   - <variable>
+   - quote
+   - <quoto-datum>
+   - <constant>
+   - procedure call
+   - lambda
+   - if
+   - set!
+** Derived Expressions
+   - cond
+   - case
+   - and
+   - or
+   - let
+   - let*
+   - letrec
+   - begin
+   - do
+   - named-let
+   - delay
+   - quasiquote (and unquote, unquote-splice)
+   - let-syntax
+   - letrec-syntax
+* Standard Procedures
+** Equivalence Predicates
+   - eqv?
+   - eq?
+   - equal?
+** Numbers
+   - read-macro: #b,#o,#d,#x, #e, #i and postfix `SFDL`
+   - number?
+   - complex?
+   - real?
+   - rational
+   - integer?
+   - exact?
+   - inexact?
+   - =
+   - >
+   - <
+   - >=
+   - <=
+   - zero?
+   - positive?
+   - negative?
+   - odd?
+   - even?
+   - max
+   - min
+   - +
+   - *
+   - -
+   - /
+   - abs
+   - quotient
+   - remainder
+   - modulo
+   - gcd
+   - lcm
+   - numerator
+   - denominator
+   - floor
+   - ceiling
+   - truncate
+   - round
+   - rationalize
+   - exp
+   - log
+   - sin
+   - cos
+   - tan
+   - asin
+   - acos
+   - atan
+   - atan
+   - sqrt
+   - expt
+   - make-rectangular
+   - make-polar
+   - real-part
+   - imag-part
+   - magnitude
+   - angle
+   - exact->inexact
+   - inexact->exact
+   - number->string
+   - string->number
+** Booleans
+   - not
+   - boolean?
+** Pairs and Lists
+   - pair?
+   - cons
+   - set-car!
+   - set-cdr!
+   - car
+   - cdr
+   - caar
+   - cadr
+   - cdar
+   - cddr
+   - caaar
+   - caadr
+   - cadar
+   - caddr
+   - cdaar
+   - cdadr
+   - cddar
+   - cdddr
+   - caaaar
+   - caaadr
+   - caadar
+   - caaddr
+   - cadaar
+   - cadadr
+   - caddar
+   - cadddr
+   - cdaaar
+   - cdaadr
+   - cdadar
+   - cdaddr
+   - cddaar
+   - cddadr
+   - cdddar
+   - cddddr
+   - null?
+   - list?
+   - list
+   - length
+   - append
+   - reverse
+   - list-tail
+   - list-ref
+   - memq
+   - memv
+   - member
+   - assq
+   - assv
+   - assoc
+** Symbol
+   - symbol?
+   - symbol->string
+   - string->symbol
+** Characters
+   - #\<char> (read-macro)
+   - char?
+   - char=?
+   - char>?
+   - char<?
+   - char>=?
+   - char<=?
+   - char-ci=?
+   - char-ci>?
+   - char-ci<?
+   - char-ci>=?
+   - char-ci<=?
+   - char-alphabetic?
+   - char-numeric?
+   - char-whitespace?
+   - char-upper-case?
+   - char-lower-case?
+   - char->integer
+   - integer->char
+   - char-upcase
+   - char-downcase
+** Strings
+   - string?
+   - make-string
+   - string
+   - string-length
+   - string-ref
+   - string-set!
+   - string=?
+   - string>?
+   - string<?
+   - string>=?
+   - string<=?
+   - string-ci=?
+   - string-ci>?
+   - string-ci<?
+   - string-ci>=?
+   - string-ci<=?
+   - substring
+   - string-append
+   - string->list
+   - list->string
+   - string-copy
+   - string-fill!
+** Vectors
+   - vector?
+   - make-vector
+   - vector
+   - vector-length
+   - vector-ref
+   - vector-set!
+   - vector->list
+   - list->vector
+   - vector-fill!
+** Control Features
+   - procedure?
+   - apply
+   - map
+   - for-each
+   - force
+   - call-with-current-continuation
+   - values
+   - call-with-values
+   - dynamic-wind
+** Eval
+   - eval
+   - scheme-report-environment
+   - null-environment
+   - interaction-environment
+** IO
+*** IO: Ports
+    - call-with-input-file
+    - call-with-output-file
+    - input-port?
+    - output-port?
+    - current-input-port
+    - current-oputput-port
+    - with-input-from-file
+    - with-output-to-file
+    - open-input-file
+    - open-output-file
+    - close-input-file
+    - close-output-file
+*** IO: Input
+    - read
+    - read-char
+    - peek-char
+    - eof-object?
+    - char-ready?
+*** IO: Output
+    - write
+    - display
+    - newline
+    - write-char
+** System Interface
+   - load
+   - transcript-on
+   - transcript-off
+
+#+INCLUDE: ../../include/ga.org
+
+* Share This Page
+#+INCLUDE: ../../include/sharethis.org
+
+* Discuss and Comment
+#+INCLUDE: ../../include/disqus.org
