@@ -8,5 +8,6 @@
 #+HTML_LINK_UP: ../index.html
 
 - [[file:lisp/r5rs-features.org][R^{5}RS Features List]]
+- [[file:python/pyc_format.org][PYC文件格式分析]]
 
 #+INCLUDE: ../include/ga.org

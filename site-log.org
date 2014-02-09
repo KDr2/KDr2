@@ -21,3 +21,11 @@
   :END:
   And if *IFTTT* works well, this entry will be posted to my tumblr as
   a link. :D
+
+* PYC文件格式分析
+  <2010-12-24>
+  :PROPERTIES:
+  :CUSTOM_ID: pyc_format
+  :PUBDATE:  <2010-12-14 Fri 10:33>
+  :END:
+  PYC文件格式分析

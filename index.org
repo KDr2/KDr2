@@ -8,7 +8,7 @@
 
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
-* [[./image/R2-D2.128.png]] Hi, I'm KDr2(ZHUO QL)
+* [[./image/res/R2-D2.128.png]] Hi, I'm KDr2(ZHUO QL)
 
 And this is my simple web site(again :D). It's
 still under building and below is the things which are ready:
