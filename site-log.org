@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: KDr2.com
+#+TITLE: ChangeLog of KDr2.com
 #+AUTHOR: KDr2
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
@@ -28,4 +28,4 @@
   :CUSTOM_ID: pyc_format
   :PUBDATE:  <2010-12-14 Fri 10:33>
   :END:
-  PYC文件格式分析
+  [[file:tech/python/pyc_format.org][PYC文件格式分析]]
