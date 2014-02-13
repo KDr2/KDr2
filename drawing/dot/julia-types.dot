@@ -1,0 +1,53 @@
+digraph JuliaTypes{
+    compound=true
+    concentrate=true
+    rankdir=TB
+    fontname="courier"
+    fontsize=12
+    
+    node [fontname="courier"
+          fontsize=10 color="gray"]
+    edge [color="pink" style="dashed"]
+
+    subgraph cluster_ubound{
+        rankdir=TB
+        style=dotted
+        rank=same
+        any[shape="octagon" label="Any" color="green4"]
+        top[shape="octagon" label="Top" color="green4"]
+    }
+
+    subgraph cluster_type{
+        rankdir=TB
+        style=dotted
+        rank=same
+        type[shape="diamond" label="Type" color="blue"]
+    }
+
+    subgraph cluster_mt{
+        rankdir=TB
+        style=dotted
+        rank=same
+        data_type[shape="diamond" label="DataType" color="blue"]
+        union_type[shape="diamond" label="UnionType" color="blue"]
+        tuple[shape="diamond" label="Tuple" color="blue"]
+    }
+
+    subgraph cluster_ct{
+        rankdir=TB
+        style=dotted
+        rank=same
+        t[shape="diamond" label="T" color="blue"]
+        ut[shape="diamond" label="Union(T1,T2...Tn)" color="green4"]
+        tt[shape="diamond" label="(T1,T2...Tn)" color="green4"]
+    }
+
+    subgraph cluster_lbound{
+        rankdir=TB
+        style=dotted
+        rank=same
+        nothing[shape="octagon" label="Nothing" color="green4"]
+        none[shape="octagon" label="None" color="green4"]
+    }
+
+}
