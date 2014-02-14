@@ -22,14 +22,11 @@ dot: $(DOT_IMGS)
 	@echo "dot files compiled"
 
 # pgf
-PGF_SRCS = $(shell sh -c "ls drawing/pgf")
-PGF_SRCS_WD = $(PGF_SRCS:%=drawing/pgf/%)
-PGF_IMGS = $(PGF_SRCS:%.tex=%.png)
+PGF_SRCS = $(shell sh -c "ls drawing/pgf/")
+PGF_IMGS = $(PGF_SRCS:%.pgf.tex=%.pgf.png)
 
 %.pgf.png: drawing/pgf/%.pgf.tex
-	pdflatex -output-directory tmp/pgf $<
-	pdftops -eps tmp/pgf/%.pgf.pdf
-	convert -density 300 %.pgf.eps static/image/pgf/$@
+	script/pgf_compiler.sh $<
 
 pgf: $(PGF_IMGS)
 	@echo "pgf files compiled"
