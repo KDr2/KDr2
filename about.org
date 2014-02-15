@@ -25,12 +25,17 @@
 
 * About Me
 ** Contact
+   :PROPERTIES:
+   :CUSTOM_ID: contact_me
+   :END:
    - Location: XI'AN, SHANNXI, China
-   - skype : data:text/plain;base64,emh1b3Fs
-   - Email : data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=
+   - skype : zhuoql
+   - Email : killy.draw<at>gmail.com
    - CellPhone : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]
    - [[http://n.kdr2.net/ask][Ask me anything on Tumblr]]
+#   - skype : [[data:text/plain;base64,emh1b3Fs]]
+#   - Email : [[data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=]]
 
 #+INCLUDE: include/ga.org
 * Share This Page

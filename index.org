@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Mind Niche
+#+TITLE: KDr2.com
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
@@ -10,8 +10,10 @@
 
 * [[./image/res/R2-D2.128.png]] Hi, I'm KDr2(ZHUO QL)
 
-And this is my simple web site(again :D). It's
-still under building and below is the things which are ready:
+I am a software developer/computer programmer.
+
+I am now working as a freelance developer/consultant. And this is my
+simple web site. You can [[file:about.html#contact_me][contact me]] if necessary.
 
 - [[file:project/index.org][Projects]]
 - [[file:tech/index.org][Technical Posts]]
