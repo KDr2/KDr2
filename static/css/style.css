@@ -13,7 +13,7 @@ body {
     font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
     margin: 5% 15% 8%;
     min-width: 600px;
-    background: none repeat scroll 0 0 #FDF6E3;
+    background: none repeat scroll 0 0 #FFFFFF; /*#FDF6E3;*/
 }
 
 #org-div-home-and-up {
@@ -27,7 +27,7 @@ body .nav {
   left: 0;
   right: 0;
   height: 46px;
-  background: white;
+  background: #0088CC;
   border-bottom: 1px solid #D2D2D2;
 }
 
@@ -38,7 +38,7 @@ body .nav #site-name {
   line-height: 46px;
   font-weight: bold;
   color: white;
-  background: #4E93D6;
+  background: #3D648A;
 }
 
 body .nav ul {
@@ -52,14 +52,14 @@ body .nav ul li {
 body .nav ul li a {
   line-height: 46px;
   display: inline-block;
-  color: #4E93D6;
+  color: #FFFFFF;
   padding: 0 20px;
   border-radius: 0;
 }
 body .nav ul li a:hover {
   color: white;
   text-decoration: none;
-  background: #4E93D6;
+  background: #3D648A;
 }
 
 body .nav ul .search {
@@ -70,21 +70,21 @@ body .nav ul .search {
 }
 
 body .nav ul .search input {
-    border: 1px solid #4E93D6;
+    border: 1px solid #3D648A;
 }
 
 body .nav ul .search .button {
     color: white;
-    background: #4E93D6;
+    background: #3D648A;
 }
 
 h1 {
     font-size: 3em;
     font-weight: bold;
-    color: #4E93D6;
+    color: #3D648A;
     padding: 1em 0 15px;
     text-align: left;
-    border-bottom: 1px solid #4E93D6;
+    border-bottom: 1px solid #3D648A;
 }
 
 h2 {
@@ -103,7 +103,7 @@ h1, h2, h3 {
 }
 
 h2 span, h3 span, h4 span {
-    color: #4E93D6;
+    color: #3D648A;
     font-weight: lighter;
 }
 
@@ -174,10 +174,10 @@ h1.title {
 }
 
 a:link, a:visited {
-    color: #4e93d6;
+    color: #3D648A;
 }
 a:active {
-    color: #4e93d6;
+    color: #3D648A;
 }
 
 img { align: center; }
@@ -224,7 +224,7 @@ td {
     position: fixed;
     right: 0em;
     top: 46px;
-    background: white;
+    background: #0088CC;
     border: #ccc solid;
     border-width: 0 0 1px 1px;
     /* ensure doesn't flow off the screen when expanded */
@@ -234,7 +234,7 @@ td {
 }
 
 #table-of-contents h2 {
-    color: #4E93D6;
+    color: #FFFFFF;
     font-size: 10pt;    
     font-weight: bold;
     padding: 0.05em 0.5em 0.5em;
@@ -251,6 +251,10 @@ td {
     padding: 0;
     margin: 1px;
     list-style: none;
+}
+
+#table-of-contents a {
+    color: #FFFFFF;
 }
 
 #table-of-contents ul>:first-child {

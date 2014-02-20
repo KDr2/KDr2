@@ -2,7 +2,7 @@ EMACS?=emacs
 
 all: pub
 
-export: dot
+export:
 	echo "export org files"
 	$(EMACS) --batch --script script/compile.el
 
