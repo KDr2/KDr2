@@ -1,8 +1,6 @@
 # -*- mode: org; mode: auto-fill; -*-
 #+TITLE: Contributions to Open-Source Projects
 #+AUTHOR: KDr2
-#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
-#+HTML_HEAD: <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
 #+HTML_LINK_UP: ../index.html
 #+HTML_LINK_HOME: ../index.html
