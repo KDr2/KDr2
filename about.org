@@ -19,7 +19,8 @@
 
   You can find my org mode configuration at
   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
-  and the source of this site at https://github.com/KDr2/kdr2-on-web.
+  and https://github.com/KDr2/kdr2-on-web/blob/master/script/compile.el.
+  The source repository of this site is https://github.com/KDr2/kdr2-on-web.
 
 * About Me
 ** Contact
