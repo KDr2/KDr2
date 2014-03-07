@@ -18,23 +18,12 @@
 <li><a target=\"_blank\" href=\"http://github.com/KDr2\">GitHub</a></li>
 <li><a target=\"_blank\" href=\"http://kdr2.net\">Tumblr</a></li>
 <li><a href=\"/about.html\">About</a></li>
+<li><a href=\"/about.html#support_me\">Support Me</a></li>
 <li class=\"search\">
 <form method=\"get\" action=\"http://www.google.com/search\">
   <input type=\"text\" name=\"q\" size=\"31\" maxlength=\"255\" value=\"\" />
   <input type=\"hidden\" id=\"sitesearch\" name=\"sitesearch\" value=\"kdr2.com\" />
   <input type=\"submit\" value=\"Search\" class=\"button\" />
-</form>
-<li class=\"search\">
-<form id=\"paypal\" name=\"_xclick\" action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\">
-    <input type=\"hidden\" name=\"cmd\" value=\"_xclick\">
-    <input type=\"hidden\" name=\"business\" value=\"zhuo@bitoasis.com\">
-    <input type=\"hidden\" name=\"item_name\" value=\"Support KDr2.com\">
-    <input type=\"hidden\" name=\"item_number\" value=\"1\">
-    <input type=\"hidden\" name=\"lc\" value=\"US\">
-    <input type=\"hidden\" name=\"currency_code\" value=\"USD\">
-    <input type=\"hidden\" name=\"tax\" value=\"0\">
-    <input type=\"hidden\" name=\"return\" value=\"http://kdr2.com\">
-    <input name=\"submit\" alt=\"Support KDr2\">Support Me</button>
 </form>
 </li>
 </ul>
@@ -81,4 +70,4 @@
            )
           ("kdr2-com" :components ("kdr2-com-org" "kdr2-com-rss" "kdr2-com-static")))))
 
-(org-publish-project "kdr2-com")
+(org-publish-project "kdr2-com" t)

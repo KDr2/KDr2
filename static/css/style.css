@@ -78,6 +78,15 @@ body .nav ul .search .button {
     background: #3D648A;
 }
 
+.button_to_link {
+    padding: 0;
+    border: none;
+    text-decoration: underline;
+    cursor:pointer;
+    background-color: #fff;
+    color: #3D648A;
+}
+
 h1 {
     font-size: 3em;
     font-weight: bold;
