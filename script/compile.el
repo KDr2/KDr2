@@ -70,4 +70,8 @@
            )
           ("kdr2-com" :components ("kdr2-com-org" "kdr2-com-rss" "kdr2-com-static")))))
 
-(org-publish-project "kdr2-com" t)
+(defun export (&optional force)
+  (org-publish-project "kdr2-com" force))
+
+(defun force-export ()
+  (export t))

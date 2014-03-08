@@ -4,9 +4,17 @@ all: pub
 
 export:
 	echo "export org files"
-	$(EMACS) --batch --script script/compile.el
+	$(EMACS) --batch --script script/compile.el -f export
+
+force-export:
+	echo "export org files"
+	$(EMACS) --batch --script script/compile.el -f force-export
 
 pub: export
+	echo "publish site"
+	script/pub
+
+force-pub: force-export dot pgf
 	echo "publish site"
 	script/pub
 
