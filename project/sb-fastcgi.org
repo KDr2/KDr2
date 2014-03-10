@@ -179,9 +179,6 @@ See =sb-fastcgi/test.lisp= for more examples.
  - on github : https://github.com/KDr2/sb-fastcgi
  - email me  : killy.draw< =@= >gmail.com
 
-
-#+INCLUDE: ../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../include/sharethis.org
 

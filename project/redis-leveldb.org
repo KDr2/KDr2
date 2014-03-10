@@ -97,9 +97,6 @@ You can get it from https://github.com/KDr2/redis-leveldb.
   - email me  : killy.draw< =@= >gmail.com
   - comment this page.
 
-
-#+INCLUDE: ../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../include/sharethis.org
 

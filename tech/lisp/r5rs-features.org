@@ -254,8 +254,6 @@
    - transcript-on
    - transcript-off
 
-#+INCLUDE: ../../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../../include/sharethis.org
 

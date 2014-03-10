@@ -8,17 +8,19 @@
       href=\"//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic\">
 <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS feed for KDr2\" href=\"http://kdr2.com/site-log.xml\">
 <script src=\"//code.jquery.com/jquery-1.10.1.min.js\"></script>
+<script src=\"//www.google-analytics.com/cx/api.js\"></script>
+<script src=\"/script/gat.js\"></script>
 <script src=\"/script/site.js\"></script>")
 
 (defvar kdr2-com-html-preamble
   "<div class='nav'>
 <ul>
-<li id=\"site-name\"></li>
+<li id=\"site-name\">KDr2.com</li>
 <li><a href=\"/\">Home</a></li>
 <li><a target=\"_blank\" href=\"http://github.com/KDr2\">GitHub</a></li>
 <li><a target=\"_blank\" href=\"http://kdr2.net\">Tumblr</a></li>
 <li><a href=\"/about.html\">About</a></li>
-<li><a href=\"/about.html#support_me\">Support Me</a></li>
+<li><a href=\"/about.html#support_me\" class=\"gat-click\" gaid=\"donate-link\">Support Me</a></li>
 <li class=\"search\">
 <form method=\"get\" action=\"http://www.google.com/search\">
   <input type=\"text\" name=\"q\" size=\"31\" maxlength=\"255\" value=\"\" />

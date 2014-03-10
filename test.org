@@ -6,8 +6,6 @@
 * About This Page
   This is a test page, for testing the new features on this page.
 
-#+INCLUDE: include/ga.org
-
 * Share This Page
 #+INCLUDE: include/sharethis.org
 

@@ -16,5 +16,3 @@ Here is some projects created/maintained by me:
 And [[file:os-contrib.org][here lists some contributions to other projects]].
 
 You may [[http://github.com/KDr2][find more things on my GitHub page]].
-
-#+INCLUDE: ../include/ga.org

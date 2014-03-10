@@ -33,7 +33,5 @@
      - https://github.com/ihnorton/Clang.jl/pulls/KDr2?state=closed
      - https://github.com/ihnorton/Clang.jl/pulls/KDr2
 
-
-#+INCLUDE: ../include/ga.org
 * Share This Page
 #+INCLUDE: ../include/sharethis.org

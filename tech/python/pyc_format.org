@@ -349,8 +349,6 @@ function 有两个默认参数.
 
 http://docs.python.org/release/2.7/library/dis.html#python-bytecode-instructions
 
-#+INCLUDE: ../../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../../include/sharethis.org
 

@@ -13,9 +13,6 @@ OpenResty(=ngx_lua=, http://openresty.org). More information:
 - https://github.com/appwilldev/moochine/
 - https://github.com/appwilldev/moochine-demo
 
-
-#+INCLUDE: ../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../include/sharethis.org
 

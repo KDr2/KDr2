@@ -46,9 +46,6 @@ to cl-fastcgi or change back easily, without code modifications.
   - on github : https://github.com/KDr2/cl-fastcgi
   - email me  : killy.draw< =@= >gmail.com
 
-
-#+INCLUDE: ../include/ga.org
-
 * Share This Page
 #+INCLUDE: ../include/sharethis.org
 

@@ -1,11 +1,8 @@
-function init_mn_site() {
+function init_site() {
     var url = window.location.href;
     var domain = url.replace(/^\w+:\/\//, "").replace(/\/.*$/gi,"").toLowerCase();
     var page = url.replace(/^\w+:\/\/.*?\//i,"").replace(/#.*$/gi,"");
     var site_name = "KDr2.com";
-    if(domain=="mindniche.com") {
-        site_name = "Mind Niche";
-    }
     $("#site-name").text(site_name);
     if(page == "" || page == "/" || page == "index.html") {
         document.title = site_name;
@@ -14,4 +11,47 @@ function init_mn_site() {
     $("#sitesearch").val(domain);
 }
 
-$(document).ready(init_mn_site);
+function init_gat(){
+    ga_cats['test'] = "TEST";
+    ga_cats['donate'] = "DONATE";
+    ga_spec['test-button']= [
+        {
+            'type' : ga_type.event_tracking,
+            'arguments': {
+                category: ga_cats.test,
+                action: "click.button.test",
+                //label: function(e) { return "FUNC-LABEL";}
+                label: "DEFAULT_LABEL"
+            },
+            'events' : ['click', 'mouseover']
+        }
+    ];
+
+    ga_spec['donate-link']= [
+        {
+            'type' : ga_type.event_tracking,
+            'arguments': {
+                category: ga_cats.donate,
+                action: "link.header.click",
+                label: "DEFAULT-LABEL"
+            },
+            'events' : ['click']
+        }
+    ];
+
+    setup_ga('UA-45424100-1', 'kdr2.com');
+    setup_simple_gat();
+    $(".button_to_link").click(function(e){
+        e.preventDefault();
+        gat(e);
+        var button = $(this);
+        setTimeout(function(){
+            button.parent("form").submit();
+        }, 500);
+    });
+}
+
+$(document).ready(function(){
+    init_site();
+    init_gat();
+});
