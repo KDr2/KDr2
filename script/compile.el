@@ -17,8 +17,10 @@
 <ul>
 <li id=\"site-name\">KDr2.com</li>
 <li><a href=\"/\">Home</a></li>
-<li><a target=\"_blank\" href=\"http://github.com/KDr2\">GitHub</a></li>
-<li><a target=\"_blank\" href=\"http://kdr2.net\">Tumblr</a></li>
+<li><a target=\"_blank\" href=\"http://github.com/KDr2\"
+       class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"GITHUB\">GitHub</a></li>
+<li><a target=\"_blank\" href=\"http://kdr2.net\"
+       class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"TUMBLR\">Tumblr</a></li>
 <li><a href=\"/about.html\">About</a></li>
 <li><a href=\"/about.html#support_me\" class=\"gat-click\" gaid=\"donate-link\">Support Me</a></li>
 <li class=\"search\">

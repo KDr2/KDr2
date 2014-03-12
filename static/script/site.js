@@ -14,6 +14,7 @@ function init_site() {
 function init_gat(){
     ga_cats['test'] = "TEST";
     ga_cats['donate'] = "DONATE";
+    ga_cats['social'] = "SOCIAL";
     ga_spec['test-button']= [
         {
             'type' : ga_type.event_tracking,
@@ -33,6 +34,18 @@ function init_gat(){
             'arguments': {
                 category: ga_cats.donate,
                 action: "link.header.click",
+                label: "DEFAULT-LABEL"
+            },
+            'events' : ['click']
+        }
+    ];
+
+    ga_spec['social-link']= [
+        {
+            'type' : ga_type.event_tracking,
+            'arguments': {
+                category: ga_cats.social,
+                action: "header.click",
                 label: "DEFAULT-LABEL"
             },
             'events' : ['click']
