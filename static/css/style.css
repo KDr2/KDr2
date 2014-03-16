@@ -43,6 +43,7 @@ body .nav #site-name {
 
 body .nav ul {
   list-style: none;
+  min-width: 960px;
   margin: 0;
 }
 body .nav ul li {
