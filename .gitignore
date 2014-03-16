@@ -1,3 +1,4 @@
 *.orgx
+*.elc
 output/
 tmp/
