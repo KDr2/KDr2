@@ -1,9 +1,9 @@
 # -*- mode: org; mode: auto-fill; -*-
 #+TITLE: About this site and me
 #+AUTHOR: KDr2
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
-#+HTML_LINK_UP: index.html
-#+HTML_LINK_HOME: index.html
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_UP: ../index.html
+#+HTML_LINK_HOME: ../index.html
 
 * About Me
 ** Contact
@@ -61,7 +61,7 @@
   The source repository of this site is https://github.com/KDr2/kdr2-on-web.
 
 * Share This Page
-#+INCLUDE: include/sharethis.org
+#+INCLUDE: ../include/sharethis.org
 
 * Discuss and Comment
-#+INCLUDE: include/disqus.org
+#+INCLUDE: ../include/disqus.org

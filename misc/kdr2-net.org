@@ -1,0 +1,18 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: Looking for things on KDr2.net?
+#+AUTHOR: KDr2
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_UP: ../index.html
+#+HTML_LINK_HOME: ../index.html
+
+
+This site is a new version of _KDr2.net_, I think you're looking for
+something listed below:
+
+ - [[file:../project/redis-leveldb.org][Document for Redis-Leveldb]]
+ - [[file:../project/sb-fastcgi.org][Document for SB-FastCGI]]
+ - [[file:../project/cl-fastcgi.org][Document for CL-FastCGI]]
+ - [[http://n.kdr2.net][KDr2's Tumblr Site]]
+
+本站点是 _KDr2.net_ 的新版，如果你来这里是为了寻找旧版站点上的东西，
+上面的列表里很可能有你想要的。

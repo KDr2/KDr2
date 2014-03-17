@@ -1,4 +1,7 @@
 (load-file "~/.emacs.d/init.el")
+(load-file "~/Work/mine/kdr2-on-web/script/gen-table.el")
+
+(setq org-confirm-babel-evaluate nil)
 
 (defvar kdr2-com-html-head-extra
   "
@@ -19,10 +22,10 @@
 <li><a href=\"/\">Home</a></li>
 <li><a target=\"_blank\" href=\"http://github.com/KDr2\"
        class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"GITHUB\">GitHub</a></li>
-<li><a target=\"_blank\" href=\"http://kdr2.net\"
+<li><a target=\"_blank\" href=\"http://n.kdr2.net\"
        class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"TUMBLR\">Tumblr</a></li>
-<li><a href=\"/about.html\">About</a></li>
-<li><a href=\"/about.html#support_me\" class=\"gat-click\" gaid=\"donate-link\">Support Me</a></li>
+<li><a href=\"/misc/about.html\">About</a></li>
+<li><a href=\"/misc/about.html#support_me\" class=\"gat-click\" gaid=\"donate-link\">Support Me</a></li>
 <li class=\"search\">
 <form method=\"get\" action=\"http://www.google.com/search\">
   <input type=\"text\" name=\"q\" size=\"31\" maxlength=\"255\" value=\"\" />
