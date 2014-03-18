@@ -7,4 +7,4 @@
 
 - [[file:misc/tools-i-use.org][Tools I use]]
 - [[file:lisp/r5rs-features.org][R^{5}RS Features List]]
-- [[file:python/pyc_format.org][PYC文件格式分析]]
+- [[file:python/pyc-format.org][PYC文件格式分析]]

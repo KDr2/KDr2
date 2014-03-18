@@ -1,5 +1,16 @@
 (load-file "~/.emacs.d/init.el")
-(load-file "~/Work/mine/kdr2-on-web/script/gen-table.el")
+
+(defvar app-root-path
+  (file-name-directory
+   (substring (file-name-directory load-file-name) 0 -1))
+  "The root dir of this project")
+
+(defun app-file (&optional path)
+  (let ((path (or path "")))
+    (concatenate 'string app-root-path path)))
+
+(load-file (app-file "script/gen-table.el"))
+(load-file (app-file "script/log-maker.el"))
 
 (setq org-confirm-babel-evaluate nil)
 
@@ -43,8 +54,8 @@
 <p>Built with %c. </p>
 ")
 
-(let ((kdr2-com-output-dir (concat (vars-get 'work-dir) "/mine/kdr2-on-web/output"))
-      (kdr2-com-source-dir (concat (vars-get 'work-dir) "/mine/kdr2-on-web")))
+(let ((kdr2-com-output-dir (app-file "output/"))
+      (kdr2-com-source-dir (app-file)))
   (setq org-publish-project-alist
         `(("kdr2-com-org"
            :base-directory ,kdr2-com-source-dir

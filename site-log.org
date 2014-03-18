@@ -5,27 +5,9 @@
 #+OPTIONS: num:nil
 #+OPTIONS: p:t
 
-* R5RS Features List
-  <2014-01-05>
-  :PROPERTIES:
-  :CUSTOM_ID: r5rs-features
-  :PUBDATE:  <2014-01-05 Sun 13:43>
-  :END:
-  [[file:tech/lisp/r5rs-features.org][R^{5}RS Features List]]
+#+NAME: site-log
+#+BEGIN_SRC elisp :exports none
+(make-site-log)
+#+END_SRC
 
-* My site kdr2.com is built with orgmode now
-  <2013-11-11>
-  :PROPERTIES:
-  :CUSTOM_ID: kdr2-com-with-orgmode
-  :PUBDATE:  <2013-11-11 Mon 10:33>
-  :END:
-  And if *IFTTT* works well, this entry will be posted to my tumblr as
-  a link. :D
-
-* PYC文件格式分析
-  <2010-12-24>
-  :PROPERTIES:
-  :CUSTOM_ID: pyc_format
-  :PUBDATE:  <2010-12-14 Fri 10:33>
-  :END:
-  [[file:tech/python/pyc_format.org][PYC文件格式分析]]
+#+CALL: site-log[:results value]() :results raw

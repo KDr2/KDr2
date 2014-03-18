@@ -3,19 +3,21 @@ EMACS?=emacs
 all: pub
 
 export:
-	echo "export org files"
+	@echo "export org files"
+	@touch site-log.org
 	$(EMACS) --batch --script script/compile.el -f export
 
 force-export:
-	echo "export org files"
+	@echo "export org files"
+	@touch site-log.org
 	$(EMACS) --batch --script script/compile.el -f force-export
 
 pub: export
-	echo "publish site"
+	@echo "publish site"
 	script/pub
 
 force-pub: force-export dot pgf
-	echo "publish site"
+	@echo "publish site"
 	script/pub
 
 # graphviz dot
