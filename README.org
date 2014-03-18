@@ -2,4 +2,4 @@
 #+TITLE: KDr2 on Web
 * Introduction
   I use this code repository to build my website(s), see more details
-  on http://kdr2.com/about.html
+  on http://kdr2.com/misc/about.html
