@@ -4,6 +4,7 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: p:t
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
 #+NAME: site-log
 #+BEGIN_SRC elisp :exports none

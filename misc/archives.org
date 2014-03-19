@@ -1,0 +1,16 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Archives of KDr2.com
+#+AUTHOR: KDr2
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: p:t
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_UP: ../index.html
+#+HTML_LINK_HOME: ../index.html
+
+#+NAME: site-archives
+#+BEGIN_SRC elisp :exports none
+(make-site-archives)
+#+END_SRC
+
+#+CALL: site-archives[:results value]() :results raw

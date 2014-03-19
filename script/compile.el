@@ -16,11 +16,12 @@
 
 (defvar kdr2-com-html-head-extra
   "
+<link rel=\"shortcut icon\" href=\"/image/res/R2-D2.48.png\" type=\"image/png\"/>
 <link rel=\"stylesheet\" type=\"text/css\"
       href=\"//fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic\">
 <link rel=\"stylesheet\" type=\"text/css\"
       href=\"//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic\">
-<link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS feed for KDr2\" href=\"http://kdr2.com/site-log.xml\">
+<link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS feed for KDr2\" href=\"http://kdr2.com/misc/site-log.xml\">
 <script src=\"//code.jquery.com/jquery-1.10.1.min.js\"></script>
 <script src=\"//www.google-analytics.com/cx/api.js\"></script>
 <script src=\"/script/gat.js\"></script>
@@ -78,7 +79,7 @@
            :html-link-home "http://kdr2.com/"
            :html-link-use-abs-url t
            :exclude ".*"
-           :include ("site-log.org"))
+           :include ("misc/site-log.org"))
           ("kdr2-com-static"
            :base-directory ,(concat kdr2-com-source-dir "/static")
            :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|html"

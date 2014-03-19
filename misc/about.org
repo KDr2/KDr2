@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill; -*-
-#+TITLE: About this site and me
+#+TITLE: About me and this site
 #+AUTHOR: KDr2
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
 #+HTML_LINK_UP: ../index.html
