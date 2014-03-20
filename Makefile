@@ -3,7 +3,7 @@ EMACS?=emacs
 all: pub
 
 AUTO_PAGES = misc/categories.org misc/archives.org misc/site-log.org
-%.org: script/site-log.el
+%.org: script/site-metadata.el
 	@touch $@
 
 export: $(AUTO_PAGES)

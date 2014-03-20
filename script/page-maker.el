@@ -1,6 +1,6 @@
 (require 'cl)
 
-(setq site-metadata-file "script/site-log.el")
+(setq site-metadata-file "script/site-metadata.el")
 
 (defun read-sexp-from-buffer (buffer &optional acc max)
   (if (and (numberp max) (>= (length acc) max))
