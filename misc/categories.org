@@ -1,0 +1,19 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Categories of KDr2.com
+#+AUTHOR: KDr2
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: p:t
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+HTML_LINK_UP: ../index.html
+#+HTML_LINK_HOME: ../index.html
+
+* Projects
+  See [[file:../project/index.org][projects page]].
+
+#+NAME: site-cats
+#+BEGIN_SRC elisp :exports none
+(make-site-cats)
+#+END_SRC
+
+#+CALL: site-cats[:results value]() :results raw

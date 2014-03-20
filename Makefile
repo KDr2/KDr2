@@ -2,10 +2,12 @@ EMACS?=emacs
 
 all: pub
 
-export:
+AUTO_PAGES = misc/categories.org misc/archives.org misc/site-log.org
+%.org: script/site-log.el
+	@touch $@
+
+export: $(AUTO_PAGES)
 	@echo "export org files"
-	@touch misc/archives.org
-	@touch misc/site-log.org
 	$(EMACS) --batch --script script/compile.el -f export
 
 force-export:

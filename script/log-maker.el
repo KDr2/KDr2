@@ -1,17 +1,21 @@
 (require 'cl)
 
-(defun read-sexp-from-buffer (buffer &optional acc)
-  (let ((exp (ignore-errors (read buffer))))
-    (if exp
-        (read-sexp-from-buffer buffer (nconc acc (list exp)))
-      acc)))
+(setq site-metadata-file "script/site-log.el")
+
+(defun read-sexp-from-buffer (buffer &optional acc max)
+  (if (and (numberp max) (>= (length acc) max))
+      acc
+    (let ((exp (ignore-errors (read buffer))))
+      (if exp
+          (read-sexp-from-buffer buffer (nconc acc (list exp)) max)
+        acc))))
 
 
-(defun read-sexp-from-file (file)
+(defun read-sexp-from-file (file &optional max)
   (with-temp-buffer
       (insert-file-contents file)
       (beginning-of-buffer)
-      (read-sexp-from-buffer (current-buffer))))
+      (read-sexp-from-buffer (current-buffer) nil max)))
 
 (defun list-to-log-entity (data)
   (concatenate
@@ -28,32 +32,51 @@
 (defun make-site-log ()
   (mapconcat 'identity
              (mapcar #'list-to-log-entity
-                     (read-sexp-from-file (app-file "script/site-log.el"))) "\n"))
+                     (read-sexp-from-file (app-file site-metadata-file))) "\n"))
 
-(defun make-site-archives ()
-  (let ((entities (read-sexp-from-file (app-file "script/site-log.el")))
-        (archives (make-hash-table))
-        (dates '())
+
+(defun classify-site-entities (key-func format-func)
+  (let ((entities (read-sexp-from-file (app-file site-metadata-file)))
+        (bucket (make-hash-table))
+        (keys '())
         (result '()))
     (dolist (entity entities)
-      (let* ((date (substring (nth 0 entity) 0 4))
-            (date-entities (gethash date archives nil)))
-        (if date-entities
-            (puthash date (append date-entities (list entity)) archives)
+      (let* ((key (funcall key-func entity))
+             (key-entities (gethash key bucket nil)))
+        (if key-entities
+            (puthash key (append key-entities (list entity)) bucket)
           (progn
-            (puthash date (list entity) archives)
-            (setq dates (append dates (list date)))))))
-    (dolist (title dates)
+            (puthash key (list entity) bucket)
+            (setq keys (append keys (list key)))))))
+    (dolist (title keys)
       (setq result (append result (list
-                                   (format "* %s (%d)" title (length (gethash title archives nil))))))
-      (dolist (entity (gethash title archives nil))
+                                   (format "* %s (%d)" title (length (gethash title bucket nil))))))
+      (dolist (entity (gethash title bucket nil))
         (setq result (append result
-                             (list (format "  - [[file:../%s][%s]] %s"
-                                           (nth 2 entity)
-                                           (nth 3 entity)
-                                           (nth 0 entity)))))))
+                             (list (funcall format-func entity))))))
     (mapconcat 'identity result "\n")))
+
+(defun make-site-archives ()
+  (classify-site-entities
+   (lambda (entity) (substring (nth 0 entity) 0 4))
+   (lambda (entity) (format "  - %s [[file:../%s][%s]]"
+                            (substring (nth 0 entity) 0 10)
+                            (nth 2 entity)
+                            (nth 3 entity)))))
+
+(defun path-to-cat (path)
+  (if (string-match "\\(.*\\)/[^/]+$" path)
+      (let ((path-parts (split-string (match-string 1 path) "/")))
+        (mapconcat #'capitalize path-parts " > "))
+    "Default"))
+
+(defun make-site-cats ()
+  (classify-site-entities
+   (lambda (entity) (path-to-cat (nth 2 entity)))
+   (lambda (entity) (format "  - %s [[file:../%s][%s]]"
+                            (substring (nth 0 entity) 0 10)
+                            (nth 2 entity)
+                            (nth 3 entity)))))
 
 (defun test ()
   (message (make-site-log)))
-
