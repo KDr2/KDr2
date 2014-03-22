@@ -98,7 +98,7 @@ You can get it from https://github.com/KDr2/redis-leveldb.
   - comment this page.
 
 * Share This Page
-#+INCLUDE: ../include/sharethis.org
+#+INCLUDE: ../include/sharethis.inc.org
 
 * Discuss and Comment
-#+INCLUDE: ../include/disqus.org
+#+INCLUDE: ../include/disqus.inc.org

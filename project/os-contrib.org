@@ -34,4 +34,4 @@
      - https://github.com/ihnorton/Clang.jl/pulls/KDr2
 
 * Share This Page
-#+INCLUDE: ../include/sharethis.org
+#+INCLUDE: ../include/sharethis.inc.org

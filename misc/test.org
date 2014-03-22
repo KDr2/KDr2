@@ -1,7 +1,7 @@
 # -*- mode: org; mode: auto-fill -*-
 #+TITLE: Test Page
 #+AUTHOR: KDr2
-#+INCLUDE: ../include/common-header.org
+#+INCLUDE: ../include/common.inc.org
 #+CALL: css[:results value]() :results raw
 
 * About This Page
@@ -50,7 +50,7 @@
   return (a,b)
   #+END_SRC
 * Share This Page
-# #+INCLUDE: ../include/sharethis.org
+# #+INCLUDE: ../include/sharethis.inc.org
 
 * Discuss and Comment
-# #+INCLUDE: ../include/disqus.org
+# #+INCLUDE: ../include/disqus.inc.org

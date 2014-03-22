@@ -1,3 +1,6 @@
+#+BEGIN_HTML
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 function _url(){
     var full_url=window.location.href;
     var ret = full_url.replace(/^\w+:\/\/.*?\//i,"").replace(/#.*$/gi,"");
@@ -14,3 +17,8 @@ var disqus_identifier = _url();
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+#+END_HTML

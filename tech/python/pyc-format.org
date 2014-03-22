@@ -350,7 +350,7 @@ function 有两个默认参数.
 http://docs.python.org/release/2.7/library/dis.html#python-bytecode-instructions
 
 * Share This Page
-#+INCLUDE: ../../include/sharethis.org
+#+INCLUDE: ../../include/sharethis.inc.org
 
 * Discuss and Comment
-#+INCLUDE: ../../include/disqus.org
+#+INCLUDE: ../../include/disqus.inc.org

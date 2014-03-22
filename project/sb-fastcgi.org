@@ -180,7 +180,7 @@ See =sb-fastcgi/test.lisp= for more examples.
  - email me  : killy.draw< =@= >gmail.com
 
 * Share This Page
-#+INCLUDE: ../include/sharethis.org
+#+INCLUDE: ../include/sharethis.inc.org
 
 * Discuss and Comment
-#+INCLUDE: ../include/disqus.org
+#+INCLUDE: ../include/disqus.inc.org
