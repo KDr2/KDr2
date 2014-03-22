@@ -9,88 +9,16 @@
   (let ((path (or path "")))
     (concatenate 'string app-root-path path)))
 
+(load-file (app-file "script/site-util.el"))
+(load-file (app-file "script/site-org-conf.el"))
 (load-file (app-file "script/gen-table.el"))
 (load-file (app-file "script/page-maker.el"))
-
-(setq org-confirm-babel-evaluate nil)
-
-(defvar kdr2-com-html-head-extra
-  "
-<link rel=\"shortcut icon\" href=\"/image/res/R2-D2.48.png\" type=\"image/png\"/>
-<link rel=\"stylesheet\" type=\"text/css\"
-      href=\"//fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic\">
-<link rel=\"stylesheet\" type=\"text/css\"
-      href=\"//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic\">
-<link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS feed for KDr2\" href=\"http://kdr2.com/misc/site-log.xml\">
-<script src=\"//code.jquery.com/jquery-1.10.1.min.js\"></script>
-<script src=\"//www.google-analytics.com/cx/api.js\"></script>
-<script src=\"/script/gat.js\"></script>
-<script src=\"/script/site.js\"></script>")
-
-(defvar kdr2-com-html-preamble
-  "<div class='nav'>
-<ul>
-<li id=\"site-name\">KDr2.com</li>
-<li><a href=\"/\">Home</a></li>
-<li><a target=\"_blank\" href=\"http://github.com/KDr2\"
-       class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"GITHUB\">GitHub</a></li>
-<li><a target=\"_blank\" href=\"http://n.kdr2.net\"
-       class=\"gat-click\" gaid=\"social-link\" ga-action=\"header.click\" ga-label=\"TUMBLR\">Tumblr</a></li>
-<li><a href=\"/misc/about.html\">About</a></li>
-<li><a href=\"/misc/about.html#support_me\" class=\"gat-click\" gaid=\"donate-link\">Support Me</a></li>
-<li class=\"search\">
-<form method=\"get\" action=\"http://www.google.com/search\">
-  <input type=\"text\" name=\"q\" size=\"31\" maxlength=\"255\" value=\"\" />
-  <input type=\"hidden\" id=\"sitesearch\" name=\"sitesearch\" value=\"kdr2.com\" />
-  <input type=\"submit\" value=\"Search\" class=\"button\" />
-</form>
-</li>
-</ul>
-</div>")
-
-(defvar kdr2-com-html-postamble
-  "
-<p>Copyright &copy; %a, <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/\">SOME RIGHTS RESERVED</a>. </p>
-<p>Last updated: %C. </p>
-<p>Built with %c. </p>
-")
-
-(let ((kdr2-com-output-dir (app-file "output/"))
-      (kdr2-com-source-dir (app-file)))
-  (setq org-publish-project-alist
-        `(("kdr2-com-org"
-           :base-directory ,kdr2-com-source-dir
-           :base-extension "org"
-           :publishing-directory ,kdr2-com-output-dir
-           :recursive t
-           :publishing-function (org-html-publish-to-html)
-           :html-head-extra ,kdr2-com-html-head-extra
-           :html-preamble ,kdr2-com-html-preamble
-           :html-postamble ,kdr2-com-html-postamble
-           :headline-levels 3
-           :auto-preamble t
-           :exclude "README.org"
-           )
-          ("kdr2-com-rss"
-           :base-directory ,kdr2-com-source-dir
-           :base-extension "org"
-           :publishing-directory ,kdr2-com-output-dir
-           :publishing-function (org-rss-publish-to-rss)
-           :html-link-home "http://kdr2.com/"
-           :html-link-use-abs-url t
-           :exclude ".*"
-           :include ("misc/site-log.org"))
-          ("kdr2-com-static"
-           :base-directory ,(concat kdr2-com-source-dir "/static")
-           :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|html"
-           :publishing-directory ,kdr2-com-output-dir
-           :recursive t
-           :publishing-function (org-publish-attachment)
-           )
-          ("kdr2-com" :components ("kdr2-com-org" "kdr2-com-rss" "kdr2-com-static")))))
+(load-file (app-file "script/code-tangler.el"))
 
 (defun export (&optional force)
-  (org-publish-project "kdr2-com" force))
+  (org-publish-project "kdr2-com" force)
+  (tangle-code))
 
 (defun force-export ()
-  (export t))
+  (export t)
+  (tangle-code t))

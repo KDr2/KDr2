@@ -2,11 +2,14 @@ EMACS?=emacs
 
 all: pub
 
+##########################
+# export org to html
+##########################
 AUTO_PAGES = misc/categories.org misc/archives.org misc/site-log.org
 %.org: script/site-metadata.el
 	@touch $@
 
-export: $(AUTO_PAGES)
+export: tangle $(AUTO_PAGES)
 	@echo "export org files"
 	$(EMACS) --batch --script script/compile.el -f export
 
@@ -22,7 +25,18 @@ force-pub: force-export dot pgf
 	@echo "publish site"
 	script/pub
 
+##########################
+# tangle code
+##########################
+output/script/site.js: tangle/site-js.tgl.org
+	echo '"tangle/site-js.tgl.org"' >> .tangle-files
+
+tangle: output/script/site.js
+	@echo "code tangled"
+
+###########################
 # graphviz dot
+###########################
 DOT_SRCS = $(shell sh -c "ls drawing/dot/")
 DOT_SRCS_WD = $(DOT_SRCS:%=drawing/dot/%)
 DOT_IMGS = $(DOT_SRCS:%.dot=%.dot.png)
@@ -33,7 +47,9 @@ DOT_IMGS = $(DOT_SRCS:%.dot=%.dot.png)
 dot: $(DOT_IMGS)
 	@echo "dot files compiled"
 
+##########################
 # pgf
+##########################
 PGF_SRCS = $(shell sh -c "ls drawing/pgf/")
 PGF_IMGS = $(PGF_SRCS:%.pgf.tex=%.pgf.png)
 
