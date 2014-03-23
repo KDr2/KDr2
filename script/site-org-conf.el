@@ -42,7 +42,7 @@
 ")
 
 (let ((kdr2-com-output-dir (app-file "output/"))
-      (kdr2-com-source-dir (app-file)))
+      (kdr2-com-source-dir (app-file "org-src")))
   (setq org-publish-project-alist
         `(("kdr2-com-org"
            :base-directory ,kdr2-com-source-dir
@@ -67,7 +67,7 @@
            :exclude ".*"
            :include ("misc/site-log.org"))
           ("kdr2-com-static"
-           :base-directory ,(concat kdr2-com-source-dir "/static")
+           :base-directory ,(app-file "static")
            :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|html"
            :publishing-directory ,kdr2-com-output-dir
            :recursive t

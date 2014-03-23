@@ -1,6 +1,0 @@
-# -*- mode: org; mode: auto-fill -*-
-#+TITLE: Things in Attic
-#+AUTHOR: KDr2
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
-#+HTML_LINK_HOME: ../index.html
-#+HTML_LINK_UP: ../index.html

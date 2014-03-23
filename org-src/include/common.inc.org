@@ -1,9 +1,3 @@
-
-#+name: test0
-#+BEGIN_SRC elisp
-(buffer-file-name (current-buffer))
-#+END_SRC
-
 #+NAME: css
 #+BEGIN_SRC elisp :exports results
 "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\" />"
