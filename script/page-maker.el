@@ -2,6 +2,23 @@
 
 (setq site-metadata-file "script/site-metadata.el")
 
+(defvar dir-to-category-names
+  '(("tech" . "Tech")))
+
+(defun path-to-cat (path)
+  (if (string-match "\\(.*\\)/[^/]+$" path)
+      (let ((path-parts (split-string (match-string 1 path) "/")))
+        (mapconcat (lambda (part)
+                     (let ((cat-name (assoc part dir-to-category-names)))
+                       (if cat-name
+                           (cdr cat-name)
+                         (capitalize part))))
+                   path-parts " > "))
+    "Default"))
+
+(defun title-to-id (title)
+  (replace-regexp-in-string "[^[:alnum:]]+" "-" (downcase title)))
+
 (defun list-to-log-entity (data)
   (concatenate
    'string
@@ -36,6 +53,8 @@
     (dolist (title keys)
       (setq result (append result (list
                                    (format "* %s (%d)" title (length (gethash title bucket nil))))))
+      (setq result (append result (list
+                                   (format "  :PROPERTIES:\n  :CUSTOM_ID: %s\n  :END:" (title-to-id title)))))
       (dolist (entity (gethash title bucket nil))
         (setq result (append result
                              (list (funcall format-func entity))))))
@@ -48,12 +67,6 @@
                             (substring (nth 0 entity) 0 10)
                             (nth 2 entity)
                             (nth 3 entity)))))
-
-(defun path-to-cat (path)
-  (if (string-match "\\(.*\\)/[^/]+$" path)
-      (let ((path-parts (split-string (match-string 1 path) "/")))
-        (mapconcat #'capitalize path-parts " > "))
-    "Default"))
 
 (defun make-site-cats ()
   (classify-site-entities

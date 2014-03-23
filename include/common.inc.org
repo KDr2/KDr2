@@ -8,3 +8,69 @@
 #+BEGIN_SRC elisp :exports results
 "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\"../css/style.css\" />"
 #+END_SRC
+
+# #######################################
+# # MACRO DEFINITIONS
+# #######################################
+
+# # MACRO EXAMPLES ####################
+#+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
+
+# # SELF INFO ###################
+#+MACRO: mu [[http://www.miss-understood.net][miss-undersood]]
+#+MACRO: mytwt [[http://twitter.com/KDr2]]
+#+MACRO: email killy.draw *at* gmail *dot* com
+#+MACRO: kd@github [[http://github.com/KDr2/kdr2.net][My GitHub]]
+
+# # PROGRAMMING LANGUAGES ##################
+#+MACRO: c C Programming Language
+#+MACRO: cpp C++ Programming Language
+#+MACRO: r [[http://www.r-project.org/][R]]
+#+MACRO: julia [[http://julialang.org/][Julia]]
+#+MACRO: erlang [[http://erlang.org][Erlang]]
+#+MACRO: java [[http://www.java.com][Java]]
+#+MACRO: scala [[http://www.scala-lang.org][Scala]]
+#+MACRO: clj [[http://clojure.org][Clojure]]
+#+MACRO: python [[http://www.python.org][Python]]
+#+MACRO: lua [[http://www.lua.org][Lua]]
+#+MACRO: ruby [[http://www.ruby-lang.org][Ruby]]
+#+MACRO: perl [[http://www.perl.org][Perl]]
+#+MACRO: cl [[http://common-lisp.net/][Common Lisp]]
+#+MACRO: ecl [[http://ecls.sourceforge.net/][ECL]]
+#+MACRO: sbcl [[http://www.sbcl.org/][SBCL]]
+#+MACRO: ocaml [[http://caml.inria.fr/ocaml/index.en.html][Ocaml]]
+
+# # Develop Tools and Libraries ################
+#+MACRO: linux [[http://www.kernel.org][Linux]]
+#+MACRO: debian [[http://www.debian.org][Debian]]
+#+MACRO: emacs [[http://www.gnu.org/software/emacs/][Emacs]]
+#+MACRO: qemu [[http://wiki.qemu.org/Main_Page][QEMU]]
+#+MACRO: gcc [[http://gcc.gnu.org/][GCC]]
+#+MACRO: llvm [[http://www.llvm.org][LLVM]]
+#+MACRO: pgsql [[http://www.postgresql.org/][PostgreSQL]]
+
+# # Dev Libraries #######################
+#+MACRO: boost [[http://www.boost.org/][Boost]]
+#+MACRO: x11 [[http://www.x.org/][X11]]
+#+MACRO: qt [[http://qt-project.org/][Qt]]
+#+MACRO: gtk [[http://www.gtk.org/][GTK]]
+
+# # Web Lib/Frameworks ###################
+#+MACRO: fcgi [[http://www.fastcgi.com/][FastCGI]]
+#+MACRO: django [[http://www.djangoproject.com/][Django]]
+#+MACRO: pylons [[http://www.pylonshq.com/][Pylons]]
+#+MACRO: wsgi [[http://www.python.org/dev/peps/pep-0333/][WSGI]]
+
+# # Documentation Tools #####################
+#+MACRO: orgmode [[http://orgmode.org/][Org-Mode]]
+#+MACRO: graphviz [[http://www.graphviz.org/][Graphviz]]
+#+MACRO: rst [[http://docutils.sourceforge.net/rst.html][reStructuredText]]
+#+MACRO: sphinx [[http://sphinx.pocoo.org/][SphinxDoc]]
+#+MACRO: latex [[http://www.latex-project.org/][LaTeX]]
+#+MACRO: tex [[http://en.wikipedia.org/wiki/TeX][TeX]]
+
+# # other external links and jargons #################
+#+MACRO: wp [[http://www.wordpress.org][WordPress]]
+#+MACRO: cczh [[http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh][自由转载-非商用-非衍生-保持署名]]
+#+MACRO: ccen [[http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en][Creative Commons BY-NC-ND 3.0]]
+#+MACRO: dh [[http://www.dreamhost.com][DreamHost]]
