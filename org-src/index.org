@@ -2,7 +2,8 @@
 #+TITLE: KDr2.com
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
+#+INCLUDE: include/common.inc.org
+#+CALL: css() :results raw
 
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
@@ -10,8 +11,8 @@
 
 I am a software developer/computer programmer.
 
-I am now working as a freelance developer/consultant. And this is my
-simple web site. You can [[file:misc/about.html#contact_me][contact me]] if necessary.
+I am now working remotely as a freelance developer/consultant. And
+this is my simple web site. You can [[file:misc/about.html#contact_me][contact me]] if necessary.
 
 - [[file:project/index.org][Projects]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]

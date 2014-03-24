@@ -14,3 +14,21 @@
       (beginning-of-buffer)
       (read-sexp-from-buffer (current-buffer) nil max)))
 
+(defun app-relative-path (path)
+  (message (concat "-=====" path))
+  (message (concat "-=====" (concat "^" (regexp-quote app-root-path) "\\(.*\\)$")))
+  (if (string-match (concat "^" (regexp-quote app-root-path) "\\(.*\\)$") path)
+      (match-string 1 path)
+    nil))
+
+(defun relative-resource-for-org-file (resource)
+  "Usage:
+   org-src/misc/about.org
+   ../css/style.css"
+  (let ((relative-path (app-relative-path (buffer-file-name (current-buffer)))))
+    (if (string-match "org-src/\\(.*\\)/[^/]+\.org" relative-path)
+        (concat (mapconcat
+                 'identity
+                 (mapcar (lambda (_) "..") (split-string (match-string 1 relative-path) "/"))
+                 "/") resource)
+      resource)))

@@ -1,10 +1,12 @@
 # -*- mode: org; mode: auto-fill; -*-
 #+TITLE: Looking for things on KDr2.net?
 #+AUTHOR: KDr2
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
 #+HTML_LINK_UP: ../index.html
 #+HTML_LINK_HOME: ../index.html
 
+#+INCLUDE: ../include/common.inc.org
+#+CALL: css() :results raw
 
 This site is a new version of _KDr2.net_, I think you're looking for
 something listed below:

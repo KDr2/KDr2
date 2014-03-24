@@ -4,9 +4,12 @@
 # #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+OPTIONS: p:t
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
 #+HTML_LINK_UP: ../index.html
 #+HTML_LINK_HOME: ../index.html
+
+#+INCLUDE: ../include/common.inc.org
+#+CALL: css() :results raw
 
 * Projects
   See [[file:../project/index.org][projects page]].

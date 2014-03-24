@@ -1,10 +1,13 @@
 # -*- mode: org; mode: auto-fill; -*-
 #+TITLE: Contributions to Open-Source Projects
 #+AUTHOR: KDr2
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
+#+OPTIONS: num:nil
+
 #+HTML_LINK_UP: ../index.html
 #+HTML_LINK_HOME: ../index.html
-#+OPTIONS: num:nil
+
+#+INCLUDE: ../include/common.inc.org
+#+CALL: css() :results raw
 
 * Julia
 ** Julia-Lang
