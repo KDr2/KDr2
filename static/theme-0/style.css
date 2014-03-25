@@ -21,53 +21,53 @@ body {
 }
 
 body .nav {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 46px;
-  background: #0088CC;
-  border-bottom: 1px solid #D2D2D2;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #0088CC;
+    border-bottom: 1px solid #D2D2D2;
 }
 
 body .nav #site-name {
-  margin: 0;
-  padding: 0 20px;
-  display: inline-block;
-  line-height: 46px;
-  font-weight: bold;
-  color: white;
-  background: #3D648A;
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    line-height: 46px;
+    font-weight: bold;
+    color: white;
+    background: #3D648A;
 }
 
 body .nav ul {
-  list-style: none;
-  min-width: 960px;
-  margin: 0;
+    list-style: none;
+    min-width: 960px;
+    margin: 0;
 }
 body .nav ul li {
-  display: inline-block;
-  margin: 0;
+    display: inline-block;
+    margin: 0;
 }
 body .nav ul li a {
-  line-height: 46px;
-  display: inline-block;
-  color: #FFFFFF;
-  padding: 0 20px;
-  border-radius: 0;
+    line-height: 46px;
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 0 20px;
+    border-radius: 0;
 }
 body .nav ul li a:hover {
-  color: white;
-  text-decoration: none;
-  background: #3D648A;
+    color: white;
+    text-decoration: none;
+    background: #3D648A;
 }
 
 body .nav ul .search {
-  line-height: 46px;
-  display: inline-block;
-  padding: 0 20px;
-  float: right;
+    line-height: 46px;
+    display: inline-block;
+    padding: 0 20px;
+    float: right;
 }
 
 body .nav ul .search input {
@@ -208,25 +208,25 @@ table {
 }
 
 th {
-	vertical-align: top;
-	border: 1px solid #e2e2e2;
+    vertical-align: top;
+    border: 1px solid #e2e2e2;
 }
 
 td {
-	vertical-align: top;
-	border: 1px solid #e2e2e2;
+    vertical-align: top;
+    border: 1px solid #e2e2e2;
 }
 
 #postamble {
-	font-size: 12px;
-	color: #666;
-	text-align: right;
-	border-top: #ccc solid 1px;
-	margin-top: 2em;
-	padding-top: 1em;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    border-top: #ccc solid 1px;
+    margin-top: 2em;
+    padding-top: 1em;
 }
 #postamble p {
-	margin: 0 1em;
+    margin: 0 1em;
 }
 
 #table-of-contents {
@@ -281,22 +281,30 @@ td {
     padding: 0.5em;
     margin-top: -1.5em;
 }
+#table-of-contents .tag, #table-of-contents .todo, #table-of-contents .done {
+    display: none;
+}
 
 
 code {
     display: inline-block;
-    background-color: #cce;
+    background-color: #f2f2f2;
     padding: 1px 5px;
     border-radius: 3px;
     line-height: normal;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .footdef sup {
+    float: left;
     vertical-align: baseline;
     font-size: inherit;
 }
 
-.footpara {
+.footdef p {
     margin: 7px;
     display: inline;
 }
