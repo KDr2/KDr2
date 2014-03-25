@@ -1,9 +1,7 @@
 
 #+NAME: css
 #+BEGIN_SRC elisp :results value raw :exports results
-  (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\""
-          (relative-resource-for-org-file "/css/style.css")
-          "\" />")
+  (css-for-theme)
 #+END_SRC
 
 # #######################################

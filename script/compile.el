@@ -10,6 +10,7 @@
     (concatenate 'string app-root-path path)))
 
 (load-file (app-file "script/site-util.el"))
+(load-file (app-file "script/site-theme.el"))
 (load-file (app-file "script/site-org-conf.el"))
 (load-file (app-file "script/gen-table.el"))
 (load-file (app-file "script/page-maker.el"))
