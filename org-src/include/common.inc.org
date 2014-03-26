@@ -1,5 +1,5 @@
 
-#+NAME: css
+#+NAME: dynamic-header
 #+BEGIN_SRC elisp :results value raw :exports results
   (dynamic-header-for-theme)
 #+END_SRC

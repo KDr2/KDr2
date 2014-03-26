@@ -2,7 +2,7 @@
 #+TITLE: About me and this site
 #+AUTHOR: KDr2
 #+INCLUDE: ../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 #+HTML_LINK_UP: ../index.html
 #+HTML_LINK_HOME: ../index.html
 

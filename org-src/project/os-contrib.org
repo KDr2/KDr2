@@ -7,7 +7,7 @@
 #+HTML_LINK_HOME: ../index.html
 
 #+INCLUDE: ../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 
 * Julia
 ** Julia-Lang

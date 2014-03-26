@@ -6,7 +6,7 @@
 #+HTML_LINK_UP: ../index.html
 
 #+INCLUDE: ../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 
 - [[file:misc/tools-i-use.org][Tools I use]]
 - [[file:lisp/r5rs-features.org][R^{5}RS Features List]]

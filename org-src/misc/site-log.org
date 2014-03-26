@@ -6,7 +6,7 @@
 #+OPTIONS: p:t
 
 #+INCLUDE: ../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 
 #+NAME: site-log
 #+BEGIN_SRC elisp :exports none

@@ -7,7 +7,7 @@
 #+HTML_LINK_UP: ../index.html
 
 #+INCLUDE: ../../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 
 # date : 2010-12-24 10:05
 

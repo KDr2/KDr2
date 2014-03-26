@@ -2,7 +2,7 @@
 #+TITLE: Test Page
 #+AUTHOR: KDr2
 #+INCLUDE: ../include/common.inc.org
-#+CALL: css() :results raw
+#+CALL: dynamic-header() :results raw
 
 * About This Page
   This is a test page.
