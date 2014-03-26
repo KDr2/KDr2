@@ -1,7 +1,7 @@
 
 (defvar site-theme "theme-0")
 
-(defun css-for-theme (&optional theme)
+(defun dynamic-header-for-theme (&optional theme)
   (let ((current-theme (or theme site-theme)))
     (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\""
             (relative-resource-for-org-file (concat current-theme  "/style.css"))

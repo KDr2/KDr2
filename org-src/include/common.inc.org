@@ -1,7 +1,7 @@
 
 #+NAME: css
 #+BEGIN_SRC elisp :results value raw :exports results
-  (css-for-theme)
+  (dynamic-header-for-theme)
 #+END_SRC
 
 # #######################################

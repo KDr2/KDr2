@@ -31,7 +31,7 @@
            :include ("misc/site-log.org"))
           ("kdr2-com-static"
            :base-directory ,(app-file "static")
-           :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|html"
+           :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
            :publishing-directory ,kdr2-com-output-dir
            :recursive t
            :publishing-function (org-publish-attachment)
