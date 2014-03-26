@@ -4,6 +4,11 @@
   (dynamic-header-for-theme)
 #+END_SRC
 
+#+NAME: inc-file
+#+BEGIN_SRC elisp :results value raw :exports results :var file="common.inc.org"
+  (include-org-file file)
+#+END_SRC
+
 # #######################################
 # # MACRO DEFINITIONS
 # #######################################

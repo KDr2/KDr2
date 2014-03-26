@@ -7,6 +7,15 @@
             (relative-resource-for-org-file (concat current-theme  "/style.css"))
             "\" />")))
 
+(defun include-org-file (file)
+  (concat "#+INCLUDE: "
+          (relative-resource-for-org-file (concat  "include/" file))))
+
+(defun org-dblock-write:inc-file (params)
+  (let ((file (plist-get params :file)))
+    (insert (concat "#+INCLUDE: "
+                    (relative-resource-for-org-file (concat  "include/" file))))))
+
 (defmacro def-theme-element (element-getter file-name)
   `(defun ,element-getter (&optional theme)
      (let ((current-theme (or theme site-theme)))

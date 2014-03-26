@@ -1,0 +1,17 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Title
+#+AUTHOR: KDr2
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+
+# ----
+
+# * Share This Page
+# #+BEGIN: inc-file :file "sharethis.inc.org"
+# #+END:
+
+# * Discuss and Comment
+# #+BEGIN: inc-file :file "disqus.inc.org"
+# #+END:

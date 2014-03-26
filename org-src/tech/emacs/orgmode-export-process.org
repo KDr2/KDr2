@@ -1,0 +1,134 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Orgmode Export Process
+#+AUTHOR: KDr2
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+
+* Overview
+  The org-mode export process consists of these steps:
+
+  - run functions in =org-export-before-processing-hook=
+  - expand =include(#+INCLDE: ...)= keywords
+  - expend =macro({{{macro}})= kerwords
+  - execute babel code blocks
+  - export with specified backend
+    
+  You can use some of these steps to generate dynamic content during
+  the export process.
+
+* Use macros to define text snippets
+  As the [[http://orgmode.org/manual/Macro-replacement.html][manaul page]] says, you can define text snippets with macro
+  like this:
+  #+BEGIN_SRC org
+    ,#+MACRO: use I use $1
+  #+END_SRC
+  #+MACRO: use I use $1
+  then ={{{use(Emacs)}}}= will become '{{{use(Emacs)}}}' after export.
+
+  Yes, strictly, macro is not such dynamical, but only simple
+  replacement(with arguments).
+* Use babel code blocks to generate content
+  You must have heard 'literal programming' if you are already an
+  orgmode user: the awesome project *Babel* allows  many different
+  languages work together, we can export both the codes themselves and
+  the output/return-value of them(yeah, by executing the codes). If
+  you are still not very familiar with *Babel*, you can read the
+  [[http://orgmode.org/worg/org-contrib/babel/intro.html][introduction]] right now, and I will give few simple samples here.
+
+  - generate table by python code:
+    #+BEGIN_SRC org
+      ,#+BEGIN_SRC python :exports results :results table
+        a = (1,2,"string \\vert string")
+        b = (4,5,6)
+       return (a,b)
+      ,#+END_SRC
+    #+END_SRC
+    will generate the table below:
+    #+BEGIN_SRC python :exports results :results table
+      a = (1,2,"string \\vert string")
+      b = (4,5,6)
+      return (a,b)
+    #+END_SRC
+
+
+  - generate raw output by elisp:
+    - define a named code block
+      #+BEGIN_SRC org
+        ,#+name: test-0
+        ,#+BEGIN_SRC elisp :exports none
+          (princ "OUTPUT *STRING* will be captured")
+        ,#+END_SRC
+      #+END_SRC
+      #+name: test-0
+      #+BEGIN_SRC elisp :exports none
+         (princ "OUTPUT *STRING* will be captured")
+      #+END_SRC
+  
+    - call the named code block =test-0=, capture the output:
+      #+BEGIN_SRC 
+        ,#+CALL: test-0[:results output]() :results raw
+      #+END_SRC
+      the output will be considered as raw org source:
+      #+CALL: test-0[:results output]() :results raw
+
+* Define named code blocks and macro in a separate file
+  The =include= keywords are expanded before macros expansion and babel
+  code blocks execution, so you can write all frequently used macros
+  and code blocks(with a name) in a separate org file, then include it
+  in other org files, [[https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/org-src/include/common.inc.org][here is an example]].
+
+* Use dynamic block to generate content
+
+  Babel code blocks and macros can satisfy our requirements of dynamic
+  content generation in almost all situations, but, today I encounter
+  a exceptional one:
+  
+  I want to generate =include= instruction dynamically, because the
+  path of the included file is calculated dynamically based on the
+  path of current org file.
+
+  We can't use babel code blocks because these blocks are expanded
+  after the expansion of the =include= keywords, neither can we use
+  the macro because both of the expansion order and that macro
+  expansion is only simple replacement.
+
+  What should I do? Fortunately we have anthor weapon: [[http://orgmode.org/manual/Dynamic-blocks.html][Dynamic
+  Blocks]]. So I define a dynamic to generate the =include= instruction
+  dynamically: 
+
+  #+BEGIN_SRC elisp
+    (defun org-dblock-write:inc-file (params)
+      (let ((file (plist-get params :file)))
+        (insert (concat "#+INCLUDE: "
+                        (get-path-dynamically)))))
+  #+END_SRC
+  
+  and then add =org-update-all-blocks= to
+  =org-export-before-processing-hook= :
+
+  #+BEGIN_SRC elisp
+    (add-hook 'org-export-before-processing-hook
+              (lambda (backend) (org-update-all-dblocks)))
+  #+END_SRC
+
+  Now, I can write:
+  #+BEGIN_SRC org
+    ,#+BEGIN: inc-file :file "common.inc.org"
+    ,#+END:
+  #+END_SRC
+  in my org files, cheers!
+
+* More samples
+  I'm using orgmode to build this site, and the source can be found at
+  https://github.com/KDr2/kdr2-on-web, you can find all the tricks I
+  metioned above in this reposotory.
+
+* Share This Page
+#+BEGIN: inc-file :file "sharethis.inc.org"
+#+END:
+
+* Discuss and Comment
+#+BEGIN: inc-file :file "disqus.inc.org"
+#+END:

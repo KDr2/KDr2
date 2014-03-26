@@ -11,11 +11,11 @@ AUTO_PAGES = org-src/misc/categories.org org-src/misc/archives.org org-src/misc/
 
 export: tangle $(AUTO_PAGES)
 	@echo "export org files"
-	$(EMACS) --batch --script script/compile.el -f export
+	$(EMACS) $(DEBUG) --batch --script script/compile.el -f export
 
 force-export:
 	@echo "export org files"
-	$(EMACS) --batch --script script/compile.el -f force-export
+	$(EMACS) $(DEBUG) --batch --script script/compile.el -f force-export
 
 pub: export
 	@echo "publish site"

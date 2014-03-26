@@ -4,6 +4,9 @@
 (defvar kdr2-com-html-preamble (html-preamble-for-theme))
 (defvar kdr2-com-html-postamble (html-postamble-for-theme))
 
+(add-hook 'org-export-before-processing-hook
+          (lambda (backend) (org-update-all-dblocks)))
+
 (let ((kdr2-com-output-dir (app-file "output/"))
       (kdr2-com-source-dir (app-file "org-src")))
   (setq org-publish-project-alist

@@ -39,7 +39,7 @@
 
 (defun classify-site-entities (key-func format-func)
   (let ((entities (read-sexp-from-file (app-file site-metadata-file)))
-        (bucket (make-hash-table))
+        (bucket (make-hash-table :test 'equal))
         (keys '())
         (result '()))
     (dolist (entity entities)

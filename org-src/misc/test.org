@@ -1,7 +1,10 @@
 # -*- mode: org; mode: auto-fill -*-
 #+TITLE: Test Page
 #+AUTHOR: KDr2
-#+INCLUDE: ../include/common.inc.org
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+
 #+CALL: dynamic-header() :results raw
 
 * About This Page
