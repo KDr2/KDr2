@@ -3,10 +3,8 @@
 #+AUTHOR: KDr2
 #+OPTIONS:   ^:{}
 
-#+HTML_LINK_HOME: ../../index.html
-#+HTML_LINK_UP: ../index.html
-
-#+INCLUDE: ../../include/common.inc.org
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
 #+CALL: dynamic-header() :results raw
 
 # date : 2010-12-24 10:05

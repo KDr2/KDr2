@@ -5,10 +5,8 @@
 #+OPTIONS: num:nil
 #+OPTIONS: p:t
 
-#+HTML_LINK_UP: ../index.html
-#+HTML_LINK_HOME: ../index.html
-
-#+INCLUDE: ../include/common.inc.org
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
 #+CALL: dynamic-header() :results raw
 
 * Projects

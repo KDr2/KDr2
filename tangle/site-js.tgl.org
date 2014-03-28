@@ -42,7 +42,7 @@ Init google analytics code
               'events' : ['click', 'mouseover']
           }
       ];
-  
+
       ga_spec['donate-link']= [
           {
               'type' : ga_type.event_tracking,
@@ -54,7 +54,7 @@ Init google analytics code
               'events' : ['click']
           }
       ];
-  
+
       ga_spec['social-link']= [
           {
               'type' : ga_type.event_tracking,
@@ -66,7 +66,7 @@ Init google analytics code
               'events' : ['click']
           }
       ];
-  
+
       setup_ga('UA-45424100-1', 'kdr2.com');
       setup_simple_gat();
       $(".button_to_link").click(function(e){
@@ -77,7 +77,16 @@ Init google analytics code
               button.parent("form").submit();
           }, 500);
       });
-  }  
+  }
+#+END_SRC
+
+Change UP|HOME link to Archives|Categories
+#+BEGIN_SRC javascript :tangle ../output/script/site.js
+  function home_up_link(){
+      var links = $("#org-div-home-and-up a");
+      $(links[0]).text("Archives");
+      $(links[1]).text("Categories");
+  }
 #+END_SRC
 
 Register document reday callback:
@@ -85,5 +94,6 @@ Register document reday callback:
   $(document).ready(function(){
       init_site();
       init_gat();
+      home_up_link();
   });
 #+END_SRC

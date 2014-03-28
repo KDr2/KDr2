@@ -1,10 +1,10 @@
 # -*- mode: org; mode: auto-fill; -*-
 #+TITLE: About me and this site
 #+AUTHOR: KDr2
-#+INCLUDE: ../include/common.inc.org
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
 #+CALL: dynamic-header() :results raw
-#+HTML_LINK_UP: ../index.html
-#+HTML_LINK_HOME: ../index.html
 
 * About Me
 ** Contact
@@ -46,7 +46,7 @@
 
 * About This Site
   I use this site to record, write, post things formally, please refer
-  to http://kdr2.net for other trival things.
+  to http://n.kdr2.net for other trival things.
 
   This site is built with emacs and org-mode, and some other tools in
   the following list:

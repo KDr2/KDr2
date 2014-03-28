@@ -2,10 +2,8 @@
 #+TITLE: R5RS Features
 #+AUTHOR: KDr2
 
-#+HTML_LINK_HOME: ../../index.html
-#+HTML_LINK_UP: ../index.html
-
-#+INCLUDE: ../../include/common.inc.org
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
 #+CALL: dynamic-header() :results raw
 
 

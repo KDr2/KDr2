@@ -2,10 +2,8 @@
 #+TITLE: Looking for things on KDr2.net?
 #+AUTHOR: KDr2
 
-#+HTML_LINK_UP: ../index.html
-#+HTML_LINK_HOME: ../index.html
-
-#+INCLUDE: ../include/common.inc.org
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
 #+CALL: dynamic-header() :results raw
 
 This site is a new version of _KDr2.net_, I think you're looking for

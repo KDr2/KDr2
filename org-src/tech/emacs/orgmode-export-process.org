@@ -10,11 +10,12 @@
   The org-mode export process consists of these steps:
 
   - run functions in =org-export-before-processing-hook=
-  - expand =include(#+INCLDE: ...)= keywords
+  - expand =include(#+INCLUDE: ...)= keywords
   - expend =macro({{{macro}})= kerwords
   - execute babel code blocks
+  - run functions in =org-export-before-parsing-hook=
   - export with specified backend
-    
+
   You can use some of these steps to generate dynamic content during
   the export process.
 
@@ -65,9 +66,9 @@
       #+BEGIN_SRC elisp :exports none
          (princ "OUTPUT *STRING* will be captured")
       #+END_SRC
-  
+
     - call the named code block =test-0=, capture the output:
-      #+BEGIN_SRC 
+      #+BEGIN_SRC
         ,#+CALL: test-0[:results output]() :results raw
       #+END_SRC
       the output will be considered as raw org source:
@@ -83,8 +84,8 @@
 
   Babel code blocks and macros can satisfy our requirements of dynamic
   content generation in almost all situations, but, today I encounter
-  a exceptional one:
-  
+  an exceptional one:
+
   I want to generate =include= instruction dynamically, because the
   path of the included file is calculated dynamically based on the
   path of current org file.
@@ -94,9 +95,9 @@
   the macro because both of the expansion order and that macro
   expansion is only simple replacement.
 
-  What should I do? Fortunately we have anthor weapon: [[http://orgmode.org/manual/Dynamic-blocks.html][Dynamic
-  Blocks]]. So I define a dynamic to generate the =include= instruction
-  dynamically: 
+  What should I do? Fortunately we have anthor weapon:
+  [[http://orgmode.org/manual/Dynamic-blocks.html][Dynamic Blocks]]. So I define a dynamic block to generate the
+  =include= instruction dynamically:
 
   #+BEGIN_SRC elisp
     (defun org-dblock-write:inc-file (params)
@@ -104,7 +105,7 @@
         (insert (concat "#+INCLUDE: "
                         (get-path-dynamically)))))
   #+END_SRC
-  
+
   and then add =org-update-all-blocks= to
   =org-export-before-processing-hook= :
 
@@ -126,9 +127,9 @@
   metioned above in this reposotory.
 
 * Share This Page
-#+BEGIN: inc-file :file "sharethis.inc.org"
-#+END:
+  #+BEGIN: inc-file :file "sharethis.inc.org"
+  #+END:
 
 * Discuss and Comment
-#+BEGIN: inc-file :file "disqus.inc.org"
-#+END:
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:

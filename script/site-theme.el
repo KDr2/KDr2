@@ -5,7 +5,11 @@
   (let ((current-theme (or theme site-theme)))
     (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\""
             (relative-resource-for-org-file (concat current-theme  "/style.css"))
-            "\" />")))
+            "\" />"
+            "\n"
+            "#+HTML_LINK_HOME: " (relative-resource-for-org-file "/misc/categories.html")
+            "\n"
+            "#+HTML_LINK_UP: " (relative-resource-for-org-file "/misc/archives.html"))))
 
 (defun include-org-file (file)
   (concat "#+INCLUDE: "
