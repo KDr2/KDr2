@@ -68,7 +68,7 @@ var ga_spec = {};
 
 function gat_get_ga_attrs(node){
     var ret = {};
-    var r = /^ga[_-]/i;
+    var r = /^data-ga[_-]/i;
     $.each($(node)[0].attributes, function(index, attr) {
         var name = attr.name;
         if(r.test(name)) {
@@ -98,7 +98,7 @@ function gat_expand_arguments(arguments, event) {
 
 function gat(event, gaid, opt_data, callback) {
     if(!gaid) {
-        gaid = $(event.currentTarget).attr("gaid");
+        gaid = $(event.currentTarget).attr("data-ga-id");
     }
     var info_array = ga_spec[gaid];
     if(!info_array) return;
@@ -132,9 +132,8 @@ function gat_handler(_gaid, opt_data) {
         var node = $(e.currentTarget);
 
         if(!gaid) {
-            gaid = node.attr("gaid");
+            gaid = node.attr("data-ga-id");
         }
-        console.log("gaid="+gaid);
         // deal link jumping to other page
         var href = null;
         var is_link = (node.prop("tagName").toLowerCase() == "a");

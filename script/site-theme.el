@@ -7,9 +7,9 @@
             (relative-resource-for-org-file (concat current-theme  "/style.css"))
             "\" />"
             "\n"
-            "#+HTML_LINK_HOME: " (relative-resource-for-org-file "/misc/categories.html")
+            "#+HTML_LINK_HOME: " (relative-resource-for-org-file "misc/categories.html")
             "\n"
-            "#+HTML_LINK_UP: " (relative-resource-for-org-file "/misc/archives.html"))))
+            "#+HTML_LINK_UP: " (relative-resource-for-org-file "misc/archives.html"))))
 
 (defun include-org-file (file)
   (concat "#+INCLUDE: "

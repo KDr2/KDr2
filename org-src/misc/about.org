@@ -35,13 +35,13 @@
     <input type="hidden" name="tax" value="0">
     <input type="hidden" name="return" value="http://kdr2.com">
     <button alt="Support KDr2" class="button_to_link"
-    gaid="donate-link" ga-label="ABOUT" ga-action="link.paypal.click">
+    data-ga-id="donate-link" data-ga-label="ABOUT" data-ga-action="link.paypal.click">
     Support KDr2 by Paypal
     </button>
     </form>
     #+END_HTML
   - 
-    #+ATTR_HTML: :target _blank :class gat-click :gaid donate-link :ga-action link.alipay.click :ga-label ABOUT
+    #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
     [[https://me.alipay.com/KDr2][通过支付宝]]
 
 * About This Site
