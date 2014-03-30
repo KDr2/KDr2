@@ -7,7 +7,10 @@
 
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
-#+CALL: dynamic-header() :results raw
+#+CALL: dynamic-header-css() :results raw
+
+#+RSS_EXTENSION: xml
+#+RSS_IMAGE_URL: /image/res/R2-D2.48.png
 
 #+NAME: site-log
 #+BEGIN_SRC elisp :exports none

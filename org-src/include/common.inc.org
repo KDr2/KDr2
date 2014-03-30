@@ -4,6 +4,11 @@
   (dynamic-header-for-theme)
 #+END_SRC
 
+#+NAME: dynamic-header-css
+#+BEGIN_SRC elisp :results value raw :exports results
+  (dynamic-header-css-for-theme)
+#+END_SRC
+
 # #######################################
 # # MACRO DEFINITIONS
 # #######################################

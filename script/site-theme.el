@@ -1,15 +1,23 @@
 
 (defvar site-theme "theme-0")
 
-(defun dynamic-header-for-theme (&optional theme)
+(defun dynamic-header-css-for-theme (&optional theme)
   (let ((current-theme (or theme site-theme)))
     (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\""
             (relative-resource-for-org-file (concat current-theme  "/style.css"))
-            "\" />"
-            "\n"
-            "#+HTML_LINK_HOME: " (relative-resource-for-org-file "misc/categories.html")
+            "\" />")))
+
+(defun dynamic-header-link-for-theme (&optional theme)
+  (let ((current-theme (or theme site-theme)))
+    (concat "#+HTML_LINK_HOME: " (relative-resource-for-org-file "misc/categories.html")
             "\n"
             "#+HTML_LINK_UP: " (relative-resource-for-org-file "misc/archives.html"))))
+
+(defun dynamic-header-for-theme (&optional theme)
+  (let ((current-theme (or theme site-theme)))
+    (concat (dynamic-header-css-for-theme current-theme)
+            "\n"
+            (dynamic-header-link-for-theme current-theme))))
 
 (defun org-dblock-write:inc-file (params)
   (let ((file (plist-get params :file)))

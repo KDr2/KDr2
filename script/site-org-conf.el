@@ -46,7 +46,7 @@
            :base-extension "org"
            :publishing-directory ,kdr2-com-output-dir
            :publishing-function (org-rss-publish-to-rss)
-           :html-link-home "http://kdr2.com/"
+           :html-link-home "http://kdr2.com/misc/"
            :html-link-use-abs-url t
            :exclude ".*"
            :include ("misc/site-log.org"))
