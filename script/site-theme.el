@@ -11,10 +11,6 @@
             "\n"
             "#+HTML_LINK_UP: " (relative-resource-for-org-file "misc/archives.html"))))
 
-(defun include-org-file (file)
-  (concat "#+INCLUDE: "
-          (relative-resource-for-org-file (concat  "include/" file))))
-
 (defun org-dblock-write:inc-file (params)
   (let ((file (plist-get params :file)))
     (insert (concat "#+INCLUDE: "

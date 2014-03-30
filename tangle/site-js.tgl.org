@@ -80,15 +80,6 @@ Init google analytics code
   }
 #+END_SRC
 
-Change UP|HOME link to Archives|Categories
-#+BEGIN_SRC javascript :tangle ../output/script/site.js
-  function home_up_link(){
-      var links = $("#org-div-home-and-up a");
-      $(links[0]).text("Archives");
-      $(links[1]).text("Categories");
-  }
-#+END_SRC
-
 Register document reday callback:
 #+BEGIN_SRC javascript :tangle ../output/script/site.js
   $(document).ready(function(){

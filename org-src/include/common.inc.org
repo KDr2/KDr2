@@ -4,11 +4,6 @@
   (dynamic-header-for-theme)
 #+END_SRC
 
-#+NAME: inc-file
-#+BEGIN_SRC elisp :results value raw :exports results :var file="common.inc.org"
-  (include-org-file file)
-#+END_SRC
-
 # #######################################
 # # MACRO DEFINITIONS
 # #######################################
@@ -20,7 +15,8 @@
 #+MACRO: mu [[http://www.miss-understood.net][miss-undersood]]
 #+MACRO: mytwt [[http://twitter.com/KDr2]]
 #+MACRO: email killy.draw *at* gmail *dot* com
-#+MACRO: kd@github [[http://github.com/KDr2/kdr2.net][My GitHub]]
+#+MACRO: kd@github [[http://github.com/KDr2/][My GitHub]]
+#+MACRO: kdweb@github [[http://github.com/KDr2/kdr2-on-web][kdr2-on-web at GitHub]]
 
 # # PROGRAMMING LANGUAGES ##################
 #+MACRO: c C Programming Language

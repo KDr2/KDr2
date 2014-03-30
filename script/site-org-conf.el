@@ -1,4 +1,22 @@
+
 (setq org-confirm-babel-evaluate nil)
+
+(setq org-html-home/up-format
+      (concat "<div id=\"org-div-home-and-up\">\n <a accesskey=\"h\" href=\"%s\"> Archives </a>"
+              "\n |\n "
+              "<a accesskey=\"H\" href=\"%s\"> Categories </a>\n</div>"))
+
+(setq org-html-checkbox-type 'unicode)
+
+(defun sacha/org-html-checkbox (checkbox)
+  "Format CHECKBOX into HTML."
+  (case checkbox (on "<span class=\"check\">&#x2611;</span>") ; checkbox (checked)
+        (off "<span class=\"checkbox\">&#x2610;</span>")
+        (trans "<code>[-]</code>")
+        (t "")))
+(defadvice org-html-checkbox (around sacha activate)
+  (setq ad-return-value (sacha/org-html-checkbox (ad-get-arg 0))))
+
 
 (defvar kdr2-com-html-head-extra (html-head-extra-for-theme))
 (defvar kdr2-com-html-preamble (html-preamble-for-theme))
