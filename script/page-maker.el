@@ -22,13 +22,13 @@
 (defun list-to-log-entity (data)
   (concatenate
    'string
-   "\n* " (nth 3 data)
+   "\n* " (nth 4 data)
    "\n  <" (nth 0 data) ">"
    "\n  :PROPERTIES:"
-   "\n  :CUSTOM_ID: " (symbol-name (nth 1 data))
+   "\n  :CUSTOM_ID: " (symbol-name (nth 2 data))
    "\n  :PUBDATE: <" (nth 0 data) ">"
    "\n  :END:"
-   "\n  [[file:../" (nth 2 data) "][" (nth 3 data) "]]"
+   "\n  [[file:../" (nth 3 data) "][" (nth 4 data) "]]"
    "\n"))
 
 (defun make-site-log ()
@@ -63,18 +63,20 @@
 (defun make-site-archives ()
   (classify-site-entities
    (lambda (entity) (substring (nth 0 entity) 0 4))
-   (lambda (entity) (format "  - %s [[file:../%s][%s]]"
+   (lambda (entity) (format "  - %s [%s] [[file:../%s][%s]]"
                             (substring (nth 0 entity) 0 10)
-                            (nth 2 entity)
-                            (nth 3 entity)))))
+                            (nth 1 entity)
+                            (nth 3 entity)
+                            (nth 4 entity)))))
 
 (defun make-site-cats ()
   (classify-site-entities
-   (lambda (entity) (path-to-cat (nth 2 entity)))
-   (lambda (entity) (format "  - %s [[file:../%s][%s]]"
+   (lambda (entity) (path-to-cat (nth 3 entity)))
+   (lambda (entity) (format "  - %s [%s] [[file:../%s][%s]]"
                             (substring (nth 0 entity) 0 10)
-                            (nth 2 entity)
-                            (nth 3 entity)))))
+                            (nth 1 entity)
+                            (nth 3 entity)
+                            (nth 4 entity)))))
 
 (defun test ()
   (message (make-site-log)))
