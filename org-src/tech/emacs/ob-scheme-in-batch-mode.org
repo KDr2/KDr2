@@ -76,6 +76,7 @@ steps:
   results. Fortunately it works for me.
 
 * The patch
+  # http://article.gmane.org/gmane.emacs.orgmode/84500
   Here is the patch:
   #+BEGIN_EXAMPLE
     diff --git a/lisp/ob-scheme.el b/lisp/ob-scheme.el
