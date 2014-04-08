@@ -1,5 +1,6 @@
 ;;(time lang id file title)
-("2014-04-03 Sun 15:43" en bug-ob-scheme-in-batch-mode "tech/emacs/ob-scheme-in-batch-mode.org"
+("2014-04-07 Mon 20:44" zh d1404-mounth-ulcer "life/1404-mounth-ulcer.org" "口腔溃疡处理方法")
+("2014-04-03 Thu 15:43" en bug-ob-scheme-in-batch-mode "tech/emacs/ob-scheme-in-batch-mode.org"
  "Babel Bug: execute scheme code blocks in batch mode")
 ("2014-03-26 Sun 21:43" en orgmode-export-process "tech/emacs/orgmode-export-process.org" "Orgmode Export Process")
 ("2014-01-05 Sun 13:43" en r5rs-features "tech/lisp/r5rs-features.org" "R^{5}RS Features List")

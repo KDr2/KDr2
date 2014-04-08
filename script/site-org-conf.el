@@ -17,6 +17,17 @@
 (defadvice org-html-checkbox (around sacha activate)
   (setq ad-return-value (sacha/org-html-checkbox (ad-get-arg 0))))
 
+(defadvice org-html-paragraph (before org-html-paragraph-advice
+                                      (paragraph contents info) activate)
+  "Join consecutive Chinese lines into a single long line without
+unwanted space when exporting org-mode to html."
+  (let* ((orig-contents (ad-get-arg 1))
+         (reg-mb "[[:multibyte:]]")
+         (fixed-contents (replace-regexp-in-string
+                          (concat "\\(" reg-mb
+                                  "\\) *\n *\\(" reg-mb "\\)")
+                          "\\1\\2" orig-contents)))
+    (ad-set-arg 1 fixed-contents)))
 
 (defvar kdr2-com-html-head-extra (html-head-extra-for-theme))
 (defvar kdr2-com-html-preamble (html-preamble-for-theme))

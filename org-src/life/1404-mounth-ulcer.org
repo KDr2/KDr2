@@ -1,0 +1,37 @@
+# -*- mode: org; -*-
+#+TITLE: 口腔溃疡处理方法
+#+AUTHOR: KDr2
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+
+# ----
+自从去年拔去一颗长歪的牙齿后，口腔溃疡的频率大大降低了，但是还是偶有出
+现，最近吃肉有点多，又出现了，不过我现在琢磨出了一套处理方法，可以使以
+往至少一周的痛苦病症在两天之内恢复:
+
+*每餐后使用牙线将每颗牙齿彻底清理干净，之后使用白酒漱口（整个口腔，着
+重照顾创口），忍受疼痛之后用水漱口将酒气清理。*
+
+最近两次如此处理一天后疼痛基本消失，两天创口恢复。之前饱受口腔溃疡之苦，
+内服外敷的药品也都试过，无一见效，主要是还是因为口腔没有彻底清理干净。
+
+之前清理口腔的手段只限于漱口刷牙，在 [[https://github.com/JeffBezanson/femtolisp][femtolisp]] 项目源码里看到[[https://github.com/JeffBezanson/femtolisp/blob/07dfa697df14e4f7656de65168ea1b6a89b34335/FLOSSING][一个奇怪
+的文件后]]（现已被作为无用文件删除），我开始用牙线清理牙齿，效果显著，不
+过有时犯懒未能坚持，偶尔还会出现口腔溃疡，这时只好采取前面提到的惨烈方
+法进行彻底清理和消毒，不过好了之后估计又不坚持每天彻底清洁了，比如今晚……
+
+该怎么办呢？好吧，我还是现在就去吧……
+
+# ----
+
+* Share This Page
+  #+BEGIN: inc-file :file "sharethis.inc.org"
+  #+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
