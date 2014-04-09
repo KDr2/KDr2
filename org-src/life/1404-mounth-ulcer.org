@@ -27,7 +27,8 @@
 该怎么办呢？好吧，我还是现在就去吧……
 
 # ----
-
+* Revisions
+  - Publish: [2014-04-07 Mon]
 * Share This Page
   #+BEGIN: inc-file :file "sharethis.inc.org"
   #+END:

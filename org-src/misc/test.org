@@ -130,6 +130,16 @@ still too short? are you kidding me?
    #+BEGIN_SRC julia :results output :exports results
    print(1)
    #+END_SRC
+* Quote
+  A quote:
+  #+BEGIN_QUOTE
+  I've found that I have to have some commands both in '.emacs' and in
+  '.gnus', and I use the same code to sign my emails in gnus. I've
+  never tried writing an email in org-mode, but if I was I'd tend to
+  use a snippet from 'YASnippet', or write my own for it. I've always
+  believed in writing emails in gnus, and using org-mode for TODOs,
+  documents, etc.
+  #+END_QUOTE
 * Share This Page
   # #+INCLUDE: ../include/sharethis.inc.org
 * Discuss and Comment

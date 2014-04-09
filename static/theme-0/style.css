@@ -308,3 +308,9 @@ code {
     margin: 7px;
     display: inline;
 }
+
+blockquote {
+    background: rgb(203, 219, 243);
+    padding: 3px 13px;
+    border: dashed 1px;
+}
