@@ -137,16 +137,16 @@ h4 span {
 .todo, .deadline {
     color: red;
 }
-.todo, .done,
-.tag span {
+
+.todo, .done, .tag span {
     display: inline-block;
-    padding: 2px 5px;
+    padding: 0 15px 0 5px;
     border-radius: 3px;
     color: #fff;
     font-weight: bold;
     font-size: 12px;
-    line-height: normal;
 }
+
 .todo {
     background-color: #e14344;
 }
@@ -159,11 +159,16 @@ h3 .todo, h3 .done {
 
 .tag {
     float: right;
+    border: 0;
+    width: auto;
 }
+
 .tag span {
+    padding: 0 5px;
     background-color: #ccc;
     color: #000;
-    margin-left: 0.3em;
+    width: auto;
+    height: auto;
 }
 
 .timestamp {
