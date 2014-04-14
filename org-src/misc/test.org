@@ -13,7 +13,10 @@
 * Org Mode Simple Examples                                   :example:simple:
 ** TODO List                                                       :checkbox:
    <2014-03-24 Mon>
-    - [ ] check box item 1
+    - [-] check box item 1
+      - [ ] sub 1
+      - [X] sub 2
+      - [ ] http://unicode-table.com/en/
     - [ ] check box item 2
     - [X] check box item 3
 
@@ -125,7 +128,6 @@ still too short? are you kidding me?
    #+BEGIN_SRC scheme :exports results :results value raw :colnames abc
      (display "Hello Scheme in OrgMode") "!!!!"
    #+END_SRC
-
 ** Julia
    #+BEGIN_SRC julia :results output :exports results
    print(1)
