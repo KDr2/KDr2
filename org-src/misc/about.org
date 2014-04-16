@@ -7,6 +7,16 @@
 #+CALL: dynamic-header() :results raw
 
 * About Me
+
+  - Emacs 用户，Linux 用户，支持 Open Source, 不反 GNU, 不反 GPL。
+  - 喜钻研技术，驳杂却乐在其中。
+  - 曾爱阅读，正试旧爱重习。
+  - 向往写作，怎奈笔力孱弱。
+  - 五音不全，全然不通音律。
+  - 肯于分享，力图不为人师。
+  - 追求完美，偶致束手束足。
+  - 意在修身，然却心有旁鶩。
+
 ** Contact
    :PROPERTIES:
    :CUSTOM_ID: contact_me
