@@ -5,7 +5,7 @@ all: pub
 ##########################
 # export org to html
 ##########################
-AUTO_PAGES = org-src/misc/categories.org org-src/misc/archives.org org-src/misc/site-log.org
+AUTO_PAGES = org-src/index.org org-src/misc/categories.org org-src/misc/archives.org org-src/misc/site-log.org
 %.org: script/site-metadata.el
 	@touch $@
 

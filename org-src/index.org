@@ -15,6 +15,15 @@ I am a software developer/computer programmer.
 I am now working remotely as a freelance developer/consultant. And
 this is my simple web site. You can [[file:misc/about.html#contact_me][contact me]] if necessary.
 
+* Navigation
 - [[file:project/index.org][Projects]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
+
+* Recent Posts
+  #+NAME: recent-posts
+  #+BEGIN_SRC elisp :exports none :results raw value
+    (make-recent-posts)
+  #+END_SRC
+  #+CALL: recent-posts[:results value]() :results raw
+  - [[file:misc/archives.org][more...]]

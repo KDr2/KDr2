@@ -36,6 +36,16 @@
              (mapcar #'list-to-log-entity
                      (read-sexp-from-file (app-file site-metadata-file))) "\n"))
 
+(defun make-recent-posts (&optional num)
+  (let ((num (or num 5)))
+    (mapconcat 'identity
+               (mapcar
+                (lambda (entity) (format "  - %s [%s] [[file:%s][%s]]"
+                                         (substring (nth 0 entity) 0 10)
+                                         (nth 1 entity)
+                                         (nth 3 entity)
+                                         (nth 4 entity)))
+                (read-sexp-from-file (app-file site-metadata-file) num)) "\n")))
 
 (defun classify-site-entities (key-func format-func)
   (let ((entities (read-sexp-from-file (app-file site-metadata-file)))
