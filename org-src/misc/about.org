@@ -11,11 +11,17 @@
   - Emacs 用户，Linux 用户，支持 Open Source, 不反 GNU, 不反 GPL。
   - 喜钻研技术，驳杂却乐在其中。
   - 曾爱阅读，正试旧爱重习。
-  - 向往写作，怎奈笔力孱弱。
+  - 向往写作，无奈笔力孱弱。
   - 五音不全，全然不通音律。
   - 肯于分享，力图不为人师。
   - 追求完美，偶致束手束足。
   - 意在修身，然却心有旁鶩。
+
+** Work
+
+   I am a software developer/computer programmer.
+
+   I am now working remotely as a freelance developer/consultant.
 
 ** Contact
    :PROPERTIES:
@@ -28,6 +34,26 @@
    - [[file:schedule.org][My Schedule]]
 #   - skype : [[data:text/plain;base64,emh1b3Fs]]
 #   - Email : [[data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=]]
+
+* About This Site
+** Content of the site
+   I write myself on this site, and write only for myself, not for any
+   other readers.
+
+** Technical Persective
+  This site is built with emacs and org-mode, and some other tools, I
+  list all of them here:
+
+  - Emacs: http://www.gnu.org/software/emacs/
+  - Org-Mode: http://orgmode.org/
+  - Disqus: http://disqus.com/
+  - ShareThis: http://www.sharethis.com/
+  - Google Analytics: http://www.google.com/analytics/
+
+  You can find my org mode configuration at
+  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
+  and https://github.com/KDr2/kdr2-on-web/blob/master/script/compile.el.
+  The source repository of this site is https://github.com/KDr2/kdr2-on-web.
 
 * Support Me
   :PROPERTIES:
@@ -53,26 +79,6 @@
   - 
     #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
     [[https://me.alipay.com/KDr2][通过支付宝]]
-
-* About This Site
-  I use this site to record, write, post things formally, please refer
-  to http://n.kdr2.net for other trival things.
-
-  This site is built with emacs and org-mode, and some other tools in
-  the following list:
-  - Emacs: http://www.gnu.org/software/emacs/
-  - Org-Mode: http://orgmode.org/
-  - Disqus: http://disqus.com/
-  - ShareThis: http://www.sharethis.com/
-  - Google Analytics: http://www.google.com/analytics/
-
-  You can find my org mode configuration at
-  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
-  and https://github.com/KDr2/kdr2-on-web/blob/master/script/compile.el.
-  The source repository of this site is https://github.com/KDr2/kdr2-on-web.
-
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

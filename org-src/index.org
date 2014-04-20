@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: KDr2.com
+#+TITLE: Write myself, write to myself.
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+BEGIN: inc-file :file "common.inc.org"
@@ -8,12 +8,7 @@
 
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
-* [[./image/res/R2-D2.128.png]] Hi, I'm KDr2(ZHUO QL)
-
-I am a software developer/computer programmer.
-
-I am now working remotely as a freelance developer/consultant. And
-this is my simple web site. You can [[file:misc/about.html#contact_me][contact me]] if necessary.
+Hi, I'm KDr2(ZHUO QL), And here is my website, a place for myself.
 
 * Navigation
 - [[file:project/index.org][Projects]]
