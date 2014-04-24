@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Write myself, write to myself.
+#+TITLE: Write about myself, write for myself.
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+BEGIN: inc-file :file "common.inc.org"

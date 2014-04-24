@@ -37,8 +37,8 @@
 
 * About This Site
 ** Content of the site
-   I write myself on this site, and write only for myself, not for any
-   other readers.
+   I write about myself on this site, and write only for myself, not
+   for any other readers.
 
 ** Technical Persective
   This site is built with emacs and org-mode, and some other tools, I
