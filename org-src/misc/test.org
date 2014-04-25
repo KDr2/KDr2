@@ -9,6 +9,7 @@
 
 * About This Page
   This is a test page.
+  {{{baidu(野猪拉屎了)}}} {{{google(野猪拉屎了)}}}
 
 * Org Mode Simple Examples                                   :example:simple:
 ** TODO List                                                       :checkbox:

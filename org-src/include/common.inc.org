@@ -16,6 +16,11 @@
 # # MACRO EXAMPLES ####################
 #+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
 
+# # SEARCH LINK #################
+#+MACRO: baidu [[http://www.baidu.com/#wd=$1][$1]]
+#+MACRO: google [[https://www.google.com.hk/search?q=$1][$1]]
+#+MACRO: site-search [[https://www.google.com.hk/search?q=$1&sitesearch=kdr2.com][$1]]
+
 # # SELF INFO ###################
 #+MACRO: mu [[http://www.miss-understood.net][miss-undersood]]
 #+MACRO: mytwt [[http://twitter.com/KDr2]]
