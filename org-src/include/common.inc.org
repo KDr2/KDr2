@@ -16,6 +16,10 @@
 # # MACRO EXAMPLES ####################
 #+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
 
+# # ADD LINK ############################
+#+MACRO: zcom [[http://www.amazon.com/gp/product/$1?tag=kdr2com-20][$2]]
+#+MACRO: zcn [[http://www.amazon.cn/gp/product/$1?tag=kdr2com-23][$2]]
+
 # # SEARCH LINK #################
 #+MACRO: baidu [[http://www.baidu.com/#wd=$1][$1]]
 #+MACRO: google [[https://www.google.com.hk/search?q=$1][$1]]
