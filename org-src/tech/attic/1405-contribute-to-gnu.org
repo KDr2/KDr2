@@ -1,9 +1,9 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Title
+#+TITLE: Contribute to GNU
 #+AUTHOR: KDr2
 
-# #+OPTIONS: toc:nil
-# #+OPTIONS: num:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
 
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
@@ -17,6 +17,6 @@
 #  #+BEGIN: inc-file :file "sharethis.inc.org"
 #  #+END:
 
-# * Discuss and Comment
-#  #+BEGIN: inc-file :file "disqus.inc.org"
-#  #+END:
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
