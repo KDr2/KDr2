@@ -8,6 +8,7 @@
 #+CALL: dynamic-header() :results raw
 
 # date : 2010-12-24 10:05
+<2010-12-14 Fri>
 
 * PYC文件简介
 不说废话,这里说的 pyc 文件就是 Python 程序编译后得到的字节码文件

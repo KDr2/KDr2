@@ -8,6 +8,8 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+
+<2014-04-30 Wed>
     
 这个冷嗖嗖雨淋淋的的春天终于就要走了，尽管它让我很不喜欢，但我现在还是
 想很客气跟它说句略正式的再见，为送它走，更为迎夏天来。
