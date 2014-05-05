@@ -8,7 +8,8 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
-# ----
+<2014-04-07 Mon>
+
 自从去年拔去一颗长歪的牙齿后，口腔溃疡的频率大大降低了，但是还是偶有出
 现，最近吃肉有点多，又出现了，不过我现在琢磨出了一套处理方法，可以使以
 往至少一周的痛苦病症在两天之内恢复:
@@ -26,9 +27,6 @@
 
 该怎么办呢？好吧，我还是现在就去吧……
 
-# ----
-* Revisions
-  - Publish: [2014-04-07 Mon]
 * Share This Page
   #+BEGIN: inc-file :file "sharethis.inc.org"
   #+END:
