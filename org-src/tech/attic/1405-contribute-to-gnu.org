@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Contribute to GNU
+#+TITLE: Contribute to FSF/GNU
 #+AUTHOR: KDr2
 
 #+OPTIONS: toc:nil
@@ -10,6 +10,20 @@
 #+CALL: dynamic-header() :results raw
 
 # - DATE
+上个月用 {{{orgmode}}} 写文档的时候[[../emacs/ob-scheme-in-batch-mode.org][发现一个 bug]]，当时简单的解决了问题，
+然后做了一个 patch 发到 {{{orgmode}}} mail list, 结果被告知 patch 太大
+(超过 15 行的变动), 需要同 {{{fsf}}} 签署一份Assignment Contract 来保
+证所贡献的代码的版权属于 {{{fsf}}}, 而非其他人(比如Contributor 的雇主)。
+
+按照要求，照着 [[https://github.com/KDr2/org-mode/blob/master/request-assign-future.txt][此处]] 填写了一份表单发到 GNU，对方反映很快，当天给了回复，
+给了一份 PDF 的 Contract 文件，但是这个文件却给错了…… 是另一位名字以 Z
+开头的 Contributor 向 GCC 提交代码的 Contract…… 于是我只好回复说你发错
+了，麻烦给个正确的吧，谁知这一下却没了反映，后来我又发邮件询问过几次，
+直到近 20 天过去，那边终于反映过来，给了我正确的 PDF。
+
+打印，签字，邮寄，DHL 倒是挺快，3天寄到，之后收到 GNU 签署过的
+Contract 的扫描图像，合同签署过程算是完结。
+
 
 # - CONTENT
 

@@ -32,6 +32,9 @@
 #+MACRO: kd@github [[http://github.com/KDr2/][My GitHub]]
 #+MACRO: kdweb@github [[http://github.com/KDr2/kdr2-on-web][kdr2-on-web at GitHub]]
 
+# # ORG #######################
+#+MACRO: fsf [[http://www.fsf.org/][Free Software Foundation]]
+
 # # PROGRAMMING LANGUAGES ##################
 #+MACRO: c C Programming Language
 #+MACRO: cpp C++ Programming Language
