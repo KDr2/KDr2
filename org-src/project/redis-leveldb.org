@@ -6,6 +6,9 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * Introduction
 
 Redis-LevelDB is a redis-protocol compatible frontend to google's
@@ -98,8 +101,9 @@ You can get it from https://github.com/KDr2/redis-leveldb.
   - email me  : killy.draw< =@= >gmail.com
   - comment this page.
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

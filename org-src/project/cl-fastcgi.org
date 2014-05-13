@@ -6,6 +6,9 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * Introduction
 
 CL-FastCGI is a generic version of [[file:sb-fastcgi.org][SB-FastCGI]], targeting to run on
@@ -47,8 +50,9 @@ to cl-fastcgi or change back easily, without code modifications.
   - on github : https://github.com/KDr2/cl-fastcgi
   - email me  : killy.draw< =@= >gmail.com
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

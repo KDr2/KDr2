@@ -11,6 +11,10 @@
 
 <2014-04-19 Sat>
 
+# ----
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 “老板，来一份羊杂汤，打包！”
 
 “好嘞, 没饭盒，拿袋子给您装一下？”
@@ -60,10 +64,9 @@
 吃完回来路上看到几个人围在我撒的羊杂汤跟前讨论那是什么东西，有的人说那
 是羊杂汤，有的说那绝对不是，嘿嘿，管他呢，我已经吃饱啦！
 
-
-* Share This Page
-  #+BEGIN: inc-file :file "sharethis.inc.org"
-  #+END:
+# ----
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"
