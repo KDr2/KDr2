@@ -8,6 +8,9 @@
 
 <2014-04-03 Thu>
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * The problem
 
 Few days ago I wrote a scheme code block in one of my org file, then I
@@ -125,9 +128,9 @@ steps:
   quick way I found to fix the problem without upstream package
   (geiser) changes.
 
-* Share This Page
-  #+BEGIN: inc-file :file "sharethis.inc.org"
-  #+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

@@ -54,8 +54,5 @@ to cl-fastcgi or change back easily, without code modifications.
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
-
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

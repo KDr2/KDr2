@@ -8,6 +8,9 @@
 
 <2014-03-26 Sun>
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * Overview
   The org-mode export process consists of these steps:
 
@@ -128,9 +131,9 @@
   https://github.com/KDr2/kdr2-on-web, you can find all the tricks I
   metioned above in this reposotory.
 
-* Share This Page
-  #+BEGIN: inc-file :file "sharethis.inc.org"
-  #+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

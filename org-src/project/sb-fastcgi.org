@@ -187,8 +187,5 @@ See =sb-fastcgi/test.lisp= for more examples.
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
-
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

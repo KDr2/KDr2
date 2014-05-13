@@ -10,6 +10,9 @@
 # date : 2010-12-24 10:05
 <2010-12-14 Fri>
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * PYC文件简介
 不说废话,这里说的 pyc 文件就是 Python 程序编译后得到的字节码文件
 (py->pyc).
@@ -350,8 +353,9 @@ function 有两个默认参数.
 
 http://docs.python.org/release/2.7/library/dis.html#python-bytecode-instructions
 
-* Share This Page
-#+INCLUDE: ../../include/sharethis.inc.org
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
 
 * Discuss and Comment
 #+INCLUDE: ../../include/disqus.inc.org

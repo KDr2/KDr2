@@ -105,8 +105,5 @@ You can get it from https://github.com/KDr2/redis-leveldb.
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
-
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

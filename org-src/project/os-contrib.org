@@ -34,5 +34,6 @@
      - https://github.com/ihnorton/Clang.jl/pulls/KDr2?state=closed
      - https://github.com/ihnorton/Clang.jl/pulls/KDr2
 
-* Share This Page
-#+INCLUDE: ../include/sharethis.inc.org
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
