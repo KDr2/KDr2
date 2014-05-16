@@ -7,6 +7,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("口腔溃疡" "治疗")) :results raw
 
 <2014-04-07 Mon>
 

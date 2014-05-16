@@ -8,6 +8,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("辩证思维" "误区")) :results raw
 
 <2014-04-19 Sat>
 

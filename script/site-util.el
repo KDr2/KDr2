@@ -30,3 +30,6 @@
                  (mapcar (lambda (_) "..") (split-string (match-string 1 relative-path) "/"))
                  "/") "/" resource)
       resource)))
+
+(defun html-meta-keywords (kws)
+  (concat "#+HTML_HEAD: <meta name=\"keywords\" content=\"" (mapconcat 'identity kws ", ") "\"/>"))

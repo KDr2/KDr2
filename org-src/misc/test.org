@@ -6,6 +6,8 @@
 #+END:
 
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
+
 * About This Page
   This is a test page.
   {{{baidu(野猪拉屎了)}}} {{{google(野猪拉屎了)}}}
