@@ -79,9 +79,11 @@
     </button>
     </form>
     #+END_HTML
-  - 
-    #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
-    [[https://me.alipay.com/KDr2][通过支付宝]]
+  - 支付宝:
+
+    [[../image/res/qr-alipay.kdr2.png]]
+    # #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
+    # [[https://me.alipay.com/KDr2][通过支付宝]]
 
   #+BEGIN: inc-file :file "gad.inc.org"
   #+END
