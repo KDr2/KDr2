@@ -9,6 +9,11 @@
   (dynamic-header-css-for-theme)
 #+END_SRC
 
+#+NAME: meta-keywords
+#+BEGIN_SRC elisp :results value raw :exports results :var kws='()
+  (html-meta-keywords kws)
+#+END_SRC
+
 # #######################################
 # # MACRO DEFINITIONS
 # #######################################

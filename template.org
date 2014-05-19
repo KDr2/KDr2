@@ -8,6 +8,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
 
 # - DATE
 

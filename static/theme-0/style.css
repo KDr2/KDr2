@@ -181,7 +181,8 @@ h3 .todo, h3 .done {
 
 .timestamp:before{
     font-style: normal;
-    content: "\23f0 ";
+    content: "\f133  ";
+    /* content: "\23f0  "; */
 }
 
 .content {

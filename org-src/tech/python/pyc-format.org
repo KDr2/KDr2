@@ -6,6 +6,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("python" "bytecode" "format")) :results raw
 
 # date : 2010-12-24 10:05
 <2010-12-14 Fri>

@@ -5,6 +5,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("nginx" "lua" "web" "framework" "openresty")) :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
