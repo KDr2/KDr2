@@ -1,4 +1,6 @@
 ;;(time lang id file title)
+
+("2014-05-22 Thu 19:54" zh d1405-contrib-to-gnu "tech/attic/1405-contributing-to-gnu.org" "Contributing to FSF/GNU")
 ("2014-05-04 Sun 18:24" zh d1405-labor-day "life/1405-a-true-labor-day.org" "名符其实的劳动节")
 ("2014-04-30 Wed 21:24" zh d1404-monthly-review "introspect/monthly-review-1404.org" "Monthly Review: 2014-04")
 ("2014-04-19 Sat 16:24" zh d1404-dialectical "jotting/1404-dialectical-thinking-ruins-my-soup.org" "辩证思维毁了我的羊杂汤")

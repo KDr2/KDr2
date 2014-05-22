@@ -10,9 +10,9 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
 
-# ----
+# - DATE
 
-# ----
+# - CONTENT
 
 # * Share This Page
 #  #+BEGIN: inc-file :file "sharethis.inc.org"

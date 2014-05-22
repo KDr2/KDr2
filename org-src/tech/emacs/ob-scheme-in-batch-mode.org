@@ -129,6 +129,13 @@ steps:
   quick way I found to fix the problem without upstream package
   (geiser) changes.
 
+* Update 1
+  <2014-05-22 Thu>
+
+  I refactored a new patch without =flet=, and it has been merge into
+  orgmode, see
+  http://orgmode.org/cgit.cgi/org-mode.git/commit/?id=21d6d7c3a0b08382e4dfc5d7300f61ba5afe6f12
+  .
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END

@@ -1,0 +1,46 @@
+# -*- mode: org; mode: auto-fill; mode: flyspell -*-
+#+TITLE: Contributing to FSF/GNU
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("opensource" "gnu" "fsf" "contribute" "assignment")) :results raw
+
+# - DATE
+<2014-05-22 Thu>
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
+上个月用 {{{orgmode}}} 写文档的时候[[../emacs/ob-scheme-in-batch-mode.org][发现一个 bug]]，当时简单的解决了问题，
+然后做了一个 patch 发到 {{{orgmode}}} mail list, 结果被告知 patch 太大
+(超过 15 行的变动), 需要同 {{{fsf}}} 签署一份 Assignment Contract 来保
+证所贡献的代码的版权属于 {{{fsf}}}, 而非其他人(比如 Contributor 的雇主)。
+
+按照要求，照着 [[https://github.com/KDr2/org-mode/blob/master/request-assign-future.txt][此处]] 填写了一份表单发到 GNU，对方反映很快，当天给了回复，
+给了一份 PDF 的 Contract 文件，但是这个文件却给错了…… 是另一位名字以 Z
+开头的 Contributor 向 GCC 提交代码的 Contract…… 于是我只好回复说你发错
+了，麻烦给个正确的吧，谁知这一下却没了反映，后来我又发邮件询问过几次，
+直到近 20 天过去，那边终于反映过来，给了我正确的 PDF。
+
+打印，签字，邮寄，DHL 倒是挺快，三天寄到，之后又等了两周，终于收到 GNU
+签署过的 Contract 的扫描版本，合同签署过程算是完结。
+
+之后邮件告之 {{{orgmode}}} 的 maintainer 合同已经签署完毕，并附上
+patch 文件，总算合并进去了。
+
+第一次向 GNU 的软件提交 patch, 签署 Contract 的过程还是有些麻烦，尤其
+是在不接收扫描件的地区。
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
+# - CONTENT
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
