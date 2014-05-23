@@ -29,6 +29,7 @@
    :END:
    - Location: XI'AN, SHANNXI, China
    - Skype : zhuoql
+   - WeChat: KDr2-o-
    - Email : zhuo<at>bitoasis.com
    - Mobile : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]

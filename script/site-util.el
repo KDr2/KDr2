@@ -33,3 +33,10 @@
 
 (defun html-meta-keywords (kws)
   (concat "#+HTML_HEAD: <meta name=\"keywords\" content=\"" (mapconcat 'identity kws ", ") "\"/>"))
+
+(defun html-youtube-video (id)
+  (concat "#+BEGIN_HTML\n<center>"
+          "<iframe width=\"640\" height=\"510\" src=\"//www.youtube.com/embed/"
+          id
+          "\" frameborder=\"0\" allowfullscreen></iframe>"
+          "</center>\n#+END_HTML\n"))

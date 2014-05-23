@@ -8,6 +8,11 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
+<2014-05-23 Fri>
+
 * About This Page
   This is a test page.
   {{{baidu(野猪拉屎了)}}} {{{google(野猪拉屎了)}}}
@@ -144,10 +149,11 @@ still too short? are you kidding me?
   believed in writing emails in gnus, and using org-mode for TODOs,
   documents, etc.
   #+END_QUOTE
-* Share This Page
-  # #+INCLUDE: ../include/sharethis.inc.org
-* Discuss and Comment
-# #+INCLUDE: ../include/disqus.inc.org
+* Video
+  #+CALL: youtube(id="dVMEkMeXYY8") :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
+
+* Discuss and Comment
+  #+INCLUDE: ../include/disqus.inc.org
