@@ -8,6 +8,15 @@
 
 (setq org-html-checkbox-type 'unicode)
 
+(defun unicode-for-org-html-checkbox (checkbox)
+  "Format CHECKBOX into HTML."
+  (case checkbox (on "&#x22A0;")
+        (off "&#x25FB;")
+        (trans "&#x22A1;")
+        (t "")))
+(defadvice org-html-checkbox (around unicode-checkbox activate)
+  (setq ad-return-value (unicode-for-org-html-checkbox (ad-get-arg 0))))
+
 (defadvice org-html-paragraph (before org-html-paragraph-advice
                                       (paragraph contents info) activate)
   "Join consecutive Chinese lines into a single long line without
