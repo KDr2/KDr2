@@ -20,10 +20,10 @@ Now in orgmode we can set =org-html-checkbox-type= to =unicode= (by
 code =(setq org-html-checkbox-type 'unicode)= ) to turn 
   - =[X]= into ☑ for checked checkbox
   - =[ ]= into ☐ for unchecked checkbox
-  - and =[-]= into ☐ for half-checked checkbox(in `Trans` status).
+  - and =[-]= into ☐ for partial-checked checkbox(in `Trans` status).
 
 These unicode symbols are nearly perfect but the one for the
-half-checked checkbox ―― It's the same as the one for unchecked
+partial-checked checkbox ―― It's the same as the one for unchecked
 checkbox.
 
 So I searched the internet and find this [[http://unicode-table.com/en/][unicode character
@@ -32,7 +32,7 @@ for the three status of checkbox, like this:
 
  - [X] checked one
  - [ ] unchecked one
- - [-] half-checked one
+ - [-] partial-checked one
    - [ ] unchecked one
    - [X] checked one
 
@@ -40,7 +40,7 @@ And here is the old style, for comparing:
 
  - ☑ checked one
  - ☐ unchecked one
- - ☐ half-checked one
+ - ☐ partial-checked one
    - ☐ unchecked one
    - ☑ checked one
 
