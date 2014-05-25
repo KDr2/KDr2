@@ -1,0 +1,38 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE:  Monthly Review: 2014-05
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结" "读书")) :results raw
+
+# - DATE
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
+五月份真是够忙的。
+
+房屋装修继续，到这个月结束基本到了只差家具的进度，其中暖气还返工一次
+—— 真是一不去盯着就会出问题，现在的人，基本不能指望他们自觉把事情做好。
+
+锻炼身体没有落下，一直坚持，不过这个月天气变热后喝了很多碳酸饮料，下个
+月得控制碳酸饮料的摄入，起码得规律一下，晚上就不要喝了。
+
+工作老样子，虽然暂时转入另一个项目，但是强度并没有太大变化，倒是接触到
+了对岸的一些东西，挺新鲜。
+
+读书这项就比较悲剧了，完全落下了…… 基本没有什么进展。
+
+# - CONTENT
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
