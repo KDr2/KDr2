@@ -11,6 +11,7 @@
 #+CALL: meta-keywords(kws='("自省" "总结" "读书")) :results raw
 
 # - DATE
+<2014-05-31 Sat>
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
