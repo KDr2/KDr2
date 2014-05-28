@@ -81,13 +81,19 @@
     </form>
     #+END_HTML
   - 支付宝:
-
-    [[../image/res/qr-alipay.kdr2.png]]
+    Scan [[#qr-codes][Alipay QR Code]].
     # #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
     # [[https://me.alipay.com/KDr2][通过支付宝]]
 
   #+BEGIN: inc-file :file "gad.inc.org"
   #+END
+* QR Codes
+  :PROPERTIES:
+  :CUSTOM_ID: qr-codes
+  :END:
+  | <c>                          | <c>                             | <c>                             |
+  | KDr2.com                     | WeChat                          | Alipay                          |
+  | [[../image/res/qr-kdr2.com.png]] | [[../image/res/qr-kdr2.wechat.png]] | [[../image/res/qr-alipay.kdr2.png]] |
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org
