@@ -29,7 +29,7 @@
    :END:
    - Location: XI'AN, SHANNXI, China
    - Skype : zhuoql
-   - WeChat: KDr2-o-
+   - WeChat: KDr2-o- (Scan [[#qr-codes][QR Code]]).
    - Email : zhuo<at>bitoasis.com
    - Mobile : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]
@@ -81,7 +81,7 @@
     </form>
     #+END_HTML
   - 支付宝:
-    Scan [[#qr-codes][Alipay QR Code]].
+    Scan [[#qr-codes][QR Code]].
     # #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
     # [[https://me.alipay.com/KDr2][通过支付宝]]
 
