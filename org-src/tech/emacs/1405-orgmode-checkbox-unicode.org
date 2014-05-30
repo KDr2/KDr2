@@ -14,7 +14,7 @@
 <2014-05-23 Fri>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 Now in orgmode we can set =org-html-checkbox-type= to =unicode= (by
 code =(setq org-html-checkbox-type 'unicode)= ) to turn 
@@ -60,7 +60,7 @@ changed these characters through =defadvice=:
 
 # - CONTENT
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

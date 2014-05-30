@@ -24,4 +24,4 @@
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:

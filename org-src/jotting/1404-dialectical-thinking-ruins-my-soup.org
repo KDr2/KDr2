@@ -14,7 +14,7 @@
 
 # ----
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 “老板，来一份羊杂汤，打包！”
 
@@ -67,7 +67,7 @@
 
 # ----
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

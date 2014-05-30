@@ -13,12 +13,12 @@
 # - DATE
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 # - CONTENT
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 # * Discuss and Comment
 #  #+BEGIN: inc-file :file "disqus.inc.org"

@@ -14,7 +14,7 @@
 <2014-05-22 Thu>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 上个月用 {{{orgmode}}} 写文档的时候[[../emacs/ob-scheme-in-batch-mode.org][发现一个 bug]]，当时简单的解决了问题，
 然后做了一个 patch 发到 {{{orgmode}}} mail list, 结果被告知 patch 太大
@@ -37,7 +37,7 @@ patch 文件，总算合并进去了。
 是在不接收扫描件的地区。
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 # - CONTENT
 

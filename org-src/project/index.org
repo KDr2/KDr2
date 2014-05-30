@@ -20,4 +20,4 @@ And [[file:os-contrib.org][here lists some contributions to other projects]].
 You may [[http://github.com/KDr2][find more things on my GitHub page]].
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:

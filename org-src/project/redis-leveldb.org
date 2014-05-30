@@ -8,7 +8,7 @@
 #+CALL: meta-keywords(kws='("redis" "leveldb" "server" "nosql")) :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Introduction
 
@@ -104,7 +104,7 @@ You can get it from https://github.com/KDr2/redis-leveldb.
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

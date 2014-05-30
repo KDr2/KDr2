@@ -45,7 +45,7 @@
 此时我只能警醒自己：一年的三分之一已经过去。
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

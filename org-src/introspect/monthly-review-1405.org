@@ -14,7 +14,7 @@
 <2014-05-31 Sat>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 五月份真是够忙的。
 
@@ -32,7 +32,7 @@
 # - CONTENT
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

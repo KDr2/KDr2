@@ -7,7 +7,7 @@
 #+CALL: dynamic-header() :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 This site is a new version of _KDr2.net_, I think you're looking for
 something listed below:
@@ -22,4 +22,4 @@ something listed below:
 上面的列表里很可能有你想要的。
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:

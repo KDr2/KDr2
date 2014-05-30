@@ -9,7 +9,7 @@
 #+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 <2014-05-23 Fri>
 
@@ -153,7 +153,7 @@ still too short? are you kidding me?
   #+CALL: youtube(id="dVMEkMeXYY8") :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+INCLUDE: ../include/disqus.inc.org

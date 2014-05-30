@@ -8,7 +8,7 @@
 #+CALL: meta-keywords(kws='("nginx" "lua" "web" "framework" "openresty")) :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Introduction
 

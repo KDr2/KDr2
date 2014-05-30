@@ -38,7 +38,7 @@
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * About This Site
 ** Content of the site
@@ -86,7 +86,7 @@
     # [[https://me.alipay.com/KDr2][通过支付宝]]
 
   #+BEGIN: inc-file :file "gad.inc.org"
-  #+END
+  #+END:
 * QR Codes
   :PROPERTIES:
   :CUSTOM_ID: qr-codes
