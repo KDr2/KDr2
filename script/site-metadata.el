@@ -1,5 +1,5 @@
 ;;(time lang id file title)
-;;("2014-05-31 Sat 21:24" zh d1405-monthly-review "introspect/monthly-review-1405.org" "Monthly Review: 2014-05")
+("2014-05-30 Fri 14:41" zh d1405-monthly-review "introspect/monthly-review-1405.org" "Monthly Review: 2014-05")
 ("2014-05-23 Fri 14:52" en d1405-org-unicode-checkbox "tech/emacs/1405-orgmode-checkbox-unicode.org"
  "Unicode Characters for Checkbox in Orgmode-Exported HTML")
 ("2014-05-22 Thu 19:54" zh d1405-contrib-to-gnu "tech/attic/1405-contributing-to-gnu.org" "Contributing to FSF/GNU")
