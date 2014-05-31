@@ -21,7 +21,7 @@
 ** Work
 
    I am a software developer/computer programmer, and now working
-   remotely as a freelance developer/consultant.
+   at home remotely as a freelance developer/consultant.
 
 ** Contact
    :PROPERTIES:
@@ -30,7 +30,7 @@
    - Location: XI'AN, SHANNXI, China
    - Skype : zhuoql
    - WeChat: KDr2-o- (Scan [[#qr-codes][QR Code]]).
-   - Email : zhuo<at>bitoasis.com
+   - Email : =zhuo+site<at>bitoasis.com=
    - Mobile : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]
 #   - skype : [[data:text/plain;base64,emh1b3Fs]]
