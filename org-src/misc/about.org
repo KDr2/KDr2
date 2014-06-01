@@ -20,8 +20,8 @@
 
 ** Work
 
-   I am a software developer/computer programmer, and now working
-   at home remotely as a freelance developer/consultant.
+   I am a software developer and computer programmer, I am currently
+   working from home as a freelance developer/consultant.
 
 ** Contact
    :PROPERTIES:
