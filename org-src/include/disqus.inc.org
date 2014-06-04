@@ -10,6 +10,7 @@ function _url(){
 
 var disqus_shortname = 'mindniche';
 var disqus_identifier = _url();
+var disqus_url = 'http://kdr2.com/' + disqus_identifier;
 
 /* * * DON'T EDIT BELOW THIS LINE * * */
 (function() {
