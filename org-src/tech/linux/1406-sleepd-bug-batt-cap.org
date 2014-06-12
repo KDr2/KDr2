@@ -1,0 +1,65 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Bugfix: Bad battery percentage reporting in sleepd
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("debian" "sleepd" "bug" "fix")) :results raw
+
+# - DATE
+<2014-06-11 Wed>
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+I got a power outage at home last night, my laptop got suspended in a few
+seconds after the AC power off. It kept going to suspended every times
+I woke it up. I checked my battery but found that it was nearly
+full charged. So what's wrong?
+
+It must be the ~sleepd~, I thought. My parameters for ~sleepd~ was so
+simple: 
+
+#+BEGIN_EXAMPLE
+  #file /etc/default/sleepd 
+  PARAMS="-u 0 -b 30"
+#+END_EXAMPLE
+
+By setting ~-u~ to ~6000~ and ~-b~ to ~3~ respectively, I found the
+problem was about the battery percentage reporting(when set ~-b~ to
+~3~ the laptop didn't suspend).
+
+After reading the source and doing some debug, I found this line =in
+acpi.c=:
+
+#+BEGIN_SRC c
+  info->battery_percentage = 100 * pcap / acpi_batt_capacity[battery];
+#+END_SRC
+
+Both ~pcap~ and  ~acpi_batt_capacity[battery]~ are 32-bits
+integer. Their values are ~55840000~ and ~57970000~ on my laptop, and
+~100 * 55840000~ is greater than the max 32-bits integer, so it's
+overflowed: The buggy result of =the battery_percentage= is about
+=23=, it's below my setting (=-b 30=).
+
+I changed these variables from =int= to =int64_t=, and problem solved.
+
+Here is the patch:
+https://github.com/KDr2/kultivate/blob/master/patches/sleepd/0001-use-int64_t-for-battery-capacity-to-avoid-integer-ov.patch
+
+* Related Links
+
+  - http://joeyh.name/code/sleepd/
+  - https://packages.debian.org/sid/sleepd
+  - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=751254
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
