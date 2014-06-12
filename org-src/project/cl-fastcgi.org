@@ -8,7 +8,7 @@
 #+CALL: meta-keywords(kws='("common lisp" "lisp" "web" "fastcgi")) :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Introduction
 
@@ -53,7 +53,7 @@ to cl-fastcgi or change back easily, without code modifications.
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

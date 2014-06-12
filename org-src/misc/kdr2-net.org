@@ -7,7 +7,7 @@
 #+CALL: dynamic-header() :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 This site is a new version of _KDr2.net_, I think you're looking for
 something listed below:
@@ -15,10 +15,11 @@ something listed below:
  - [[file:../project/redis-leveldb.org][Document for Redis-Leveldb]]
  - [[file:../project/sb-fastcgi.org][Document for SB-FastCGI]]
  - [[file:../project/cl-fastcgi.org][Document for CL-FastCGI]]
+ - [[file:../tech/python/pyc-format.org][PYC文件格式分析]]
  - [[http://n.kdr2.net][KDr2's Tumblr Site]]
 
 本站点是 _KDr2.net_ 的新版，如果你来这里是为了寻找旧版站点上的东西，
 上面的列表里很可能有你想要的。
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:

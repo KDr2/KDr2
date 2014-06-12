@@ -1,0 +1,67 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Unicode Characters for Checkbox in Orgmode-Exported HTML
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("orgmode" "checkbox")) :results raw
+
+# - DATE
+<2014-05-23 Fri>
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+Now in orgmode we can set =org-html-checkbox-type= to =unicode= (by
+code =(setq org-html-checkbox-type 'unicode)= ) to turn 
+  - =[X]= into ☑ for checked checkbox
+  - =[ ]= into ☐ for unchecked checkbox
+  - and =[-]= into ☐ for partial-checked checkbox(in `Trans` status).
+
+These unicode symbols are nearly perfect but the one for the
+partial-checked checkbox ―― It's the same as the one for unchecked
+checkbox.
+
+So I searched the internet and find this [[http://unicode-table.com/en/][unicode character
+table]]. After checking symbols in it one by one, I found three symbols
+for the three status of checkbox, like this:
+
+ - [X] checked one
+ - [ ] unchecked one
+ - [-] partial-checked one
+   - [ ] unchecked one
+   - [X] checked one
+
+And here is the old style, for comparing:
+
+ - ☑ checked one
+ - ☐ unchecked one
+ - ☐ partial-checked one
+   - ☐ unchecked one
+   - ☑ checked one
+
+I donno whether other ones think that these symbols are better, so I
+changed these characters through =defadvice=:
+
+#+BEGIN_SRC elisp
+(defun unicode-for-org-html-checkbox (checkbox)
+  "Format CHECKBOX into Unicode Characters."
+  (case checkbox (on "&#x22A0;")
+        (off "&#x25FB;")
+        (trans "&#x22A1;")
+        (t "")))
+(defadvice org-html-checkbox (around unicode-checkbox activate)
+  (setq ad-return-value (unicode-for-org-html-checkbox (ad-get-arg 0))))
+#+END_SRC
+
+# - CONTENT
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:

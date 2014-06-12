@@ -10,32 +10,18 @@
 #+CALL: meta-keywords(kws='("julia")) :results raw
 
 * Julia
-** Julia-Lang
    :PROPERTIES:
-   :CUSTOM_ID: julia-lang
+   :CUSTOM_ID: julia
    :END:
-   - Commits
-     - https://github.com/JuliaLang/julia/commits?author=KDr2
+   - Julia-Lang: https://github.com/JuliaLang/julia/commits?author=KDr2
+   - Clang.jl: https://github.com/ihnorton/Clang.jl/commits?author=KDr2
 
-   - Patches(Pull Request)
-     - https://github.com/JuliaLang/julia/pulls/KDr2?state=closed
-     - https://github.com/JuliaLang/julia/pulls/KDr2
-
-   - Issues
-     - https://github.com/JuliaLang/julia/issues/created_by/KDr2?state=closed
-     - https://github.com/JuliaLang/julia/issues/created_by/KDr2
-
-** Clang.jl
+* Emacs
    :PROPERTIES:
-   :CUSTOM_ID: clang.jl
+   :CUSTOM_ID: emacs
    :END:
-   - Commits
-     - https://github.com/ihnorton/Clang.jl/commits?author=KDr2
-
-   - Patches(Pull Request)
-     - https://github.com/ihnorton/Clang.jl/pulls/KDr2?state=closed
-     - https://github.com/ihnorton/Clang.jl/pulls/KDr2
+   - org-mode: http://orgmode.org/cgit.cgi/org-mode.git/log/?qt=author&q=KDr2
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:

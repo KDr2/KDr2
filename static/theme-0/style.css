@@ -134,6 +134,10 @@ h4 span {
     font-size: 10px;
 }
 
+.center{
+    text-align: center;
+}
+
 .todo, .deadline {
     color: red;
 }

@@ -10,7 +10,7 @@
 <2014-03-26 Sun>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Overview
   The org-mode export process consists of these steps:
@@ -134,7 +134,7 @@
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"

@@ -10,7 +10,7 @@
 <2014-01-05 Sun>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Definitions
   - define
@@ -263,7 +263,7 @@
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
 #+INCLUDE: ../../include/disqus.inc.org

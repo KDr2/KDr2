@@ -12,11 +12,13 @@
 
 # - DATE
 
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
 # - CONTENT
 
-# * Share This Page
-#  #+BEGIN: inc-file :file "sharethis.inc.org"
-#  #+END:
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
 
 # * Discuss and Comment
 #  #+BEGIN: inc-file :file "disqus.inc.org"

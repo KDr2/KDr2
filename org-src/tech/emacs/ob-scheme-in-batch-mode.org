@@ -10,7 +10,7 @@
 <2014-04-03 Thu>
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * The problem
 
@@ -138,7 +138,7 @@ steps:
   .
 
 #+BEGIN: inc-file :file "gad.inc.org"
-#+END
+#+END:
 
 * Discuss and Comment
   #+BEGIN: inc-file :file "disqus.inc.org"
