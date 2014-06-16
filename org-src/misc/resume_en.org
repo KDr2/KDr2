@@ -64,7 +64,7 @@
   - Emacs org-mode, Graphviz, Tex/LaTeX
   - git/hg/subversion/redmine/trac...
   - Julia, R
-  - Qt (C++ GUI lib), PyQt
+  # - Qt (C++ GUI lib), PyQt
   # - MRI, Rubinius, Rails
 
 * OpenSource Projects
