@@ -23,19 +23,6 @@
    I am a software developer and computer programmer, I am currently
    working from home as a freelance developer/consultant.
 
-** Contact
-   :PROPERTIES:
-   :CUSTOM_ID: contact_me
-   :END:
-   - Location: XI'AN, SHANNXI, China
-   - Skype : zhuoql
-   - WeChat: KDr2-o- (Scan [[#qr-codes][QR Code]]).
-   - Email : =zhuo+site<at>bitoasis.com=
-   - Mobile : +86 0b10111010 05532 0x0636
-   - [[file:schedule.org][My Schedule]]
-#   - skype : [[data:text/plain;base64,emh1b3Fs]]
-#   - Email : [[data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=]]
-
 #+BEGIN_HTML
 <!--
 
@@ -67,6 +54,20 @@
 
 -->
 #+END_HTML
+
+** Contact
+   :PROPERTIES:
+   :CUSTOM_ID: contact_me
+   :END:
+   - Location: XI'AN, SHANNXI, China
+   - Skype : zhuoql
+   - WeChat: KDr2-o- (Scan [[#qr-codes][QR Code]]).
+   - Email : =zhuo+site<at>bitoasis.com=
+   - Mobile : +86 0b10111010 05532 0x0636
+   - [[file:schedule.org][My Schedule]]
+#   - skype : [[data:text/plain;base64,emh1b3Fs]]
+#   - Email : [[data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=]]
+
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
