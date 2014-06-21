@@ -11,7 +11,7 @@
 Hi, I'm KDr2(ZHUO QL), And here is my website, a place for myself.
 
 * Navigation
-- [[file:project/index.org][Projects]]
+- [[file:project/index.org][Projects]] / [[file:resource/index.org][Resources]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
 

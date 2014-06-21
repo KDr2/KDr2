@@ -40,7 +40,8 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - 常用技术平台及编程语言
-    - Linux, C/C++, Java, Erlang, Lua, Scala, Clojure
+    - Linux, C/C++, Java, Erlang, Lua
+    - Clojure, Common Lisp, Scala
     - Bash, Python, PHP, Ruby, Perl ...
     - Julia, R
 
@@ -50,7 +51,7 @@
   - Linux, Debian, Qemu
   - GCC, GDB, LLVM
   - Python, PyPy, Tornado, WebPy
-  - PHP, ZendFramework
+  - PHP
   - Lua, LuaJit
   - Erlang/otp, RabbitMQ
   - Nginx

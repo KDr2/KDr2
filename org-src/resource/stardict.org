@@ -1,0 +1,106 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Resources for Stardict
+#+AUTHOR: KDr2
+
+#+OPTIONS:   ^:{}
+# #+OPTIONS: toc:nil
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("stardict" "dictionary" "download" "sdcv" "星际译王" "词典" "词库" "下载")) :results raw
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+#+MACRO: file [[http://depot.kdr2.com/stardict/$1][$1]]
+
+* Dictionaries/字典文件
+  #+NAME: dict-table
+  #+BEGIN_SRC elisp :results value raw :exports results
+    (let (( dict-list '(("stardict-21shijishuangxiangcidian-2.4.2.tar.bz2" . "21世纪英汉汉英双向词典")
+                        ("stardict-21shijishuangyukejicidian-2.4.2.tar.bz2" . "21世纪英双语科技词典")
+                        ("stardict-bcgm-2.4.2.tar.bz2" . "本草纲目")
+                        ("stardict-cdict-gb-2.4.2.tar.bz2" . "CDICT5英汉辞典")
+                        ("stardict-cedict-gb-2.4.2.tar.bz2" . "CEDICT汉英辞典")
+                        ("stardict-CET4-2.4.2.tar.bz2" . "CET4")
+                        ("stardict-CET6-2.4.2.tar.bz2" . "CET6")
+                        ("stardict-chengyuda-2.4.2.tar.bz2" . "中华成语大词典 2.1")
+                        ("stardict-chibigenc-2.4.2.tar.bz2" . "汉语大词典 离线版")
+                        ("stardict-gaojihanyudacidian-2.4.2.tar.bz2" . "高级汉语大词典")
+                        ("stardict-gaojihanyudacidian_fix-2.4.2.tar.bz2" . "高级汉语大词典 修正版")
+                        ("stardict-ghycyzzd-2.4.2.tar.bz2" . "古汉语常用字字典")
+                        ("stardict-guojibiaozhunhanzidacidian-2.4.2.tar.bz2" . "国际标准汉字大辞典")
+                        ("stardict-hanyuchengyucidian-2.4.2.tar.bz2" . "汉语成语词典")
+                        ("stardict-hanyuchengyucidian_fix-2.4.2.tar.bz2" . "汉语成语词典 修正版")
+                        ("stardict-HanYuChengYuCiDian-new_colors-2.4.2.tar.bz2" . "汉语成语词典 美化版")
+                        ("stardict-hanzim-2.4.2.tar.bz2" . "Hanzi Master 1.3")
+                        ("stardict-kdic-computer-gb-2.4.2.tar.bz2" . "计算机词汇")
+                        ("stardict-kdic-ec-11w-2.4.2.tar.bz2" . "KDic11万英汉词典")
+                        ("stardict-langdao-ce-gb-2.4.2.tar.bz2" . "朗道汉英字典5.0")
+                        ("stardict-langdao-ec-gb-2.4.2.tar.bz2" . "朗道英汉字典5.0")
+                        ("stardict-lazyworm-ce-2.4.2.tar.bz2" . "懒虫简明汉英词典")
+                        ("stardict-lazyworm-ec-2.4.2.tar.bz2" . "懒虫简明英汉词典")
+                        ("stardict-mdbg-cc-cedict-2.4.2.tar.bz2" . "MDBG Chinese-English Dictionary (www.mdbg.net)")
+                        ("stardict-ncce-ce-2.4.2.tar.bz2" . "新世纪汉英科技大词典")
+                        ("stardict-ncce-ec-2.4.2.tar.bz2" . "新世纪英汉科技大词典")
+                        ("stardict-poemstory-2.4.2.tar.bz2" . "诗词典故词典")
+                        ("stardict-ProECCE-2.4.2.tar.bz2" . "英汉汉英专业词典")
+                        ("stardict-quick_eng-zh_CN-2.4.2.tar.bz2" . "quick_eng-zh_CN")
+                        ("stardict-stardict1.3-2.4.2.tar.bz2" . "stardict1.3英汉辞典")
+                        ("stardict-sun_dict_e2c-2.4.2.tar.bz2" . "Sun Dict")
+                        ("stardict-swjznote-2.4.2.tar.bz2" . "段注说文解字")
+                        ("stardict-TOEIC-2.4.2.tar.bz2" . "TOEIC")
+                        ("stardict-xdict-ce-gb-2.4.2.tar.bz2" . "XDICT汉英辞典")
+                        ("stardict-xdict-ec-gb-2.4.2.tar.bz2" . "XDICT英汉辞典")
+                        ("stardict-xhzd-2.4.2.tar.bz2" . "新华字典")
+                        ("stardict-xiandaihanyucidian-2.4.2.tar.bz2" . "现代汉语词典")
+                        ("stardict-xiandaihanyucidian_fix-2.4.2.tar.bz2" . "现代汉语词典 修正版")
+                        ("stardict-xiangya-medical-2.4.2.tar.bz2" . "湘雅医学专业词典")
+                        ("stardict-zigenzidian-2.4.2.tar.bz2" . "英文字根字典")))
+          (table-string "| Dictionary File | Description |\n"))  
+      (dolist (dict dict-list)
+        (setq table-string
+              (concat table-string
+                      "| [[http://depot.kdr2.com/resource/stardict/" (car dict) "][" (car dict) "]] | *" (cdr dict) "* |\n")))
+      table-string)
+  #+END_SRC
+
+  #+CALL: dict-table() :results raw
+  
+  Install all these dictionaries with one command:
+  #+BEGIN_SRC sh
+  curl http://depot.kdr2.com/resource/stardict/stardict-dict-installer.sh | bash
+  #+END_SRC
+
+* Emacs Plugin
+  - Install sdcv(use your system package manager like apt-get/yum or
+    download from http://sdcv.sourceforge.net/).
+  - Download ~sdcv-mode.el~ from https://code.google.com/p/sdcv-mode/,
+    put it into the emacs load path, then put these lines into you
+    ~.emacs~ file:
+    #+BEGIN_SRC elisp
+    (require 'sdcv-mode)
+    (global-set-key (kbd "C-c d") 'sdcv-search)
+    #+END_SRC
+  - Lookup word use ~C-c d~
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Relative Links/相关链结
+  - http://www.stardict.org/
+  - https://code.google.com/p/stardict-3/
+  - http://goldendict.org/
+  - http://sdcv.sourceforge.net/
+  - https://code.google.com/p/sdcv-mode/
+
+# - CONTENT
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# * Discuss and Comment
+#  #+BEGIN: inc-file :file "disqus.inc.org"
+#  #+END:
