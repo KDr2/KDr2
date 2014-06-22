@@ -1,4 +1,7 @@
 *.orgx
 *.elc
+*.out
+*.private.yml
 output/
+depot/
 tmp/

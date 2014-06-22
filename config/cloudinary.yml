@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: kdr2
+  api_key: '************'
+  api_secret: **************
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: kdr2
+  api_key: '************'
+  api_secret: **************
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: kdr2
+  api_key: '************'
+  api_secret: **************
+  enhance_image_tag: true
+  static_image_support: false
