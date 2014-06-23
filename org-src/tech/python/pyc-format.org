@@ -234,8 +234,7 @@ PyCodeObject 会出现在它的 *父作用域* 对应的 PyCodeObject 的
   | co_lnotab      | '\x00\x01\x06\x01\x06\x01' | 行号表                                             |
 
 * 图解 test.py 与 test.pyc 的结构关系
-
-  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png.png" width=600) :results raw
+  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, title="图一") :results raw
 
 * co_freevars 与 co_cellvars
 

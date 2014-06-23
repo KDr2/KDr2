@@ -24,7 +24,7 @@ def depot_url(path):
     return "http://depot.kdr2.com/img-kdr2-com/%s" % path
 
 def public_id(path):
-    return "img-kdr2-com/%s" % path
+    return "img-kdr2-com/%s" % (os.path.splitext(path)[0])
 
 def upload2cloudinary(path):
     local_img_path = local_path(path)
@@ -38,7 +38,11 @@ def upload2cloudinary(path):
     if(meta_mtime > img_mtime):
         return
     print " ==> Uploading Image : %s" % local_img_path
-    ret = cloudinary.uploader.upload(depot_url(path), public_id=public_id(path))
+    ret = cloudinary.uploader.upload(
+        depot_url(path),
+        public_id=public_id(path),
+        format=os.path.splitext(path)[1][1:]
+    )
     with open(meta_path, "w") as m:
         m.write("%s" % ret['version'])
 

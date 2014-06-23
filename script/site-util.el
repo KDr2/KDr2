@@ -43,8 +43,9 @@
 
 ;; example:
 ;; http://res.cloudinary.com/kdr2/image/upload/c_scale,w_400/img-kdr2-com/2010/12/pyc_format_example_0.png.png
-(defun site-image (path width)
+(defun site-image (path width title)
   (let* ((width (or width 600))
+         (title (or title ""))
          (url
           (concat "http://res.cloudinary.com/kdr2/image/upload/c_scale,w_" (number-to-string width)
                   "/img-kdr2-com/" path))
@@ -53,4 +54,4 @@
     (concat "#+BEGIN_HTML\n<center>"
             "<a target=\"_blank\" href=\"" original-url "\">"
             "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 600px; \">"
-            "</a></center>\n#+END_HTML\n")))
+            "</a><br/>" title "</center>\n#+END_HTML\n")))

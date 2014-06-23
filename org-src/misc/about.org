@@ -122,9 +122,9 @@
   :PROPERTIES:
   :CUSTOM_ID: qr-codes
   :END:
-  | <c>                          | <c>                             | <c>                             |
-  | KDr2.com                     | WeChat                          | Alipay                          |
-  | [[../image/res/qr-kdr2.com.png]] | [[../image/res/qr-kdr2.wechat.png]] | [[../image/res/qr-alipay.kdr2.png]] |
+  | <c12>        | <c12>        | <c12>        |
+  | KDr2.com     | WeChat       | Alipay       |
+  | {{{inline-image(common/qr-kdr2.com.png)}}} | {{{inline-image(common/qr-kdr2.wechat.png)}}} | {{{inline-image(common/qr-alipay.kdr2.png)}}} |
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org
