@@ -45,7 +45,8 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - Platforms or Programming Languages I'm using:
-    - Linux, C/C++, Java, Erlang, Lua, Scala, Clojure
+    - Linux, C/C++, Java, Erlang, Lua
+    - Clojure, Common Lisp, Scala
     - Bash, Python, PHP, Ruby, Perl ...
     - Julia, R
 
@@ -56,7 +57,7 @@
   - Linux, Debian, Qemu
   - GCC, GDB, {{{llvm}}}
   - Python, PyPy, WSGI, Tornado, WebPy
-  - PHP, ZendFramework
+  - PHP
   - Lua, LuaJit
   - Erlang/otp, RabbitMQ
   - Nginx
@@ -64,7 +65,7 @@
   - Emacs org-mode, Graphviz, Tex/LaTeX
   - git/hg/subversion/redmine/trac...
   - Julia, R
-  - Qt (C++ GUI lib), PyQt
+  # - Qt (C++ GUI lib), PyQt
   # - MRI, Rubinius, Rails
 
 * OpenSource Projects

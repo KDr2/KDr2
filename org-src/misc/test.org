@@ -139,6 +139,13 @@ still too short? are you kidding me?
    #+BEGIN_SRC julia :results output :exports results
    print(1)
    #+END_SRC
+* Table
+
+  | Col1   | Col2       |
+  |--------+------------|
+  | quick  | 狐狸跳懒狗 |
+  | 狗不理 | fox        |
+
 * Quote
   A quote:
   #+BEGIN_QUOTE

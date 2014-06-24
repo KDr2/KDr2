@@ -13,7 +13,7 @@
 [[file:resume_en.org][English Version(英文版)]]
 
 * 目前状态
-  人在西安，欢迎推荐何时职位，远程工作职位优先考虑。
+  人在西安，欢迎推荐合适职位，远程工作职位优先考虑。
 * 基本信息
   - 姓名 : 卓__
   - 出生年月 : 1983.__.__
@@ -40,7 +40,8 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - 常用技术平台及编程语言
-    - Linux, C/C++, Java, Erlang, Lua, Scala, Clojure
+    - Linux, C/C++, Java, Erlang, Lua
+    - Clojure, Common Lisp, Scala
     - Bash, Python, PHP, Ruby, Perl ...
     - Julia, R
 
@@ -50,7 +51,7 @@
   - Linux, Debian, Qemu
   - GCC, GDB, LLVM
   - Python, PyPy, Tornado, WebPy
-  - PHP, ZendFramework
+  - PHP
   - Lua, LuaJit
   - Erlang/otp, RabbitMQ
   - Nginx
@@ -58,7 +59,7 @@
   - Emacs, org-mode, Graphviz, Tex/LaTeX
   - git/hg/subversion/redmine/trac...
   - Julia， R
-  - Qt (C++ GUI lib), PyQt
+  # - Qt (C++ GUI lib), PyQt
   # - MRI, Rubinius, Rails
 
 * 维护/参与的开源项目
