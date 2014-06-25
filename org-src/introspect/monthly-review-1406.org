@@ -12,6 +12,11 @@
 
 # - DATE
 
+把使用了多年的深色 Emacs 主题换成了浅色的
+装修结束，家具也慢慢进入
+读书还是少，《写在人生的边上》勉强读完
+
+
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
