@@ -9,8 +9,8 @@
 body {
     background: #fff;
     color: #111; /*#557575;*/
-    /* font: 14px/1.7 sans-serif; */
-    font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
+    font: 14px/1.7 sans-serif;
+    /* font: 14px/1.7 "Open Sans", Helvetica, Arial, sans; */
     margin: 5% 15% 8%;
     min-width: 600px;
     background: none repeat scroll 0 0 #FFFFFF; /*#FDF6E3;*/
@@ -348,4 +348,8 @@ blockquote {
     padding: 3px 13px;
     border: solid 2px;
     border-radius: 10px;
+}
+
+center.image-container {
+    margin: 16px 0;
 }

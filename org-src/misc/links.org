@@ -1,0 +1,34 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Links
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("kdr2" "friend" "blog" "link")) :results raw
+
+* Family
+  - [[http://miss-understood.net/][{miss}understood]]
+
+* Bloggers
+  - [[http://www.windsays.com/][听风扯淡]]
+  - [[http://blog.liulantao.com][Peek Poke]]
+  - [[http://demonc.com][前端 Demon]]
+  - [[http://blog.andyliu.net][Andy的博客]]
+
+# Image Examples
+# {{{inline-image(common/qr-kdr2.com.png)}}}
+# {{{inline-image-scale(common/qr-kdr2.com.png, 400)}}}
+# #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png.png", width=600, title="图一") :results raw
+
+
+* Discuss and Comment
+
+  Leave a comment on this page if you want to add your link here.
+
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+

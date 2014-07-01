@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-07-01 Tue 16:27" en d1406-monthly-review "introspect/monthly-review-1406.org" "Monthly Review: 2014-06")
 ("2014-06-11 Wed 19:16" en d1406-bugfix-sleepd-batcap "tech/linux/1406-sleepd-bug-batt-cap.org"
  "Bugfix: Bad battery percentage reporting in sleepd")
 ("2014-05-30 Fri 14:41" zh d1405-monthly-review "introspect/monthly-review-1405.org" "Monthly Review: 2014-05")

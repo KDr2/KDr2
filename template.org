@@ -17,6 +17,11 @@
 
 # - CONTENT
 
+# Image Examples
+# {{{inline-image(common/qr-kdr2.com.png)}}}
+# {{{inline-image-scale(common/qr-kdr2.com.png, 400)}}}
+# #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png.png", width=600, title="图一") :results raw
+
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 

@@ -51,7 +51,7 @@
                   "/img-kdr2-com/" path))
          (original-url
           (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path)))
-    (concat "#+BEGIN_HTML\n<center>"
+    (concat "#+BEGIN_HTML\n<center class=\"image-container\">"
             "<a target=\"_blank\" href=\"" original-url "\">"
             "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 600px; \">"
             "</a><br/>" title "</center>\n#+END_HTML\n")))
