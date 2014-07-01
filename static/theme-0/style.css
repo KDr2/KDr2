@@ -349,3 +349,7 @@ blockquote {
     border: solid 2px;
     border-radius: 10px;
 }
+
+center.image-container {
+    margin: 16px 0;
+}

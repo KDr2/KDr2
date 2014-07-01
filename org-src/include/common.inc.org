@@ -74,6 +74,7 @@
 # # Develop Tools and Libraries ################
 #+MACRO: linux [[http://www.kernel.org][Linux]]
 #+MACRO: debian [[http://www.debian.org][Debian]]
+#+MACRO: fluxbox [[http://fluxbox.org][Fluxbox]]
 #+MACRO: emacs [[http://www.gnu.org/software/emacs/][Emacs]]
 #+MACRO: qemu [[http://wiki.qemu.org/Main_Page][QEMU]]
 #+MACRO: gcc [[http://gcc.gnu.org/][GCC]]
