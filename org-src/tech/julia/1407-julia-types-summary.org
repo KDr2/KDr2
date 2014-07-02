@@ -63,6 +63,10 @@
     - None: Union type of none type (~Union()~)
     - Any: Root spuer type of all declared type(like ~Object~ in Java)
     - Nothing: a type with none field, used for ~NULL~ or ~void~
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END
+
 * Summary
   Suppose =T, T1, T2 ... Tn= are Declared Types, =t, t1, t2 .. tn= are
   their instances, we can get below ~super~ chains:
