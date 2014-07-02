@@ -84,6 +84,9 @@
   - Org-Mode: http://orgmode.org/
   - Disqus: http://disqus.com/
   - Google Analytics: http://www.google.com/analytics/
+  - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]], and there're coupons for it:
+    * =DHKDR200= , One free domain name, at least $5 discount
+    * =DHKDR201= , At least $30 discount
 
   You can find my org mode configuration at
   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
