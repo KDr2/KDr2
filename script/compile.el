@@ -2,7 +2,7 @@
 
 (defvar app-root-path
   (file-name-directory
-   (substring (file-name-directory load-file-name) 0 -1))
+   (substring (file-name-directory (or load-file-name (buffer-file-name))) 0 -1))
   "The root dir of this project")
 
 (defun app-file (&optional path)

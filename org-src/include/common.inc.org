@@ -22,6 +22,11 @@
 #+MACRO: inline-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
 #+MACRO: inline-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
 
+#+NAME: inc-code
+#+BEGIN_SRC elisp :results value raw :exports results :var path="" lang=""
+  (inc-code path lang)
+#+END_SRC
+
 #+NAME: youtube
 #+BEGIN_SRC elisp :results value raw :exports results :var id=""
   (html-youtube-video id)

@@ -18,6 +18,6 @@ Hi, I'm KDr2(ZHUO QL), And here is my website, a place for myself.
 * Recent Posts
   #+NAME: recent-posts
   #+BEGIN_SRC elisp :exports none :results raw value
-    (make-recent-posts 5 t)
+    (make-recent-posts 6 t)
   #+END_SRC
   #+CALL: recent-posts[:results value]() :results raw

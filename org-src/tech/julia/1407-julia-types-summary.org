@@ -13,9 +13,13 @@
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
 
+<2014-07-02 Wed>
+
 * Overview
-  This summary is written for *Julia v0.3.x*,  you can read more on
+  This summary is written for *Julia v0.3.x*,  and it is *NOT* a
+  tutorial, you can get more about julia types on
   http://julia.readthedocs.org/en/latest/manual/types/.
+
 * All Types of Julia
   - Declared Types
     - Abstract Type,
@@ -53,7 +57,15 @@
        typealias Uint Uint64
     #+END_SRC
   - Parametric Types
-    - Parametric Abstract Types
+    #+BEGIN_SRC julia
+      type Point{T}
+          x::T
+          y::T
+      end
+    #+END_SRC
+
+    - Parametric Abstract Types, e.g. =abstract Pointy{T}=
+
   - Meta Types
     - Type
     - DataType, UnionType
@@ -73,7 +85,7 @@
    - =Any <- Type <- DataType=
    - =Any <- Type <- UnionType=
    - =Any <- Type{T}=
-   - =Any <- Type{UnionType(T1, T2)}=
+   - =Any <- Type{Union(T1, T2)}=
    - =Any <- T=
    - =Any <- T1=
    - =Any <- T2=
@@ -94,11 +106,7 @@
    - =(t1,t2) isa (T1, T2) isa (DataType, DataType)=
 
 * Some Demo Code  
-  #+BEGIN_SRC julia
-    isa(T, DataType)             # => true
-    isa(T, Type{T})              # => true 
-    issubtype(Type{T}, DataType) # => true
-  #+END_SRC
+  #+CALL: inc-code[:results value](path="julia/1407-types-summary.jl", lang="julia") :results raw
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END
