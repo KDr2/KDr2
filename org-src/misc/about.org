@@ -63,6 +63,7 @@
    - Skype : zhuoql
    - WeChat: KDr2-o- (Scan [[#qr-codes][QR Code]]).
    - Email : =zhuo+site<at>bitoasis.com=
+   - [[https://plus.google.com/+ZhuoQL][Google+]]
    - Mobile : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]
 #   - skype : [[data:text/plain;base64,emh1b3Fs]]
