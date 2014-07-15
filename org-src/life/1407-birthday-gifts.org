@@ -1,0 +1,38 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Birthday gifts, 2014
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("birthday" "gift" "chelsea")) :results raw
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - DATE
+<2014-07-23 Wed>
+
+# - CONTENT
+
+I won't tell you I'm a Chelsea Fan! ^_^
+
+#+CALL: image[:results value](path="2014/07/chelsea-cup-00.jpg", width=600, title="Fan Cup") :results raw
+
+#+CALL: image[:results value](path="2014/07/chelsea-cup-01.jpg", width=600, title="Fan Cup") :results raw
+
+#+CALL: image[:results value](path="2014/07/chelsea-scarf-00.jpg", width=600, title="Crest Scarf") :results raw
+
+#+CALL: image[:results value](path="2014/07/chelsea-scarf-01.jpg", width=600, title="Crest Scarf") :results raw
+
+Thanks to [[http://miss-understood.net/][{miss}understood]].
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
