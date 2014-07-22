@@ -1,0 +1,51 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Books
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("book" "douban")) :results raw
+
+* Books I have read
+
+#+BEGIN_HTML
+<div style="margin-bottom: 24px; text-align:center;">
+<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=collection&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
+</div>
+#+END_HTML
+
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Books I'm reading
+
+#+BEGIN_HTML
+<div style="margin-bottom: 24px; text-align:center;">
+<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=dolist&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
+</div>
+#+END_HTML
+
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Books I want to read
+
+#+BEGIN_HTML
+<div style="margin-bottom: 24px; text-align:center;">
+<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=wishlist&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
+</div>
+#+END_HTML
+
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# * Discuss and Comment
+#  #+BEGIN: inc-file :file "disqus.inc.org"
+#  #+END:
