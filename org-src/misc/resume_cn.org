@@ -40,18 +40,21 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - 常用技术平台及编程语言
-    - Linux, C/C++, Java, Erlang, Lua
-    - Clojure, Common Lisp, Scala
-    - Bash, Python, PHP, Ruby, Perl ...
+    - Linux, C/C++
+    - Python, Golang, Erlang
+    - Lua, Scheme
     - Julia, R
+    - Others:
+      - Bash
+      - Java, PHP
+      - Common Lisp
 
 * 常用工具
   (包括 OS/Platform/FrameWork/Library/Product/DevTools 等)
 
-  - Linux, Debian, Qemu
-  - GCC, GDB, LLVM
-  - Python, PyPy, Tornado, WebPy
-  - PHP
+  - Linux, Debian, Qemu(KVM), Docker
+  - GCC, GDB, {{{llvm}}}, SystemTap
+  - Python, PyPy, Flask, Tornado
   - Lua, LuaJit
   - Erlang/otp, RabbitMQ
   - Nginx
@@ -59,6 +62,7 @@
   - Emacs, org-mode, Graphviz, Tex/LaTeX
   - git/hg/subversion/redmine/trac...
   - Julia， R
+  - FemtoLisp, SBCL, ECL
   # - Qt (C++ GUI lib), PyQt
   # - MRI, Rubinius, Rails
 
