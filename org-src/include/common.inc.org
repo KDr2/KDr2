@@ -14,6 +14,11 @@
   (html-meta-keywords kws)
 #+END_SRC
 
+#+NAME: org-files-under-dir
+#+BEGIN_SRC elisp :results value raw :exports results :var dir='()
+  (org-files-under-dir dir)
+#+END_SRC
+
 #+NAME: image
 #+BEGIN_SRC elisp :results value raw :exports results :var path="" width=600 title=""
   (site-image path width title)

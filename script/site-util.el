@@ -69,3 +69,15 @@
             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
             "<a target=\"_blank\" href=\"https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/code-src/" path "\">Raw File</a>"
             "</center>\n#+END_HTML\n")))
+
+(defun org-files-under-dir (dir)
+  (let* ((dir (or dir (file-name-directory (buffer-file-name))))
+         (cmd (format "find %s -type f -name \"*.org\"" dir))
+         (files (split-string (shell-command-to-string cmd) "\n")))
+    (mapconcat 'identity
+               (mapcar (lambda (f)
+                         (if (or (zerop (length f))
+                                 (string-match "\\.inc\\.org$" f))
+                             ""
+                           (let* ((rf (replace-regexp-in-string (concat "^" dir) "" f)))
+                             (format "- [[file:%s][%s]]" rf rf)))) files) "\n")))
