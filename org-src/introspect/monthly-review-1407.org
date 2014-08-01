@@ -1,0 +1,29 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE:  Monthly Review: 2014-07
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结" "读书")) :results raw
+
+# - DATE
+
+<2014-07-31 Thu>
+
+- 进入人生的第 32 个年头。 T_T 至今都不习惯说自己 30 多岁了。
+- 开始蚂蚁搬家般运些书籍等物到新房子。
+- 用 OrgMode 记录的笔记也开始使用本站的构建脚本，希望快捷方便的机制能让我更乐于记录。
+- 开始使用 Docker，不是很稳定，目前新建环境还是直接拷贝一份自制 KVM Image 方便。 ^_^
+- 读书计划继续荒废……
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
