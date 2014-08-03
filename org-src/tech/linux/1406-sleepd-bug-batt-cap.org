@@ -13,7 +13,8 @@
 # - DATE
 <2014-06-11 Wed>
 
-#+BEGIN: inc-file :file "gad.inc.org"
+
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 I got a power outage at home last night, my laptop got suspended in a few
@@ -22,10 +23,10 @@ I woke it up. I checked my battery but found that it was nearly
 full charged. So what's wrong?
 
 It must be the ~sleepd~, I thought. My parameters for ~sleepd~ was so
-simple: 
+simple:
 
 #+BEGIN_EXAMPLE
-  #file /etc/default/sleepd 
+  #file /etc/default/sleepd
   PARAMS="-u 0 -b 30"
 #+END_EXAMPLE
 

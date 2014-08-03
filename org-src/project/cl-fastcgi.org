@@ -7,13 +7,13 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("common lisp" "lisp" "web" "fastcgi")) :results raw
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * Introduction
 
 CL-FastCGI is a generic version of [[file:sb-fastcgi.org][SB-FastCGI]], targeting to run on
-mostly Common Lisp implementation. 
+mostly Common Lisp implementation.
 
 You can get it from https://github.com/KDr2/cl-fastcgi.
 
@@ -28,7 +28,7 @@ CL-FastCGI's API is exactly the same as [[file:sb-fastcgi.org][SB-FastCGI]]'s.
    - Multithreaded fastcgi server.
 
 ** CL-FastCGI
-   - Targeting to running on all Common Lisp implementation. And now 
+   - Targeting to running on all Common Lisp implementation. And now
      supports:
      - SBCL
      - CMUCL
@@ -39,7 +39,7 @@ CL-FastCGI's API is exactly the same as [[file:sb-fastcgi.org][SB-FastCGI]]'s.
    - Depends on *cffi* and *usocket*
    - Unix-domain-socket is unsupported.
    - Multithreaded fastcgi server is unsupported(You can run it in
-     multi-processes mode). 
+     multi-processes mode).
 
 * Which to Use?
 

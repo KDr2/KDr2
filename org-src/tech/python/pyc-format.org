@@ -11,7 +11,7 @@
 # date : 2010-12-24 10:05
 <2010-12-14 Fri>
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * PYC文件简介
@@ -27,7 +27,7 @@ pyc文件一般由3个部分组成:
   - 接下来四个字节还是个int,是pyc产生的时间(TIMESTAMP, 1970.01.01到产
     生pyc时候的秒数)
   - 接下来是个序列化了的 PyCodeObject(此结构在 ~Include/code.h~ 内定
-    义),序列化方法在 ~Python/marshal.c~ 内定义 
+    义),序列化方法在 ~Python/marshal.c~ 内定义
 
 前两个字段的读写很简单,接下来咱们主要看一下 PyCodeObject 的序列化过程,
 由于 PyCodeObject 内还有其他很多类型的 PyObject, 所以咱们从一般的
@@ -234,7 +234,7 @@ PyCodeObject 会出现在它的 *父作用域* 对应的 PyCodeObject 的
   | co_lnotab      | '\x00\x01\x06\x01\x06\x01' | 行号表                                             |
 
 * 图解 test.py 与 test.pyc 的结构关系
-  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, title="图一") :results raw 
+  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, title="图一") :results raw
 * co_freevars 与 co_cellvars
 
 这两个字段是给 Closure 准备的(*Python里没有真正的Closure*),通俗的说就

@@ -7,6 +7,9 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("KDr2" "free lancer")) :results raw
 
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
 * About Me
 
   - Emacs 用户，Linux 用户，支持 Open Source, 不反 GNU, 不反 GPL。
@@ -98,7 +101,7 @@
   :PROPERTIES:
   :CUSTOM_ID: support_me
   :END:
-  - 
+  -
     #+BEGIN_HTML
     <form id="paypal" name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
     <input type="hidden" name="cmd" value="_xclick">

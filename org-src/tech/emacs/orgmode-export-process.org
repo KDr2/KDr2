@@ -9,7 +9,7 @@
 
 <2014-03-26 Sun>
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * Overview

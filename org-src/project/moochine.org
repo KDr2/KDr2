@@ -7,7 +7,7 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("nginx" "lua" "web" "framework" "openresty")) :results raw
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * Introduction
@@ -17,6 +17,9 @@ OpenResty(=ngx_lua=, http://openresty.org). More information:
 
 - https://github.com/appwilldev/moochine/
 - https://github.com/appwilldev/moochine-demo
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
 
 * Discuss and Comment
 #+INCLUDE: ../include/disqus.inc.org

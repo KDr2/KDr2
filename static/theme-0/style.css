@@ -9,8 +9,12 @@
 body {
     background: #fff;
     color: #111; /*#557575;*/
+    font: 13px/1.6 Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", sans-serif;
+    /*
     font: 14px/1.7 sans-serif;
-    /* font: 14px/1.7 "Open Sans", Helvetica, Arial, sans; */
+    font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
+    */
+    line-height: 1.6em;
     margin: 5% 15% 8%;
     min-width: 600px;
     background: none repeat scroll 0 0 #FFFFFF; /*#FDF6E3;*/
@@ -271,7 +275,7 @@ td {
     border: #ccc solid;
     border-width: 0 0 1px 1px;
     /* ensure doesn't flow off the screen when expanded */
-    max-height: 80%;    
+    max-height: 80%;
     overflow-y: auto;
     z-index: 200;
     white-space: nowrap;
@@ -279,7 +283,7 @@ td {
 
 #table-of-contents h2 {
     color: #FFFFFF;
-    font-size: 10pt;    
+    font-size: 10pt;
     font-weight: bold;
     padding: 0.05em 0.5em 0.5em;
     border-bottom: none;

@@ -13,22 +13,23 @@
 # - DATE
 <2014-07-15 Tue>
 
-#+BEGIN: inc-file :file "gad.inc.org"
+
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
-I started to use docker in the past few days, and encountered few issues: 
+I started to use docker in the past few days, and encountered few issues:
 
 # - CONTENT
 * Use docker as a non-root user without ~sudo~
   I am using debian and installed docker with ~aptitude~, that created
   a new group named ~docker~, and the unix socket file created by the
   docker daemon is owned by that group:
-  
+
   #+BEGIN_EXAMPLE
   $ ls /run/docker.sock -l
   srw-rw---- 1 root docker 0 Jul 14 20:46 /run/docker.sock
   #+END_EXAMPLE
-  
+
   so just add the user you are using to the group ~docker~,  then you
   can easily use docker command without ~sudo~:
   #+BEGIN_SRC sh

@@ -7,7 +7,7 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("redis" "leveldb" "server" "nosql")) :results raw
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * Introduction
@@ -16,6 +16,10 @@ Redis-LevelDB is a redis-protocol compatible frontend to google's
 leveldb: Use leveldb as a Redis-Server.
 
 You can get it from https://github.com/KDr2/redis-leveldb.
+
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
 
 * Redis COMMAND Supported
 
@@ -67,7 +71,7 @@ You can get it from https://github.com/KDr2/redis-leveldb.
     install with apt-get or port please.
 
   - leveldb:
-    * git clone git://github.com/appwilldev/redis-leveldb.git
+    * git clone git://github.com/KDr2/redis-leveldb.git
     * cd redis-leveldb
     * git submodule init
     * git submodule update
@@ -89,7 +93,7 @@ You can get it from https://github.com/KDr2/redis-leveldb.
    - -H <host-ip>:    host addr to listen on(eg: 127.0.0.1)
    - -P <port>:	     port to listen on(default 8323)
    - -D <data-dir>:   leveldb data dir(default "redis.db" under your
-     work directory) 
+     work directory)
    - -M <number>:     run in multi-db mode and set its db count to
      <number>, each db in the server is a separatly leveldb database
      and its data directory is a directory named =db-<num>= under the

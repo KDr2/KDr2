@@ -8,6 +8,9 @@
 
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
 Hi, I'm KDr2(ZHUO QL), And here is my website, a place for myself.
 
 * Navigation

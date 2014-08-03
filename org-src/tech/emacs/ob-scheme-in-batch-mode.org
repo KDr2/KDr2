@@ -9,7 +9,7 @@
 
 <2014-04-03 Thu>
 
-#+BEGIN: inc-file :file "gad.inc.org"
+#+BEGIN: inc-file :file "flattr.inc.org"
 #+END:
 
 * The problem
@@ -92,7 +92,7 @@ steps:
     @@ -118,6 +118,17 @@ org-babel-scheme-execute-with-geiser will use a temporary session."
                (name))))
          result))
-     
+
     +(defmacro org-babel-scheme-capture-current-message (&rest body)
     +  "Capture current message in both interactive and noninteractive mode"
     +  `(if noninteractive
