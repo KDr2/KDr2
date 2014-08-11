@@ -14,6 +14,7 @@
   - [[http://miss-understood.net/][{miss}understood]]
 
 * Bloggers
+  - [[http://fann.im][Meet @fannheyward]]
   - [[http://www.windsays.com/][听风扯淡]]
   - [[http://blog.liulantao.com][Peek Poke]]
   - [[http://demonc.com][前端 Demon]]
