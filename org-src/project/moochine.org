@@ -17,6 +17,7 @@ OpenResty(=ngx_lua=, http://openresty.org). More information:
 
 - https://github.com/appwilldev/moochine/
 - https://github.com/appwilldev/moochine-demo
+- [[file:../tech/linux/1408-docker-img-for-mch-demo.org][A Docker Image for Moochine Demo]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
