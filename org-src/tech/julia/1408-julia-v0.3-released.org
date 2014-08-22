@@ -1,0 +1,57 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Julia 0.3.0 Final
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
+
+[2014-08-22 Fri]
+
+# #+BEGIN: inc-file :file "flattr.inc.org"
+# #+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+#+BEGIN_QUOTE
+We are pleased to announce the immediate release of Julia 0.3.0.  This
+release contains numerous improvements across the board from standard
+library changes to pure performance enhancements as well as an
+expanded ecosystem of packages as compared to the 0.2 releases. A
+summary of changes is available in [[https://github.com/JuliaLang/julia/blob/021d87dc7290ef2804a01660c561c8a6ce522d02/NEWS.md][NEWS.md]] in our main repository, and
+binaries are now available on our [[http://julialang.org/downloads/][main download page]]. 
+
+We are now transitioning into the 0.4 development cycle, and encourage
+users to use the 0.3.X line if they need a stable julia environment.
+Many breaking changes will be entering the environment over the course
+of the next few months, and to denote this builds will have use the
+versioning scheme 0.4.0-dev.  Once the major breaking changes have
+been merged and the development cycle progresses towards a stable
+release, the version will shift to 0.4.0-pre, at which point package
+authors and users should start to think about transitioning the
+codebases over to the 0.4.X line. 
+
+The release-0.3 branch of the codebase will remain open for bugfixes
+during this time, and we encourage users facing problems to open
+issues on our [[https://github.com/JuliaLang/julia/issues][GitHub tracker]], or email the [[https://groups.google.com/forum/#!forum/julia-users][julia-users mailing list]]. 
+
+Happy coding.
+#+END_QUOTE
+
+-- by Elliot Saba.
+
+BTW, a book named ~《Mastering Julia》~ is planed to be released by
+[[https://www.packtpub.com/][Packt Publishing]] on Feb 2015, and I'm now acting as a technical
+reviewer on it :)
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
