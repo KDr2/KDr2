@@ -1,0 +1,29 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE:  Monthly Review: 2014-08
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结" "读书")) :results raw
+
+# - DATE
+
+<2014-08-29 Fri>
+
+- 随着月底的到来，结束了近一年的 SOHO 生活，9月初要迈出家门工作了。
+- 收到 [[https://www.packtpub.com/][Packt Pub]] 邀请，为计划于明年二月份出版的 《Mastering Julia》做
+  Technical Review，目前进行到第二章，第三章书稿还未拿到。
+- 终于在不得不用车的时候，被迫克服拖延症，报了驾校。但是…… 貌似要出现
+  学不会的节奏…… 早知道直接学 C2 照……
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:

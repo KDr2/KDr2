@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-08-29 Fri 20:27" 中 d1408-monthly-review "introspect/monthly-review-1408.org" "Monthly Review: 2014-08")
 ("2014-08-22 Fri 22:14" en d1408-julia-v0.3 "tech/julia/1408-julia-v0.3-released.org" "Julia 0.3.0 Final")
 ("2014-08-10 Sun 09:43" en d1408-docker-img-4-mch-demo "tech/linux/1408-docker-img-for-mch-demo.org" "A Docker Image for Moochine Demo")
 ("2014-07-31 Thu 19:27" 中 d1407-monthly-review "introspect/monthly-review-1407.org" "Monthly Review: 2014-07")
