@@ -61,15 +61,14 @@ read(2)/write(2) 省去了两次 kernel space 与 user space 之间的数据拷�
 了。
 
 如果要 Nginx 连内容一起缓存，那就需要每次文件变化都要用 read(2) 将数据
-从 kernel space 复制到 user space，然后放在 user space，没次应答请求的
+从 kernel space 复制到 user space，然后放在 user space，每次应答请求的
 时候再从 user space 复制到 kernel space 然后写入 socket。比起前面的方
 式，这样的方式毫无优点。
 
 * 在文件缓存更新周期内文件发生变化了会发生什么？
 
-上面提到的配置中，30 天无访问天丢弃，每 3 分钟做一次信息有效性监测，我
-们暂且把 3 分钟叫做缓存更新周期。那在这 3 分钟之内文件发生变化了会怎样
-呢？
+上面提到的配置中，30 天无访问丢弃，每 3 分钟做一次信息有效性监测，我们
+暂且把 3 分钟叫做缓存更新周期。那在这 3 分钟之内文件发生变化了会怎样呢？
 
 ** 文件被删除
 
@@ -96,14 +95,11 @@ client 还是能通过原路径访问此文件。即便你删除后又新建了�
 
 * 如何设置？
   - 如果你的静态文件内容变化频繁并且对时效性要求较高，一般应该把
-    ~open_file_cache_valid~ 设置的小一些，及时检测和更新。
+    ~open_file_cache_valid~ 设置的小一些，以便及时检测和更新。
   - 如果变化相当不频繁的话，那就可以设置大一点，在变化后用 reload
     nginx 的方式来强制更新缓存。
   - 对静态文件访问的 error 和 access log 不关心的话，可以关闭已提升效
     率。
-
-
-# - CONTENT
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
