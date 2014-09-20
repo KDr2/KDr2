@@ -1,0 +1,113 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Nginx Open File Cache
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("nginx" "cache" "static")) :results raw
+
+# - DATE
+<2014-09-20 Sat>
+
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* 概述
+
+Nginx 的 open_file_cache 相关配置可以缓存静态文件的元信息，在这些静态
+文件被频繁访问时可以显着提升性能。
+
+被缓存的文件元信息包括：
+ - fd，文件被打开一次后，fd保留使用
+ - size
+ - path
+ - last modified time
+ - ...
+
+这里有个配置示例： 
+
+#+BEGIN_EXAMPLE
+  open_file_cache max=64 inactive=30d;
+  open_file_cache_min_uses 8;
+  open_file_cache_valid 3m;
+#+END_EXAMPLE
+
+~max=64~ 表示设置缓存文件的最大数目为 64, 超过此数字后 Nginx 将按照
+LRU 原则丢弃冷数据。
+
+~inactive=30d~ 与 ~open_file_cache_min_uses 8~ 表示如果在 30 天内某文
+件被访问的次数低于 8 次，那就将它从缓存中删除。
+
+~open_file_cache_valid 3m~ 表示每 3 分钟检查一次缓存中的文件元信息是否
+是最新的，如果不是则更新之。
+
+* 为什么只缓存文件元信息而不缓存文件内容？
+
+这个问题的关键是 sendfile(2).
+
+Nginx 在 serve 静态文件的时候用的是 sendfile(2), 当然前提是你配置了
+~sendfile on~, sendfile(2) 直接在 kernel space 内传输数据，对比使用
+read(2)/write(2) 省去了两次 kernel space 与 user space 之间的数据拷贝。
+而同时这些被频繁读取的静态文件的内容会被 OS 缓存到 kernel space。在这
+样的机制下，我们缓存中有文件的 fd 和 size，直接调用 sendfile(2) 就可以
+了。
+
+如果要 Nginx 连内容一起缓存，那就需要每次文件变化都要用 read(2) 将数据
+从 kernel space 复制到 user space，然后放在 user space，没次应答请求的
+时候再从 user space 复制到 kernel space 然后写入 socket。比起前面的方
+式，这样的方式毫无优点。
+
+* 在文件缓存更新周期内文件发生变化了会发生什么？
+
+上面提到的配置中，30 天无访问天丢弃，每 3 分钟做一次信息有效性监测，我
+们暂且把 3 分钟叫做缓存更新周期。那在这 3 分钟之内文件发生变化了会怎样
+呢？
+
+** 文件被删除
+
+由于 nginx 还持有原文件的 fd，所以你删除此文件后，文件并不会真正消失，
+client 还是能通过原路径访问此文件。即便你删除后又新建了一个同名文件，
+在当前缓存更新周期内能访问到的还是原文件的内容。
+
+** 文件内容被修改
+
+文件内容被修改可以分为两种情况：
+
+- 文件大小不变或增大
+  由于 nginx 缓存了文件的 size 并且使用 这个缓存中 size 调用
+  sendfile(2)，所以此种情况的后果是：
+  - 从文件开始到原 size 字节中的变化可以被 client 看到。
+  - 原 size 之后的内容不会被 sendfile(2) 发送，因此 client 看不到此部
+    份内容。
+
+- 文件大小减小
+  此种情况下，由于同样原因，nginx 在 HTTP Header 中告诉 client 文件大
+  小还是原来的尺寸，而 sendfile(2) 只能发送真正的文件数据，程度小于
+  HTTP Header 中设置的大小，所以 client 会等待到自己超时或者 Nginx 在
+  epoll_wait 超时后关闭连接。
+
+* 如何设置？
+  - 如果你的静态文件内容变化频繁并且对时效性要求较高，一般应该把
+    ~open_file_cache_valid~ 设置的小一些，及时检测和更新。
+  - 如果变化相当不频繁的话，那就可以设置大一点，在变化后用 reload
+    nginx 的方式来强制更新缓存。
+  - 对静态文件访问的 error 和 access log 不关心的话，可以关闭已提升效
+    率。
+
+
+# - CONTENT
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
