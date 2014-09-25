@@ -1,0 +1,44 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review 2014-09
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结" "搬家" "工作")) :results raw
+
+# - DATE
+<2014-09-27 Sta>
+
+这个月很忙。
+
+* 搬家
+
+  因为10号起要出门上班，在月初搬了家，比计划中早了些。
+
+  工作了8年了，平均每年搬一次家，不过不同于以往，这次终于搬入自己的房
+  子，近期内不会再折腾了。
+
+  #+CALL: image[:results value](path="2014/09/bookshelf.jpg", width=600, title="书架") :results raw
+
+* 工作
+
+  去年回到西安，一时无法面对本地行业水准与一线城市的巨大落差，只好网上
+  寻了一份从某 Hackathon 出来的一 Startup 提供的可 SOHO 的工作机会，每
+  日蜷缩家中远程办公，倒也十分轻松，时常能抽出时间来逛逛街看看电影。但
+  到今年夏天公司所营业务仍无起色，技术挑战也几乎没有。正在这时，碰到了
+  一个本地的看着很不错的工作机会，便决定再次走出家门了。
+
+  10号开始上班，到本月底，刚过两周，说实话，我目前还不知道该如何评价这
+  份工作，也不知道这份工作如何评价我：无论从现有技能上看还是从个人规划
+  上看，这份工作的工作内容与我自己的技能范围以及兴趣范围之间的交集不是
+  很大。不过我还是打算尽量以积极的态度去调整和面对，后续的发展后面再写
+  吧^_^
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+

@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-09-27 Sat 17:07" 中 d1409-monthly-review "introspect/monthly-review-1409.org" "Monthly Review: 2014-09")
 ("2014-09-20 Sat 15:50" 中 d1409-ngx-ofc "tech/nginx/open-file-cache.org" "Nginx Open File Cache")
 ("2014-08-29 Fri 20:27" 中 d1408-monthly-review "introspect/monthly-review-1408.org" "Monthly Review: 2014-08")
 ("2014-08-22 Fri 22:14" en d1408-julia-v0.3 "tech/julia/1408-julia-v0.3-released.org" "Julia 0.3.0 Final")
