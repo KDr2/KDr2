@@ -4,7 +4,7 @@
 (defun dynamic-header-css-for-theme (&optional theme)
   (let ((current-theme (or theme site-theme)))
     (concat "#+HTML_HEAD: <link rel=\"stylesheet\" type=\"text/css\" href=\""
-            (relative-resource-for-org-file (concat current-theme  "/style.css"))
+            (relative-resource-for-org-file (concat "static/" current-theme  "/style.css"))
             "\" />")))
 
 (defun dynamic-header-link-for-theme (&optional theme)

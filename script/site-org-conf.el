@@ -64,7 +64,7 @@ unwanted space when exporting org-mode to html."
           ("kdr2-com-static"
            :base-directory ,(app-file "static")
            :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-           :publishing-directory ,kdr2-com-output-dir
+           :publishing-directory ,(concat kdr2-com-output-dir "static/")
            :recursive t
            :publishing-function (org-publish-attachment)
            )
