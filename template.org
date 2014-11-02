@@ -2,6 +2,7 @@
 #+TITLE: Title
 #+AUTHOR: KDr2
 
+#+OPTIONS: ^:{}
 # #+OPTIONS: toc:nil
 # #+OPTIONS: num:nil
 

@@ -1,0 +1,27 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review: 2014-10
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结")) :results raw
+
+<2014-10-31 Fri>
+
+- 工作第二个月，对于出门上班这件事，好像终于适应了下来。对于工作本身，
+  也慢慢熟悉。
+- 终于给娃做了四维 B-超，娃在里面摸脚丫抠鼻子，很是活泼，春节前后出生，
+  希望一切顺利。
+- 月底，终于考了驾考科一。
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+

@@ -1,4 +1,6 @@
 ;;(time lang id file title)
+("2014-10-31 Fri 21:07" 中 d1410-monthly-review "introspect/monthly-review-1410.org" "Monthly Review: 2014-10")
+("2014-10-31 Fri 17:31" 中 d1410-thoughts-dev "jotting/1410-nonsence-thoughts-about-dev.org" "扯淡：开发相关")
 ("2014-09-27 Sat 17:07" 中 d1409-monthly-review "introspect/monthly-review-1409.org" "Monthly Review: 2014-09")
 ("2014-09-20 Sat 15:50" 中 d1409-ngx-ofc "tech/nginx/open-file-cache.org" "Nginx Open File Cache")
 ("2014-08-29 Fri 20:27" 中 d1408-monthly-review "introspect/monthly-review-1408.org" "Monthly Review: 2014-08")
