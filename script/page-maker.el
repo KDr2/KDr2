@@ -23,11 +23,11 @@
   (concatenate
    'string
    "\n* " (nth 4 data)
-   "\n  <" (nth 0 data) ">"
    "\n  :PROPERTIES:"
    "\n  :CUSTOM_ID: " (symbol-name (nth 2 data))
    "\n  :PUBDATE: <" (nth 0 data) ">"
    "\n  :END:"
+   "\n  <" (nth 0 data) ">"
    "\n  [[file:../" (nth 3 data) "][" (nth 4 data) "]]"
    "\n"))
 
