@@ -24,7 +24,8 @@
 ** Work
 
    I am a software developer and computer programmer, I am currently
-   working at home as a freelance developer/consultant.
+   working at home as a freelance developer and independent
+   consultant.
 
 #+BEGIN_HTML
 <!--
