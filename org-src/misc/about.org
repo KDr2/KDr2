@@ -12,6 +12,7 @@
 
 * About Me
 
+  - An Old-fashioned Hardcore Linux Guy.
   - Emacs 用户，Linux 用户，支持 Open Source, 不反 GNU, 不反 GPL。
   - 喜钻研技术，驳杂却乐在其中。
   - 曾爱阅读，正试旧爱重习。
