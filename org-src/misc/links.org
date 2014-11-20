@@ -19,7 +19,6 @@
   - [[http://www.windsays.com/][听风扯淡]]
   - [[http://blog.liulantao.com][Peek Poke]]
   - [[http://demonc.com][前端 Demon]]
-  - [[http://blog.andyliu.net][Andy的博客]]
 
 # Image Examples
 # {{{inline-image(common/qr-kdr2.com.png)}}}

@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-11-21 Fri 07:44" 中 d1411-extcmd-bash-quote "tech/linux/1411-extcmd-bash-quote.org" "Call External Command and Bash Quote")
 ("2014-11-06 Thu 21:17" 中 d1411-visitors "jotting/1411-visitors-from-whole-world.org" "Visitors from the Whole World")
 ("2014-10-31 Fri 21:07" 中 d1410-monthly-review "introspect/monthly-review-1410.org" "Monthly Review: 2014-10")
 ("2014-10-31 Fri 17:31" 中 d1410-thoughts-dev "jotting/1410-nonsence-thoughts-about-dev.org" "扯淡：开发相关")

@@ -1,0 +1,69 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Call External Command and Bash Quote
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("bash" "quote" "script")) :results raw
+
+# - DATE
+<2014-11-21 Fri>
+
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - CONTENT
+
+* 问题
+  今天图方便在 python 代码里执行一段 bash，写出了类似代码：
+  #+BEGIN_SRC python
+    ctx.run("""bash -c "
+    for file in $(find . -type p); do
+      rm $file
+    done
+    "
+    """)
+  #+END_SRC
+  ~ctx.run~ 是 [[https://github.com/pyinvoke/invoke/][Invoke]] 里的 run，类似 os.system 。
+  
+  之后就 bash 就一个劲的抱怨 ~syntax error~ ，各种方法调了近一个小时都
+  没解决，下班路上忽然想到 ~ctx.run(cmd_string)~ 这种 API 本身应该就是
+  调用 sh 来执行 cmd_string 的，由于 -c 后面用了 double quote，bash 看
+  到的 cmd string 是已经被 sh 展开过的了……
+
+  回家确认了下
+  [[https://github.com/pyinvoke/invoke/blob/master/invoke/runner.py][Invoke的源码]] ，
+  ctx.run 果然是调用的 shell……，于是把 -c 后面的 double quote 改成
+  signle quote 避免 shell 做提前的展开解决。
+
+  - Note ::
+       从 invoke 代码看，调用 ctx.run 是指定 pty=True 可确保调用的
+       shell 是 bash，此时可以直接用的 cmd_string 不用 ~bash -c~ 来确
+       保所用 shell 是 bash 。 
+* 结论
+  - 无论什么语言什么库，调用外部程序的函数一般分三类：
+    - 有明确参数指定是否在 shell 中执行 cmd，依照调用时给定 shell 参数
+      为 true 或 false 分别落入后面两种情况；
+    - 其参数是一个字符串，如 system(3)，这种一般是 fork(2) 一个进程，
+      之后 exec(2) /bin/sh， 并同时将字符串传给 sh 来执行的，所以 sh
+      会对参数做展开然后执行；
+    - 其参数是一个或多个字符串数组，如 python 的 os.spawnv 等，这种情
+      况是一般是调用 fork(2) 后调用 exec(2) 直接执行给定的可执行文件，
+      所以参数在传给可执行文件之前不会发生变化。
+  - bash -c 后面的 command_string 一般情况下都是不期望它被展开的，所以
+    首选 *Single Quote* 。
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
