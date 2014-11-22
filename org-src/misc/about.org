@@ -22,11 +22,11 @@
   - 追求完美，偶致束手束足。
   - 意在修身，然却心有旁鶩。
 
-** Work
+# ** Work
 
-   I am a software developer and computer programmer, I am currently
-   working at home as a freelance developer and independent
-   consultant.
+#   I am a software developer and computer programmer, I am currently
+#   working at home as a freelance developer and independent
+#   consultant.
 
 #+BEGIN_HTML
 <!--
@@ -83,7 +83,7 @@
    I write about myself on this site, and write only for myself, not
    for any other readers.
 
-** Technical Persective
+** Technical Perspective
   This site is built with emacs and org-mode, and some other tools, I
   list all of them here:
 
@@ -91,14 +91,16 @@
   - Org-Mode: http://orgmode.org/
   - Disqus: http://disqus.com/
   - Google Analytics: http://www.google.com/analytics/
-  - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]], and there're coupons for it:
-    * =DHKDR200= , One free domain name, at least $5 discount
-    * =DHKDR201= , At least $30 discount
+  - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]]
+
+  # and there're coupons for it:
+  # * =DHKDR200= , One free domain name, at least $5 discount
+  # * =DHKDR201= , At least $30 discount
 
   You can find my org mode configuration at
   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
   and https://github.com/KDr2/kdr2-on-web/blob/master/script/.
-  The source repository of this site is at https://github.com/KDr2/kdr2-on-web.
+  The source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
 
 # ------------------------------------
 # * Support Me
