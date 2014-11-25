@@ -1,0 +1,94 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Emulate a NUMA machine with QEMU
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
+
+# - DATE
+<2014-11-25 Tue>
+
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - CONTENT
+
+在 VirtualBox, VMWare 大行其道的今天，我依然坚持使用 QEMU 的原因不外乎：
+
+ - 安装方便，使用 VirtualBox, VMWare 等经常因为 Host Machine 使用的
+   kernel 版本过新，但是 VirtualBox，VMWare 提供的 kernel module 更新
+   却跟不上编译不过导致无法使用，换用 QEMU+KVM 以后从来没碰到过这样的
+   问题
+ - KVM 支持，快速稳定
+ - 可使用虚拟机外部的 kernel image 启动，可方便的对内核进行 debug
+
+今天偶尔发现 QEMU 还可以模拟 NUMA 架构的机器，如下：
+
+  #+BEGIN_SRC sh
+    qemu-system-x86_64 \
+        -enable-kvm \
+        -smp cpus=8,sockets=2,cores=4 \
+        -m 2048 \
+        -numa node,mem=1024,cpus=0-3 \
+        -numa node,mem=1024,cpus=4-7 \
+        -hda debian64-with-kernel-12G.qcow2 
+  #+END_SRC
+
+上面给定 2 个 4 核 CPU 共 8 个 core，2G Memeory，让两个 Node 来平分。
+
+启动后看一下效果：
+
+  #+BEGIN_EXAMPLE
+    root@Debian64-QEMU:~# lscpu 
+    Architecture:          x86_64
+    CPU op-mode(s):        32-bit, 64-bit
+    Byte Order:            Little Endian
+    CPU(s):                8
+    On-line CPU(s) list:   0-7
+    Thread(s) per core:    1
+    Core(s) per socket:    4
+    Socket(s):             2
+    NUMA node(s):          2
+    Vendor ID:             GenuineIntel
+    CPU family:            6
+    Model:                 6
+    Stepping:              3
+    CPU MHz:               2893.426
+    BogoMIPS:              5786.85
+    Hypervisor vendor:     KVM
+    Virtualization type:   full
+    L1d cache:             32K
+    L1i cache:             32K
+    L2 cache:              4096K
+    NUMA node0 CPU(s):     0-3
+    NUMA node1 CPU(s):     4-7
+    root@Debian64-QEMU:~# numastat 
+                               node0           node1
+    numa_hit                  130695          130093
+    numa_miss                      0               0
+    numa_foreign                   0               0
+    interleave_hit             28713           28693
+    local_node                101435          129048
+    other_node                 29260            1045
+    root@Debian64-QEMU:~# 
+  #+END_EXAMPLE
+
+一个包含两个 Nodes 的 NUMA 机器已成功启动，以后不愁没有 NUMA 机器做开
+发调试了 ^_^ 
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+
