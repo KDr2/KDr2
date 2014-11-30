@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-11-30 Sun 18:07" 中 d1411-monthly-review "introspect/monthly-review-1411.org" "Monthly Review: 2014-11")
 ("2014-11-25 Tue 22:14" 中 d1411-numa-mch-qemu "tech/linux/1411-numa-machine-with-qemu.org" "Emulate a NUMA machine with QEMU")
 ("2014-11-21 Fri 07:44" 中 d1411-extcmd-bash-quote "tech/linux/1411-extcmd-bash-quote.org" "Call External Command and Bash Quote")
 ("2014-11-06 Thu 21:17" 中 d1411-visitors "jotting/1411-visitors-from-whole-world.org" "Visitors from the Whole World")
