@@ -72,7 +72,7 @@
 
 (defun org-files-under-dir (dir)
   (let* ((dir (or dir (file-name-directory (buffer-file-name))))
-         (cmd (format "find %s -type f -name \"*.org\"" dir))
+         (cmd (format "find %s '(' -type f -or -type l ')' -name \"*.org\"|sort" dir))
          (files (split-string (shell-command-to-string cmd) "\n")))
     (mapconcat 'identity
                (mapcar (lambda (f)
