@@ -1,0 +1,77 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Localize-Perl
+#+AUTHOR: KDr2
+
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("perl" "local::lib" "virtualenv")) :results raw
+
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
+
+~localize-perl~ is a simple wrapper of perl's ~local::lib~
+package. It's as easy as (even easier than) python's ~virtualenv~.
+
+I don't like the word ~virtualenv~, so I didn't name this after it,
+but use the name ~localize-perl~ instead.
+
+* Install
+
+Use one-line installer:
+
+#+BEGIN_SRC sh
+sudo sh -c '\curl -L http://tinyurl.com/localize-perl | bash'
+#+END_SRC
+
+Or You can get the simple scripts from
+https://github.com/KDr2/localize-perl and place them wherever you want.
+
+#+BEGIN_QUOTE
+Note: Since ~localize-perl~ is a wrapper of ~local::lib~, You should
+ensure perl's ~local::lib~ package is installed system widely on you
+box before using ~localize-perl~. 
+#+END_QUOTE
+
+* Using command ~localize-perl~
+  #+BEGIN_SRC 
+  localize-perl /path/to/local-perl
+  #+END_SRC
+
+  then your can use ~source /path/to/local-perl/bin/activate~ to
+  activate the localized perl environment, and use ~deactivate~ to
+  deactivate it.
+
+  #+BEGIN_QUOTE
+  Note: if no path is given, ~localize-perl~ will make a environment
+  at ~$HOME/perl5~.
+  #+END_QUOTE
+
+* Using the util functions
+  After you mixing the ~localize-perl-util.sh~ file into to your shell
+  (using ~source~ or ~.~ usually), you can use these tree shell
+  functions to manipulate you localize perl environments:
+   - ~make-local-perl dest~ : make a localized perl environment in ~$HOME/.localize-perl/dest~
+   - ~plon dest~ : activate a localized perl environment in ~$HOME/.localize-perl/dest~
+   - ~ploff~ : deactivate current localized perl environment
+
+* After activating the localized perl environment
+  You can use ~cpanm~ or ~cpan~ to manage the packages. For example,
+  if you want a perl REPL, you can run the command
+  ~cpanm install Devel::REPL~ to install package ~Devel::REPL~, then
+  you'll get a ~re.pl~ command. ^_^
+
+  Run ~man cpanm~ to see more usage about ~cpanm~.
+
+* Bug Report
+  - on github : https://github.com/KDr2/localize-perl
+  - email me  : zhuo< =@= >bitoasis.com
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+#+INCLUDE: ../include/disqus.inc.org

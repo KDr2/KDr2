@@ -306,6 +306,11 @@ td {
     color: #FFFFFF;
 }
 
+#table-of-contents code {
+    color: #FFFFFF;
+    background: #303030;
+}
+
 #table-of-contents ul>:first-child {
     color: blue;
 }
