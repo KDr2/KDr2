@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2014-12-28 Sun 21:54" en d1412-problem-stap-tracepoints "tech/linux/1412-problem-stap-tracepoint.org" "Problem: SystemTap fails to find kernel tracepoints")
 ("2014-11-30 Sun 18:07" 中 d1411-monthly-review "introspect/monthly-review-1411.org" "Monthly Review: 2014-11")
 ("2014-11-25 Tue 22:14" 中 d1411-numa-mch-qemu "tech/linux/1411-numa-machine-with-qemu.org" "Emulate a NUMA machine with QEMU")
 ("2014-11-21 Fri 07:44" 中 d1411-extcmd-bash-quote "tech/linux/1411-extcmd-bash-quote.org" "Call External Command and Bash Quote")

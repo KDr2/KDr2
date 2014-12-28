@@ -1,0 +1,128 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Problem: SystemTap fails to find kernel tracepoints
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
+
+# - DATE
+<2014-12-28 Sun>
+
+#+BEGIN: inc-file :file "flattr.inc.org"
+#+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Problem and solution
+
+I just encountered a problem about systemtap on my box, it couldn't
+find any static kernel tracepoints:
+
+#+BEGIN_EXAMPLE
+kdr2@Debian-X230:~$ stap -vv -l 'kernel.trace("*")'
+Systemtap translator/driver (version 2.6/0.159, Debian version 2.6-0.2)
+Copyright (C) 2005-2014 Red Hat, Inc. and others
+This is free software; see the source for copying conditions.
+enabled features: AVAHI LIBSQLITE3 NSS TR1_UNORDERED_MAP NLS
+Created temporary directory "/tmp/stapsAsdb0"
+Session arch: x86_64 release: 3.10.53
+Searched for library macro files: "/usr/share/systemtap/tapset/linux/*.stpm", found: 3, processed: 3
+Searched for library macro files: "/usr/share/systemtap/tapset/*.stpm", found: 5, processed: 5
+Searched: "/usr/share/systemtap/tapset/linux/x86_64/*.stp", found: 3, processed: 3
+Searched: "/usr/share/systemtap/tapset/linux/*.stp", found: 70, processed: 70
+Searched: "/usr/share/systemtap/tapset/x86_64/*.stp", found: 1, processed: 1
+Searched: "/usr/share/systemtap/tapset/*.stp", found: 28, processed: 28
+Pass 1: parsed user script and 110 library script(s) using 94292virt/30644res/2608shr/28524data kb, in 110usr/20sys/125rea$ ms.
+Attempting to extract kernel debuginfo build ID from /lib/modules/3.10.53/build/vmlinux.id
+Attempting to extract kernel debuginfo build ID from /sys/kernel/notes
+semantic error: while resolving probe point: identifier 'kernel' at <input>:1:7
+   thrown from: elaborate.cxx:1062
+        source: probe kernel.trace("*") {}
+
+semantic error: no match
+   thrown from: elaborate.cxx:1025
+Pass 2: analyzed script: 0 probe(s), 0 function(s), 0 embed(s), 0 global(s) using 95384virt/32340res/3096shr/29616data kb,
+in 30usr/180sys/205real ms.
+Tip: /usr/share/doc/systemtap/README.Debian should help you get started.
+Running rm -rf /tmp/stapsAsdb0
+Spawn waitpid result (0x0): 0
+Removed temporary directory "/tmp/stapsAsdb0"                      ^
+#+END_EXAMPLE
+
+But my kernel is correctly configured with debuginfo and tracepoint
+supporting:
+
+#+BEGIN_SRC 
+# cat /sys/kernel/debug/tracing/events/enable
+X
+# less /sys/kernel/debug/tracing/available_events
+drm:drm_vblank_event
+drm:drm_vblank_event_queued
+drm:drm_vblank_event_delivered
+i2c:i2c_write
+i2c:i2c_read
+...
+...
+...
+skb:skb_copy_datagram_iovec
+skb:consume_skb
+skb:kfree_skb
+#+END_SRC
+
+That really confused me. After having a disscussion on the systemtap
+maillist, I got the reason:
+
+I built my kernel in a separate diredtory from the kernel source tree
+directory, by setting a environment variable named ~BUILDDIR~ (~export
+BUILDDIR=/opt/kernel/build/3.10~). So my ~/lib/modules/$(uname -r)/build~
+and ~/lib/modules/$(uname -r)/source~ refer to two different
+directories:
+
+#+BEGIN_SRC 
+kdr2@Debian-X230:~$ ls -l /lib/modules/$(uname -r)/{build,source}
+lrwxrwxrwx 1 root root 28 Sep  3 08:59 /lib/modules/3.10.53/build -> /opt/kernel/build/3.10/build
+lrwxrwxrwx 1 root root 29 Sep  3 08:59 /lib/modules/3.10.53/source -> /home/kdr2/Work/opensrc/linux
+kdr2@Debian-X230:~$
+#+END_SRC
+
+Under this situation, systemtap fails to find the tracepoints. I
+recompiled my kernel directly in the kernel source tree(not in a
+separate ~BUILDDIR~), and the problem fixed.
+
+* But on Debian ...
+
+But on debian, these two directories are indeed two different
+directories:
+
+#+BEGIN_SRC 
+kdr2@Debian-X230:~$ dpkg -l|grep -e 'linux-.*-3.16'|awk '{print $2}'
+linux-headers-3.16.0-4-amd64
+linux-headers-3.16.0-4-common
+linux-image-3.16.0-4-amd64
+linux-image-3.16.0-4-amd64-dbg
+linux-kbuild-3.16
+kdr2@Debian-X230:~$ ls -l /lib/modules/3.16.0-4-amd64/{build,source}
+lrwxrwxrwx 1 root root 37 Nov  7 07:30 /lib/modules/3.16.0-4-amd64/build -> /usr/src/linux-headers-3.16.0-4-amd64
+lrwxrwxrwx 1 root root 38 Nov  7 07:30 /lib/modules/3.16.0-4-amd64/source -> /usr/src/linux-headers-3.16.0-4-common
+#+END_SRC
+
+So systemtap doesn't work well with these kernel packages to find the
+tracepoits, you need kernel built directly in the kernel source tree
+by yourself :)
+
+On Fedora, build and source directory is a same one, stap works well.
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+
