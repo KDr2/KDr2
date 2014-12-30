@@ -61,8 +61,8 @@ box before using ~localize-perl~.
 * After activating the localized perl environment
   You can use ~cpanm~ or ~cpan~ to manage the packages. For example,
   if you want a perl REPL, you can run the command
-  ~cpanm install Devel::REPL~ to install package ~Devel::REPL~, then
-  you'll get a ~re.pl~ command. ^_^
+  ~cpanm Devel::REPL~ to install package ~Devel::REPL~, then you'll
+  get a ~re.pl~ command. ^_^
 
   Run ~man cpanm~ to see more usage about ~cpanm~.
 
