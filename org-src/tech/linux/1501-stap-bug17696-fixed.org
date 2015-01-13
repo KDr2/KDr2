@@ -1,0 +1,76 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Systemtap: Bug 17696 is fixed
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("systemtap" "stap" "tracepoint")) :results raw
+
+# - DATE
+<2015-01-13 Tue>
+
+# #+BEGIN: inc-file :file "flattr.inc.org"
+# #+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - CONTENT
+
+I filed [[https://sourceware.org/bugzilla/show_bug.cgi?id=17696][a bug]] for the problem "[[file:1412-problem-stap-tracepoint.org][SystemTap fails to find kernel
+tracepoints]]" I've mentioned.
+
+Now it has been fixed:
+
+#+BEGIN_EXAMPLE
+$ ls /lib/modules/$(uname -r)/{build,source} -l
+lrwxrwxrwx 1 root root 28 Sep  3 08:59 /lib/modules/3.10.53/build -> /opt/kernel/build/3.10/build
+lrwxrwxrwx 1 root root 29 Sep  3 08:59 /lib/modules/3.10.53/source -> /home/kdr2/Work/opensrc/linux
+$ ~/programs/systemtap/bin/stap -l 'kernel.trace("*")'|head -n 20
+kernel.trace("9p_client_req")
+kernel.trace("9p_client_res")
+kernel.trace("9p_protocol_dump")
+kernel.trace("__cfg80211_send_deauth")
+kernel.trace("__cfg80211_send_disassoc")
+kernel.trace("__extent_writepage")
+kernel.trace("aer_event")
+kernel.trace("alloc_extent_state")
+kernel.trace("api_beacon_loss")
+kernel.trace("api_chswitch_done")
+kernel.trace("api_connection_loss")
+kernel.trace("api_cqm_rssi_notify")
+kernel.trace("api_enable_rssi_reports")
+kernel.trace("api_eosp")
+kernel.trace("api_gtk_rekey_notify")
+kernel.trace("api_radar_detected")
+kernel.trace("api_ready_on_channel")
+kernel.trace("api_remain_on_channel_expired")
+kernel.trace("api_restart_hw")
+kernel.trace("api_scan_completed")
+#+END_EXAMPLE
+
+Finally I can hack my self-built kernel with systemtap(and qemu of
+course) efficiently.
+
+* Relative Commits:
+  -
+    https://sourceware.org/git/?p=systemtap.git;a=commit;h=f27496f3bbfd678cfde0a33dbc0ed2d13ab6a396
+  -
+    https://sourceware.org/git/?p=systemtap.git;a=commit;h=b19a43768009076de3aea638922dfaebb687e3e9
+
+* Relative Links:
+  - [[file:1412-problem-stap-tracepoint.org][SystemTap fails to find kernel tracepoints]]
+  - https://sourceware.org/bugzilla/show_bug.cgi?id=17696
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
+
