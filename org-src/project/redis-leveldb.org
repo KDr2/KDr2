@@ -69,7 +69,7 @@ You can get it from https://github.com/KDr2/redis-leveldb.
     install with apt-get or port please.
   - gmp(http://gmplib.org/):
     install with apt-get or port please.
-
+  - libsnappy
   - leveldb:
     * git clone git://github.com/KDr2/redis-leveldb.git
     * cd redis-leveldb
@@ -101,9 +101,14 @@ You can get it from https://github.com/KDr2/redis-leveldb.
      command =select= to switch db on the client side while
      redis-leveldb is running in this mode.
 
+* Test Suite
+  - dependencies: perl5(>=v5.10) with Redis.pm
+  - run test: ~make test~
+* Known Issues
+  -  [[https://github.com/KDr2/redis-leveldb/issues/13][issue 13]]: signle data package size limitation.
 * Bug Report
   - on github : https://github.com/KDr2/redis-leveldb
-  - email me  : killy.draw< =@= >gmail.com
+  - email me  : zhuo< =@= >bitoasis.com
   - comment this page.
 
 
