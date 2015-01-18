@@ -64,7 +64,7 @@
    :PROPERTIES:
    :CUSTOM_ID: contact_me
    :END:
-   - Location: XI'AN, SHANNXI, China
+   - Location: XI'AN, SHAANXI, China
    - Skype : zhuoql
    - WeChat: KDr2-o-
    - Email : =zhuo+site<at>bitoasis.com=
