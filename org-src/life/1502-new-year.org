@@ -1,0 +1,44 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: 春节 2015
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("life" "春节")) :results raw
+
+<2015-02-18 Wed>
+
+# #+BEGIN: inc-file :file "flattr.inc.org"
+# #+END:
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - CONTENT
+
+也记不清是春节先消失了年味，还是我先没了对春节的期盼，除了吃几顿或甜甜
+蜜蜜或不情不愿的饭以外，春节和平时就没有什么两样了。
+
+今年的春节倒是跟往年有很大不同，由于[[http://c.kdr2.com][儿子]]还未满月，所以整个春节就在母婴
+会所内度过了。尽管不在家，一家三口在一块却也满满家味，就今天看过的也充
+实：
+
+ - 娃不定期拉响警报，除了喂奶哄睡换尿布外现在还有了逗乐玩耍的需求；
+ - 夜里被闹醒后还能赶上欧冠，以前除了决赛一般是不会起来看的；
+ - 正赶上 Packt 又发来几章书稿，白天补觉过后 Review 几页，倒没了以前假
+   期的荒废的感觉。
+
+这就是我简单的春节了！同时也祝所有人新年快乐！希望下一个春节快快到来，
+那时仔仔就一岁啦。
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
