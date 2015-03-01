@@ -1,0 +1,24 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review: 2015-02
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结")) :results raw
+
+<2015-02-28 Sat>
+
+自 2.24 从母婴会所回家，被儿子折腾到做什么都无力了，这个月大部分内容都
+在 [[file:../life/1502-new-year.org][这里（春节 2015)]] 了，其它的内容都是跟娃搏斗的血泪史，就不多说了……
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
