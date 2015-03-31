@@ -1,0 +1,27 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review: 2015-03
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结")) :results raw
+
+<2015-03-31 Tue>
+
+- 带娃回到家的第二个月，前半月彻底累成狗，而且效果还不好，后半月开始好转。
+- 工作一直处于一个奇怪的状态，不是特开心，也没有厌恶。每晚抽出 1-2 小
+  时看些自己感兴趣的东西，能带来一些充实感…… 
+- 《Mastering Julia》 Review 到第八章，计划2月出版来着，现在三月已经结束了 :D
+- 驾校本来给安排了科三，结果由因为他们安排的原因推迟到下次了……
+
+#+BEGIN: inc-fil e :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
