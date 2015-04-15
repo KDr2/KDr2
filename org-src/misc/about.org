@@ -22,44 +22,76 @@
   - 追求完美，偶致束手束足。
   - 意在修身，然却心有旁鶩。
 
-# ** Work
+  # ** Work
 
-#   I am a software developer and computer programmer, I am currently
-#   working at home as a freelance developer and independent
-#   consultant.
+  #   I am a software developer and computer programmer, I am currently
+  #   working at home as a freelance developer and independent
+  #   consultant.
 
-#+BEGIN_HTML
-<!--
+  #+BEGIN_HTML
+  <!--
 
-/---------------------------------------------\
-| Want more info about me? here is my resume: |
-| http://kdr2.com/misc/resume_en.html         |
-\---------------------------------------------/
-        .-.
-       /_ _\
-       |o^o|
-       \ _ /
-      .-'-'-.
-    /`)  .  (`\
-   / /|.-'-.|\ \
-   \ \| (_) |/ /  .-""-.
-    \_\'-.-'/_/  /[] _ _\
-    /_/ \_/ \_\ _|_o_LII|_
-      |'._.'|  / | ==== | \
-      |  |  |  |_| ==== |_|
-       \_|_/    ||" ||  ||
-       |-|-|    ||LI  o ||
-       |_|_|    ||'----'||
-      /_/ \_\  /__|    |__\
+  /---------------------------------------------\
+  | Want more info about me? here is my resume: |
+  | http://kdr2.com/misc/resume_en.html         |
+  \---------------------------------------------/
+          .-.
+         /_ _\
+         |o^o|
+         \ _ /
+        .-'-'-.
+      /`)  .  (`\
+     / /|.-'-.|\ \
+     \ \| (_) |/ /  .-""-.
+      \_\'-.-'/_/  /[] _ _\
+      /_/ \_/ \_\ _|_o_LII|_
+        |'._.'|  / | ==== | \
+        |  |  |  |_| ==== |_|
+         \_|_/    ||" ||  ||
+         |-|-|    ||LI  o ||
+         |_|_|    ||'----'||
+        /_/ \_\  /__|    |__\
 
-/---------------------------------------------\
-| 想了解更多？这是我的简历：                  |
-| http://kdr2.com/misc/resume_cn.html         |
-\---------------------------------------------/
+  /---------------------------------------------\
+  | 想了解更多？这是我的简历：                  |
+  | http://kdr2.com/misc/resume_cn.html         |
+  \---------------------------------------------/
 
--->
-#+END_HTML
+  -->
+  #+END_HTML
+** My GPG public key
+  #+BEGIN_EXAMPLE
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v2
 
+    mQENBFUstS4BCADmEzWym6hbzw1e0E3dZ50De+OxmywZ8QIPS7VySArVJMKRX4Bj
+    eDc/womTL49tWA1r9jzjknwRzkQ9NgqTYCldSqmDz3OanoXg0lqbGbq0d4kK2Dr8
+    Xu/hGVFbj7iWV1MBarpKZiiODOzyV/7jOXvM8A//6XdjYH2VyOSGplssLlKuIKnM
+    HIYI6CaocSUpx5sG9zB5+iIU18Owhw2JMuWbQ/NXAreYlRRlVCHvE7SMzOTNzaAY
+    RPrRt0znuYw2t208E3b+NlS3LrABrqbD6gLBTuV9/ncn56/gcJGQEdjg9ccYganc
+    NjcuNjw+8n3C/g2NcdpXwSN0MX4FFsV8iLwNABEBAAG0GlpIVU9RTCA8emh1b0Bi
+    aXRvYXNpcy5jb20+iQE5BBMBAgAjBQJVLLUuAhsDBwsJCAcDAgEGFQgCCQoLBBYC
+    AwECHgECF4AACgkQO56kixV8y8kAiggArOkoKFRNMWyqNuCr9fKtqjdT/VIPunky
+    coFXEXQmPnWV84S7KLL4AEcEkiUvgSolCOLn0NKGmu/MMEqosdsTEDX5A8DQyXcf
+    viDNxG1I5yht/IDf0NPM3S9DfzFLwjU3q+S7IQ4wZW7A73Mx82PdQj03/yWqShVi
+    cp/YfDTcU8ivDPamDTUogtdyTiWXnWw+bKd7ttyPaUW0cKWSWdgxLCJ8Danw4p8+
+    YKLeBMATMBa0BaF9eo+6/nwi9xoLrvynmPNWPuzJP89sPnk7AKWp7e9S1WfiIkYi
+    BsfGXUtj1t+mYVRq3dHU20C9irGZ13CURH7K0GKHL0BZQKWnbfrgC7kBDQRVLLUu
+    AQgAyYrcYTOpjJWkRlPdGlfmX9ehC0ZaN0NlsZGLIb+TfzBq3OggQQZaFjaDRq2Z
+    7u4N8jaazJ53gX2oPuSkxotH7ahkBDufESMOA/IxJTQU9oekph5Msgz2UXTdui7o
+    t3MbhrXa3fN/Tv3S3kCc7KEAyOSwJU9wv27/1e23cUqU7JFksk8nhNoMQ8xE8N7w
+    T5/jeMudtuA12v8ONwZOQ5RSeV7hNXVV6NcOuCXEivwYkPwbg6KnMpJkvR4w7NPE
+    h+TIwXeXff+5k6Aln0W0q0qG64QMpO5c5HJeQcpsyqLAL5HiXBds+jQVBWTC+uiB
+    vx2k5Y02GLmbVekC2YKqtMgHlQARAQABiQEfBBgBAgAJBQJVLLUuAhsMAAoJEDue
+    pIsVfMvJ4hkIAIcoar/vxEMopcYWvbaNRgmoIsfZIh+48ibq8M/2Ghc69gSLKJpZ
+    NUHcXGA3K+bTl1Qv9IC3DGmKM15nwFUkZ0BAG76dN1wsOCna/co4aE2/7ZpXm8u3
+    RllAJ0byO5XhLhgQBxMjMgDlAZZ35TT318hYI6ASgJ8XOIlP1uqL51QedcgZq8ST
+    PTNVT22l8gOl8R+sfS+UKKBPcx68e/IRhkctl4e13G2iUgrG/n5fN6YGW5iD74UW
+    MBlyEEPvWkh574DBC1T8dRxZJ73pi4/54e5h7InyGC8+sz3nltSorJgTA88JYPHr
+    BS4VHJp7tHcK0kjXK4XswGdekeR05QsTV+c=
+    =dn9W
+    -----END PGP PUBLIC KEY BLOCK-----
+  #+END_EXAMPLE
 ** Contact
    :PROPERTIES:
    :CUSTOM_ID: contact_me
