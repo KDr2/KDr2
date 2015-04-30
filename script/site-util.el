@@ -79,5 +79,5 @@
                          (if (or (zerop (length f))
                                  (string-match "\\.inc\\.org$" f))
                              ""
-                           (let* ((rf (replace-regexp-in-string (concat "^" dir) "" f)))
+                           (let* ((rf (replace-regexp-in-string (concat "^" dir "/?") "" f)))
                              (format "- [[file:%s][%s]]" rf rf)))) files) "\n")))
