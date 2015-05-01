@@ -1,0 +1,31 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review: 2015-04
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结")) :results raw
+
+<2015-04-30 Thu>
+
+- 儿子在五一假期刚好满百天。从第三个月后半月开始越来越乖，并且开始会发
+  出“母母”这样的音节，到最近能发出“妈妈”或者单个“妈”这样的音节了，当然
+  可能只是建立了一些条件反射，感谢巴甫洛夫 :P ；
+- 工作依旧，乏善可陈。
+- 《Mastering Julia》 Review 完毕；
+- 自己感兴趣的东西和不感兴趣的东西都太多，一边想办法摆脱兴趣之外的事情
+  的纠缠，另一边又在众多兴趣点之间游走徘徊，很多时候时间就这样过去了。
+  月底终于要下决心改变一下这样的状况，制定了一些兴趣与时间管理方面的试验
+  性的方法计划，希望能有用。
+
+#+BEGIN: inc-fil e :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
