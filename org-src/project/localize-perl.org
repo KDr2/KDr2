@@ -68,7 +68,7 @@ box before using ~localize-perl~.
 
 * Bug Report
   - on github : https://github.com/KDr2/localize-perl
-  - email me  : zhuo< =@= >bitoasis.com
+  - email me  : zhuo< =@= >hexoasis.com
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
