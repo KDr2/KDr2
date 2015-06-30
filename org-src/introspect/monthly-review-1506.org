@@ -1,0 +1,29 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Monthly Review: 2015-06
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("自省" "总结")) :results raw
+
+<2015-06-30 Tue>
+
+- 休假一个月，在家跟儿子玩的很开心，都有些不想回去上班了……
+- 儿子斜颈问题好转明显，但是还要继续坚持一段时间。
+- 哄孩子很开心但是也很累，胳膊和腰得到了锻炼，但是腹肌一点一点被脂肪淹
+  没了，下个月是不是无论多累都要坚持锻炼身体呢？
+- 带娃休息时间能按照自己的兴趣方向研究学习一些东西，比上班的时候时间要
+  多一些，记了一些零散笔记，但没什么成文的东西。
+- 有出版社约书，果断拒绝，现在实在拿不出那么多精力。
+
+#+BEGIN: inc-fil e :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+END:
