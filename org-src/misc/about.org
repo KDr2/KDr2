@@ -96,15 +96,14 @@
    :PROPERTIES:
    :CUSTOM_ID: contact_me
    :END:
-   - Location: XI'AN, SHAANXI, China
+   - Location: Xi'an, Shaanxi, China
    - Skype : zhuoql
-   - WeChat: KDr2-o-
-   - Email : =zhuo+site<at>hexoasis.com=
-   - [[https://plus.google.com/+ZhuoQL][Google+]]
+   - Emails :
+     - =zhuo<at>hexoasis.com=, for personal affairs.
+     - =zhuo.dev<at>gmail.com=, for development affairs, e.g. mail
+       list, bug report.
    - Mobile : +86 0b10111010 05532 0x0636
    - [[file:schedule.org][My Schedule]]
-#   - skype : [[data:text/plain;base64,emh1b3Fs]]
-#   - Email : [[data:text/plain;base64,a2lsbHkuZHJhd0BnbWFpbC5jb20=]]
 # (Scan [[#qr-codes][QR Code]]).
 
 #+BEGIN: inc-file :file "gad.inc.org"

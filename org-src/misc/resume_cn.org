@@ -40,13 +40,15 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - 常用技术平台及编程语言
-    - Linux, C/C++
-    - Python, Golang, Erlang
+    - Linux, Bash, C/C++
+    - Python, Perl
+    - Golang, Erlang
     - Lua, Scheme
     - Julia, R
     - Others:
-      - Bash
       - Java, PHP
+      - O'Caml
+      - Rust
       - Common Lisp
 
 * 常用工具
@@ -86,11 +88,13 @@
     - https://github.com/JuliaLang/julia/issues/created_by/KDr2
     - https://github.com/JuliaLang/julia/commits?author=KDr2
     - https://github.com/JuliaCN/julia_zh_cn/commits?author=KDr2
+    - Technical Reviewer of 《Mastering Julia》
+    - Technical Reviewer of 《High Performance Julia》
 
 * 工作经历
   如有需要，请给我发送EMAIL索取详细简历。
 
-  - 2013.10.01 - 今，Pintics (硅谷 Startup, 远程工作)
+  - 2013.10.01 - 2014.10.01, Pintics (硅谷 Startup, 远程工作)
   - 2011.05.03 - 2013.06.20, 北京爱微创想科技有限公司(Appwill Inc.),
     负责Server端开发工作。
   - 2007.07.28 - 2011.04.28, 北京赞同科技发展有限公司，金融行业，中间

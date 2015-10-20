@@ -26,7 +26,7 @@
   - [2002-2006] [[http://www.xjtu.edu.cn][Xi'an Jiaotong University]], China.
 
 * Languages
-  - Chinese (Simplified): Speaking and Writing
+  - Chinese (Simplified): Native Speaker
   - English: Reading/Writing
 
 * IT Skills
@@ -41,13 +41,15 @@
 #  - |x11|_, |gtk|_, |qt|_
 
   - Platforms or Programming Languages I'm using:
-    - Linux, C/C++
-    - Python, Golang, Erlang
+    - Linux, Bash, C/C++
+    - Python, Perl
+    - Golang, Erlang
     - Lua, Scheme
     - Julia, R
     - Others:
-      - Bash
       - Java, PHP
+      - O'Caml
+      - Rust
       - Common Lisp
 
 * Tools I am familiar with and often use
@@ -89,11 +91,13 @@
     - https://github.com/JuliaLang/julia/issues/created_by/KDr2
     - https://github.com/JuliaLang/julia/commits?author=KDr2
     - https://github.com/JuliaCN/julia_zh_cn/commits?author=KDr2
+    - Technical Reviewer of 《Mastering Julia》
+    - Technical Reviewer of 《High Performance Julia》
 
 * Work Experience
   Please email me to get more details of this section, if necessary.
 
-  - 2013.10.01 - Now, Pintics (Startup in USA, I work remotely for it)
+  - 2013.10.01 - 2014.10.01, Pintics (Startup in USA, worked remotely)
   - 2011.05.03 - 2013.06.20, Appwill Inc., server side development;
   - 2007.07.28 - 2011.04.28, AGREE TECH( http://www.agree.com.cn/ ),
     Middle Ware and Teller System development;
