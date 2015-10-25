@@ -99,7 +99,7 @@
    - Location: Xi'an, Shaanxi, China
    - Skype : zhuoql
    - Emails :
-     - =zhuo<at>hexoasis.com=, for personal affairs.
+     - =zhuo<at>hexoasis.com=, =zhuoql<at>zoho.com=, for personal affairs.
      - =zhuo.dev<at>gmail.com=, for development affairs, e.g. mail
        list, bug report.
    - Mobile : +86 0b10111010 05532 0x0636
