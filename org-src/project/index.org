@@ -13,7 +13,6 @@ Here is some projects created/maintained by me:
 - [[file:moochine.org][Moochine]]
 - [[file:sb-fastcgi.org][SB-FastCGI]]
 - [[file:cl-fastcgi.org][CL-FastCGI]]
-- [[file:localize-perl.org][Localize-Perl]]
 
 And [[file:os-contrib.org][here lists some contributions to other projects]].
 
