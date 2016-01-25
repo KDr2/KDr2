@@ -13,8 +13,6 @@
 
 # - DATE
 
-# #+BEGIN: inc-file :file "flattr.inc.org"
-# #+END:
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:

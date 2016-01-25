@@ -13,8 +13,6 @@
 # - DATE
 <2014-05-23 Fri>
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 Now in orgmode we can set =org-html-checkbox-type= to =unicode= (by
 code =(setq org-html-checkbox-type 'unicode)= ) to turn

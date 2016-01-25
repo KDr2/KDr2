@@ -7,8 +7,6 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("sbcl" "common lisp" "lisp" "web" "fastcgi")) :results raw
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 * Introduction
 

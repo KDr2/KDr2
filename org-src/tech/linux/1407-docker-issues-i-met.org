@@ -14,8 +14,6 @@
 <2014-07-15 Tue>
 
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 I started to use docker in the past few days, and encountered few issues:
 

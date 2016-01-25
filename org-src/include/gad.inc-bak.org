@@ -1,4 +1,4 @@
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Banner-0 -->
 <center>
@@ -10,4 +10,4 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-#+END_HTML
+#+END_EXPORT

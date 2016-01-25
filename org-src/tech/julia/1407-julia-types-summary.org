@@ -10,8 +10,6 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("julia" "julia-lang" "type")) :results raw
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 <2014-07-02 Wed>
 

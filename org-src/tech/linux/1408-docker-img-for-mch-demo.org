@@ -13,8 +13,6 @@
 # - DATE
 <2014-08-10 Sun>
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 * Moochine and Moochine-Demo
   [[file:../../project/moochine.org][Moochine]] is a simple web framework based on Openresty I created. And
@@ -37,7 +35,7 @@
 
   And then start the demo:
 
-  #+BEGIN_SRC
+  #+BEGIN_SRC sh
   docker run -d -p 0.0.0.0:9801:9800 kdr2/debian:sid-moochine /root/moochine-demo/bin/start.sh -f
   #+END_SRC
 
@@ -51,12 +49,12 @@
   image, you should install them yourself if you want to use
   them. It's simple:
   - run the image and start a shell:
-    #+BEGIN_SRC
+    #+BEGIN_SRC sh
     $ docker run -t -i -p 0.0.0.0:9801:9800 kdr2/debian:sid-moochine /bin/bash
     #+END_SRC
   - install what you want (using ~aptitude~) and start them in that shell;
   - start the demo:
-    #+BEGIN_SRC
+    #+BEGIN_SRC sh
     root@4df89d75e286:/# /root/moochine-demo/bin/start.sh
     #+END_SRC
 

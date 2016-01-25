@@ -9,8 +9,6 @@
 
 <2014-04-03 Thu>
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 * The problem
 

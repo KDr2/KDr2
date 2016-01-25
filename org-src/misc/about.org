@@ -7,8 +7,6 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("KDr2" "free lancer")) :results raw
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 * About Me
 
@@ -28,7 +26,7 @@
   #   working at home as a freelance developer and independent
   #   consultant.
 
-  #+BEGIN_HTML
+  #+BEGIN_EXPORT html
   <!--
 
   /---------------------------------------------\
@@ -58,7 +56,7 @@
   \---------------------------------------------/
 
   -->
-  #+END_HTML
+  #+END_EXPORT
 
 ** Contact
    :PROPERTIES:

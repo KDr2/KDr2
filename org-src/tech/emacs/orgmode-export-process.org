@@ -9,8 +9,6 @@
 
 <2014-03-26 Sun>
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 * Overview
   The org-mode export process consists of these steps:
@@ -74,7 +72,7 @@
       #+END_SRC
 
     - call the named code block =test-0=, capture the output:
-      #+BEGIN_SRC
+      #+BEGIN_SRC org
         ,#+CALL: test-0[:results output]() :results raw
       #+END_SRC
       the output will be considered as raw org source:

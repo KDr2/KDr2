@@ -9,13 +9,11 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
-#+CALL: meta-keywords(kws='("Test" "OrgMode")) :results raw
+#+CALL: meta-keywords(kws='("linux" "systemtap" "stap" "kernel")) :results raw
 
 # - DATE
 <2014-12-28 Sun>
 
-# #+BEGIN: inc-file :file "flattr.inc.org"
-# #+END:
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
@@ -63,7 +61,7 @@ Removed temporary directory "/tmp/stapsAsdb0"                      ^
 But my kernel is correctly configured with debuginfo and tracepoint
 supporting:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC sh
 # cat /sys/kernel/debug/tracing/events/enable
 X
 # less /sys/kernel/debug/tracing/available_events
@@ -89,7 +87,7 @@ BUILDDIR=/opt/kernel/build/3.10~). So my ~/lib/modules/$(uname -r)/build~
 and ~/lib/modules/$(uname -r)/source~ refer to two different
 directories:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC sh
 kdr2@Debian-X230:~$ ls -l /lib/modules/$(uname -r)/{build,source}
 lrwxrwxrwx 1 root root 28 Sep  3 08:59 /lib/modules/3.10.53/build -> /opt/kernel/build/3.10/build
 lrwxrwxrwx 1 root root 29 Sep  3 08:59 /lib/modules/3.10.53/source -> /home/kdr2/Work/opensrc/linux
@@ -105,7 +103,7 @@ separate ~BUILDDIR~), and the problem fixed.
 But on debian, these two directories are indeed two different
 directories:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC sh
 kdr2@Debian-X230:~$ dpkg -l|grep -e 'linux-.*-3.16'|awk '{print $2}'
 linux-headers-3.16.0-4-amd64
 linux-headers-3.16.0-4-common

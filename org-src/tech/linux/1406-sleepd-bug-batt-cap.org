@@ -14,8 +14,6 @@
 <2014-06-11 Wed>
 
 
-#+BEGIN: inc-file :file "flattr.inc.org"
-#+END:
 
 I got a power outage at home last night, my laptop got suspended in a few
 seconds after the AC power off. It kept going to suspended every times
