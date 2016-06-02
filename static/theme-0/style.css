@@ -16,7 +16,7 @@ body {
     */
     line-height: 1.6em;
     margin: 5% 15% 8%;
-    min-width: 600px;
+    min-width: 240px;
     background: none repeat scroll 0 0 #FFFFFF; /*#FDF6E3;*/
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -362,4 +362,11 @@ blockquote {
 
 center.image-container {
     margin: 16px 0;
+}
+
+
+@media only screen and (max-width: 767px ) {
+    #table-of-contents {
+        display: none;
+    }
 }
