@@ -13,7 +13,7 @@
 [[file:resume_cn.org][中文版(Chinese Version)]]
 
 * Status
-  Locate in Xi'AN Shannxi China. Please concat me if you have an
+  Settle in Xi'AN Shaanxi China. Please concat me if you have an
   opportunity (especially one allows me work remotely) for me.
 
 * Personal Information
@@ -42,33 +42,26 @@
 
   - Platforms or Programming Languages I'm using:
     - Linux, Bash, C/C++
-    - Python, Perl
-    - Golang, Erlang
+    - Python, Perl, JavaScript
+    - Java, Scala, Clojure
     - Lua, Scheme
     - Julia, R
-    - Others:
-      - Java, PHP
-      - O'Caml
-      - Rust
-      - Common Lisp
+    - Golang, Erlang
 
 * Tools I am familiar with and often use
   (inculdes OS, Platform, FrameWork, Library, Product, DevTools and so
   on)
 
-  - Linux, Debian, Qemu(KVM), Docker
+  - Linux, Debian, Qemu(KVM)
+  - Docker, Ansible
   - GCC, GDB, {{{llvm}}}, SystemTap
-  - Python, PyPy, Flask, Tornado
-  - Lua, LuaJit
-  - Erlang/otp, RabbitMQ
-  - Nginx
-  - PostgreSQL, MySQL, Redis, Riak
+  - Gevent, Flask, Tornado
+  - Nginx, HAProxy
+  - PostgreSQL, MySQL, Redis, InfluxDB
+  - Git
   - Emacs, org-mode, Graphviz, Tex/LaTeX
-  - git/hg/subversion/redmine/trac...
-  - Julia， R
-  - FemtoLisp, SBCL, ECL
-  # - Qt (C++ GUI lib), PyQt
-  # - MRI, Rubinius, Rails
+  - IDE from JetBrains
+
 
 * OpenSource Projects
 
@@ -78,8 +71,6 @@
   - Moochine:
     A simple and lightweight web framework based on
     [[http://openresty.org][OpenResty(ngx_lua)]], https://github.com/appwilldev/moochine/
-  - Erlix:
-    The Ruby interface for Erlang, http://github.com/KDr2/erlix/
   - SB-FASTCGI:
     https://github.com/KDr2/sb-fastcgi/
   - CL-FASTCGI:
@@ -91,8 +82,10 @@
     - https://github.com/JuliaLang/julia/issues/created_by/KDr2
     - https://github.com/JuliaLang/julia/commits?author=KDr2
     - https://github.com/JuliaCN/julia_zh_cn/commits?author=KDr2
-    - Technical Reviewer of 《Mastering Julia》
-    - Technical Reviewer of 《High Performance Julia》
+    - Technical Reviewer of [[https://www.packtpub.com/application-development/mastering-julia][《Mastering Julia》]]
+    - Technical Reviewer of [[https://www.packtpub.com/application-development/julia-high-performance][《High Performance Julia》]]
+  - Erlix(no longer maintained):
+    The Ruby interface for Erlang, http://github.com/KDr2/erlix/
 
 * Work Experience
   Please email me to get more details of this section, if necessary.
