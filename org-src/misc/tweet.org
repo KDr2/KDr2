@@ -1,0 +1,13 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Cluttered Tweets
+#+AUTHOR: KDr2
+#+OPTIONS: num:nil
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+
+#+BEGIN_HTML
+<div id="tweet" data-num=27>
+<blockquote id="tweet-loading"><p> Loading... </p></blockquote>
+</div>
+#+END_HTML
