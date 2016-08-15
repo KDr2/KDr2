@@ -82,7 +82,7 @@
   The =include= keywords are expanded before macros expansion and babel
   code blocks execution, so you can write all frequently used macros
   and code blocks(with a name) in a separate org file, then include it
-  in other org files, [[https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/org-src/include/common.inc.org][here is an example]].
+  in other org files, [[https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/content/include/common.inc.org][here is an example]].
 
 * Use dynamic block to generate content
 

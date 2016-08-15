@@ -21,10 +21,10 @@
 
 (defun relative-resource-for-org-file (resource)
   "Usage:
-   org-src/misc/about.org
+   content/misc/about.org
    ../css/style.css"
   (let ((relative-path (app-relative-path (buffer-file-name (current-buffer)))))
-    (if (string-match "org-src/\\(.*\\)/[^/]+\.org" relative-path)
+    (if (string-match "content/\\(.*\\)/[^/]+\.org" relative-path)
         (concat (mapconcat
                  'identity
                  (mapcar (lambda (_) "..") (split-string (match-string 1 relative-path) "/"))
@@ -58,16 +58,16 @@
 
 (defun inc-code (path lang)
   (let* ((lang (or lang ""))
-         (file (app-file (concat "code-src/" path)))
+         (file (app-file (concat "code/" path)))
          (code (with-temp-buffer
                  (insert-file-contents file)
                  (buffer-string))))
     (concat "#+BEGIN_SRC " lang "\n"
             code "\n#+END_SRC\n\n"
             "#+BEGIN_HTML\n<center>"
-            "<a target=\"_blank\" href=\"https://github.com/KDr2/kdr2-on-web/blob/master/code-src/" path "\">On Github</a>"
+            "<a target=\"_blank\" href=\"https://github.com/KDr2/kdr2-on-web/blob/master/code/" path "\">On Github</a>"
             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-            "<a target=\"_blank\" href=\"https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/code-src/" path "\">Raw File</a>"
+            "<a target=\"_blank\" href=\"https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/code/" path "\">Raw File</a>"
             "</center>\n#+END_HTML\n")))
 
 (defun org-files-under-dir (dir)
