@@ -24,9 +24,6 @@
   (site-image path width title)
 #+END_SRC
 
-#+MACRO: inline-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
-#+MACRO: inline-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
-
 #+NAME: inc-code
 #+BEGIN_SRC elisp :results value raw :exports results :var path="" lang=""
   (inc-code path lang)
@@ -44,6 +41,9 @@
 # # MACRO EXAMPLES ####################
 #+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
 
+#+MACRO: inline-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
+#+MACRO: inline-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
+
 # # ADD LINK ############################
 #+MACRO: zcom [[http://www.amazon.com/gp/product/$1?tag=kdr2com-20][$2]]
 #+MACRO: zcn [[http://www.amazon.cn/gp/product/$1?tag=kdr2com-23][$2]]
@@ -54,9 +54,8 @@
 #+MACRO: site-search [[https://www.google.com.hk/search?q=$1&sitesearch=kdr2.com][$1]]
 
 # # SELF INFO ###################
-#+MACRO: mu [[http://www.miss-understood.net][miss-undersood]]
 #+MACRO: mytwt [[http://twitter.com/KDr2]]
-#+MACRO: email killy.draw *at* gmail *dot* com
+#+MACRO: email zhuo.dev *at* gmail *dot* com
 #+MACRO: kd@github [[http://github.com/KDr2/][My GitHub]]
 #+MACRO: kdweb@github [[http://github.com/KDr2/kdr2-on-web][kdr2-on-web at GitHub]]
 

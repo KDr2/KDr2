@@ -181,7 +181,7 @@ See =sb-fastcgi/test.lisp= for more examples.
 
 * Bug Report
  - on github : https://github.com/KDr2/sb-fastcgi
- - email me  : killy.draw< =@= >gmail.com
+ - email me  : zhuo.dev< =@= >gmail.com
 
 
 #+BEGIN: inc-file :file "gad.inc.org"

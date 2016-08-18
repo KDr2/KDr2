@@ -47,7 +47,7 @@ to cl-fastcgi or change back easily, without code modifications.
 
 * Bug Report
   - on github : https://github.com/KDr2/cl-fastcgi
-  - email me  : killy.draw< =@= >gmail.com
+  - email me  : zhuo.dev< =@= >gmail.com
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
