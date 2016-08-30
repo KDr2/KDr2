@@ -2,6 +2,7 @@
 *.elc
 *.out
 *.private.yml
+__pycache__
 output/
 depot/
 tmp/
