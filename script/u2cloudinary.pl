@@ -78,7 +78,11 @@ sub upload2cloudinary {
     }, sub {
         my ($cloudinary, $res) = @_;
         ### $res
-        write_file($img_meta_path, $res->{version});
+        if (defined $res->{version}) {
+            write_file($img_meta_path, $res->{version});
+        } else {
+            say "--- :( upload error: @{[$res->{error}->{message}]} ...";
+        }
         $end->();
     });
 }
