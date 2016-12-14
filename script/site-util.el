@@ -70,6 +70,12 @@
             "<a target=\"_blank\" href=\"https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/code/" path "\">Raw File</a>"
             "</center>\n#+END_HTML\n")))
 
+(defun inc-local-image (path width title)
+  (let ((file (relative-resource-for-org-file (concat "static/images/" path))))
+    (concat (or (and width (format "#+ATTR_HTML: :width %s\n" width)) "")
+            (or (and title (format "#+ATTR_HTML: :title %s\n" title)) "")
+            "[[" file "]]\n")))
+
 (defun org-files-under-dir (dir)
   (let* ((dir (or dir (file-name-directory (buffer-file-name))))
          (cmd (format "find %s '(' -type f -or -type l ')' -name \"*.org\"|sort" dir))
@@ -80,4 +86,4 @@
                                  (string-match "\\.inc\\.org$" f))
                              ""
                            (let* ((rf (replace-regexp-in-string (concat "^" dir "/?") "" f)))
-                             (format "- [[file:%s][%s]]" rf rf)))) files) "\n")))
+                             (format "- [[file:%s][%s]]" rf (replace-regexp-in-string "_" "-" rf))))) files) "\n")))
