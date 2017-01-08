@@ -177,7 +177,6 @@ PyCodeObject 会出现在它的 *父作用域* 对应的 PyCodeObject 的
 接下来用个例子对上面的某些字段做个说明, 比如下面的 python 代码
 
 #+BEGIN_SRC python
-
   #test.py
   import struct
 

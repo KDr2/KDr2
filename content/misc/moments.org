@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Cluttered Tweets
+#+TITLE: Moments
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+BEGIN: inc-file :file "common.inc.org"
@@ -7,7 +7,7 @@
 #+CALL: dynamic-header() :results raw
 
 #+BEGIN_HTML
-<div id="tweet" data-num=27>
-<blockquote id="tweet-loading"><p> Loading... </p></blockquote>
+<div id="moments-container" data-num=27>
+<div class="moment" id="moments-loading">Loading... </div>
 </div>
 #+END_HTML

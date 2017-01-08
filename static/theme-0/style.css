@@ -364,6 +364,31 @@ center.image-container {
     margin: 16px 0;
 }
 
+.moment {
+    padding: -1px 13px;
+    border-bottom: solid 1px lightgray;
+}
+
+.moment:before
+{
+    content: "\01F399";
+    padding-right: 6px;
+}
+
+.comment {
+    color: #152269;
+    background: rgb(217, 228, 246);
+    padding: 3px 6px;
+    border: dotted 1px;
+    border-color: #e93030;
+}
+
+.comment:before
+{
+    content: "\01F58B";
+    padding-right: 6px;
+}
+
 
 @media only screen and (max-width: 767px ) {
     #table-of-contents {

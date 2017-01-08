@@ -76,21 +76,21 @@ Init google analytics code
   }
 #+END_SRC
 
-Get Tweets
+Get Moments
 #+BEGIN_SRC javascript :tangle ../output/static/script/site.js
-  function render_tweets(){
-      var num = $("#tweet").data("num");
+  function render_moments(){
+      var num = $("#moments-container").data("num");
       if(!num)return;
-      get_tweets(function(data) {
-          $("#tweet-loading").hide();
+      get_moments(function(data) {
+          $("#moments-loading").hide();
           for(var i = 0; i < num && i < data.length; i++) {
-              $("#tweet").append($("<blockquote>" + data[i] + "</blockquote>"));
+              $("#moments-container").append($("<div class=\"moment\">" + data[i] + "</div>"));
           }
       });
   }
-  function get_tweets(render){
+  function get_moments(render){
       $.ajax({
-          url: "http://ds3.kdr2.com/tweets",
+          url: "http://ds3.kdr2.com/moments",
           jsonp: "callback",
           dataType: "jsonp",
           success: function(response) {
@@ -105,6 +105,6 @@ Register document reday callback:
   $(document).ready(function(){
       init_site();
       init_gat();
-      render_tweets();
+      render_moments();
   });
 #+END_SRC

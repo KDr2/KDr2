@@ -1,0 +1,3 @@
+Mojolicious
+Cloudinary
+File::Slurp
