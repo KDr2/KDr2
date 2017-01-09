@@ -5,6 +5,8 @@
    (substring (file-name-directory (or load-file-name (buffer-file-name))) 0 -1))
   "The root dir of this project")
 
+(setenv "PROJECT_ROOT" app-root-path)
+
 (defun app-file (&optional path)
   (let ((path (or path "")))
     (concatenate 'string app-root-path path)))

@@ -158,5 +158,35 @@ still too short? are you kidding me?
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
+* Math and Formula
+
+  #+BEGIN_LaTeX
+  [ y = x ^ 2 ]
+  #+END_LaTeX
+
+  $$
+  y = \frac{1}{x ^ 2}
+  $$
+
+* Generate Image by R
+  #+BEGIN_SRC R :results value html :exports results :width 400 :height 300
+    source(paste0(Sys.getenv("PROJECT_ROOT"), "code/R/lib.R"))
+    filename <- autogen_path("images", "sandbox1.png")
+    p2c <- function(x){
+      x[x<=0] <- 720;
+      y <- 20*(10-log(x, 2.2));
+      y[y<5] <- 5;
+      return(y);
+    }
+
+    p <- seq(-100, 1440*2)
+    c <- p2c(p)
+
+    png(filename, width=560, height=480)
+    plot(p, c, type="o")
+    dev.off()
+    inline_html(filename)
+  #+END_SRC
+
 * Discuss and Comment
   #+INCLUDE: ../include/disqus.inc.org

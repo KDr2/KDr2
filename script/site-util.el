@@ -81,9 +81,10 @@
          (cmd (format "find %s '(' -type f -or -type l ')' -name \"*.org\"|sort" dir))
          (files (split-string (shell-command-to-string cmd) "\n")))
     (mapconcat 'identity
-               (mapcar (lambda (f)
-                         (if (or (zerop (length f))
-                                 (string-match "\\.inc\\.org$" f))
-                             ""
-                           (let* ((rf (replace-regexp-in-string (concat "^" dir "/?") "" f)))
-                             (format "- [[file:%s][%s]]" rf (replace-regexp-in-string "_" "-" rf))))) files) "\n")))
+               (remove-if (lambda (x) (eq x nil))
+                          (mapcar (lambda (f)
+                                    (if (or (zerop (length f))
+                                            (string-match "[._-]inc\\.org$" f))
+                                        nil
+                                      (let* ((rf (replace-regexp-in-string (concat "^" dir "/?") "" f)))
+                                        (format "- [[file:%s][%s]]" rf (replace-regexp-in-string "_" "-" rf))))) files)) "\n")))
