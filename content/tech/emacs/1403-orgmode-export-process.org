@@ -15,7 +15,7 @@
 
   - run functions in =org-export-before-processing-hook=
   - expand =include(#+INCLUDE: ...)= keywords
-  - expend =macro({{{macro}})= kerwords
+  - expend =macro({{{macro}}})= kerwords
   - execute babel code blocks
   - run functions in =org-export-before-parsing-hook=
   - export with specified backend
@@ -128,7 +128,7 @@
 * More samples
   I'm using orgmode to build this site, and the source can be found at
   https://github.com/KDr2/kdr2-on-web, you can find all the tricks I
-  metioned above in this reposotory.
+  metioned above in this repository.
 
 
 #+BEGIN: inc-file :file "gad.inc.org"
