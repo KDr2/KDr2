@@ -189,4 +189,4 @@ still too short? are you kidding me?
   #+END_SRC
 
 * Discuss and Comment
-  #+INCLUDE: ../include/disqus.inc.org
+  #+INCLUDE: ../include/comment.inc.org

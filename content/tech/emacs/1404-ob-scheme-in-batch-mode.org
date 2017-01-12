@@ -139,5 +139,5 @@ steps:
 #+END:
 
 * Discuss and Comment
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:

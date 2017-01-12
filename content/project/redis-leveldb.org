@@ -114,4 +114,4 @@ You can get it from https://github.com/KDr2/redis-leveldb.
 #+END:
 
 * Discuss and Comment
-#+INCLUDE: ../include/disqus.inc.org
+#+INCLUDE: ../include/comment.inc.org

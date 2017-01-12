@@ -25,6 +25,6 @@
 
   Leave a comment on this page if you want to add your link here.
 
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:
 

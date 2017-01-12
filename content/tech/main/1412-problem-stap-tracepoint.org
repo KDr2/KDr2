@@ -125,6 +125,6 @@ On Fedora, build and source directory is a same one, stap works well.
 #+END:
 
 * Discuss and Comment
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:
 

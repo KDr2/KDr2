@@ -42,5 +42,5 @@ patch 文件，总算合并进去了。
 # - CONTENT
 
 * Discuss and Comment
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:

@@ -103,5 +103,5 @@ client 还是能通过原路径访问此文件。即便你删除后又新建了�
 #+END:
 
 * Discuss and Comment
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:

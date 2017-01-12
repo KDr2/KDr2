@@ -54,4 +54,4 @@ to cl-fastcgi or change back easily, without code modifications.
 #+END:
 
 * Discuss and Comment
-#+INCLUDE: ../include/disqus.inc.org
+#+INCLUDE: ../include/comment.inc.org

@@ -60,5 +60,5 @@ https://github.com/KDr2/kultivate/blob/master/patches/sleepd/0001-use-int64_t-fo
 #+END:
 
 * Discuss and Comment
-  #+BEGIN: inc-file :file "disqus.inc.org"
+  #+BEGIN: inc-file :file "comment.inc.org"
   #+END:

@@ -65,40 +65,33 @@
    - Location: Xi'an, Shaanxi, China
    - Skype : zhuoql
    - Emails :
-     - =zhuo<at>hexoasis.com=, =zhuoql<at>zoho.com=, for personal affairs.
-     - =zhuo.dev<at>gmail.com=, for development affairs, e.g. mail
+     - zhuo@@html:&#x01F4E7;@@hexoasis.com, zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
+     - zhuo.dev@@html:&#x01F4E7;@@gmail.com, for development affairs, e.g. mail
        list, bug report.
    - Mobile : +86 0b10111010 05532 0x0636
    - GPG Key:  [[http://pgp.mit.edu/pks/lookup?op=get&search=0x3B9EA48B157CCBC9][0x3B9EA48B157CCBC9]]
-   - [[file:schedule.org][My Schedule]]
-# (Scan [[#qr-codes][QR Code]]).
+   - [[file:schedule.org][Public Schedule]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
 * About This Site
 ** Content of the site
-   I write about myself on this site, and write only for myself, not
-   for any other readers.
+   My clutter, hope it helps.
 
 ** Technical Perspective
-  This site is built with emacs and org-mode, and some other tools, I
-  list all of them here:
+   This site is built with emacs and org-mode, and some other tools, I
+   list all of them here:
 
-  - Emacs: http://www.gnu.org/software/emacs/
-  - Org-Mode: http://orgmode.org/
-  - Disqus: http://disqus.com/
-  - Google Analytics: http://www.google.com/analytics/
-  - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]]
+   - Emacs: http://www.gnu.org/software/emacs/
+   - Org-Mode: http://orgmode.org/
+   - Google Analytics: http://www.google.com/analytics/
+   - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]]
 
-  # and there're coupons for it:
-  # * =DHKDR200= , One free domain name, at least $5 discount
-  # * =DHKDR201= , At least $30 discount
-
-  You can find my org mode configuration at
-  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
-  and https://github.com/KDr2/kdr2-on-web/blob/master/script/.
-  The source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
+   You can find my org mode configuration at
+   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
+   and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
+   source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
 
 # ------------------------------------
 # * Support Me
@@ -139,4 +132,4 @@
 # | {{{inline-image(common/qr-kdr2.com.png)}}} | {{{inline-image(common/qr-kdr2.wechat.png)}}} | {{{inline-image(common/qr-alipay.kdr2.png)}}} |
 
 * Discuss and Comment
-#+INCLUDE: ../include/disqus.inc.org
+#+INCLUDE: ../include/comment.inc.org
