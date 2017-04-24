@@ -51,10 +51,10 @@
                   "/img-kdr2-com/" path))
          (original-url
           (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path)))
-    (concat "#+BEGIN_HTML\n<center class=\"image-container\">"
+    (concat "#+BEGIN_EXPORT HTML\n<center class=\"image-container\">"
             "<a target=\"_blank\" href=\"" original-url "\">"
             "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 600px; \">"
-            "</a><br/>" title "</center>\n#+END_HTML\n")))
+            "</a><br/>" title "</center>\n#+END_EXPORT\n")))
 
 (defun inc-code (path lang)
   (let* ((lang (or lang ""))
@@ -64,11 +64,11 @@
                  (buffer-string))))
     (concat "#+BEGIN_SRC " lang "\n"
             code "\n#+END_SRC\n\n"
-            "#+BEGIN_HTML\n<center>"
+            "#+BEGIN_EXPORT HTML\n<center>"
             "<a target=\"_blank\" href=\"https://github.com/KDr2/kdr2-on-web/blob/master/code/" path "\">On Github</a>"
             "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
             "<a target=\"_blank\" href=\"https://raw.githubusercontent.com/KDr2/kdr2-on-web/master/code/" path "\">Raw File</a>"
-            "</center>\n#+END_HTML\n")))
+            "</center>\n#+END_EXPORT\n")))
 
 (defun inc-local-image (path width title)
   (let ((file (relative-resource-for-org-file (concat "static/images/" path))))
