@@ -35,11 +35,11 @@
   (concat "#+HTML_HEAD: <meta name=\"keywords\" content=\"" (mapconcat 'identity kws ", ") "\"/>"))
 
 (defun html-youtube-video (id)
-  (concat "#+BEGIN_HTML\n<center>"
+  (concat "#+BEGIN_EXPORT HTML\n<center>"
           "<iframe width=\"640\" height=\"510\" src=\"//www.youtube.com/embed/"
           id
           "\" frameborder=\"0\" allowfullscreen></iframe>"
-          "</center>\n#+END_HTML\n"))
+          "</center>\n#+END_EXPORT\n"))
 
 ;; example:
 ;; http://res.cloudinary.com/kdr2/image/upload/c_scale,w_400/img-kdr2-com/2010/12/pyc_format_example_0.png.png

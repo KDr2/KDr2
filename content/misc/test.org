@@ -89,7 +89,7 @@
   exported html.
 
   #+name: t1
-  #+BEGIN_SRC elisp :results output raw :exports results
+  #+BEGIN_SRC elisp :results output :exports none
     (gen-table-test) ;; from gen-table.el
   #+END_SRC
 
@@ -170,7 +170,7 @@ still too short? are you kidding me?
 
 * Generate Image by R
   #+BEGIN_SRC R :results value html :exports results :width 400 :height 300
-    source(paste0(Sys.getenv("PROJECT_ROOT"), "code/R/lib.R"))
+    source(paste0(Sys.getenv("PROJECT_ROOT"), "/code/R/lib.R"))
     filename <- autogen_path("images", "sandbox1.png")
     p2c <- function(x){
       x[x<=0] <- 720;

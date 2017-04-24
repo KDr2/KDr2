@@ -1,9 +1,9 @@
 library(stringr)
 
-project_root <- Sys.getenv("PROJECT_ROOT") # end with slash
+project_root <- Sys.getenv("PROJECT_ROOT") # end without slash
 
 autogen_path <- function(subdir, file) {
-  paste0(project_root, "static/autogen/", subdir, "/", file)
+  paste0(project_root, "/static/autogen/", subdir, "/", file)
 }
 
 rel_path <- function(abs_path) {
@@ -13,7 +13,7 @@ rel_path <- function(abs_path) {
   file_rel_path <- str_replace(abs_path, project_root, "")
   cwd_rel_path <- str_replace(cwd, project_root, "")
   components = str_split(cwd_rel_path, "/")[[1]]
-  prefix <- strrep("../", length(components) - 1)
+  prefix <- paste0(rep("../", length(components) - 1), collapse="")
   return(paste0(prefix, file_rel_path))
 }
 

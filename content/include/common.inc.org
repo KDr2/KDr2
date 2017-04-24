@@ -1,36 +1,36 @@
 
 #+NAME: dynamic-header
-#+BEGIN_SRC elisp :results value raw :exports results
+#+BEGIN_SRC elisp :results value raw :exports none
   (dynamic-header-for-theme)
 #+END_SRC
 
 #+NAME: dynamic-header-css
-#+BEGIN_SRC elisp :results value raw :exports results
+#+BEGIN_SRC elisp :results value raw :exports none
   (dynamic-header-css-for-theme)
 #+END_SRC
 
 #+NAME: meta-keywords
-#+BEGIN_SRC elisp :results value raw :exports results :var kws='()
+#+BEGIN_SRC elisp :results value raw :exports none :var kws='()
   (html-meta-keywords kws)
 #+END_SRC
 
 #+NAME: org-files-under-dir
-#+BEGIN_SRC elisp :results value raw :exports results :var dir='()
+#+BEGIN_SRC elisp :results value raw :exports none :var dir='()
   (org-files-under-dir dir)
 #+END_SRC
 
 #+NAME: image
-#+BEGIN_SRC elisp :results value raw :exports results :var path="" width=600 title=""
+#+BEGIN_SRC elisp :results value raw :exports none :var path="" width=600 title=""
   (site-image path width title)
 #+END_SRC
 
 #+NAME: inc-code
-#+BEGIN_SRC elisp :results value raw :exports results :var path="" lang=""
+#+BEGIN_SRC elisp :results value raw :exports none :var path="" lang=""
   (inc-code path lang)
 #+END_SRC
 
 #+NAME: youtube
-#+BEGIN_SRC elisp :results value raw :exports results :var id=""
+#+BEGIN_SRC elisp :results value raw :exports none :var id=""
   (html-youtube-video id)
 #+END_SRC
 
