@@ -117,7 +117,7 @@ h1, h2, h3 {
     line-height: 1.4;
 }
 
-h2 span, h3 span, h4 span {
+h2 span.section-number-2, h3 span.section-number-3, h4 span.section-number-4 {
     display: inline-block;
     width: 38px;
     height: 38px;
@@ -183,9 +183,9 @@ h3 .todo, h3 .done {
 .timestamp {
     padding-left: 2px;
     padding-right: 2px;
-    color: #ccc;
+    color: #789;
     font-style: oblique;
-    font-size: large;
+    font-size: smaller;
 }
 
 .timestamp:before{
