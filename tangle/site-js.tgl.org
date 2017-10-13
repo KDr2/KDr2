@@ -76,35 +76,10 @@ Init google analytics code
   }
 #+END_SRC
 
-Get Moments
-#+BEGIN_SRC javascript :tangle ../output/static/script/site.js
-  function render_moments(){
-      var num = $("#moments-container").data("num");
-      if(!num)return;
-      get_moments(function(data) {
-          $("#moments-loading").hide();
-          for(var i = 0; i < num && i < data.length; i++) {
-              $("#moments-container").append($("<div class=\"moment\">" + data[i] + "</div>"));
-          }
-      });
-  }
-  function get_moments(render){
-      $.ajax({
-          url: "http://ds3.kdr2.com/moments",
-          jsonp: "callback",
-          dataType: "jsonp",
-          success: function(response) {
-              render(response);
-          }
-      });
-  }
-#+END_SRC
-
 Register document reday callback:
 #+BEGIN_SRC javascript :tangle ../output/static/script/site.js
   $(document).ready(function(){
       init_site();
       init_gat();
-      render_moments();
   });
 #+END_SRC

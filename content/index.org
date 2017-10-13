@@ -15,14 +15,6 @@ Hi, I'm KDr2(ZHUO QL), And here is my website, a place for myself.
 - [[file:project/index.org][Projects]] / [[file:resource/index.org][Resources]] / [[file:misc/links.org][Links]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
-* Moments
-#+BEGIN_EXPORT HTML
-<div id="moments-container" data-num=3>
-<div class="moment" id="moments-loading">Loading... </div>
-</div>
-#+END_EXPORT
-#+ATTR_HTML: :style float: right
-[[file:misc/moments.org][more...]]
 * Recent Posts
   #+NAME: recent-posts
   #+BEGIN_SRC elisp :exports none :results raw value
