@@ -1,0 +1,40 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: 枯小沧
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+# - DATE
+<2018-01-02 Tue>
+
+# - CONTENT
+
+已收起，那热忱；\\
+潮起潮落，你已不再看；\\
+我愿干涸，不问明天。
+
+已放下，那执念；\\
+飓风旋转，你不再起波澜；\\
+我在干涸，不畏明天。
+
+沧海桑田，你我无需历练；\\
+愿尘世繁华，迎你笑容灿烂；\\
+我已干涸，只为那天。
+
+我已干涸，请勿遗憾；\\
+我已干涸，只为永久相伴。
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "comment.inc.org"
+  #+END:

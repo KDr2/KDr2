@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2018-01-02 Tue 21:17" 中 d1801-driedinlet "essay/1801-dried-inlet.org" "枯小沧")
 ("2015-01-13 Tue 19:54" en d1501-stap-bug17696-fixed "tech/main/1501-stap-bug17696-fixed.org" "Systemtap: Bug 17696 is fixed")
 ("2014-12-28 Sun 21:54" en d1412-problem-stap-tracepoints "tech/main/1412-problem-stap-tracepoint.org" "Problem: SystemTap fails to find kernel tracepoints")
 ("2014-11-25 Tue 22:14" 中 d1411-numa-mch-qemu "tech/main/1411-numa-machine-with-qemu.org" "Emulate a NUMA machine with QEMU")
