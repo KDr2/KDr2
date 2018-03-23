@@ -120,6 +120,14 @@
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
+* 20180322
+** 抓娃娃
+   我对仔妈说：“今天看了一个笑话，‘ *有些人表面上看起来牛逼哄哄的，实
+   际上抓娃娃至今都没成功过。* ’” \\
+   仔妈：“戳到了你的痛处？” \\
+   我：“对。” \\
+   仔听了跑过来扑到我怀里说：“爸爸抓自己家娃娃成功了！”
+
 * Discuss and Comment
   #+BEGIN: inc-file :file "comment.inc.org"
   #+END:
