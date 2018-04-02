@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Books
+#+TITLE: Books I participated
 #+AUTHOR: KDr2
 
 # #+OPTIONS: toc:nil
@@ -8,44 +8,16 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
-#+CALL: meta-keywords(kws='("book" "douban")) :results raw
+#+CALL: meta-keywords(kws='("book" "reviewer" "author")) :results raw
 
-* Books I have read
-
-#+BEGIN_HTML
-<div style="margin-bottom: 24px; text-align:center;">
-<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=collection&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
-</div>
-#+END_HTML
-
+* As Reviewer
+  - [[https://www.amazon.com/dp/1785880918][Julia High performance]]
+  - [[https://www.amazon.com/dp/1783553316][Mastering Julia]]
+  - [[https://www.amazon.com/dp/178829274X][Julia 1.0 By Example]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
-* Books I'm reading
-
-#+BEGIN_HTML
-<div style="margin-bottom: 24px; text-align:center;">
-<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=dolist&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
-</div>
-#+END_HTML
-
-
-#+BEGIN: inc-file :file "gad.inc.org"
-#+END:
-
-* Books I want to read
-
-#+BEGIN_HTML
-<div style="margin-bottom: 24px; text-align:center;">
-<script type="text/javascript" src="http://www.douban.com/service/badge/KDr2/?selection=random&amp;picsize=medium&amp;show=wishlist&amp;n=80&amp;hidelogo=on&amp;cat=book&amp;columns=5"></script>
-</div>
-#+END_HTML
-
-
-#+BEGIN: inc-file :file "gad.inc.org"
-#+END:
-
-# * Discuss and Comment
-#  #+BEGIN: inc-file :file "comment.inc.org"
-#  #+END:
+* Discuss and Comment
+  #+BEGIN: inc-file :file "comment.inc.org"
+  #+END:
