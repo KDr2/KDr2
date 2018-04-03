@@ -10,8 +10,6 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("kdr2" "friend" "blog" "link")) :results raw
 
-* Family
-  - [[http://c.kdr2.com][My Child]]
 * Bloggers
   - [[http://fann.im][Meet @fannheyward]]
   - [[http://blog.liulantao.com][Peek Poke]]
@@ -23,8 +21,7 @@
 
 * Discuss and Comment
 
-  Leave a comment on this page if you want to add your link here.
+  Send me an email if you want to add your link here.
 
   #+BEGIN: inc-file :file "comment.inc.org"
   #+END:
-

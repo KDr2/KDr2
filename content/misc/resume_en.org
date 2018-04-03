@@ -62,7 +62,6 @@
   - Emacs, org-mode, Graphviz, Tex/LaTeX
   - IDE from JetBrains
 
-
 * OpenSource Projects
 
   - RedisLevelDB:
@@ -90,7 +89,7 @@
 * Work Experience
   Please email me to get more details of this section, if necessary.
 
-  - 2013.10.01 - 2014.10.01, Pintics (Startup in USA, worked remotely)
+  - 2013.10.01 - 2014.10.01, Pintics (a startup in USA, worked remotely)
   - 2011.05.03 - 2013.06.20, Appwill Inc., server side development;
   - 2007.07.28 - 2011.04.28, AGREE TECH( http://www.agree.com.cn/ ),
     Middle Ware and Teller System development;

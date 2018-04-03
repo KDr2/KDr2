@@ -20,7 +20,7 @@
    :PROPERTIES:
    :CUSTOM_ID: emacs
    :END:
-   - org-mode: http://orgmode.org/cgit.cgi/org-mode.git/log/?qt=author&q=KDr2
+   - org-mode: https://github.com/KDr2/org-mode/commits/master?author=KDr2
 
 
 #+BEGIN: inc-file :file "gad.inc.org"

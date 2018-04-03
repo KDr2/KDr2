@@ -9,7 +9,6 @@
 
 I share resources useful to me here:
 
-- [[file:books.org][Books]]
 - [[file:stardict.org][Stardict Dictionaries/星际译王词典文件]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
