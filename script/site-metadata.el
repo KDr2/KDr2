@@ -1,6 +1,6 @@
 ;;(time lang id file title)
-("2018-02-25 Sun 21:17" 中 d1801-driedinlet "essay/1802-child-unterances-2018.org" "仔句精选, 2018")
-("2018-02-25 Sun 21:17" 中 d1801-driedinlet "essay/1802-child-unterances-2017.org" "仔句精选, 2017")
+("2018-02-25 Sun 21:17" 中 d1802-child-utter-2018 "essay/1802-child-utterances-2018.org" "仔句精选, 2018")
+("2018-02-25 Sun 21:17" 中 d1802-child-utter-2017 "essay/1802-child-utterances-2017.org" "仔句精选, 2017")
 ("2018-01-02 Tue 21:17" 中 d1801-driedinlet "essay/1801-dried-inlet.org" "枯小沧")
 ("2015-01-13 Tue 19:54" en d1501-stap-bug17696-fixed "tech/main/1501-stap-bug17696-fixed.org" "Systemtap: Bug 17696 is fixed")
 ("2014-12-28 Sun 21:54" en d1412-problem-stap-tracepoints "tech/main/1412-problem-stap-tracepoint.org" "Problem: SystemTap fails to find kernel tracepoints")
