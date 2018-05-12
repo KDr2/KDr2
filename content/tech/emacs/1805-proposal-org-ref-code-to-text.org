@@ -1,0 +1,118 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: Proposal for Orgmode: references from code to text.
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("orgmode" "literate programming")) :results raw
+
+# - DATE
+<2018-05-12 Sat>
+
+
+Literate programming is writing out the program logic in a human
+language with included (separated by a primitive markup) code snippets
+and macros. A preprocessor is used to substitute arbitrary
+hierarchies, or rather "interconnected 'webs' of macros", to produce
+the compilable source code with one command ("tangle"), and
+documentation with another ("weave").
+
+So in a literate programming source file, any chunk is either a block
+of code or a block of document in a human language, I'll call them
+*code* and *text* below.
+
+In my opinion, code and text should be able to reference each other:
+
+- *Text refers to text* \\
+  In the exported/woven documentation, these references act as links,
+  make interconnections between relevant topics.
+- *Text refers to code* \\
+  The links in the exported/woven documentation can also link to a
+  line of code if the code blocks are also included in the
+  exported/woven documentation.
+- *Code refers to code* \\
+  That's the most important part of the literate programming. This
+  kind of references act as placeholders or something like macro in
+  the C-programming language. With it, literate programming provides
+  an ability to change the order of the source code from a
+  machine-imposed sequence to one convenient to the human mind. [[https://en.wikipedia.org/wiki/Literate_programming#Example][Here
+  is a simple Example depicts this concept]].
+- *Code refers to text* \\
+  So far as I know, no literate programming tool has this kind of
+  references. However, this kind of references could be very benifical
+  too. Many programming languages have a mechanism to support
+  embedding documentation(usually as comments) in the source code, AKA
+  [[https://en.wikipedia.org/wiki/Docstring][Docstring]]. These embedded documentations are widely and conveniently
+  used in editor, REPL and IDE. For instance, the docs of any elisp
+  function that we can read in Emacs are from the elisp source.
+
+  But in literate programming we seldom embed comments into the code
+  blocks, as an impliaction the extracted/tangled code has no docs
+  embeded. If we can refer to chunks of text in the code blocks, we
+  will have the chance to include these chunks of text as embeded docs
+  in the code in the tangling process, which results in
+  well-documented source code. This is useful especially while the
+  programmer are authoring reusable source code, like libraries or
+  frameworks.
+
+Here is the implementation status of these kinds of references of
+noweb and Org mode (~->~ means 'has the ability to make reference
+to'):
+
+  | tool     | text -> text | code -> code     | text -> code   | code -> text |
+  |----------+--------------+------------------+----------------+--------------|
+  | noweb    | No           | Yes              | No             | No           |
+  | Org mode | Yes, links   | Yes, noweb style | Yes, ~(ref:*)~ | No           |
+
+
+As we saw, both noweb and Org mode do not implement the reference from
+code to text. Could we provide this feature in Org mode -- the best
+and widely used literate programming tool?
+
+As a proposal, in Org mode, we can mimic the labels in
+code blocks(i.e. text -> code reference), use something like
+~(ref:text:<REF-NAME>)~ as the reference from code to text:
+
+#+BEGIN_SRC org
+  ,#+NAME: DOC-OF-ADD
+  We use the function add to calculate the sum of two numbers.
+
+  ,#+BEGIN_SRC elisp
+  (defun add (x y)
+    "(ref:text:DOC-OF-ADD)"
+    (+ x y))
+  ,#+END_SRC
+#+END_SRC
+
+The Org file above will produce the code below:
+
+#+BEGIN_SRC elisp
+  (defun add (x y)
+    "We use the function add to calculate the sum of two numbers."
+    (+ x y))
+#+END_SRC
+
+- Beside the ~NAME~, we could also support reference via the
+  ~CUSTOM_ID~ property or anything else that can locate a text chunk.
+- In the tangling process, we should do some kind of transformation of
+  the target text, for example, escape the quote mark. A hook may be
+  needed to let the user customize the transformation too.
+
+What do you think?
+
+* References
+  - https://en.wikipedia.org/wiki/Literate_programming
+  - https://en.wikipedia.org/wiki/Noweb
+  - https://en.wikipedia.org/wiki/Docstring
+  - http://orgmode.org/manual/Extracting-source-code.html#Extracting-source-code
+  - http://orgmode.org/manual/Noweb-reference-syntax.html#Noweb-reference-syntax
+  - http://orgmode.org/manual/Literal-examples.html#Literal-examples
+  - https://orgmode.org/worg/dev/org-syntax.html
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "comment.inc.org"
+  #+END:

@@ -1,4 +1,6 @@
 ;;(time lang id file title)
+("2018-05-12 Sat 21:32" en d1805-org-ref-code-to-text "tech/emacs/1805-proposal-org-ref-code-to-text.org"
+ "Proposal for Orgmode: references from code to text.")
 ("2018-02-25 Sun 21:17" 中 d1802-child-utter-2018 "essay/1802-child-utterances-2018.org" "仔句精选, 2018")
 ("2018-02-25 Sun 21:17" 中 d1802-child-utter-2017 "essay/1802-child-utterances-2017.org" "仔句精选, 2017")
 ("2018-01-02 Tue 21:17" 中 d1801-driedinlet "essay/1801-dried-inlet.org" "枯小沧")
