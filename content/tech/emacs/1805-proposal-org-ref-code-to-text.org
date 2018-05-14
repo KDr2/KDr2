@@ -51,7 +51,7 @@ In my opinion, code and text should be able to reference each other:
   function that we can read in Emacs are from the elisp source.
 
   But in literate programming we seldom embed comments into the code
-  blocks, as an impliaction the extracted/tangled code has no docs
+  blocks, as an implication the extracted/tangled code has no docs
   embeded. If we can refer to chunks of text in the code blocks, we
   will have the chance to include these chunks of text as embeded docs
   in the code in the tangling process, which results in
