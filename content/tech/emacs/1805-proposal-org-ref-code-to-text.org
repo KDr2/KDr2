@@ -104,6 +104,11 @@ The Org file above will produce the code below:
 
 What do you think?
 
+* Updates:
+
+  <2018-05-15 Tue> I also posted this article on [[https://lists.gnu.org/archive/html/emacs-orgmode/2018-05/msg00301.html][the Orgmode mail list]]
+  and [[https://www.reddit.com/r/orgmode/comments/8iw1ab][Reddit]], you can join the discussion there.
+
 * References
   - https://en.wikipedia.org/wiki/Literate_programming
   - https://en.wikipedia.org/wiki/Noweb
