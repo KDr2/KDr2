@@ -1,0 +1,105 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: An approach to references from code to text in Orgmode.
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("orgmode" "literate programming")) :results raw
+
+# - DATE
+<2018-05-17 Thu>
+
+A few days ago, I made [[file:1805-proposal-org-ref-code-to-text.org][a proposal for implementing references from
+code to text in Orgmode]], and posted it on [[https://lists.gnu.org/archive/html/emacs-orgmode/2018-05/msg00301.html][the Orgmode mail
+list]]. Thanks to the community, I got an approach from [[https://lists.gnu.org/archive/html/emacs-orgmode/2018-05/msg00350.html][John
+Kitchin]]. Within this approach, we achieve the target by including
+**the results of** another named code block rather than its body into
+the code block which we want to embed the named text in as its
+docstring, and we cloud do it without touching the source of Orgmode:
+
+  1. Write a piece of code in elisp to get named text as a string, put
+     it into a named code block so that it can be called in other code
+     blocks.
+  2. Write the text which will be used as docstring with a
+     NAME(~#+NAME:<NAME>~).
+  3. In the target code block, turn on the ~noweb~ flag, and refer to
+     the result of the named code block we wrote in step 1,
+     i.e. ~<<name-of-code(args...)>>~.
+  4. Tangle the code block, it will have the docstring in it.
+
+Now I'll depict this process detailedly.
+
+* The code block to get named text
+
+  I name that block as ~get-named-text~, the code is mainly from Join
+  Kitchin, and with minor changes of mine. It parses the whole Org
+  file, finds the element which is named with the string we given as
+  the only argument, takes out the content of the found element,
+  escapes double quotes in it add surrounds it with a pair of double
+  quotes, then returns that string.
+
+  #+BEGIN_SRC org
+    ,#+NAME: get-named-text
+    ,#+BEGIN_SRC elisp :var name="docstring"
+      (let* ((named-element (org-element-map (org-element-parse-buffer) org-element-all-elements
+                              (lambda (element)
+                                (when (string= (org-element-property :name element) name)
+                                  element))
+                              nil t))
+             (result (buffer-substring (org-element-property :contents-begin named-element)
+                                       (org-element-property :contents-end named-element))))
+        (format "\"%s\"" (replace-regexp-in-string "\\\"" "\\\\\"" result))) ;; escape quote
+    ,#+END_SRC
+  #+END_SRC
+
+* Name the text(docstring)
+  In the same Org file, name your text(docstring):
+  #+BEGIN_SRC org
+    ,#+NAME: doc-for-add
+    This is a sample docstring for the function "add".
+  #+END_SRC
+
+* Put the named text into the target code block
+  #+BEGIN_SRC org
+    ,#+BEGIN_SRC elisp :noweb yes :tangle yes
+    (defun add (x y)
+      <<get-named-text("doc-for-add")>>
+      (+ x y))
+    ,#+END_SRC
+  #+END_SRC
+
+  Notice: turn on the ~:noweb~ flag.
+
+  This code block will be tangled as:
+  #+BEGIN_SRC elisp
+    (defun add (x y)
+      "This is a sample docstring for the function \"add\"."
+      (+ x y))
+  #+END_SRC
+
+
+* And a step further
+  With the help of [[https://orgmode.org/worg/org-contrib/babel/library-of-babel.html][The Library of Babel]], we don't have to include the
+  code block ~get-named-text~ into every Org file. I put the block
+  into an Org file under my .emacs.d directory,
+  ~$HOME/.emacs.d/src/resources/org-babel-lib.org~. Then put this line
+  into my .emacs:
+  #+BEGIN_SRC elisp
+    (org-babel-lob-ingest (expand-file-name "~/.emacs.d/src/resources/org-babel-lib.org"))
+  #+END_SRC
+
+  This makes the code block ~get-named-text~ a predefined and callable
+  code block that can be seen and called in any Org file.
+
+* References
+  - [[file:1805-proposal-org-ref-code-to-text.org][Proposal for implementing references from code to text in Orgmode]]
+  - https://lists.gnu.org/archive/html/emacs-orgmode/2018-05/msg00369.html
+  - http://orgmode.org/manual/Noweb-reference-syntax.html#Noweb-reference-syntax
+
+* Discuss and Comment
+  #+BEGIN: inc-file :file "comment.inc.org"
+  #+END:
