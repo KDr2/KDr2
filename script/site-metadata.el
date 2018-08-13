@@ -1,11 +1,10 @@
 ;;(time lang id file title)
 ("2018-05-17 Thu 19:21" en d1805-approach-org-ref-code-to-text "tech/emacs/1805-approach-org-ref-code-to-text.org"
- "An approach to references from code to text in Orgmode.")
+ "An approach to references from code to text in Orgmode")
 ("2018-05-12 Sat 21:32" en d1805-org-ref-code-to-text "tech/emacs/1805-proposal-org-ref-code-to-text.org"
- "Proposal for Orgmode: references from code to text.")
+ "Proposal for Orgmode: references from code to text")
 ("2018-02-25 Sun 21:17" 中 d1802-child-utter-2018 "essay/1802-child-utterances-2018.org" "仔句精选, 2018")
 ("2018-02-25 Sun 21:17" 中 d1802-child-utter-2017 "essay/1802-child-utterances-2017.org" "仔句精选, 2017")
-("2018-01-02 Tue 21:17" 中 d1801-driedinlet "essay/1801-dried-inlet.org" "枯小沧")
 ("2015-01-13 Tue 19:54" en d1501-stap-bug17696-fixed "tech/main/1501-stap-bug17696-fixed.org" "Systemtap: Bug 17696 is fixed")
 ("2014-12-28 Sun 21:54" en d1412-problem-stap-tracepoints "tech/main/1412-problem-stap-tracepoint.org" "Problem: SystemTap fails to find kernel tracepoints")
 ("2014-11-25 Tue 22:14" 中 d1411-numa-mch-qemu "tech/main/1411-numa-machine-with-qemu.org" "Emulate a NUMA machine with QEMU")
