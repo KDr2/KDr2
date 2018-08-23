@@ -15,7 +15,7 @@
 
   - An old-fashioned hardcore Linux guy;
   - An open-source supporter, not an opponent of GPL;
-  - An Emacs and Orgmode User;
+  - An Emacs and Orgmode user;
   - An reader who is trying to read more;
   - An writer who is trying to write hard;
   - An idiot of music and ryhme;

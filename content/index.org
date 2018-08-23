@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Cultivating a Simple Life.
+#+TITLE: An Indistinct Mind
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+BEGIN: inc-file :file "common.inc.org"
@@ -12,10 +12,13 @@
 Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a misanthrope in
 society, an ascetic in spirit, a learner in the lifetime.
 
-I dedicate my thoughts to epistemology, learning styles & methods,
-computer science, and the study of natural languages.
-
-You can find more about me on [[file:misc/about.org][this page]], and contact me by email.
+I am searching for a better understanding of myself and my
+surroundings. To achieve so, I dedicate my thoughts to epistemology,
+cognitive science, computer science, and linguistics. I read, think,
+practice, and write. I would like to write here about things I
+learned, if I think they are worth to write. But getting such things
+is hard to me, a person on the hard way. So please don't set any
+expectation.
 
 * Navigation
 - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]] / [[file:misc/links.org][Links]]
