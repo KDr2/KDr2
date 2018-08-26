@@ -83,12 +83,12 @@
 # # Develop Tools and Libraries ################
 #+MACRO: linux [[http://www.kernel.org][Linux]]
 #+MACRO: debian [[http://www.debian.org][Debian]]
-#+MACRO: fluxbox [[http://fluxbox.org][Fluxbox]]
 #+MACRO: emacs [[http://www.gnu.org/software/emacs/][Emacs]]
 #+MACRO: qemu [[http://wiki.qemu.org/Main_Page][QEMU]]
 #+MACRO: gcc [[http://gcc.gnu.org/][GCC]]
 #+MACRO: llvm [[http://www.llvm.org][LLVM]]
 #+MACRO: pgsql [[http://www.postgresql.org/][PostgreSQL]]
+#+MACRO: rex [[https://www.rexify.org/][Rex]]
 
 # # Dev Libraries #######################
 #+MACRO: boost [[http://www.boost.org/][Boost]]
@@ -99,7 +99,6 @@
 # # Web Lib/Frameworks ###################
 #+MACRO: fcgi [[http://www.fastcgi.com/][FastCGI]]
 #+MACRO: django [[http://www.djangoproject.com/][Django]]
-#+MACRO: pylons [[http://www.pylonshq.com/][Pylons]]
 #+MACRO: wsgi [[http://www.python.org/dev/peps/pep-0333/][WSGI]]
 
 # # Documentation Tools #####################

@@ -1,0 +1,101 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Is Rex dying?
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("systemtap" "stap" "tracepoint")) :results raw
+
+# - DATE
+<2018-08-26 Sun>
+
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+{{{rex}}} is a deployment and configuration management tool, like
+Ansible being. Here are its advantages from its official website:
+
+- Uses ssh, no agent required
+- Seamless integration, no conflicts
+- Easy to use and to extend
+- Easy to learn, it‘s just plain Perl
+
+What I love most is the last one, "just plain perl", which makes it
+more flexible. If you hate stereotype configuration files like me, you
+should try it.
+
+But unfortunately, things I don't expect happen around it:
+
+- Development is under a low activity;
+- Offical website was down for a time(being up now);
+- Modules repository(https://modules.rexify.org) is broken: [[https://github.com/RexOps/Rex/issues/1185][1185]],
+  [[https://github.com/RexOps/Rex/issues/1201][1201]].
+
+The break of the modules repository is really the worst one. It indeed
+casts a damper to the usage: users could not install any extension
+module by ~rexify --use~ before it is fixed. (There's a
+working-around, please read on.)
+
+With all these being seen, the consequential question comes out: Is
+{{{rex}}} dying?
+
+I hope not, and it is actually not.
+
+Ferenc Erki, one of the {{{rex}}} maintainers, said [[https://groups.google.com/forum/#!topic/rex-users/v5nTnGHeNms][on the mail list
+of Rex-User]]:
+
+#+begin_quote
+... I personally don't consider rex as a dead project, despite the low
+activity. I wish I could work on it more, but it proves to be hard to
+find the quality time simply because life happens (in chronological
+order: being knocked out of tech for a year due to burnout, changing
+jobs, moving to a another city hundreds of kilometres away, getting
+married, selling/renovating flats in another country).
+
+In fact, I started to organize an open source contribution meetup
+locally so I have some dedicated time to work on non-paid open source
+stuff again (mostly rex) in a managed fashion. So at least once a
+month I'm sitting down and going through open issues and pull
+requests. Plus I committed a contribution guide earlier this year that
+should make many workflows around the project smoother.
+
+Maintaining all the surrounding additional stuff (website, CI, build
+pipelines, repos, etc. + sister projects like repositorio and
+rex-recipes + support over IRC/mailing list) are currently beyond
+me. If anyone is interested in helping out, I'm happy to discuss ideas
+and review code.
+
+All help are welcome :)
+
+...
+#+end_quote
+
+So some guys are still fighting there and we will probably see its
+resuscitation someday.
+
+If you are, like me, using {{{rex}}} now, or are trying to use it,
+here's a working-around for the modules installation, install from the
+source:
+
+#+begin_src sh
+  $cd $PROJECT_HOME
+  $ls
+  Rexfile
+  $mkdir lib -p
+  $git clone https://github.com/RexOps/rex-recipes.git
+  $git -C rex-recipes checkout 1.4  # ensure rex-recipes is on branch 1.4
+  $ln -sf $PWD/rex-recipes/Rex/ lib/
+  $ls
+  lib  Rexfile  rex-recipes
+#+end_src
+
+After that, all the extension modules in rex-recipes are installed.
+
+* Discuss and Comment
+  #+INCLUDE: ../../include/comment.inc.org

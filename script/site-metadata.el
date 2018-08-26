@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2018-08-26 Sun 21:41" en d1808-is-rex-dying "tech/main/1808-is-rex-dying.org" "Is Rex dying?")
 ("2018-05-17 Thu 19:21" en d1805-approach-org-ref-code-to-text "tech/emacs/1805-approach-org-ref-code-to-text.org"
  "An approach to references from code to text in Orgmode")
 ("2018-05-12 Sat 21:32" en d1805-org-ref-code-to-text "tech/emacs/1805-proposal-org-ref-code-to-text.org"
