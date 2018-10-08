@@ -393,4 +393,10 @@ center.image-container {
     #table-of-contents {
         display: none;
     }
+    #org-div-home-and-up {
+        margin-top: 40px;
+        /* margin-left: 50%; */
+        min-width: 100%;
+        text-align: right;
+    }
 }
