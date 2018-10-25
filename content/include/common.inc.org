@@ -41,6 +41,7 @@
 # # MACRO EXAMPLES ####################
 #+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
 
+#+MACRO: image [[http://depot.kdr2.com/img-kdr2-com/$1]]
 #+MACRO: inline-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
 #+MACRO: inline-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
 
@@ -55,7 +56,7 @@
 
 # # SELF INFO ###################
 #+MACRO: mytwt [[http://twitter.com/KDr2]]
-#+MACRO: email zhuo.dev *at* gmail *dot* com
+#+MACRO: email zhuoql *at* zoho *dot* com
 #+MACRO: kd@github [[http://github.com/KDr2/][My GitHub]]
 #+MACRO: kdweb@github [[http://github.com/KDr2/kdr2-on-web][kdr2-on-web at GitHub]]
 
