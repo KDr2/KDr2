@@ -53,7 +53,7 @@
           (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path)))
     (concat "#+BEGIN_EXPORT HTML\n<center class=\"image-container\">"
             "<a target=\"_blank\" href=\"" original-url "\">"
-            "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 600px; \">"
+            "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 100%; \">"
             "</a><br/>" title "</center>\n#+END_EXPORT\n")))
 
 (defun inc-code (path lang)

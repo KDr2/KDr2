@@ -16,8 +16,8 @@
   - An old-fashioned hardcore Linux guy;
   - An open-source supporter, not an opponent of GPL;
   - An Emacs and Orgmode user;
-  - An reader who is trying to read more;
-  - An writer who is trying to write hard;
+  - A reader who is trying to read more;
+  - A writer who is trying to write hard;
   - An idiot of music and ryhme;
 
   # ** Work
@@ -92,44 +92,6 @@
    https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
    and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
    source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
-
-# ------------------------------------
-# * Support Me
-#  :PROPERTIES:
-#  :CUSTOM_ID: support_me
-#  :END:
-#  -
-#    #+BEGIN_HTML
-#    <form id="paypal" name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-#    <input type="hidden" name="cmd" value="_xclick">
-#    <input type="hidden" name="business" value="zhuo@hexoasis.com">
-#    <input type="hidden" name="item_name" value="Support KDr2.com">
-#    <input type="hidden" name="item_number" value="1">
-#    <input type="hidden" name="lc" value="US">
-#    <input type="hidden" name="currency_code" value="USD">
-#    <input type="hidden" name="tax" value="0">
-#    <input type="hidden" name="return" value="http://kdr2.com">
-#    <button alt="Support KDr2" class="button_to_link"
-#    data-ga-id="donate-link" data-ga-label="ABOUT" data-ga-action="link.paypal.click">
-#    Support KDr2 by Paypal
-#    </button>
-#    </form>
-#    #+END_HTML
-#  - 支付宝:
-#    Scan [[#qr-codes][QR Code]].
-#    # #+ATTR_HTML: :target _blank :class gat-click :data-ga-id donate-link :data-ga-action link.alipay.click :data-ga-label ABOUT
-#    # [[https://me.alipay.com/KDr2][通过支付宝]]
-#
-#  #+BEGIN: inc-file :file "gad.inc.org"
-#  #+END:
-# ------------------------
-# * QR Codes
-#  :PROPERTIES:
-#  :CUSTOM_ID: qr-codes
-#  :END:
-# | <c12>        | <c12>        | <c12>        |
-# | KDr2.com     | WeChat       | Alipay       |
-# | {{{inline-image(common/qr-kdr2.com.png)}}} | {{{inline-image(common/qr-kdr2.wechat.png)}}} | {{{inline-image(common/qr-alipay.kdr2.png)}}} |
 
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org

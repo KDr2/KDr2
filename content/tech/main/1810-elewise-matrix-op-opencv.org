@@ -48,7 +48,8 @@ is not important.
    The following image demonstrates the resulting image of an add
    operation of two images:
 
-   {{{image(2018/10/opencv-tut-010.png)}}}
+   # {{{image(2018/10/opencv-tut-010.png)}}}
+   #+CALL: image[:results value](path="2018/10/opencv-tut-010.png") :results raw
 
    In case, you want to add a single scalar value to all elements of a
    ~Mat~ object, you can simply use something similar to the
@@ -71,7 +72,8 @@ is not important.
    Here's the image transformation when the above code is executed on
    it:
 
-   {{{image(2018/10/opencv-tut-020.png)}}}
+   # {{{image(2018/10/opencv-tut-020.png)}}}
+   #+CALL: image[:results value](path="2018/10/opencv-tut-020.png") :results raw
 
    In the above example codes, simply increase the added value to get
    an even brighter image.
@@ -94,7 +96,8 @@ is not important.
    If executed on the sample pictures from the previous section with
    the add example, the result would be similar to the following:
 
-   {{{image(2018/10/opencv-tut-030.png)}}}
+   # {{{image(2018/10/opencv-tut-030.png)}}}
+   #+CALL: image[:results value](path="2018/10/opencv-tut-030.png") :results raw
 
    Notice the transparent text that is similar to the watermark
    usually applied by photo-editing applications. Notice the comments
@@ -124,7 +127,8 @@ is not important.
 
    Here's the result of the subtraction operation:
 
-   {{{image(2018/10/opencv-tut-040.png)}}}
+   # {{{image(2018/10/opencv-tut-040.png)}}}
+   #+CALL: image[:results value](path="2018/10/opencv-tut-040.png") :results raw
 
    Notice how the subtraction of higher pixel values (brighter pixels)
    from the source image results in the dark color of the overlay
@@ -229,7 +233,8 @@ is not important.
   inverted (in the sense of its binary pixel values), which is
   depicted in the following image:
 
-  {{{image(2018/10/opencv-tut-050.png)}}}
+  # {{{image(2018/10/opencv-tut-050.png)}}}
+  #+CALL: image[:results value](path="2018/10/opencv-tut-050.png") :results raw
 
   The ~bitwise_and~ function, or the ~&~ operator, is used to perform
   a bitwise ~And~ operation on pixels from two images or on pixels
@@ -250,7 +255,8 @@ is not important.
   demonstration of how ~bitwise_and~ results in an image that passes
   the white pixels and removes the black pixels:
 
-  {{{image(2018/10/opencv-tut-060.png)}}}
+  # {{{image(2018/10/opencv-tut-060.png)}}}
+  #+CALL: image[:results value](path="2018/10/opencv-tut-060.png") :results raw
 
   Besides masking certain areas of an image, the bitwise ~And~
   operation can be used to filter out a channel altogether. To be able
@@ -286,7 +292,8 @@ is not important.
   brighter) in any of its input images. Here's the result of
   performing the bitwise ~Or~ operation:
 
-  {{{image(2018/10/opencv-tut-070.png)}}}
+  # {{{image(2018/10/opencv-tut-070.png)}}}
+  #+CALL: image[:results value](path="2018/10/opencv-tut-070.png") :results raw
 
   Similar to the bitwise ~And~ operation, you can also use bitwise
   ~Or~ operation to update an individual channel or all the pixels of
@@ -316,7 +323,8 @@ is not important.
   Here is the resulting image, if the ~Exclusive Or~ operation is
   performed on the example image from the preceding section:
 
-  {{{image(2018/10/opencv-tut-080.png)}}}
+  # {{{image(2018/10/opencv-tut-080.png)}}}
+  #+CALL: image[:results value](path="2018/10/opencv-tut-080.png") :results raw
 
   Notice how this operation leads to the inversion of the pixels in
   the masked area? Think about the reason behind this by writing down
