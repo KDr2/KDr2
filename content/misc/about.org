@@ -58,7 +58,7 @@
   -->
   #+END_EXPORT
 
-** Contact
+** Contact Me
    :PROPERTIES:
    :CUSTOM_ID: contact_me
    :END:
@@ -66,32 +66,24 @@
    - Skype : zhuoql
    - Emails :
      - zhuo@@html:&#x01F4E7;@@hexoasis.com, zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
-     - zhuo.dev@@html:&#x01F4E7;@@gmail.com, for development affairs, e.g. mail
-       list, bug report.
+     - zhuoql@@html:&#x01F4E7;@@yahoo.com, for development affairs,
+       e.g. mail list, bug report.
    - Mobile : +86 0b10111010 05532 0x0636
    - GPG Key:  [[http://pgp.mit.edu/pks/lookup?op=get&search=0x3B9EA48B157CCBC9][0x3B9EA48B157CCBC9]]
-   - [[file:schedule.org][Public Schedule]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
 * About This Site
-** Content of the site
-   My clutter, hope it helps.
+  This site is built with emacs and org-mode, hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]].
 
-** Technical Perspective
-   This site is built with emacs and org-mode, and some other tools, I
-   list all of them here:
+  You can find my org mode configuration at
+  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
+  and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
+  source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
 
-   - Emacs: http://www.gnu.org/software/emacs/
-   - Org-Mode: http://orgmode.org/
-   - Google Analytics: http://www.google.com/analytics/
-   - Hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]]
-
-   You can find my org mode configuration at
-   https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
-   and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
-   source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
+  I write/post here things that I think are worth to read, and hope
+  they help. Feel free to contact me if you want.
 
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org

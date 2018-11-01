@@ -47,7 +47,6 @@
     - Julia, R
     - Golang, Erlang
 
-
 * 常用工具
   (包括 OS/Platform/FrameWork/Library/Product/DevTools 等)
 
