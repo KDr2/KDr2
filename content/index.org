@@ -9,8 +9,9 @@
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
 
-Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a misanthrope in
-society, an ascetic in spirit, a learner in the lifetime.
+Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a martinet in
+behavior, a misanthrope in society, an ascetic in spirit, a learner in
+the lifetime.
 
 I am searching for a better understanding of myself and my
 surroundings. To achieve so, I dedicate my thoughts to epistemology,
@@ -21,6 +22,7 @@ is hard to me, a person on the hard way. So please don't set any
 expectation.
 
 * Navigation
+- [[https://www.notion.so/What-is-happening-3fa589c95cb8497fb9a70fec96675db1][What's happening]]
 - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]

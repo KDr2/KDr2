@@ -10,8 +10,9 @@
 
 * About Me
 
-  Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a misanthrope in
-  society, an ascetic in spirit, a learner in the lifetime, and more:
+  Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a martinet in
+  behavior, a misanthrope in society, an ascetic in spirit, a learner
+  in the lifetime, and more:
 
   - An old-fashioned hardcore Linux guy;
   - An open-source supporter, not an opponent of GPL;
