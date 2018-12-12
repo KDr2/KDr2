@@ -1,0 +1,150 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Tutorial: [Salesforce] Creating a custom Lightning component
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("tutorial" "salesforce")) :results raw
+
+<2018-11-30 Fri>
+
+In this tutorial, you will create one custom component. You’ll develop
+Lightning Components in the built-in *integrated development
+environment (IDE)*, the developer console, and see the basic and key
+techniques of Lightning component development.
+
+* Getting ready
+
+  You need a developer console. The Lightning Framework is a
+  JavaScript-based user interface component
+  framework. *Component-based* means components are
+  reusable. Lightning Framework, which is JavaScript-based, is case
+  sensitive. Consider the following example:
+
+  #+begin_example
+    helloWorld HelloWorld
+  #+end_example
+
+  Here, ~helloWorld~ has ~h~ in lower case and ~W~ in upper case, and
+  ~HelloWorld~ has the initials in upper case. Both will work on
+  Visualforce Framework, but not in the Lightning Framework as it is
+  case-sensitive. Coming to the naming convention, the camel case
+  naming convention is followed in the Lightning Framework. For
+  markup, the HTML style of commenting is followed. If you want to
+  comment on any logic in the controllers, you can use (~//~) for a
+  single line, (~/*~) and (~*/~) for multiple line comments.
+
+* How to do it...
+  1. Switch to the *Developer Console*, as you are in the *Lightning
+     Experience* environment. There are no issues whatsoever whether
+     you're in *Salesforce Classic* or *Lightning Experience*; you
+     only require the *Developer Console*:
+
+     #+CALL: image[:results value](path="2018/11/salesforce-tut-010.png") :results raw
+
+  2. In the *File* menu, click on *New*. You can choose any
+     development case, such as *Visualforce Page*, and *Visualforce
+     Component*. Apart from these, you have *Lightning Application*,
+     *Lightning Component*, and more. Time to create *Lightning
+     Component*:
+
+     #+CALL: image[:results value](path="2018/11/salesforce-tut-020.png") :results raw
+
+  3. Provide a name for your component. As you can see in the
+     following screenshot, you also have some optional configurations
+     that help the user to use these Lightning Components, such as
+     *Lightning Tab*, *Lightning Page*, and *Lightning Record Page*,
+     *Lightning Communities Page*, *Lightning Quick Action*. As per
+     your requirements, you can choose any of these options or you can
+     configure it later. You can also provide a description, as shown
+     in the following screenshot, and then click on *Submit*:
+
+     #+CALL: image[:results value](path="2018/11/salesforce-tut-030.png") :results raw
+
+  4. In the following screenshot, the first component is
+     ~<aura:component>~. The ~aura~ is a standard namespace, under
+     which some standard ~aura~ components are available. So,
+     ~<aura:component>~ is the outermost component, which means it
+     should be the first component in a Lightning component. On the
+     right-hand side of the following screenshot, you have a Lightning
+     resource bundle:
+
+     #+CALL: image[:results value](path="2018/11/salesforce-tut-040.png") :results raw
+
+* How it works...
+  You now have a component that is a user interface, which is a
+  markup. In the following highlighted code snippet, what you are
+  doing is simply taking ~<aura:attribute...>~. So, one of the
+  features of this Lightning Framework is that you can declare the
+  variables within the markup itself by using ~aura:attribute~.
+
+  You are taking a variable with a ~name~, and also a ~type~, which is
+  ~String~. Optionally, you can also assign the ~default~ value if the
+  variable is not assigned with any value. You can also optionally
+  give the following ~description~:
+
+  #+begin_src xml
+    <aura:component >
+      <aura:attribute name="enterName" type="String" default="" description="" />
+    </aura:component>
+  #+end_src
+
+  In the following highlighted code snippet, you are taking ~ui~, that
+  is, user interface. ~ui~ is a standard namespace, under which UI
+  components are placed. We are taking ~ui:outputText~, so much so
+  that we are bending the expression here and will provide the ~value~
+  as ~v.enterName~.
+
+  Here, ~v~ stands for a view; on the markup, this component has a
+  variable and you are referencing that variable here. By default, you
+  are giving the variable a value as ~"Enter Name"~ . After that, you
+  are giving ~inputText~, allowing the user to get a value.
+
+  You can also take one more attribute if you want to execute some
+  functionality or a controller job, but for now you are keeping it
+  blank, ~<ui: inputText />~. After that, add a button with the
+  ~label~ as ~Submit~, and finally save your component:
+
+  #+begin_src xml
+    <aura:component >
+      <aura:attribute name="enterName" type="String" default="Enter Name"/>
+      <ui:outputText value="{!v.enterName}" />
+      <ui:inputText />
+      <ui:button label="Submit" />
+    </aura:component>
+  #+end_src
+
+  If there are any syntactical errors, it is going to throw them, or
+  else it is saved to the server. So, you’ve followed the camel case
+  naming style for naming the components. The following highlighted
+  code snippet is for commenting single or multiple line
+  comments. Save your component again, or you can use the shortcut
+  *Ctrl + S*. Now, the component is saved and created:
+
+  #+begin_src xml
+    <aura:component >
+      <!-- for the label of the Name -->
+      <aura:attribute name="enterName" type="String" default="Enter Name"/>
+      <ui:outputText value="{!v.enterName}" />
+      <ui:inputText />
+      <ui:button label="Submit" />
+    </aura:component>
+  #+end_src
+
+  We need to use it in the Lightning pages you have developed through
+  the Lightning App Builder, so this component should be visible in
+  the Lightning App Builder. You have created a Lightning component
+  that observes case sensitivity, camel case naming convention, and
+  commenting. So, you need to use this component in the Lightning
+  pages, through the Lightning App Builder.s
+
+* Further Reading
+  If you found this article interesting and want to learn more about
+  Salesforce Lightning, you can checkout [[https://www.packtpub.com/application-development/salesforce-lightning-cookbook][Salesforce Lightning
+  Cookbook]]. Packed with numerous hands-on and practical recipes,
+  [[https://www.amazon.com/Salesforce-Lightning-Cookbook-enterprise-Components/dp/1789538254][Salesforce Lightning Cookbook]] is a must-read for Salesforce
+  developers, admins, sales consultants, and sales managers.

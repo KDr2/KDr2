@@ -1,5 +1,7 @@
 ;;(time lang id file title)
-("2018-10-25 Thu 15:41" en d1810-elewise-matrix-op-opencv "tech/main/1810-elewise-matrix-op-opencv.org" "Tutorial: Element-Wise Matrix Operations in OpenCV")
+("2018-12-12 Wed 10:41" en d1812-vector-op-cuda "promotion/1812-vector-ops-cuda.org" "Tutorial, CUDA: Vector operations in CUDA")
+("2018-11-30 Fri 15:41" en d1811-salesforce "promotion/1811-salesforce.org" "Tutorial, Salesforce: Creating a custom Lightning component")
+("2018-10-25 Thu 15:41" en d1810-elewise-matrix-op-opencv "tech/main/1810-elewise-matrix-op-opencv.org" "Tutorial, OpenCV: Element-Wise Matrix Operations in OpenCV")
 ("2018-08-26 Sun 21:41" en d1808-is-rex-dying "tech/main/1808-is-rex-dying.org" "Is Rex dying?")
 ("2018-05-17 Thu 19:21" en d1805-approach-org-ref-code-to-text "tech/emacs/1805-approach-org-ref-code-to-text.org"
  "An approach to references from code to text in Orgmode")
