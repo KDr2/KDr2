@@ -43,18 +43,19 @@
 
 ;; example:
 ;; http://res.cloudinary.com/kdr2/image/upload/c_scale,w_400/img-kdr2-com/2010/12/pyc_format_example_0.png.png
-(defun site-image (path width title)
+(defun site-image (path width caption link)
   (let* ((width (or width 600))
-         (title (or title ""))
+         (caption (or caption ""))
          (url
           (concat "http://res.cloudinary.com/kdr2/image/upload/c_scale,w_" (number-to-string width)
                   "/img-kdr2-com/" path))
          (original-url
-          (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path)))
+          (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path))
+         (link (or link original-url)))
     (concat "#+BEGIN_EXPORT HTML\n<center class=\"image-container\">"
-            "<a target=\"_blank\" href=\"" original-url "\">"
+            "<a target=\"_blank\" href=\"" link "\">"
             "<img src=\"" url "\" style=\"width: auto; height: auto; max-width: 100%; \">"
-            "</a><br/>" title "</center>\n#+END_EXPORT\n")))
+            "</a><br/>" caption "</center>\n#+END_EXPORT\n")))
 
 (defun inc-code (path lang)
   (let* ((lang (or lang ""))

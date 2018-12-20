@@ -20,13 +20,13 @@
 
 我才不会告诉你我是 Chelsea 伪球迷! ^_^
 
-#+CALL: image[:results value](path="2014/07/chelsea-cup-00.jpg", width=600, title="Fan Cup") :results raw
+#+CALL: image[:results value](path="2014/07/chelsea-cup-00.jpg", width=600, caption="Fan Cup") :results raw
 
-#+CALL: image[:results value](path="2014/07/chelsea-cup-01.jpg", width=600, title="Fan Cup") :results raw
+#+CALL: image[:results value](path="2014/07/chelsea-cup-01.jpg", width=600, caption="Fan Cup") :results raw
 
-#+CALL: image[:results value](path="2014/07/chelsea-scarf-00.jpg", width=600, title="Crest Scarf") :results raw
+#+CALL: image[:results value](path="2014/07/chelsea-scarf-00.jpg", width=600, caption="Crest Scarf") :results raw
 
-#+CALL: image[:results value](path="2014/07/chelsea-scarf-01.jpg", width=600, title="Crest Scarf") :results raw
+#+CALL: image[:results value](path="2014/07/chelsea-scarf-01.jpg", width=600, caption="Crest Scarf") :results raw
 
 感谢[[http://miss-understood.net/][媳妇]]。
 

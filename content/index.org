@@ -21,6 +21,10 @@ learned, if I think they are worth to write. But getting such things
 is hard to me, a person on the hard way. So please don't set any
 expectation.
 
+
+#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
+
+
 * Navigation
 - [[https://www.notion.so/What-is-happening-3fa589c95cb8497fb9a70fec96675db1][What's happening]]
 - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]]

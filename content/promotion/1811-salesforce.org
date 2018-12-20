@@ -12,6 +12,8 @@
 
 <2018-11-30 Fri>
 
+#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
+
 In this tutorial, you will create one custom component. You’ll develop
 Lightning Components in the built-in *integrated development
 environment (IDE)*, the developer console, and see the basic and key

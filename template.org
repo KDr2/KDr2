@@ -22,7 +22,7 @@
 # Image Examples
 # {{{cloudinary-image(common/qr-kdr2.com.png)}}}
 # {{{cloudinary-image-scale(common/qr-kdr2.com.png, 400)}}}
-# #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, title="图一") :results raw
+# #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, caption="图一") :results raw
 
 # Include External Code
 # #+CALL: inc-code[:results value](path="julia/1407-types-summary.jl", lang="julia") :results raw

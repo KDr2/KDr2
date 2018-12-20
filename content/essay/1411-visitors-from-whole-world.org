@@ -22,9 +22,9 @@
 大概去年此时换了 {{{orgmode}}} 来建造本站，开始使用 GA 统计一些数据，
 一年下来，访问者数目虽然不是很多，但是竟然广布世界各地：
 
-#+CALL: image[:results value](path="2014/11/visitors-map.png", width=634, title="地图") :results raw
+#+CALL: image[:results value](path="2014/11/visitors-map.png", width=634, caption="地图") :results raw
 
-#+CALL: image[:results value](path="2014/11/visitors-list.png", width=768, title="国家/地区列表") :results raw
+#+CALL: image[:results value](path="2014/11/visitors-list.png", width=768, caption="国家/地区列表") :results raw
 
 继续努力。
 

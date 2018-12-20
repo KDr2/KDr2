@@ -228,7 +228,7 @@
   | co_lnotab      | '\x00\x01\x06\x01\x06\x01' | 行号表                                             |
 
 * 图解 test.py 与 test.pyc 的结构关系
-  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, title="图一") :results raw
+  #+CALL: image[:results value](path="2010/12/pyc_format_example_0.png", width=600, caption="图一") :results raw
 * co_freevars 与 co_cellvars
 
   这两个字段是给 Closure 准备的（ *Python里没有真正的Closure* ），通俗
