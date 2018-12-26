@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2018-12-25 Tue 23:05" en d1812-ads-data "tech/main/1812-export-and-restore-data-from-ads.org" "Exporting and Restoring data from ApacheDS")
 ("2018-12-12 Wed 10:41" en d1812-vector-op-cuda "promotion/1812-vector-ops-cuda.org" "Tutorial, CUDA: Vector operations in CUDA")
 ("2018-11-30 Fri 15:41" en d1811-salesforce "promotion/1811-salesforce.org" "Tutorial, Salesforce: Creating a custom Lightning component")
 ("2018-10-25 Thu 15:41" en d1810-elewise-matrix-op-opencv "tech/main/1810-elewise-matrix-op-opencv.org" "Tutorial, OpenCV: Element-Wise Matrix Operations in OpenCV")
