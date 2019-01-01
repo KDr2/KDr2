@@ -20,7 +20,7 @@
 #+END_SRC
 
 #+NAME: image
-#+BEGIN_SRC elisp :results value raw :exports none :var path="" width=601 caption="" link='()
+#+BEGIN_SRC elisp :results value raw :exports none :var path="" width=600 caption="" link='()
   (site-image path width caption link)
 #+END_SRC
 
