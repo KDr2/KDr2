@@ -90,7 +90,7 @@ new nodes in the order of how the nodes are stored in the LDIF file,
 and the parent-fist order is not guaranteed by ~ldapsearch~. So errors
 happen when ~ldapadd~ creates nodes whose parent are not created yet.
 
-There are two way to resolve this problem:
+There are two ways to resolve this problem:
 
 The first one is crude: We run the ~ldapadd~ command multiple times
 with the option ~-c~.
