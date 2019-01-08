@@ -33,6 +33,6 @@ expectation.
 * Recent Posts
   #+NAME: recent-posts
   #+BEGIN_SRC elisp :exports none :results raw value
-    (make-recent-posts 6 t)
+    (make-recent-posts 10 t)
   #+END_SRC
   #+CALL: recent-posts[:results value]() :results raw

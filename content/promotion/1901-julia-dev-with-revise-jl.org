@@ -1,0 +1,176 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Julia Development Workflow with Revise.jl
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+# #+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("julia" "workflow" "revise.jl")) :results raw
+
+<2019-01-08 Tue>
+
+#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
+
+This article shows how to organize the module development process in
+Julia using the Revise.jl package. A Julia program contains several
+functions that are normally aggregated into modules. On one hand, the
+process of module development and testing usually involves
+experimenting with the code in the Julia command line.
+
+However, every time a change is made in one of the functions within a
+module, it requires reloading the entire module. This is inconvenient
+because having to remember to reload the module, you will need to do
+it after every single change to your code.
+
+Additionally, for large modules, reloading an entire module may take a
+significant amount of time. A remedy for this problem is the
+~Revise.jl~ package.
+
+* Getting ready
+  Configure your favorite programming environment. Note that you can
+  find the complete code for this article at
+  https://github.com/PacktPublishing/Julia-1.0-Programming-Cookbook/tree/master/Chapter08.
+
+  ~Revise~ can simply be installed with the Julia package manager. In
+  the Julia command line, press the ~]~ key and run the following
+  command:
+
+  #+begin_src julia
+    (v1.0) pkg> add Revise
+  #+end_src
+
+  This will install the ~Revise.jl~ library and all its
+  dependencies. Additionally, use the ~HTTP.jl~ library:
+
+  #+begin_src julia
+    (v1.0) pkg> add HTTP
+  #+end_src
+
+* How to do it...
+  A module for collecting data on Bitcoin cryptocurrency prices from
+  coindesk.com will be created. Follow these steps:
+
+  1. Create a file, ~Module1.jl~, with the following content. Note that
+     this code is assembled into a module:
+
+     #+begin_src julia
+       module Module1
+
+       using HTTP
+       using JSON
+
+       export getcoinprices
+
+       function getcoinprices(dateFrom::String, dateTo::String)
+           url = string("https://api.coindesk.com/v1/bpi/historical/close.json?currency=USD&start=",
+                        dateFrom, "&end=", dateTo)
+           res = HTTP.request("GET", url ,verbose=0)
+           dat = JSON.parse(join(readlines(IOBuffer(res.body)), " "))
+           haskey(dat, "bpi") ? dat["bpi"] : Dict()
+       end
+
+       end # module
+     #+end_src
+
+     In order to use the preceding module, you need to make sure that
+     the file is located in the same directory as the working
+     directory of the Julia command line.
+  2. Use the ~pwd()~ command to check the current directory. If you
+     want to switch directories, use the
+     ~cd("enter_new_directory_here")~ command. Once you have made sure
+     the directories are correct, run the following commands:
+
+     #+begin_src julia
+       push!(LOAD_PATH, ".")
+       using Revise
+       using Module1
+     #+end_src
+  3. Now, test the module by running the following code:
+     #+begin_src julia
+       julia> getcoinprices("2018-06-20", "2018-06-22")
+       Dict{String,Any} with 3 entries:
+         "2018-06-22" => 6053.9
+         "2018-06-20" => 6758.38
+         "2018-06-21" => 6717.2
+     #+end_src
+  4. Add an incorrect date range and observe what happens:
+     #+begin_src julia
+       julia> getcoinprices("2018-06-23", "2018-06-22")
+       ERROR: HTTP.ExceptionRequest.StatusError(404, HTTP.Messages.Response:
+       """
+       HTTP/1.1 404 Not Found
+           ...(more errors here)...
+
+     #+end_src
+     Update the implementation of the ~getcoinprices~ function in
+     order to avoid throwing an error for such date ranges; instead,
+     return an empty ~Dict~ object.
+
+  5. Open the ~Module1.jl~ file in any text editor and add the
+     following line at the beginning of the
+     ~getcoinprices(dateFrom::String, dateTo::String)~
+     function. Remember to save the file:
+
+     #+begin_src julia
+       dateFrom > dateTo && return Dict()
+     #+end_src
+
+  6. Now, run the same function again:
+     #+begin_src julia
+       julia> getcoinprices("2018-06-23", "2018-06-22")
+       Dict{Any,Any} with 0 entries
+     #+end_src
+
+     Note that the function definition has been automatically updated
+     by ~Revise.jl~; you need not relaunch Julia nor reload the
+     module, ~Module1~.
+* How it works...
+  ~Revise.jl~ works by continuously scanning the source code for
+  changes. Special event handling for command-line Terminals
+  (including the Julia command line and Juno) is added. Whenever a
+  change in function implementation is discovered, this function is
+  automatically passed to the Julia interpreter. Note that ~Revise.jl~
+  does not reload the entire module; only those functions that have
+  changed are reloaded.
+
+  ~Revise.jl~ is able to track most code changes, with two
+  exceptions. Firstly, when a type definition is changed (for example,
+  a new field is added to ~struct~), the Julia interpreter needs to be
+  reloaded (that is, you need to execute the ~exit()~ command and
+  start the Julia interpreter again). Secondly, module or file
+  renaming is not supported; again, if you decide to rename modules or
+  files, you should restart the Julia command line.
+
+  Note that ~Revise.jl~ only provides automatic tracking out of the
+  box for files that have been included within the namespace, either
+  by executing a ~using~ or an ~import~ statement. However, it is
+  possible to manually add files to the tracking system by executing
+  the ~push!(LOAD_PATH, "/path/to/the/file/that/will/be/tracked")~
+  command. Files loaded by include can also be tracked by explicitly
+  using ~Revise.track(filename)~.
+
+* There's more...
+  When working in Juno, makes sure that your Julia is set to
+  *CyclerBoot Mode*. In this way, when you eventually need to restart
+  the Julia command line due to type definition changes, for instance,
+  you will not be left waiting for a new Julia Terminal to start
+  (there will always be one Julia process waiting in the background
+  for you).
+
+* Further Reading
+  Learn about Julia development workflow with ~Revise.jl~ in this
+  article by Bogumił Kamiński, an associate professor and head of the
+  Decision Support and Analysis Unit at the SGH Warsaw School of
+  Economics, and Przemysław Szufel, an assistant professor in the
+  Decision Support and Analysis Unit at the SGH Warsaw School of
+  Economics.
+
+  If you found this article interesting, you can explore [[https://www.amazon.com/Julia-1-0-Programming-Cookbook-distributed/dp/1788998367][Julia 1.0
+  Programming Cookbook]] to discover the new features and widely used
+  packages in Julia to solve complex computational problems in your
+  statistical applications. [[https://www.packtpub.com/application-development/julia-10-programming-cookbook][Julia 1.0 Programming Cookbook]] will be
+  your solution-based guide as it will take you through different
+  programming aspects with Julia.
