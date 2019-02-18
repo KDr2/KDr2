@@ -7,14 +7,21 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("opensource" "project" "contribution")) :results raw
 
-Here is some projects created/maintained by me:
+Here are some projects created/maintained by me:
 
 - [[file:redis-leveldb.org][Redis-Leveldb]]
-- [[file:moochine.org][Moochine]]
 - [[file:sb-fastcgi.org][SB-FastCGI]]
 - [[file:cl-fastcgi.org][CL-FastCGI]]
 
-And [[file:os-contrib.org][here lists some contributions to other projects]].
+I also contribute many other opensource projects, includes:
+
+- [[https://github.com/JuliaLang/julia][Julia]] and many projects in the Julia ecosystem.
+- [[https://orgmode.org][Orgmode]], a document editing, formatting, and organizing mode for and
+  built-in in Emacs.
+- [[https://pdfium.googlesource.com/pdfium/][PDFium]], a PDF library from Google,the PDF component for Chromium.
+- [[https://skia.org/][Skia]], an open source 2D graphics library from Google.
+- [[https://postgresql.org][PostgreSQL]], a powerful, open source object-relational database
+  system.
 
 You may [[http://github.com/KDr2][find more things on my GitHub page]].
 
