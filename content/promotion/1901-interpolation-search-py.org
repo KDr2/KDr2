@@ -12,8 +12,6 @@
 
 <2019-01-30 Wed>
 
-#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
-
 One of the most important operations for all data structures is
 searching for the elements from the stored data. There are various
 methods to search for an element in the data structures; in this

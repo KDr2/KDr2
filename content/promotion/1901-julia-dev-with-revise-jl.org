@@ -12,8 +12,6 @@
 
 <2019-01-08 Tue>
 
-#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
-
 This article shows how to organize the module development process in
 Julia using the Revise.jl package. A Julia program contains several
 functions that are normally aggregated into modules. On one hand, the

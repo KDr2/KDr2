@@ -12,8 +12,6 @@
 
 <2018-12-12 Wed>
 
-#+CALL: image[:results value](path="2018/12/Packt-Dollar-5-Blog-Banners-01.png", caption="The $5 Campaign", link="https://www.packtpub.com/") :results raw
-
 * Two-vector addition program
   To understand vector operation on the GPU, we will start by writing
   a vector addition program on the CPU and then modify it to utilize
