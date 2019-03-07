@@ -345,6 +345,7 @@ code {
     float: left;
     vertical-align: baseline;
     font-size: inherit;
+    padding-right: 10px;
 }
 
 .footdef p {

@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2019-03-07 Thu 12:45" en d1903-basic-gui-opencv "promotion/1903-basic-gui-opencv.org" "Tutorial: Basic GUI with OpenCV")
 ("2019-01-30 Wed 17:45" en d1901-interpolation-search-py "promotion/1901-interpolation-search-py.org" "The Interpolation Search Algorithm with Python")
 ("2019-01-08 Tue 17:45" en d1901-jl-dev-revise "promotion/1901-julia-dev-with-revise-jl.org" "Julia Development Workflow with Revise.jl")
 ("2019-01-07 Mon 21:45" en d1901-password-attacks "promotion/1901-password-attacks.org" "Tutorial: Password Attacks")
