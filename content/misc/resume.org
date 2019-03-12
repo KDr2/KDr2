@@ -1,0 +1,84 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: KDr2's Resume
+#+AUTHOR: KDr2
+
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("KDr2" "Zhuo Qingliang" "resume")) :results raw
+
+* Status Quo
+  Settle in Xi'AN Shaanxi China. Active in software development, open
+  for any proper opportunity.
+* Personal Information
+  - Name: Zhuo Qingliang
+  - Year of Birth: 1983
+  - Email: zhuo+job@@html:&#x01F4E7;@@hexoasis.com
+  - Homepage: https://kdr2.com
+  - Mobile: +86 0b10111010 05532 0x0636
+  - Education: [2002-2006] [[http://www.xjtu.edu.cn][Xi'an Jiaotong University]], China.
+* Languages
+  - Chinese (Mandarin, Simplified): Native Speaker
+  - English: Reading/Writing
+* Skills
+  - Platforms or Programming Languages
+    - Linux, Bash, C/C++
+    - Julia, R
+    - Python, Perl, JavaScript
+    - Scheme, Lua
+  - Domains
+    - Linux system programming
+    - Database: PostgreSQL and many others
+    - Distributed computing, parallel computing
+    - Graphics: GUI, Layout, Rendering, CV
+    - Web back-end
+* Open Source Projects
+  - *Projects I contribute to* ::
+    + [[https://github.com/JuliaLang/julia][The Julia Language]] :: a general purpose programming language,
+         which is optimized for technical computing, I also contribute
+         to many projects/packages in the Julia ecosystem;
+    + [[https://orgmode.org][Orgmode]] :: a document editing, formatting, and organizing mode
+         for and built-in in Emacs;
+    + [[https://pdfium.googlesource.com/pdfium/][PDFium]] :: a PDF library from Google,the PDF component for Chromium;
+    + [[https://skia.org/][Skia]] :: an open source 2D graphics library from Google;
+    + [[https://postgresql.org][PostgreSQL]] :: a powerful, open source object-relational database
+         system.
+  - *Projects I maintain* ::
+    + [[https://github.com/KDr2/sb-fastcgi/][SB-FASTCGI]] :: FastCGI low-level API and WSGI-Style API for SBCL;
+    + [[https://github.com/KDr2/cl-fastcgi/][CL-FASTCGI]] :: A Generic Version of SB-FastCGI, runs on mostly
+         Common Lisp implementations;
+    + [[https://github.com/KDr2/redis-leveldb][Redis-LevelDB]] :: A redis frontend for google's leveldb: Use
+         leveldb as a Redis-Server;
+* Books
+  - Books I reviewed(as a technical reviewer):
+    - [[https://www.amazon.com/dp/1783553316][Mastering Julia]], July 22, 2015
+    - [[https://www.amazon.com/dp/1785880918][Julia High performance]], April 26, 2016
+    - [[https://www.amazon.com/Hands-Computer-Vision-Julia-techniques/dp/1788998790/][Hands-On Computer Vision with Julia]], July 10, 2018
+    - [[https://www.amazon.com/Hands-Algorithms-Computer-Vision-algorithms/dp/1789130948/][Hands-On Algorithms for Computer Vision]], July 27, 2018
+    - [[https://www.amazon.com/dp/178829274X][Julia Programming Projects]], October 9, 2018
+    - [[https://www.amazon.com/dp/B07M6H6PKD][Hands-On Enterprise Application Development with Python]], December 9, 2018
+
+* Work Experience
+  - 2016.10.01 - 000000.NOW, Paoding Tech, https://www.paodingai.com/, a
+    startup bring AI to the financial industry, as the CTO;
+  - 2014.09.01 - 2016.01.01, Wisdom Garden,
+    http://www.wisdomgarden.com/, online education, full-stack senior
+    engineer;
+  - 2013.08.01 - 2014.08.01, Pintics (a small startup in USA, worked
+    remotely);
+  - 2011.05.03 - 2013.06.20, http://www.apptao.com/, mobile internet,
+    server-side and infrastructure development, as a senior engineer;
+  - 2007.07.28 - 2011.04.28, AGREE TECH( http://www.agree.com.cn/ ),
+    banking software development, as a senior engineer;
+  - 2006.07.20 - 2007.07.20, worked for many small start-ups, as a
+    server side developer, using Java, Perl, Python.
+
+* Jobs I prefer
+  1. Linux/UNIX System Programming;
+  1. Distributed System, High-Performance and Parallel Computing;
+  1. Database: PostgreSQL and others;
+  1. Scripts and Utilities.

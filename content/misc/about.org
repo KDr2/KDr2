@@ -7,7 +7,6 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("KDr2" "free lancer")) :results raw
 
-
 * About Me
 
   Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a martinet in
@@ -21,18 +20,12 @@
   - A writer who is trying to write hard;
   - An idiot of music and ryhme;
 
-  # ** Work
-
-  #   I am a software developer and computer programmer, I am currently
-  #   working at home as a freelance developer and independent
-  #   consultant.
-
   #+BEGIN_EXPORT HTML
   <!--
 
   /---------------------------------------------\
   | Want more info about me? here is my resume: |
-  | http://kdr2.com/misc/resume_en.html         |
+  | https://kdr2.com/misc/resume.html            |
   \---------------------------------------------/
           .-.
          /_ _\
@@ -50,11 +43,6 @@
          |-|-|    ||LI  o ||
          |_|_|    ||'----'||
         /_/ \_\  /__|    |__\
-
-  /---------------------------------------------\
-  | 想了解更多？这是我的简历：                  |
-  | http://kdr2.com/misc/resume_cn.html         |
-  \---------------------------------------------/
 
   -->
   #+END_EXPORT
