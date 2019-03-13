@@ -15,9 +15,9 @@ Here are some projects created/maintained by me:
 
 I also contribute many other opensource projects, includes:
 
-- [[https://github.com/JuliaLang/julia][The Julia Language]] :: a general purpose programming language, which
-     is optimized for technical computing, I also contribute to many
-     projects/packages in the Julia ecosystem;
+- [[https://github.com/JuliaLang/julia][The Julia Programing Language]] :: a general purpose programming
+     language, which is optimized for technical computing, I also
+     contribute to many projects/packages in the Julia ecosystem;
 - [[https://orgmode.org][Orgmode]] :: a document editing, formatting, and organizing mode for
      and built-in in Emacs;
 - [[https://pdfium.googlesource.com/pdfium/][PDFium]] :: a PDF library from Google,the PDF component for Chromium;

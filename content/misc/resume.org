@@ -19,13 +19,14 @@
   - Year of Birth: 1983
   - Email: zhuo+job@@html:&#x01F4E7;@@hexoasis.com
   - Homepage: https://kdr2.com
-  - Mobile: +86 0b10111010 05532 0x0636
+  - Mobile: +86 0b10111010 0o5532 0x0636
   - Education: [2002-2006] [[http://www.xjtu.edu.cn][Xi'an Jiaotong University]], China.
-* Languages
-  - Chinese (Mandarin, Simplified): Native Speaker
-  - English: Reading/Writing
 * Skills
-  - Platforms or Programming Languages
+  - Languages
+    - Chinese (Mandarin, Simplified): Native Speaker
+    - English: Conversant with Reading and Writing
+    - Writing: Good at non-fiction writing
+  - Platforms and Programming Languages
     - Linux, Bash, C/C++
     - Julia, R
     - Python, Perl, JavaScript
@@ -38,9 +39,9 @@
     - Web back-end
 * Open Source Projects
   - *Projects I contribute to* ::
-    + [[https://github.com/JuliaLang/julia][The Julia Language]] :: a general purpose programming language,
-         which is optimized for technical computing, I also contribute
-         to many projects/packages in the Julia ecosystem;
+    + [[https://github.com/JuliaLang/julia][The Julia Programming Language]] :: a general purpose programming
+         language, which is optimized for technical computing, I also
+         contribute to many projects/packages in the Julia ecosystem;
     + [[https://orgmode.org][Orgmode]] :: a document editing, formatting, and organizing mode
          for and built-in in Emacs;
     + [[https://pdfium.googlesource.com/pdfium/][PDFium]] :: a PDF library from Google,the PDF component for Chromium;
@@ -63,16 +64,16 @@
     - [[https://www.amazon.com/dp/B07M6H6PKD][Hands-On Enterprise Application Development with Python]], December 9, 2018
 
 * Work Experience
-  - 2016.10.01 - 000000.NOW, Paoding Tech, https://www.paodingai.com/, a
-    startup bring AI to the financial industry, as the CTO;
+  - 2016.10.01 - 000000.NOW, Paoding Tech, https://www.paodingai.com/,
+    a startup who brings AI to the financial industry, as the CTO;
   - 2014.09.01 - 2016.01.01, Wisdom Garden,
     http://www.wisdomgarden.com/, online education, full-stack senior
     engineer;
-  - 2013.08.01 - 2014.08.01, Pintics (a small startup in USA, worked
-    remotely);
+  - 2013.08.01 - 2014.08.01, Pintics, a small startup in USA, worked
+    remotely;
   - 2011.05.03 - 2013.06.20, http://www.apptao.com/, mobile internet,
     server-side and infrastructure development, as a senior engineer;
-  - 2007.07.28 - 2011.04.28, AGREE TECH( http://www.agree.com.cn/ ),
+  - 2007.07.28 - 2011.04.28, AGREE TECH, http://www.agree.com.cn/,
     banking software development, as a senior engineer;
   - 2006.07.20 - 2007.07.20, worked for many small start-ups, as a
     server side developer, using Java, Perl, Python.
@@ -81,4 +82,5 @@
   1. Linux/UNIX System Programming;
   1. Distributed System, High-Performance and Parallel Computing;
   1. Database: PostgreSQL and others;
+  1. Graphics Programming;
   1. Scripts and Utilities.
