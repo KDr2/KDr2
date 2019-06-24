@@ -1,0 +1,139 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: New Book: Qt 5 and OpenCV 4 Computer Vision Projects
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+# #+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("qt" "opencv" "opengl")) :results raw
+
+# - DATE
+<2019-06-24 Mon>
+
+#+BEGIN: inc-file :file "gad.inc.org"
+#+END:
+
+
+My new book, **Qt 5 and OpenCV 4 Computer Vision Projects**, is on
+[[https://www.amazon.com/dp/1789532582/][Amazon]] now. If you are not sure if it is for you, [[https://github.com/PacktPublishing/Qt-5-and-OpenCV-4-Computer-Vision-Projects][here]] is the code
+repository for the book and the follows is its table of contents:
+
+- Chapter 1: Building an Image Viewer
+  - Technical requirements
+  - Designing the user interface
+  - Starting the project from scratch
+  - Setting up the full user interface
+  - Implementing the functions for the actions
+    - The Exit action
+    - Opening an image
+    - Zooming in and out
+    - Saving a copy
+    - Navigating in the folder
+    - Responding to hotkeys
+  - Summary
+  - Questions
+- Chapter 2: Editing Images Like a Pro
+  - Technical requirements
+  - The ImageEditor application
+  - Blurring images using OpenCV
+    - Adding the blur action
+    - Building and installing OpenCV from the source
+    - Blurring images
+    - QPixmap, QImage, and Mat
+      - QPixmap
+      - QImage
+      - Mat
+  - Adding features using Qt's plugin mechanism
+  - The plugin interface
+  - Eroding images with ErodePlugin
+  - Loading the plugin into our application
+  - Editing images like a pro
+    - Sharpening images
+    - Cartoon effect
+    - Rotating images
+    - Affine transformation
+  - Summary
+  - Questions
+- Chapter 3: Home Security Applications
+  - Technical requirements
+  - The Gazer application
+    - Starting the project and setting up the UI
+  - Accessing cameras
+    - Listing cameras with Qt
+    - Capturing and playing
+    - Threading and the performance of real-time video processing
+    - Capturing and playing with Qt
+    - Calculating the FPS
+  - Saving videos
+  - Motion analysis with OpenCV
+    - Motion detection with OpenCV
+    - Sending notifications to our mobile phone
+  - Summary
+  - Questions
+- Chapter 4: Fun with Faces
+  - Technical requirements
+  - The Facetious application
+    - From Gazer to Facetious
+    - Taking photos
+  - Detecting faces using cascade classifiers
+  - Detecting facial landmarks
+  - Applying masks to faces
+    - Loading images with the Qt resource system
+    - Drawing masks on the faces
+    - Selecting masks on the UI
+  - Summary
+  - Questions
+- Chapter 5: Optical Character Recognition
+  - Technical requirements
+  - Creating Literacy
+    - Designing the UI
+    - Setting up the UI
+  - OCR with Tesseract
+    - Building Tesseract from the source
+    - Recognizing characters in Literacy
+  - Detecting text areas with OpenCV
+  - Recognizing characters on the screen
+  - Summary
+  - Questions
+- Chapter 6: Object Detection in Real Time
+  - Technical requirements
+  - Detecting objects using OpenCV
+  - Detecting objects using a cascade classifier
+  - Training a cascade classifier
+    - The no-entry traffic sign
+    - The faces of Boston Bulls
+  - Detecting objects using deep learning models
+  - About real time
+  - Summary
+  - Questions
+- Chapter 7: Real-Time Car Detection and Distance Measurement
+  - Technical requirements
+  - Car detection in real time
+  - Distance measurement
+  - Measuring the distance between cars or between the car and the
+    camera
+    - Measuring the distance between cars in a bird's eye view
+    - Measuring the distance between a car and the camera in the
+      eye-level view
+    - Switching between view modes
+  - Summary
+  - Questions
+- Chapter 8: Using OpenGL for the High-Speed Filtering of Images
+  - Technical requirements
+  - Hello OpenGL
+  - OpenGL in Qt
+  - Filtering images with OpenGL
+  - Drawing images with OpenGL
+  - Filtering images in the fragment shader
+  - Saving the filtered images
+  - Using OpenGL with OpenCV
+  - Summary
+  - Further reading
+
+
+#+BEGIN: inc-file :file "comment.inc.org"
+#+END:

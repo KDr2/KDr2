@@ -164,3 +164,6 @@ Then restore the data by running the below command for only once:
 If all goes well, you will have got what you want at this point.
 
 Good luck with {{{ADS}}} and {{{ADStudio}}}.
+
+#+BEGIN: inc-file :file "comment.inc.org"
+#+END:
