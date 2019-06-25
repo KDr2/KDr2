@@ -127,9 +127,9 @@ repository for the book and the follows is its table of contents:
   - Hello OpenGL
   - OpenGL in Qt
   - Filtering images with OpenGL
-  - Drawing images with OpenGL
-  - Filtering images in the fragment shader
-  - Saving the filtered images
+    - Drawing images with OpenGL
+    - Filtering images in the fragment shader
+    - Saving the filtered images
   - Using OpenGL with OpenCV
   - Summary
   - Further reading

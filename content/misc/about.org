@@ -11,13 +11,12 @@
 
   Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a martinet in
   behavior, a misanthrope in society, an ascetic in spirit, a learner
-  in the lifetime, and more:
+  in lifetime, and more:
 
   - An old-fashioned hardcore Linux guy;
-  - An open-source supporter, not an opponent of GPL;
+  - An open-source supporter, NOT an opponent of GPL;
   - An Emacs and Orgmode user;
-  - A reader who is trying to read more;
-  - A writer who is trying to write hard;
+  - A reader, and a writer;
   - An idiot of music and ryhme;
 
   #+BEGIN_EXPORT HTML

@@ -35,8 +35,9 @@
     - Linux system programming
     - Database: PostgreSQL and many others
     - Distributed computing, parallel computing
+    - Data science
     - Graphics: GUI, Layout, Rendering, CV
-    - Web back-end
+    - Web
 * Open Source Projects
   - *Projects I contribute to* ::
     + [[https://github.com/JuliaLang/julia][The Julia Programming Language]] :: a general purpose programming
