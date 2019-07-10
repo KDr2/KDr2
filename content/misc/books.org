@@ -19,6 +19,7 @@
   - [[https://www.amazon.com/Hands-Algorithms-Computer-Vision-algorithms/dp/1789130948/][Hands-On Algorithms for Computer Vision]], July 27, 2018
   - [[https://www.amazon.com/dp/178829274X][Julia Programming Projects]], October 9, 2018
   - [[https://www.amazon.com/dp/B07M6H6PKD][Hands-On Enterprise Application Development with Python]], December 9, 2018
+  - [[https://www.amazon.com/dp/B0748MTFVL][Julia High performance, Second Edition]], June 10, 2019
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
