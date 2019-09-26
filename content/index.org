@@ -9,9 +9,9 @@
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
 
-Hi, I'm KDr2(ZHUO QL), a nostalgist in technology, a martinet in
-behavior, a misanthrope in society, an ascetic in spirit, a learner in
-lifetime.
+Hi, I'm KDr2(ZHUO Qingliang), a nostalgist in technology, a martinet
+in behavior, a misanthrope in society, an ascetic in spirit, a learner
+in lifetime.
 
 I am searching for a better understanding of myself and my
 surroundings. To achieve so, I dedicate my thoughts to epistemology,
@@ -26,6 +26,7 @@ expectation.
   - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]]
   - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
   - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
+  - [[https://www.notion.so/7af20ebae0ce40e39dcf5c0838486e77][Bookmarks]]
 
 * News
   #+BEGIN_EXPORT HTML
