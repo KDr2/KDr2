@@ -26,7 +26,6 @@ expectation.
   - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]]
   - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
   - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
-  - [[https://www.notion.so/7af20ebae0ce40e39dcf5c0838486e77][Bookmarks]]
 
 * News
   #+BEGIN_EXPORT HTML
