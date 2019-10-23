@@ -58,7 +58,7 @@
      - zhuoql@@html:&#x01F4E7;@@yahoo.com, for development affairs,
        e.g. mail list, bug report.
    - Mobile : +86 0b10111010 05532 0x0636
-
+   - [[file:resume.org][Resume]]
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
 
@@ -73,8 +73,5 @@
   I write here things that I think are worth to read, and hope they
   help. Feel free to contact me if you want.
 
-* Links
-  - [[https://www.notion.so/7af20ebae0ce40e39dcf5c0838486e77][Bookmarks]]
-  - [[file:resume.org][Resume]]
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org
