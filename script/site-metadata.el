@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2019-11-04 Mon 10:45" en d1104-svg-path "tech/main/1911-chromium-svg-path-blurry.org" "Avoid blurry rendering of SVG paths in Chromium")
 ("2019-06-24 Mon 10:45" en d1906-new-book "tech/main/1906-new-book.org" "New Book: Qt 5 and OpenCV 4 Computer Vision Projects")
 ("2019-03-07 Thu 12:45" en d1903-basic-gui-opencv "promotion/1903-basic-gui-opencv.org" "Tutorial: Basic GUI with OpenCV")
 ("2019-01-30 Wed 17:45" en d1901-interpolation-search-py "promotion/1901-interpolation-search-py.org" "The Interpolation Search Algorithm with Python")
