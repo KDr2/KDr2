@@ -21,7 +21,7 @@ replication can also be used to improve the performance of a solution
 based on PostgreSQL. Sometimes, third-party tools can be used to
 implement complex scaling scenarios.
 
-This article is taken from the book [[https://www.packtpub.com/in/big-data-and-business-intelligence/learning-postgresql-11-third-edition][Learning PostgreSQL 11 - Third
+This article is taken from the book [[https://www.packtpub.com/in/big-data-and-business-intelligence/learning-postgresql-11-third-edition?utm_source=kdr2&utm_packt=referral&utm_campaign=Outreach][Learning PostgreSQL 11 - Third
 Edition]] by Salahaldin Juba and Andrey Volkov. This book will
 familiarize you with the latest features in PostgreSQL 11, and get you
 up and running with building efficient PostgreSQL database solutions
@@ -251,7 +251,7 @@ different sharding tools.
 * Further Reading
   This article walked you through the different scalability use cases
   and how to handle them in PostgreSQL. If you found this post useful,
-  do check out the book, [[https://www.packtpub.com/in/big-data-and-business-intelligence/learning-postgresql-11-third-edition][Learning PostgreSQL 11 - Third Edition]] by
+  do check out the book, [[https://www.packtpub.com/in/big-data-and-business-intelligence/learning-postgresql-11-third-edition?utm_source=kdr2&utm_packt=referral&utm_campaign=Outreach][Learning PostgreSQL 11 - Third Edition]] by
   Packt Publishing. This book will give you a thorough understanding
   of PostgreSQL 11 and help you develop the necessary skills to build
   efficient database solutions.
