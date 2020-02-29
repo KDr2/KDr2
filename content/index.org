@@ -29,17 +29,10 @@ expectation.
 
 * News
   #+BEGIN_EXPORT HTML
-  Buy <a href="https://www.packtpub.com/data/qt-5-and-opencv-4-computer-vision-projects" target="_blank">my book</a> in the Packt $5 Campaign!
-  <br/>
-  <a href="https://www.packtpub.com/data/qt-5-and-opencv-4-computer-vision-projects" target="_blank">
-    <img src="http://res.cloudinary.com/kdr2/image/upload/c_scale,w_600/img-kdr2-com/common/5dollar-sm-2019_twitter.png">
-  </a>
-  <!--
   My New Book is published! <br/>
   <a href="tech/main/1906-new-book.html">
     <img src="https://images-na.ssl-images-amazon.com/images/I/518P6OYe%2BhL._SX404_BO1,204,203,200_.jpg" height="256">
   </a>
-  -->
   #+END_EXPORT
 
 * Recent Posts

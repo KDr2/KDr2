@@ -68,6 +68,8 @@
     - [[https://www.amazon.com/dp/178829274X][Julia Programming Projects]], October 9, 2018
     - [[https://www.amazon.com/dp/B07M6H6PKD][Hands-On Enterprise Application Development with Python]], December 9, 2018
     - [[https://www.amazon.com/dp/B0748MTFVL][Julia High performance, Second Edition]], June 10, 2019
+    - [[https://www.amazon.com/dp/B07SHV9PVV][Hands-On Design Patterns and Best Practices with Julia]], January 17, 2020
+    - [[https://www.amazon.com/dp/B083QG9G7H][Advanced C++ Programming Cookbook]], January 30, 2020
 
 * Work Experience
   - 2016.10.01 - 000000.NOW, Paoding Tech, https://www.paodingai.com/,
