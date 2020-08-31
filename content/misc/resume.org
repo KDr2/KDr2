@@ -73,7 +73,8 @@
 
 * Work Experience
   - 2016.10.01 - 000000.NOW, Paoding Tech, https://www.paodingai.com/,
-    a startup who brings AI to the financial industry, as the CTO;
+    a startup who brings AI to the financial industry, as the chief
+    architect;
   - 2014.09.01 - 2016.01.01, Wisdom Garden,
     http://www.wisdomgarden.com/, online education, full-stack senior
     engineer;
