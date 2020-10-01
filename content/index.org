@@ -9,7 +9,8 @@
 # #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
 
 
-Hi, I'm KDr2(ZHUO Qingliang), a nostalgist in technology, a martinet
+Simple, tough, resilient, optimistic, that's me. I'm KDr2(or Killian,
+or ZHUO Qingliang somewhere), a nostalgist in technology, a martinet
 in behavior, a misanthrope in society, an ascetic in spirit, a logical
 positivist in philosophy, a learner in lifetime.
 
