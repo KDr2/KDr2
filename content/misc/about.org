@@ -5,7 +5,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
-#+CALL: meta-keywords(kws='("KDr2" "free lancer")) :results raw
+#+CALL: meta-keywords(kws='("KDr2" "freelancer")) :results raw
 
 * About Me
   Hi, I'm KDr2(ZHUO Qingliang), a nostalgist in technology, a martinet

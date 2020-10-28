@@ -1,0 +1,69 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: Outline of math knowledge for kid
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("KDr2" "kid" "josh")) :results raw
+
+<2020-10-28 Wed>
+
+My 5 years old kid, Josh, likes math pretty much, he always actively
+askes me to teach him math knowledge from when he was three. So I
+picked some topics I thought which are suitable for him as listed
+below. It turns out he enjoys them very much, if your kid likes math
+as well, this list may give you a roadmap for reference.
+
+* [D] Numbers
+  - Integer, Fraction, Decimal, Per cent
+  - Odd, Even
+  - Prime, Composite
+  - Positive, Negative, Zero
+  - Rational, Irrational
+  - Real, Imaginary, Complex
+* [D] Calculations
+  - Addition, Subtraction, Multiplication, Division
+  - Power, Extracting
+  - Reciprocal, Absolute Value, Opposite
+  - GCD (greatest common divisor), LCM (least common multiple)
+  - Modulo
+  - Decomposition of prime factors
+  - Factorial
+  - Law of commutation, Law of association, Low of distribution
+  - Precedence and parenthesis
+* [D] Sequences
+  - Arithmetic Sequences
+  - Geometric Sequences
+  - Fibonacci Sequence
+* [D] Permutations and Combinations
+* [P] Algebra
+  - [D] linear equation with one unknown
+  - [D] linear equation with two unknowns
+  - [D] quadratic equation
+  - [D] binomials, binomials expansion
+  - [D] polynomials
+  - [P] factor polynomials
+  - [D] functions
+* [D] Analytic Geometry
+  - number axis
+  - plane-coordinate system
+  - space-coordinate system
+* [P] Linear Algebra
+  - [D] Matrix
+  - [P] Matrix Addition, Matrix Multiplication
+* [P] Trigonometric functions.
+  - [D] sine/cosine/tangent/cotangent
+  - [P] Trigonometric functions on the unit circle
+
+
+Notes:
+
+- [D] means DONE, items with this indicator are well learned by my kid;
+- [P] means PARTIALLY DONE, I have taught my kid about these items, he
+  understands the concepts, but can't apply them well;
+- [T] means TODO, I haven't taught my kid about the items marked with
+  this indicator.
