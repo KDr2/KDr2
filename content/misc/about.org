@@ -10,13 +10,16 @@
 * About Me
   Hi, I'm KDr2(ZHUO Qingliang), a nostalgist in technology, a martinet
   in behavior, a misanthrope in society, an ascetic in spirit, a
-  logical positivist in philosophy, a learner in lifetime, and more:
+  logical positivist in philosophy, a learner in lifetime.
 
-  - An old-fashioned hardcore Linux guy
-  - An open-source supporter, NOT an opponent of GPL
-  - An Emacs and Orgmode user
-  - A reader, and a writer
-  - An idiot of music and rhythm
+  I am interested in many domains including:
+
+  - Computer science and programming
+  - Data science
+  - Child Education
+  - Psychology and mental health
+  - Finance and econometrics
+  - Way to financial freedom and job freedom
 
   #+BEGIN_EXPORT HTML
   <!-- -----------------------------------------\
@@ -29,7 +32,7 @@
    :CUSTOM_ID: contact_me
    :END:
    - Location: Xi'an, Shaanxi, China
-   - Skype : zhuoql
+   - Skype : zhuoql@outlook.com
    - Emails :
      - zhuo@@html:&#x01F4E7;@@hexoasis.com,
        zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
