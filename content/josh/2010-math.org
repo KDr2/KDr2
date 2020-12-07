@@ -8,7 +8,7 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
-#+CALL: meta-keywords(kws='("KDr2" "kid" "josh")) :results raw
+#+CALL: meta-keywords(kws='("KDr2" "kid" "josh" "math")) :results raw
 
 <2020-10-28 Wed>
 
@@ -27,7 +27,7 @@ as well, this list may give you a roadmap for reference.
   - Real, Imaginary, Complex
 * [D] Calculations
   - Addition, Subtraction, Multiplication, Division
-  - Power, Extracting
+  - Power, Extracting, Logarithm
   - Reciprocal, Absolute Value, Opposite
   - GCD (greatest common divisor), LCM (least common multiple)
   - Modulo
@@ -46,8 +46,9 @@ as well, this list may give you a roadmap for reference.
   - [D] quadratic equation
   - [D] binomials, binomials expansion
   - [D] polynomials
-  - [P] factor polynomials
+  - [P] factorization of polynomials
   - [D] functions
+* [P] Geometry
 * [D] Analytic Geometry
   - number axis
   - plane-coordinate system
