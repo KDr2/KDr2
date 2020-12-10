@@ -1,0 +1,101 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: An Equation Puzzle
+#+AUTHOR: KDr2
+
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("KDr2" "kid" "josh" "math")) :results raw
+
+<2020-12-10 Thu>
+
+The other day my kid, Josh, asked me a question: How many equations at
+most could be correct at the same time on the below toy.
+
+#+CALL: image[:results value](path="2020/12/math-toy-1.jpg") :results raw
+
+Note: The operators on the second wheel are "+ - * / + - * / + -".
+
+He is only 5-6 years old but has learned [[file:2010-math.org][much mathematics knowledge]]. I
+had just been starting off to teach him programming with [[https://el.media.mit.edu/logo-foundation/index.html][Logo]] and
+[[https://el.media.mit.edu/logo-foundation/index.html][Maxima]], so I solved his question with Logo to help his learning. Here
+is my code:
+
+#+begin_src text
+  erase "roll
+  to roll :start :lst
+      output sentence (filter [# >= :start] :lst) (filter [# < :start] :lst)
+  end
+
+  erase "check_eq
+  to check_eq :eq
+      ifelse [and (item 2 :eq) = "/ (item 3 :eq) = 0] [output "false] [output run :eq]
+  end
+
+  erase "check
+  to check :lsts
+      make "ans apply "map fput [(list ?1 ?2 ?3 "= 10 * ?4 + ?5)] :lsts
+      make "res map "check_eq :ans
+      if [(count filter [?] :res) > 1 ][
+          print (sentence [correct equations count:] (count filter [?] :res))
+          foreach :ans [show ?]
+      ]
+  end
+
+  make "index [1 2 3 4 5 6 7 8 9 10]
+  make "offsets (crossmap [(list 1 ?1 ?2 ?3 ?4)] :index :index :index :index)
+
+  foreach :offsets [
+      make "w1 roll (item 1 ?) [0 1 2 3 4 5 6 7 8 9]
+      make "w2 roll (item 2 ?) [+ - * / + - * / + -]
+      make "w3 roll (item 3 ?) [0 1 2 3 4 5 6 7 8 9]
+      make "w4 roll (item 4 ?) [0 1 2 3 4 5 6 7 8 9]
+      make "w5 roll (item 5 ?) [0 1 2 3 4 5 6 7 8 9]
+      check (list :w1 :w2 :w3 :w4 :w5)
+  ]
+#+end_src
+
+The code could be ran using [[https://github.com/jrincayc/ucblogo-code/releases][UCB Logo]], and it will print the answers
+which contain more than one correct equation. From the output, I found
+only one answer who contains 3 (the most) correct equations:
+
+#+begin_src text
+  correct equations count: 3
+  [0 + 9 = 78]
+  [1 - 0 = 89]
+  [2 + 1 = 90]
+  [3 - 2 = 1]
+  [4 * 3 = 12]
+  [5 / 4 = 23]
+  [6 + 5 = 34]
+  [7 - 6 = 45]
+  [8 * 7 = 56]
+  [9 / 8 = 67]
+#+end_src
+
+#+CALL: image[:results value](path="2020/12/math-toy-2.jpg") :results raw
+
+Josh hadn't learned much about Logo yet, maybe only be able to enable
+the turtle to crawl and draw some geometry shapes. When I showed him
+the answer and the code, he was excited and asked me to explain the
+code, but the code is too complex to him so I only taught him what is
+Cartesian Product (what is function ~crossmap~ doing) and he was
+satisfied.
+
+My plan to teach Josh programming is as follows:
+
+- First, teach him Logo and Maxima
+- Then, Lisp(maybe one or many of scheme/common-lisp/elisp/clojure)
+  and Python
+- Then, Julia and C++
+- After that, let him teach himself
+
+I will write about my teaching and Josh's learning on this site
+afterward, if you are interested in this sort of contents please stay
+tuned or contact me via email.
+
+* Discuss and Comment
+#+INCLUDE: ../include/comment.inc.org

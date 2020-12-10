@@ -40,6 +40,9 @@ as well, this list may give you a roadmap for reference.
   - Geometric Sequences
   - Fibonacci Sequence
 * [D] Permutations and Combinations
+  - Permutations
+  - Combinations
+  - Cartesian Product
 * [P] Algebra
   - [D] linear equation with one unknown
   - [D] linear equation with two unknowns
@@ -68,3 +71,6 @@ Notes:
   understands the concepts, but can't apply them well;
 - [T] means TODO, I haven't taught my kid about the items marked with
   this indicator.
+
+* Discuss and Comment
+#+INCLUDE: ../include/comment.inc.org
