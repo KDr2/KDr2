@@ -41,52 +41,6 @@
    - [[file:resume.org][Resume]]
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
-
-# ** My GPG public key
-#    #+BEGIN_EXAMPLE
-#      -----BEGIN PGP PUBLIC KEY BLOCK-----
-#
-#      mQGNBF7OC6oBDADHLWxTIS5QMQ7/NeH58JlIqr2qI+iRBBZu8bdGlRnZ0nlFscNw
-#      gmcd0IksUvaEbtpLhhnZ+GXQ4ZwTVHxFFtRvLLOLIIRGusIEQPs5FBn6Ty6Rj343
-#      EivcV3SRrXSDWCziWHlgFBPeHIErupu/rEaShLd6UfhtU237zR4tmlHIJkcme3FM
-#      /G+/PWD2aR9iB70tVOX4ZR8c+X7pISAsFv6bFj1aINGEP1plgamEH857narzpn5+
-#      ND6jnx+3VV7PyAsR681IU8ABChNviXBunPAqLGhYocQdEW8AwcfJDEcW4DK3mwyO
-#      ToCTk+5/eoNiV7CEscnzBhFw7s94+G44c58rD90gJedVFcbC74SqgTI72cSXa8U5
-#      Wrl85dHDSZoXVLPqpfl+08aD4qR6lduo1KBNXUoD8I5v1/g+4vgVMnW0Aqocyht1
-#      yfLLwvsN119PB2Z39iN4VJY1M6RsYKWpdHxwxV11pUSUCzRv54hsCfbo+OyObGg6
-#      Biivrlo07FFaTzsAEQEAAbQgWkhVTyBRaW5nbGlhbmcgPHpodW9xbEB6b2hvLmNv
-#      bT6JAdQEEwEKAD4WIQTAs3Icrla68BgXTpgbWUuqlXHkRAUCXs4LqgIbAwUJA8Jn
-#      AAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAbWUuqlXHkRElnDACQJjvOa99M
-#      LkgVJi0Uw5F8ox0NeIWc9YFRWzOObsnehQqu0Yq6JCdIzUZ/9Tj5UPztQU4xWCuH
-#      4M8DpcWj6EQledDZg7CyA6tUMGJVJkindj3GK57jPicgE2Y7/HxuNyYrJv4XguZi
-#      wWPe2OHZ0XafTPOL9XZwOlah2JmHzDglL1b+8RT7P2DEK3pFMWaG+s1k9vYEq8qZ
-#      2iLc6tGoI43h3GtieBo/z5TJbl13B3JgPF2mZ1zd8KTIyyQsRcsDAn8A8kHRsp9g
-#      pQvD0pJ/KmMc/VDNKHT0zZey2OL6XO7A0yiDeiDyDZ8ZZ9hUELnow0f3BUFdFqxZ
-#      peLMSdGEubNSEqMkKPq2JdNFNn+/tDzhmGr7zo+9XqNTrKYCAnTOHqVIhYvszvOo
-#      aO4MJRE+qA7kJBB1RL+eqMbQ+4yvOLy9sakw85tCPCvh8wI8cNxoNlr8BUy9YcXJ
-#      gXcdbW9pmSrSd7iQ8xpWI3jZhK8aaF61yuJ4WINogkuieQHTQyvgmQC5AY0EXs4L
-#      qgEMAKnOJtxcVpYVdQG/pUDruyTF/US3g1gTBXoqrippEElBS+zKR3bgBWy9NYgX
-#      0Lg5x4Ts64d5FOcY+/3D0KB8vTcyeyUe0CERkHKgLu9/TnxuBoXhUKCD2KLsQ393
-#      rT16ViskBzl6dw0UwQgCPwkGkP0ZyG/FjdA5cK98q3/H9McKyAPfPXzlGs32pahC
-#      KsKhOx4lIbwdF2xTgaIwCYZ70OGGL2bRili9KpVkv+KULErfjSoA6S1+oveflROr
-#      T88QGq8NyKeIZxyf1p7prcrF8Jey7FJFEIwmY7QsTxIVpgq7wD/3r8b7N40MgduO
-#      J0AL2R5MUxhL9KACS7Kg5V+I7a3B90uLYB3a8lpOx9bAGJkCvkxM08v5peguo4Yh
-#      C0sR9wsiVtxDIgubkigoy4WjmmN5CaLQDYI2d9PT0onNhqxkvym5X1YkbIHVN1hz
-#      fo56P7OZMSlW1d14ved94XCwmPVlLfUdTvlEKnsdF3k7rhrjUN9YnpDaxNNplfg+
-#      ZfkoTwARAQABiQG8BBgBCgAmFiEEwLNyHK5WuvAYF06YG1lLqpVx5EQFAl7OC6oC
-#      GwwFCQPCZwAACgkQG1lLqpVx5ESzDwv+IsZsUUHiunBpw72PRmrAE0jJSt7Co7Q+
-#      pqgDi4fooEDUcb44KCKmyIShq1Iib41vxFyrBRh474qU1BPObzG/V4X53IhA4Iru
-#      l8Wna9Y5FkkroQli+YltAmOdW4o1AtWgAprG4pyCMBXJuIa0vtWMyZPU5cVKAkbg
-#      CNcMAT0dA8D2ilrpD/VifaZHNPvhG1JX0pclntTvgu7CSn6hJRveT9+qCMDIbAUO
-#      SA5X0DZRhpIq6JeA6sqdlBBrNsEPae61mSjW0YHMq9bIGWW+JXgTvR+AQ4Ixiy5K
-#      BIjThnqx+NoLDHtwFPfnbCFsh9VWJEOMmypzCLPPEbTjEYEcDt0ktVw4NYyZCYha
-#      9ArzXtyxFQkFpR92eeRaiusDwEWYnCusQD4l9zoPgA5utGRJP+yY0d0kYcGvcHjf
-#      XFLVHni8wXzqJF2l8U5C9IJcQFu+brivFWQGLul4RrQTUHlZutdLYkGbz+3//xjX
-#      MnTJZxXB+mkaXlWruE/ypH55gxCTnpM7
-#      =ae7c
-#      -----END PGP PUBLIC KEY BLOCK-----
-#    #+END_EXAMPLE
-
 * About This Site
   This site is built with emacs and orgmode, hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]].
 

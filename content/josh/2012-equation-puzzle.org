@@ -90,7 +90,7 @@ My plan to teach Josh programming is as follows:
 - First, teach him Logo and Maxima
 - Then, Lisp(maybe one or many of scheme/common-lisp/elisp/clojure)
   and Python
-- Then, Julia and C++
+- Then, C++, C, and Julia
 - After that, let him teach himself
 
 I will write about my teaching and Josh's learning on this site
