@@ -97,5 +97,14 @@ I will write about my teaching and Josh's learning on this site
 afterward, if you are interested in this sort of contents please stay
 tuned or contact me via email.
 
+* Update on 2021.02.03
+  I decided to remove Logo from my teaching kit because my kid thinks
+  Scheme (concretely, Racket) is much more interesting than Logo, and
+  Racket also has a module called ~graphics/turtles~ to do the turtle
+  geometry. He is also interested in Julia, so the list should be
+  updated as:
+  - Lisp, Maxima, Julia
+  - C, C++, Python
+
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org
