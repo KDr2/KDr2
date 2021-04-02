@@ -1,5 +1,5 @@
 /*******************************************************************************
- * @author: Hsiaw-yih, KDr2
+ * @author: KDr2
  * @version: 1.0
  * Licence: CC
  * About:
@@ -7,9 +7,8 @@
  *
  ******************************************************************************/
 body {
-    background: #fff;
     color: #111; /*#557575;*/
-    font: 13px/1.6 Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", sans-serif;
+    font: 14px/1.7 Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", sans-serif;
     /*
     font: 14px/1.7 sans-serif;
     font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
@@ -17,7 +16,7 @@ body {
     line-height: 1.6em;
     margin: 5% 15% 8%;
     min-width: 240px;
-    background: none repeat scroll 0 0 #FFFFFF; /*#FDF6E3;*/
+    background: none repeat scroll 0 0 #FDF6E3;
     /* text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
 }
 

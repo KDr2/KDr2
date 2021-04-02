@@ -1,6 +1,6 @@
 ;;(time lang id file title)
-("2020-12-10 Thu 21:06" en d2012-equation-puzzle "josh/2012-equation-puzzle.org" "An Equation Puzzle")
-("2020-10-28 Wed 08:06" en d2010-math "josh/2010-math.org" "Outline of math knowledge for kids")
+("2020-12-10 Thu 21:06" en d2012-equation-puzzle "kid/2012-equation-puzzle.org" "An Equation Puzzle")
+("2020-10-28 Wed 08:06" en d2010-math "kid/2010-math.org" "Outline of math knowledge for kids")
 ("2019-11-10 Sun 17:45" en d1911-scalable-pg "promotion/1911-build-scalable-pg.org" "Building a Scalable PostgreSQL Solution")
 ("2019-11-04 Mon 10:45" en d1911-svg-path "tech/main/1911-chromium-svg-path-blurry.org" "Avoid blurry rendering of SVG paths in Chromium")
 ("2019-06-24 Mon 10:45" en d1906-new-book "tech/main/1906-new-book.org" "New Book: Qt 5 and OpenCV 4 Computer Vision Projects")
@@ -17,8 +17,6 @@
  "An approach to references from code to text in Orgmode")
 ("2018-05-12 Sat 21:32" en d1805-org-ref-code-to-text "tech/emacs/1805-proposal-org-ref-code-to-text.org"
  "Proposal for Orgmode: references from code to text")
-("2018-02-25 Sun 21:17" 中 d1802-child-utter-2018 "essay/1802-child-utterances-2018.org" "仔句精选, 2018")
-("2018-02-25 Sun 21:17" 中 d1802-child-utter-2017 "essay/1802-child-utterances-2017.org" "仔句精选, 2017")
 ("2015-01-13 Tue 19:54" en d1501-stap-bug17696-fixed "tech/main/1501-stap-bug17696-fixed.org" "Systemtap: Bug 17696 is fixed")
 ("2014-12-28 Sun 21:54" en d1412-problem-stap-tracepoints "tech/main/1412-problem-stap-tracepoint.org" "Problem: SystemTap fails to find kernel tracepoints")
 ("2014-11-25 Tue 22:14" 中 d1411-numa-mch-qemu "tech/main/1411-numa-machine-with-qemu.org" "Emulate a NUMA machine with QEMU")
