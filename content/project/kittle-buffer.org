@@ -1,0 +1,167 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Kittle-Buffer
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("brainfuck" "racket")) :results raw
+
+* Introduction
+  Kittle Buffer, or KBF for short, is an extended [[https://en.wikipedia.org/wiki/Brainfuck][Brainf**k]]
+  implementation. KBF could also be explained as KDr2’s Brainf**k.
+
+  This is a project I use to teach my kid, that's why I renamed it to
+  eliminate the dirty word.
+
+  This document doesn't contain any introduction or manual of BF, but
+  you must know what BF is before you use KBF. BF has only 8
+  instructions, it is a simple yet intresting programming language,
+  you will easily find many materials for learning it if you do a
+  search on the internet.
+
+* Extensions to the vanilla BF
+
+  I added a few extensions to the vanilla BF with the intention of
+  making it more expressive, more interesting, and richer for kid
+  teaching.
+
+  Among these extensions, the most important ones are ~^~ and ~@~.
+
+  ~^~ is for multiple pointers support. A pointer stack is added
+  besides the data cells (a.k.a, the data buffer), you can push into
+  or pop out a pointer from the pointer stack. Each pointer has a
+  integer ID. When a BF program starts, the default pointer whose ID
+  is 0 is pushed into the pointer stack automatically. Afterwards, you
+  can push a pointer into the pointer stack by ~^ID~ where ID is the
+  numerical ID of the pointer. If you want to pop the top pointer out
+  from the pointer stack, just use ~^~ without any digit following
+  it. As a special case, the last pointer in the pointer stack can't
+  be popped out: ~^~ does nothing when there's only one pointer in the
+  pointer stack.
+
+  The current pointer which instrcutions like ~+-<>~ are manipulating
+  is always the top pointer of the pointer stack.
+
+  ~@~ is added for function call. The vanilla BF has no function
+  related facilities and it is hard to do calculations like comparison
+  and division. To cope with this issue, I add a function table to
+  KBF. Each function in that table has an integer ID, for example:
+
+  - ~0~ coresponds to function ~identify~, a simple function returns
+    its only argument untouched.
+  - ~1~ converts its argument to a string and output it.
+  - ~21~ is ~+~ who adds all its arguments up.
+
+  A function call is usually expressed as ~ret = func(args...)~ in
+  common programming languages, so do we here:
+  - first, we use ~^N~ to push a pointer into the pointer stack, the
+    data cell to which this pointer points to will be used to hold the
+    return value of he function, this step can be thought ss ~ret =~
+  - then, again we use ~^N~ to push the pointer who points to the data
+    cell with the target function id in it into the pointer stack,
+    this step coresponds to ~func~.
+  - then, at push the pointer(s) to the arguments orderly.
+  - at last, we use ~@ARITY~ to trigger the function call, here
+    ~ARITY~ is count of the arguments.
+  - ~@ARITY~ doesn't change the pointer stack, you should pop out the
+    pointers manually if needed.
+
+  Let's see an example: ~^0^1>+21^2>>+^3>>>++@2~ calculates that
+  ~cell(0) = cell(2) + cell(3)~, which is ~cell(0) = 1 + 2~.
+
+  - ~^0~ pushes pointer 0 to the pointer stack, which is for the
+    return value.
+  - ~^1~ pushes pointer 1 to the pointer stack, ~>~ moves it right to
+    cell(1), ~+21~ adds it up to ~21~. This is for function ~+~.
+  - ~^2>>+^3>>>++~ prepares the arguments, ~1~ in cell(2), ~2~ in
+    cell(3).
+  - ~@2~ calls the function, after this step, cell(0) will become ~3~.
+
+  There are also some trivial extensions besides the two main
+  extensions:
+  - Using a number for repetition, ~+23~ means repeating ~+~ for 23
+    times. This works for ~+-<>~;
+  - ~!~ for input data, like what [[https://fatiherikli.github.io/brainfuck-visualizer/][this BF visualizer]] does. The
+    characters after a ~!~ will not be treated as code, but as
+    data. ~,~ will pick character from this data *circularly*.
+  - ~?~ to set a break-point under GUI mode. Under cli-mode, it does
+    nothing, but under GUI mode, it will pause when an ~?~ instruction
+    is encountered if the "Pause at ?" checkbox is checked.
+
+  Here is a simple demonstration of the GUI window:
+
+  #+BEGIN_EXPORT HTML
+  <center class="image-container">
+  <a target="_blank" href="https://res.cloudinary.com/kdr2/image/upload/v1617707587/dev/kbf-v0.2-alpha.gif">
+  <img src="https://res.cloudinary.com/kdr2/image/upload/v1617707587/dev/kbf-v0.2-alpha.gif"
+  style="width: auto; height: auto; max-width: 100%;">
+  </a><br/></center>
+  #+END_EXPORT
+
+* How to obtain KBF
+  There are [[https://cxan.kdr2.com/kittle-buffer/][pre-built binaries hosted here]]:
+  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-linux-v0.2.zip][Linux]]
+  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-win64-v0.2.zip][Windows]]
+  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-macos-v0.2.zip][macOS]]
+
+  Or you can [[https://github.com/KDr2/kittle-buffer][download the source from github]] and run it from source:
+  - install racket
+  - clone the source, run ~raco pkg install~ in the project direcotry
+  - run ~kbf.rkt~
+    - ~racket kbf.rkt~ will start with the GUI;
+    - ~racket kbf.rkt src.bf~ will run the BF/KBF code in the file ~src.bf~;
+    - ~racket kbf.rkt -~ will read BF/KBF source from ~stdin~.
+
+* The builtin function-table
+  - 0: @1, identify, a function returns its only argument untouched.
+  - 1: @1, outputs the number literally, instead of converting it to a
+    char, returns the count of chars it has printed out.
+  - 21: @N (N>=1), +
+  - 22: @N (N>=1), -
+  - 23: @N (N>=1), *
+  - 24: @2, /
+  - 25: @2, modulo
+  - 26: @2, power, returns arg-0 raised to the power of arg-1.
+  - 27: @2, =, returns 0 or 1 which stands for false and true
+    respectively.
+  - 28: @2, >
+  - 29: @2, <
+  - 30: @2, >=
+  - 31: @2, <=
+  - 32: @2, bitwise or
+  - 33: @2, bitwise and
+  - 34: @2, bitwise xor
+  - 35: @2, bitwise shift
+  - 36: @2, random
+
+* Changelog
+  - v0.2
+    - use ~?~ to set a break-point under GUI mode
+    - colorize related cells while executing a function call instruction (i.e., ~@N~)
+    - cacth the error when brackets mismatch
+  - v0.1
+    - The first release
+    - An extended BF interpreter with the following extensions: ~^, @, <N>, !~
+    - A graphic user interface to visualize the execution process of BF
+* TODO Examples
+  The below code:
+  #+begin_src text
+    ^0^1>+21^2>>+50^3>3+47@2^0.
+  #+end_src
+
+  outputs ~a~.
+
+  - ~^0~ pushes the pointer 0 to the pointer stack;
+  - ~^1>+21~ pushes the pointer 1 to the pointer stack, moves it right
+    for 1 step, then adds its value to 21 (21 is the function ~+~);
+  - ~^2>>+50~ pushes the pointer 2 to the pointer stack, moves it
+    right for 2 steps, then adds its value from 0 to 50;
+  - ~^3>3+47~ pushes the pointer 3 to the pointer stack, moves it
+    right for 3 steps, then adds its value from 0 to 47;
+  - ~@2~ uses the top 2 pointers (^2 and ^3) as arguments, calls the
+    function 21 to which the pointer 1 is pointing, places the return
+    value (97 here) into the cell to which pointer 0 is pointing;
+  - ~^0.~ selects pointer 0 and outputs the value it points to.
