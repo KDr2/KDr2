@@ -9,6 +9,7 @@
 
 Here are some projects created/maintained by me:
 
+- [[file:kittle-kids.org][Kittle Kids]]
 - [[file:kittle-buffer.org][Kittle Buffer]]
 - [[file:redis-leveldb.org][Redis-Leveldb]]
 - [[file:sb-fastcgi.org][SB-FastCGI]]

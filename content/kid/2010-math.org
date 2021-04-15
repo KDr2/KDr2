@@ -32,7 +32,7 @@ as well, this list may give you a roadmap for reference.
   - Modulo
   - Decomposition of prime factors
   - Factorial
-  - Law of commutation, Law of association, Low of distribution
+  - Law of commutation, Law of association, Law of distribution
   - Precedence and parenthesis
 * [D] Sequences
   - Arithmetic Sequences

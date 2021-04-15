@@ -1,0 +1,128 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: Kittle Kids
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("brainfuck" "racket")) :results raw
+
+* Introduction
+
+  **Kittle Kids** is a project focusing on **KIDS EDUCATION**.
+
+  Actually, I haven't developed a mature system yet, but just want to
+  share the materials, tools, methods, tricks I've used to teach my
+  kid. Maybe it will be developed into a complete system one day, if
+  you are interested in it, you can contact me to discuss more about
+  it.
+
+  Generally, I teach my kid three disciplines:
+  - Mathematics and Programming
+  - English, as we are native Mandarin speaker
+  - Physical Education
+
+  The common disposition of these disciplines is they are the most
+  fundamental disciplines, and kids/people need no prior social or
+  life experience to learn them.
+
+* Mathematics and Programming
+** Mathematics
+   [[file:../kid/2010-math.org][Here is an outline of math knowledge points]] my kid had learned
+   before he was six. I will continuously list other items along my
+   teaching process.
+
+   Besides the outline, I also recommend some materials and tools:
+   - The math textbooks of primary school, secondary school, and high
+     school, especially the latter two series, they are good.
+   - Many other books, like:
+     - Tao Terence's <Solving Mathematical Problems> (《陶哲轩教你学数学》)
+     - Tao Terence's <Analysis> (《陶哲轩实分析》)
+     - What is Mathematics? (《什么是数学》)
+     - 《十万个为什么 数学篇》
+     - Discrete Mathematics and Its Applications(《离散数学及其应用》)
+     - ...
+   - [[http://maxima.sourceforge.net/][Maxima]], a free and easy to use CAS (Computer Algebra System).
+   - https://www.desmos.com/, a tool for drawing function curves thus
+     very helpful to learn analytical
+     geometry. https://www.geogebra.org/ is another similar tool.
+** Programming
+   Choosing fundamental, practical, yet interesting programming
+   languages is the first step of teach programming, and here are my
+   choices:
+
+   - Racket
+   - C/C++
+   - Julia
+   - Python
+
+   **Racket**, as a lisp, has a homogeneous syntax, so it is easy to
+   kids. It also has many other pros: (a) numerous of libraries,
+   including Turtle geometry, Drawing, GUI Toolkit, Web Sever, and
+   many others; (b) many books about teaching directly or indirectly
+   around it, like [[https://htdp.org/2018-01-06/Book/][How to Design Programs]], [[https://www.realmofracket.com/][Realm of Racket]], [[http://picturingprograms.com/][Picturing
+   Programs]], [[https://nostarch.com/racket-programming-fun-way][Racket Programming the Fun Way]], and [[https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html][SICP]].
+
+   There are other teaching projects using Racket as well:
+   - https://bootstrapworld.org/
+   - https://projectguts.org/
+
+   **C/C++** are the most fundamental programming languages on which
+   our computer world are built, and they are also the first tier of
+   the chosen languages for many competitions.
+
+   **Julia** is a general purpose language who is very lispy and
+   math-friendly, **Python** is the hottest one nowadays and it is
+   very easy too.
+
+   Learning not only one languages at the same time will widen and
+   deepen the view and the mind of kids, the comparison between them
+   will introduce them thoughts of how computer works and why were
+   these languages designed like what they are.
+
+   Additionally, Haskell is also a nice option to choose, it has its
+   most conceptions borrowed from mathematics, and this makes it
+   friendly to kids who love math. The reasons I don't choose it are
+   (a) it is NOT practical enough (e.g. lacking of quality GUI
+   libraries); (b) mapping its source code to low-level computer
+   instructions is usually not straightforward. But, again, it is
+   still a good option, if my kid wants to learn it, I won't stand on
+   the opposite side, I just won't sell it to him.
+
+   After all, [[https://brilliant.org/][Brilliant]] is another place to learning math and similar
+   things.
+
+** Games
+   I also use games to teach math and programming, in these steps:
+   - learn how to play it
+   - learn how to implement it ourselves
+   - try to write a robot to play it automatically
+
+   Below lists the games I've used:
+   - [[file:kittle-buffer.org][Kittle Buffer]]
+   - Minesweeper
+   - [[https://playgameoflife.com/][John Conway's Game of Life]]
+   - [[https://docs.racket-lang.org/games/index.html][PLT Games within Racket]]
+
+* English
+  Learning natural language has no shortcut, but for kids, it is much
+  easier, just listening, reading, and speaking, that is, do the same
+  as when they were learning their native language.
+
+  To let them do that, you should give them something interests them,
+  I gave my kid many math materials (he likes math very much) in
+  English, and Youtube Kids. He watches these series on Youtube
+  everyday:
+
+  - NumberBlocks
+  - AlphaBlocks
+  - Akili and Me
+  - BabyBus - Math Kingdom Adventure and others
+
+  And now he talks to me in English increasingly everyday.
+* Physical Education
+  I am not good at this so I handed it over to a professional coach.
+* TODO What next?
+  Feel free to contact me to ask anything and share your experiences.
