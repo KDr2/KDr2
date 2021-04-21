@@ -104,8 +104,8 @@
 * How to obtain KBF
   There are [[https://cxan.kdr2.com/kittle-buffer/][pre-built binaries hosted here]]:
   - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-linux-v0.2.zip][Linux]]
-  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-win64-v0.2.zip][Windows]]
-  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-macos-v0.2.zip][macOS]]
+  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-win64-v0.2.1.zip][Windows]]
+  - [[https://cxan.kdr2.com/kittle-buffer/kittle-buffer-macos-v0.2.1.zip][macOS]]
 
   Or you can [[https://github.com/KDr2/kittle-buffer][download the source from github]] and run it from source:
   - install racket
