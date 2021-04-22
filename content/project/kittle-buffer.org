@@ -138,6 +138,8 @@
   - 36: @2, random
 
 * Changelog
+  - v0.2.1
+    - change icon on macOS and Windows
   - v0.2
     - use ~?~ to set a break-point under GUI mode
     - colorize related cells while executing a function call instruction (i.e., ~@N~)
