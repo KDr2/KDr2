@@ -15,7 +15,7 @@
 
   - run functions in =org-export-before-processing-hook=
   - expand =include(#+INCLUDE: ...)= keywords
-  - expend =macro({{{macro}}})= kerwords
+  - expend =macro({{{macro}}})= keywords
   - execute babel code blocks
   - run functions in =org-export-before-parsing-hook=
   - export with specified backend

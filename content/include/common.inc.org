@@ -1,3 +1,6 @@
+# #################
+# site facilities
+# #################
 
 #+NAME: dynamic-header
 #+BEGIN_SRC elisp :results value raw :exports none
@@ -29,6 +32,11 @@
   (inc-code path lang)
 #+END_SRC
 
+#+NAME: inc-local-img
+#+BEGIN_SRC elisp :results value raw :exports none :var path="" width=600 title=""
+  (inc-local-image path width title)
+#+END_SRC
+
 #+NAME: youtube
 #+BEGIN_SRC elisp :results value raw :exports none :var id=""
   (html-youtube-video id)
@@ -46,6 +54,8 @@
 #+MACRO: weserv-image [[https://images.weserv.nl/?url=http://depot.kdr2.com/img-kdr2-com/$1]]
 #+MACRO: cloudinary-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
 #+MACRO: cloudinary-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
+#+MACRO: comment #+ATTR_HTML: :class comment
+#+MACRO: import-mermaid (eval mermaid-html)
 
 # # ADD LINK ############################
 #+MACRO: zcom [[http://www.amazon.com/gp/product/$1?tag=kdr2com-20][$2]]
@@ -58,8 +68,8 @@
 
 # # SELF INFO ###################
 #+MACRO: mytwt [[http://twitter.com/KDr2]]
-#+MACRO: email zhuoql *at* zoho *dot* com
-#+MACRO: kd@github [[http://github.com/KDr2/][My GitHub]]
+#+MACRO: email zhuoql@@html:&#x01F4E7;@@zoho.com
+#+MACRO: kd@github [[http://github.com/KDr2/][KDr2 on GitHub]]
 #+MACRO: kdweb@github [[http://github.com/KDr2/kdr2-on-web][kdr2-on-web at GitHub]]
 
 # # ORG #######################
@@ -68,52 +78,19 @@
 # # PROGRAMMING LANGUAGES ##################
 #+MACRO: c C Programming Language
 #+MACRO: cpp C++ Programming Language
-#+MACRO: r [[http://www.r-project.org/][R]]
 #+MACRO: julia [[http://julialang.org/][Julia]]
-#+MACRO: erlang [[http://erlang.org][Erlang]]
-#+MACRO: java [[http://www.java.com][Java]]
-#+MACRO: scala [[http://www.scala-lang.org][Scala]]
 #+MACRO: clj [[http://clojure.org][Clojure]]
 #+MACRO: python [[http://www.python.org][Python]]
-#+MACRO: lua [[http://www.lua.org][Lua]]
-#+MACRO: ruby [[http://www.ruby-lang.org][Ruby]]
 #+MACRO: perl [[http://www.perl.org][Perl]]
 #+MACRO: cl [[http://common-lisp.net/][Common Lisp]]
 #+MACRO: ecl [[http://ecls.sourceforge.net/][ECL]]
 #+MACRO: sbcl [[http://www.sbcl.org/][SBCL]]
-#+MACRO: ocaml [[http://caml.inria.fr/ocaml/index.en.html][Ocaml]]
 
-# # Develop Tools and Libraries ################
-#+MACRO: linux [[http://www.kernel.org][Linux]]
-#+MACRO: debian [[http://www.debian.org][Debian]]
+# # Tools #####################
 #+MACRO: emacs [[http://www.gnu.org/software/emacs/][Emacs]]
-#+MACRO: qemu [[http://wiki.qemu.org/Main_Page][QEMU]]
-#+MACRO: gcc [[http://gcc.gnu.org/][GCC]]
-#+MACRO: llvm [[http://www.llvm.org][LLVM]]
-#+MACRO: pgsql [[http://www.postgresql.org/][PostgreSQL]]
-#+MACRO: rex [[https://www.rexify.org/][Rex]]
-
-# # Dev Libraries #######################
-#+MACRO: boost [[http://www.boost.org/][Boost]]
-#+MACRO: x11 [[http://www.x.org/][X11]]
-#+MACRO: qt [[http://qt-project.org/][Qt]]
-#+MACRO: gtk [[http://www.gtk.org/][GTK]]
-
-# # Web Lib/Frameworks ###################
-#+MACRO: fcgi [[http://www.fastcgi.com/][FastCGI]]
-#+MACRO: django [[http://www.djangoproject.com/][Django]]
-#+MACRO: wsgi [[http://www.python.org/dev/peps/pep-0333/][WSGI]]
-
-# # Documentation Tools #####################
 #+MACRO: orgmode [[http://orgmode.org/][Org-Mode]]
-#+MACRO: graphviz [[http://www.graphviz.org/][Graphviz]]
-#+MACRO: rst [[http://docutils.sourceforge.net/rst.html][reStructuredText]]
-#+MACRO: sphinx [[http://sphinx.pocoo.org/][SphinxDoc]]
-#+MACRO: latex [[http://www.latex-project.org/][LaTeX]]
-#+MACRO: tex [[http://en.wikipedia.org/wiki/TeX][TeX]]
 
 # # other external links and jargons #################
-#+MACRO: wp [[http://www.wordpress.org][WordPress]]
 #+MACRO: cczh [[http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh][自由转载-非商用-非衍生-保持署名]]
 #+MACRO: ccen [[http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en][Creative Commons BY-NC-ND 3.0]]
 #+MACRO: dh [[http://www.dreamhost.com][DreamHost]]

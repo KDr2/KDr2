@@ -14,6 +14,7 @@
 # - DATE
 <2018-08-26 Sun>
 
+#+MACRO: rex [[https://www.rexify.org/][Rex]]
 
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:

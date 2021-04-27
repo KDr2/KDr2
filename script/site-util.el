@@ -89,3 +89,13 @@
                                         nil
                                       (let* ((rf (replace-regexp-in-string (concat "^" dir "/?") "" f)))
                                         (format "- [[file:%s][%s]]" rf (replace-regexp-in-string "_" "-" rf))))) files)) "\n")))
+
+(defvar mermaid-html "#+begin_export html
+  <script src=\"https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js\"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
+#+end_export")
+
+(defun mermaid (str)
+  (concat "#+begin_export html\n  <div class=\"mermaid\">"
+          str
+          "\n  </div>\n#+end_export"))

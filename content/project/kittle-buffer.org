@@ -9,6 +9,8 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("brainfuck" "racket")) :results raw
 
+[[https://res.cloudinary.com/kdr2/image/upload/c_scale,w_128/v1619321978/dev/kbf-icon-1024.png]]
+
 * Introduction
   Kittle Buffer, or KBF for short, is an extended [[https://en.wikipedia.org/wiki/Brainfuck][Brainf**k]]
   implementation. KBF could also be explained as KDr2’s Brainf**k.

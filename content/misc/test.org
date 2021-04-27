@@ -130,10 +130,10 @@ very very very looong footnote, at least longer than one line. what?
 still too short? are you kidding me?
 
 * Babel Languages
-** Scheme
-   #+NAME: scheme-test
-   #+BEGIN_SRC scheme :exports results :results value raw :colnames abc
-     (display "Hello Scheme in OrgMode") "!!!!"
+** Emacs Lisp
+   #+NAME: elisp-test
+   #+BEGIN_SRC elisp :exports results :results value raw :colnames abc
+     (message "Hello Scheme in OrgMode") "!!!!"
    #+END_SRC
 * Table
 
@@ -159,7 +159,6 @@ still too short? are you kidding me?
 #+END:
 
 * Math and Formula
-
   #+BEGIN_LaTeX
   [ y = x ^ 2 ]
   #+END_LaTeX
@@ -168,25 +167,15 @@ still too short? are you kidding me?
   y = \frac{1}{x ^ 2}
   $$
 
-* Generate Image by R
-  #+BEGIN_SRC R :results value html :exports results :width 400 :height 300
-    source(paste0(Sys.getenv("PROJECT_ROOT"), "/code/R/lib.R"))
-    filename <- autogen_path("images", "sandbox1.png")
-    p2c <- function(x){
-      x[x<=0] <- 720;
-      y <- 20*(10-log(x, 2.2));
-      y[y<5] <- 5;
-      return(y);
-    }
-
-    p <- seq(-100, 1440*2)
-    c <- p2c(p)
-
-    png(filename, width=560, height=480)
-    plot(p, c, type="o")
-    dev.off()
-    inline_html(filename)
+* Mermaid
+  {{{import-mermaid}}}
+  #+BEGIN_SRC elisp :results value raw :exports results
+    (mermaid "
+        graph TD
+        A[Client] --> B[Load Balancer]
+                B --> C[Server01]
+                B --> D[Server02]
+    ")
   #+END_SRC
-
 * Discuss and Comment
   #+INCLUDE: ../include/comment.inc.org
