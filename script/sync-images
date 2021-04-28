@@ -11,5 +11,5 @@ rsync -avr $BASENAME/depot/images/ kdr2@kdr2.com:depot/img-kdr2-com/
 rsync -avr kdr2@kdr2.com:depot/img-kdr2-com/ $BASENAME/depot/images/
 
 # upload to cloudinary
-# python $BASENAME/script/u2cloudinary.py
-$BASENAME/script/u2cloudinary.pl
+python $BASENAME/script/u2cloudinary.py
+# $BASENAME/script/u2cloudinary.pl

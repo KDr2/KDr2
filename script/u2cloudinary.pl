@@ -3,7 +3,7 @@ use v5.12;
 use strict;
 use warnings;
 
-#use Smart::Comments;
+# use Smart::Comments;
 
 use Cwd 'abs_path';
 use File::Basename;
@@ -89,6 +89,7 @@ sub upload2cloudinary {
 
 sub main {
     my (undef, $delay) = init_cloudinay;
+    $delay->begin->();
     File::Find::find({wanted => \&upload2cloudinary}, $IMG_ROOT);
     $delay->wait;
 }

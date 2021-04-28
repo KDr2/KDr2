@@ -13,7 +13,7 @@ IMG_ROOT = os.path.join(APP_ROOT, "depot/images")
 
 def init_cloudinay():
     config_file = os.path.join(APP_ROOT, "config/cloudinary.private.yml")
-    cloudinary_config = yaml.load(open(config_file))
+    cloudinary_config = yaml.safe_load(open(config_file))
     cloudinary.config(**cloudinary_config['production'])
 
 
@@ -46,19 +46,21 @@ def upload2cloudinary(path):
         public_id=public_id(path),
         format=ext_name
     )
-    with open(meta_path, "w") as m:
-        m.write("%s" % ret['version'])
-
+    if ret.get('version'):
+        with open(meta_path, "w") as m:
+            m.write("%s" % ret['version'])
+    else:
+        print(" -- :( upload error: %s", ret['error']['message'])
 
 def walk_fun(root, _dirs, files):
-    print("Entering Drirectory: %s" % root)
+    print("=> Entering Drirectory: %s" % root)
     path = root.replace(IMG_ROOT + "/", "")
     for f in files:
         if f.endswith(META_EXT):
             continue
         img = os.path.join(path, f)
         upload2cloudinary(img)
-    print("Leaving Drirectory: %s" % root)
+    print("<= Leaving Drirectory:  %s" % root)
 
 
 if __name__ == '__main__':
