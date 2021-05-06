@@ -6,13 +6,10 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
-# #+ATTR_HTML: :alt R2D2 :title R2D2 :align right
-
-
-Simple, tough, resilient, optimistic, that's me. I'm KDr2(or Killian,
-or ZHUO Qingliang somewhere), a nostalgist in technology, a martinet
-in behavior, a misanthrope in society, an ascetic in spirit, a logical
-positivist in philosophy, a learner in lifetime.
+Simple, tough, resilient, optimistic, that's me. I'm KDr2 (Killian
+Q. Zhuo), a nostalgist in technology, a martinet in behavior, a
+misanthrope in society, an ascetic in spirit, a logical positivist in
+philosophy, a learner in lifetime.
 
 I live with my kid and we two together lead a simple life.
 
