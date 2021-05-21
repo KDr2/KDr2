@@ -54,9 +54,11 @@
    choices:
 
    - Racket
-   - C/C++
-   - Julia
+   - Haskell
    - Python
+   - Julia
+   - C/C++
+   - Others: JavaScript(TypeScript), Rust
 
    **Racket**, as a lisp, has a homogeneous syntax, so it is easy to
    kids. It also has many other pros: (a) numerous of libraries,
@@ -69,29 +71,24 @@
    - https://bootstrapworld.org/
    - https://projectguts.org/
 
-   **C/C++** are the most fundamental programming languages on which
-   our computer world are built, and they are also the first tier of
-   the chosen languages for many competitions.
+   **Haskell** is a pure functional programming language. It has its
+   most conceptions borrowed from mathematics, and this makes it
+   friendly to kids who love math.
 
    **Julia** is a general purpose language who is very lispy and
    math-friendly, **Python** is the hottest one nowadays and it is
    very easy too.
+
+   **C/C++** are the most fundamental programming languages on which
+   our computer world are built, and they are also the first tier of
+   the chosen languages for many competitions.
 
    Learning not only one languages at the same time will widen and
    deepen the view and the mind of kids, the comparison between them
    will introduce them thoughts of how computer works and why were
    these languages designed like what they are.
 
-   Additionally, Haskell is also a nice option to choose, it has its
-   most conceptions borrowed from mathematics, and this makes it
-   friendly to kids who love math. The reasons I don't choose it are
-   (a) it is NOT practical enough (e.g. lacking of quality GUI
-   libraries); (b) mapping its source code to low-level computer
-   instructions is usually not straightforward. But, again, it is
-   still a good option, if my kid wants to learn it, I won't stand on
-   the opposite side, I just won't sell it to him.
-
-   After all, [[https://brilliant.org/][Brilliant]] is another place to learning math and similar
+   After all, [[https://brilliant.org/][Brilliant]] is another place for learning math and similar
    things.
 
 ** Games

@@ -27,10 +27,10 @@
     - English: Conversant with Reading and Writing
     - Writing: Good at non-fiction writing
   - Platforms and Programming Languages
-    - Linux, Bash, C/C++
-    - Julia, R
+    - C/C++, Rust, Linux, Bash
     - Python, Perl, JavaScript
-    - Common Lisp, Scheme, Emacs Lisp
+    - Scheme(Racket), Clojure, Common Lisp, Emacs Lisp
+    - Julia, Haskell
   - Domains
     - Linux system programming
     - Database: PostgreSQL and many others
