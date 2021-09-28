@@ -12,10 +12,10 @@
 #+CALL: meta-keywords(kws='("KDr2" "Zhuo Qingliang" "resume")) :results raw
 
 * Status Quo
-  Settle in Xi'AN Shaanxi China. Active in software development, open
+  Settle in Xi'AN Shaanxi China. Active in software development, ready
   for any proper opportunity.
 * Personal Information
-  - Name: Zhuo Qingliang
+  - Name: Zhuo Qingliang, sometimes go as Killian.
   - Year of Birth: 1983
   - Email: zhuo+job@@html:&#x01F4E7;@@hexoasis.com
   - Homepage: https://kdr2.com
@@ -24,13 +24,14 @@
 * Skills
   - Languages
     - Chinese (Mandarin, Simplified): Native Speaker
-    - English: Conversant with Reading and Writing
+    - English: Conversant
     - Writing: Good at non-fiction writing
   - Platforms and Programming Languages
     - C/C++, Rust, Linux, Bash
     - Python, Perl, JavaScript
     - Scheme(Racket), Clojure, Common Lisp, Emacs Lisp
-    - Julia, Haskell
+    - Julia
+    - Haskell
   - Domains
     - Linux system programming
     - Database: PostgreSQL and many others
