@@ -11,7 +11,6 @@
 
 * Special Topic(*)
   - [[file:../project/index.org][Projects]]
-  - [[file:../resource/index.org][Resources]]
 
 #+NAME: site-cats
 #+BEGIN_SRC elisp :exports none
