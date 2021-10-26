@@ -1,4 +1,5 @@
 ;;(time lang id file title)
+("2021-10-26 Tue 16:06" en d2110-daily "kid/2110-daily.org" "Josh Daily, 2021")
 ("2020-12-10 Thu 21:06" en d2012-equation-puzzle "kid/2012-equation-puzzle.org" "An Equation Puzzle")
 ("2020-10-28 Wed 08:06" en d2010-math "kid/2010-math.org" "Outline of math knowledge for kids")
 ("2019-11-10 Sun 17:45" en d1911-scalable-pg "promotion/1911-build-scalable-pg.org" "Building a Scalable PostgreSQL Solution")

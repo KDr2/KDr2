@@ -23,15 +23,9 @@ expectation.
 
 * Navigation
   # - [[https://www.notion.so/What-is-happening-3fa589c95cb8497fb9a70fec96675db1][What's happening]]
-  - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]] / [[file:resource/index.org][Resources]]
+  - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]]
   - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
   - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
-
-  #+BEGIN_EXPORT HTML
-  <a href="tech/main/1906-new-book.html">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/518P6OYe%2BhL._SX404_BO1,204,203,200_.jpg" height="256">
-  </a>
-  #+END_EXPORT
 
 * Recent Posts
   #+NAME: recent-posts
