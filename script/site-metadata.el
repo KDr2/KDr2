@@ -24,7 +24,6 @@
 ("2014-11-21 Fri 07:44" 中 d1411-extcmd-bash-quote "tech/main/1411-extcmd-bash-quote.org" "Call External Command and Bash Quote")
 ("2014-11-06 Thu 21:17" 中 d1411-visitors "essay/1411-visitors-from-whole-world.org" "Visitors from the Whole World")
 ("2014-09-20 Sat 15:50" 中 d1409-ngx-ofc "tech/main/1409-nginx-open-file-cache.org" "Nginx Open File Cache")
-("2014-07-02 Wed 17:01" en d1407-julia-types "tech/main/1407-julia-types-summary.org" "Julia Types Summary")
 ("2014-06-11 Wed 19:16" en d1406-bugfix-sleepd-batcap "tech/main/1406-sleepd-bug-batt-cap.org"
  "Bugfix: Bad battery percentage reporting in sleepd")
 ("2014-05-23 Fri 14:52" en d1405-org-unicode-checkbox "tech/emacs/1405-orgmode-checkbox-unicode.org"

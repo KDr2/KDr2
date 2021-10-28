@@ -49,11 +49,11 @@
 # # MACRO EXAMPLES ####################
 #+MACRO: macro-name-1 replacement text $1, $2 are arguments [[a-link]]
 
-#+MACRO: image [[http://depot.kdr2.com/img-kdr2-com/$1]]
-#+MACRO: image-scale [[https://images.weserv.nl/?url=http://depot.kdr2.com/img-kdr2-com/$1&w=$2]]
-#+MACRO: weserv-image [[https://images.weserv.nl/?url=http://depot.kdr2.com/img-kdr2-com/$1]]
-#+MACRO: cloudinary-image [[http://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
-#+MACRO: cloudinary-image-scale [[http://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
+#+MACRO: image [[https://raw.githubusercontent.com/KDr2/public-assets/main/kdr2-com/images/$1]]
+#+MACRO: image-scale [[https://images.weserv.nl/?url=https://raw.githubusercontent.com/KDr2/public-assets/main/kdr2-com/images/$1&w=$2]]
+#+MACRO: weserv-image [[https://images.weserv.nl/?url=https://raw.githubusercontent.com/KDr2/public-assets/main/kdr2-com/images/$1]]
+#+MACRO: cloudinary-image [[https://res.cloudinary.com/kdr2/image/upload/img-kdr2-com/$1]]
+#+MACRO: cloudinary-image-scale [[https://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
 #+MACRO: comment #+ATTR_HTML: :class comment
 #+MACRO: import-mermaid (eval mermaid-html)
 

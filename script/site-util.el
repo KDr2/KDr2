@@ -42,15 +42,15 @@
           "</center>\n#+END_EXPORT\n"))
 
 ;; example:
-;; http://res.cloudinary.com/kdr2/image/upload/c_scale,w_400/img-kdr2-com/2010/12/pyc_format_example_0.png.png
+;; https://res.cloudinary.com/kdr2/image/upload/c_scale,w_400/img-kdr2-com/2010/12/pyc_format_example_0.png.png
 (defun site-image (path width caption link)
   (let* ((width (or width 600))
          (caption (or caption ""))
          (url
-          (concat "http://res.cloudinary.com/kdr2/image/upload/c_scale,w_" (number-to-string width)
+          (concat "https://res.cloudinary.com/kdr2/image/upload/c_scale,w_" (number-to-string width)
                   "/img-kdr2-com/" path))
          (original-url
-          (concat "http://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path))
+          (concat "https://res.cloudinary.com/kdr2/image/upload/" "img-kdr2-com/" path))
          (link (or link original-url)))
     (concat "#+BEGIN_EXPORT HTML\n<center class=\"image-container\">"
             "<a target=\"_blank\" href=\"" link "\">"
