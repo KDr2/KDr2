@@ -22,10 +22,10 @@ is hard to me, a person on the hard way. So please don't set any
 expectation.
 
 * Navigation
-  # - [[https://www.notion.so/What-is-happening-3fa589c95cb8497fb9a70fec96675db1][What's happening]]
   - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]]
   - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
   - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
+  - [[https://kdr2.com/misc/draft.html][Nothing fresh?]]
 
 * Recent Posts
   #+NAME: recent-posts
