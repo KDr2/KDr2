@@ -19,46 +19,49 @@
   you are interested in it, you can contact me to discuss more about
   it.
 
-  Generally, I teach my kid three disciplines:
+  Generally, I teach my kid two disciplines:
   - Mathematics and Programming
   - English, as we are native Mandarin speaker
-  - Physical Education
 
   The common disposition of these disciplines is they are the most
   fundamental disciplines, and kids/people need no prior social or
-  life experience to learn them.
+  life experiences to learn them.
 
 * Mathematics and Programming
 ** Mathematics
    [[file:../kid/2010-math.org][Here is an outline of math knowledge points]] my kid had learned
-   before he was six. I will continuously list other items along my
-   teaching process.
+   before he was six (as of 2020). I will continuously list other
+   items along my teaching process. I think one can follow these
+   knowledge points and order of them to learn or teach.
 
    Besides the outline, I also recommend some materials and tools:
    - The math textbooks of primary school, secondary school, and high
      school, especially the latter two series, they are good.
    - Many other books, like:
-     - Tao Terence's <Solving Mathematical Problems> (《陶哲轩教你学数学》)
-     - Tao Terence's <Analysis> (《陶哲轩实分析》)
-     - What is Mathematics? (《什么是数学》)
      - 《十万个为什么 数学篇》
-     - Discrete Mathematics and Its Applications(《离散数学及其应用》)
+     - What is Mathematics? (《什么是数学》)
+     - Tao Terence's <Solving Mathematical Problems> (《陶哲轩教你学数学》)
      - ...
    - [[http://maxima.sourceforge.net/][Maxima]], a free and easy to use CAS (Computer Algebra System).
+   - [[https://www.wolfram.com/mathematica/][Mathematica]], a powerful mathematics tool.
    - https://www.desmos.com/, a tool for drawing function curves thus
      very helpful to learn analytical
      geometry. https://www.geogebra.org/ is another similar tool.
+
+   I have given a full list of them in [[*Materials my kid uses][a later section of this post]].
+
 ** Programming
    Choosing fundamental, practical, yet interesting programming
    languages is the first step of teach programming, and here are my
    choices:
 
-   - Racket
+   - Racket (and/or other lisp dialects)
    - Haskell
-   - Python
    - Julia
+   - Python
+   - Wolfram Language and Maxima
+   - JavaScript(TypeScript)
    - C/C++
-   - Others: JavaScript(TypeScript), Rust
 
    **Racket**, as a lisp, has a homogeneous syntax, so it is easy to
    kids. It also has many other pros: (a) numerous of libraries,
@@ -71,25 +74,27 @@
    - https://bootstrapworld.org/
    - https://projectguts.org/
 
-   **Haskell** is a pure functional programming language. It has its
-   most conceptions borrowed from mathematics, and this makes it
-   friendly to kids who love math.
-
    **Julia** is a general purpose language who is very lispy and
    math-friendly, **Python** is the hottest one nowadays and it is
    very easy too.
+
+   **Haskell** is a pure functional programming language. It has its
+   most conceptions borrowed from mathematics, and this makes it
+   friendly to kids who love math.
 
    **C/C++** are the most fundamental programming languages on which
    our computer world are built, and they are also the first tier of
    the chosen languages for many competitions.
 
+   *Wolfram Language* and *Maxima* are CAS, they are helpful on
+   modeling and solving mathematic problems. And also they will give
+   an overview of full symbolic system and its differences from other
+   programming languages.
+
    Learning not only one languages at the same time will widen and
    deepen the view and the mind of kids, the comparison between them
    will introduce them thoughts of how computer works and why were
    these languages designed like what they are.
-
-   After all, [[https://brilliant.org/][Brilliant]] is another place for learning math and similar
-   things.
 
 ** Games
    I also use games to teach math and programming, in these steps:
@@ -119,7 +124,38 @@
   - BabyBus - Math Kingdom Adventure and others
 
   And now he talks to me in English increasingly everyday.
-* Physical Education
-  I am not good at this so I handed it over to a professional coach.
+
+* Materials my kid uses
+** Books
+   - 《十万个为什么 数学篇》
+   - Singapore Math Textbooks (Primary, 1-6)
+   - [[https://www.amazon.com/dp/0966621131][Mastering Essential Math Skills]]
+   - [[https://www.amazon.com/dp/0999443380][Mastering Essential Math Skills, Book 2]]
+   - [[https://www.amazon.com/dp/0999443399][Pre-Algebra Concepts 2nd Edition, Mastering Essential Math Skills]]
+   - What is Mathematics? (《什么是数学》)
+   - Discrete Mathematics and Its Applications(《离散数学及其应用》)
+   - Tao Terence's <Analysis> (《陶哲轩实分析》)
+   - Tao Terence's <Solving Mathematical Problems> (《陶哲轩教你学数
+     学》)
+   - [[https://item.jd.com/10026200360034.html][盖尔范德中学生数学思维丛书全套]] (Gelfand, Springer)
+   - [[https://www.amazon.com/dp/B07VTQT95V][Infinite Powers]]
+   - [[https://www.amazon.com/dp/B08PDBFQHQ][Princeton Lifesaver Study Guides (3 books)]]
+** Blogs and Youtubers
+   - NumberBlocks
+   - AlphaBlocks
+   - Akili and Me
+   - BabyBus - Math Kingdom Adventure and others
+   - https://numberock.com/
+   - https://mathantics.com/
+   - https://mindyourdecisions.com/blog/
+** Software and Apps
+   - [[http://maxima.sourceforge.net/][Maxima]]
+   - [[https://www.wolfram.com/mathematica/][Mathematica]]
+   - https://www.desmos.com/
+   - https://www.geogebra.org/
+   - [[https://brilliant.org/][Brilliant]]
+* Updating log
+  - 2011.11, added some materials.
+  - 2011.04, first version.
 * TODO What next?
   Feel free to contact me to ask anything and share your experiences.
