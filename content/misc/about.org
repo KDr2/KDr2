@@ -8,7 +8,7 @@
 #+CALL: meta-keywords(kws='("KDr2" "freelancer")) :results raw
 
 * About Me
-  Hi, I'm KDr2(ZHUO Qingliang), a nostalgist in technology, a martinet
+  Hi, I'm KDr2(Killian Zhuo), a nostalgist in technology, a martinet
   in behavior, a misanthrope in society, an ascetic in spirit, a
   logical positivist in philosophy, a learner in lifetime.
 
@@ -17,8 +17,9 @@
   - Computer science and programming
   - Data science
   - Child Education
+  - Reading and writing
   - Psychology and mental health
-  - Finance and econometrics
+  - Finance
 
   #+BEGIN_EXPORT HTML
   <!-- -----------------------------------------\
@@ -35,9 +36,9 @@
    - Emails :
      - zhuo@@html:&#x01F4E7;@@hexoasis.com,
        zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
-     - zhuoql@@html:&#x01F4E7;@@yahoo.com, for development affairs,
+     - zhuo.dev@@html:&#x01F4E7;@@gmail.com, for development affairs,
        e.g. mailing list, bug report.
-   - Mobile : +86 0b10111010 05532 0x0636
+   - Mobile : +86 0b10111010 0o5532 0x0636
    - [[file:resume.org][Resume]]
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:
