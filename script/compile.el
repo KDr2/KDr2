@@ -9,7 +9,7 @@
 
 (defun app-file (&optional path)
   (let ((path (or path "")))
-    (concatenate 'string app-root-path path)))
+    (concat app-root-path path)))
 
 (load-file (app-file "script/site-util.el"))
 (load-file (app-file "script/site-theme.el"))

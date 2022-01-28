@@ -20,8 +20,7 @@
   (replace-regexp-in-string "[^[:alnum:]]+" "-" (downcase title)))
 
 (defun list-to-log-entity (data)
-  (concatenate
-   'string
+  (concat
    "\n* " (nth 4 data)
    "\n  :PROPERTIES:"
    "\n  :CUSTOM_ID: " (symbol-name (nth 2 data))
