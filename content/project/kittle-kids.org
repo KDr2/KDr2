@@ -9,6 +9,12 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("brainfuck" "racket")) :results raw
 
+#+begin_quote
+  This project had been stopped, and this page will not be updated any
+  more. The reason is that I found my kid learns too quickly, and I must
+  see him as a fellow but not a kid now.
+#+end_quote
+
 * Introduction
 
   **Kittle Kids** is a project focusing on **KIDS EDUCATION**.
@@ -43,7 +49,7 @@
      - Tao Terence's <Solving Mathematical Problems> (《陶哲轩教你学数学》)
      - ...
    - [[http://maxima.sourceforge.net/][Maxima]], a free and easy to use CAS (Computer Algebra System).
-   - [[https://www.wolfram.com/mathematica/][Mathematica]], a powerful mathematics tool.
+     - or [[https://www.wolfram.com/mathematica/][Mathematica]], a powerful mathematics tool.
    - https://www.desmos.com/, a tool for drawing function curves thus
      very helpful to learn analytical
      geometry. https://www.geogebra.org/ is another similar tool.
@@ -57,11 +63,11 @@
 
    - Racket (and/or other lisp dialects)
    - Haskell
-   - Julia
-   - Python
-   - Wolfram Language and Maxima
-   - JavaScript(TypeScript)
    - C/C++
+   - Python
+   - Maxima (or Wolfram Language)
+   - JavaScript(TypeScript)
+   - Julia
 
    **Racket**, as a lisp, has a homogeneous syntax, so it is easy to
    kids. It also has many other pros: (a) numerous of libraries,
@@ -73,10 +79,6 @@
    There are other teaching projects using Racket as well:
    - https://bootstrapworld.org/
    - https://projectguts.org/
-
-   **Julia** is a general purpose language who is very lispy and
-   math-friendly, **Python** is the hottest one nowadays and it is
-   very easy too.
 
    **Haskell** is a pure functional programming language. It has its
    most conceptions borrowed from mathematics, and this makes it
@@ -90,6 +92,10 @@
    modeling and solving mathematic problems. And also they will give
    an overview of full symbolic system and its differences from other
    programming languages.
+
+   **Julia** is a general purpose language who is very lispy and
+   math-friendly, **Python** is the hottest one nowadays and it is
+   very easy too.
 
    Learning not only one languages at the same time will widen and
    deepen the view and the mind of kids, the comparison between them
@@ -107,6 +113,7 @@
    - Minesweeper
    - [[https://playgameoflife.com/][John Conway's Game of Life]]
    - [[https://docs.racket-lang.org/games/index.html][PLT Games within Racket]]
+   - Minecraft
 
 * English
   Learning natural language has no shortcut, but for kids, it is much
@@ -129,9 +136,6 @@
 ** Books
    - 《十万个为什么 数学篇》
    - Singapore Math Textbooks (Primary, 1-6)
-   - [[https://www.amazon.com/dp/0966621131][Mastering Essential Math Skills]]
-   - [[https://www.amazon.com/dp/0999443380][Mastering Essential Math Skills, Book 2]]
-   - [[https://www.amazon.com/dp/0999443399][Pre-Algebra Concepts 2nd Edition, Mastering Essential Math Skills]]
    - What is Mathematics? (《什么是数学》)
    - Discrete Mathematics and Its Applications(《离散数学及其应用》)
    - Tao Terence's <Analysis> (《陶哲轩实分析》)
@@ -149,13 +153,13 @@
    - https://mathantics.com/
    - https://mindyourdecisions.com/blog/
 ** Software and Apps
-   - [[http://maxima.sourceforge.net/][Maxima]]
-   - [[https://www.wolfram.com/mathematica/][Mathematica]]
+   - [[http://maxima.sourceforge.net/][Maxima]] or [[https://www.wolfram.com/mathematica/][Mathematica]]
    - https://www.desmos.com/
    - https://www.geogebra.org/
    - [[https://brilliant.org/][Brilliant]]
 * Updating log
-  - 2011.11, added some materials.
-  - 2011.04, first version.
-* TODO What next?
-  Feel free to contact me to ask anything and share your experiences.
+  - 2022.01, **stopped this project.**
+  - 2021.11, added some materials.
+  - 2021.04, first version.
+* Discuss and Comment
+#+INCLUDE: ../include/comment.inc.org
