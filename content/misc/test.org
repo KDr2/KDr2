@@ -17,6 +17,13 @@
   This is a test page.
   {{{baidu(野猪拉屎了)}}} {{{google(野猪拉屎了)}}}
 
+  #+BEGIN_EXPORT HTML
+  <!-- -----------------------------------------\
+  | Want more info about me? here is my resume: |
+  | https://kdr2.com/misc/resume.html           |
+  \------------------------------------------ -->
+  #+END_EXPORT
+
 * Org Mode Simple Examples                                   :example:simple:
 ** TODO List                                                       :checkbox:
    <2014-03-24 Mon>

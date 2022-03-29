@@ -15,8 +15,7 @@
   Settle in Xi'AN Shaanxi China. Active in software development, ready
   for any proper opportunity.
 * Personal Information
-  - Name: Zhuo Qingliang, sometimes go as Killian.
-  - Year of Birth: 1983
+  - Name: Zhuo Qingliang, sometimes goes as Killian.
   - Email: zhuo+job@@html:&#x01F4E7;@@hexoasis.com
   - Homepage: https://kdr2.com
   - Mobile: +86 0b10111010 0o5532 0x0636
@@ -28,17 +27,17 @@
     - Writing: Good at non-fiction writing
   - Platforms and Programming Languages
     - C/C++, Rust, Linux, Bash
-    - Python, Perl, JavaScript
-    - Scheme(Racket), Clojure, Common Lisp, Emacs Lisp
+    - Python, JavaScript, Perl
     - Julia
-    - Haskell
+    - Haskell, Agda, Idris
+    - Scheme(Racket), Common Lisp, Emacs Lisp, Clojure
   - Domains
-    - Linux system programming
+    - Linux System Programming
+    - Compiler
     - Database: PostgreSQL and many others
-    - Distributed computing, parallel computing
-    - Data science
-    - Graphics: GUI, Layout, Rendering, CV
-    - Web
+    - Data Science Infrastructure
+    - Distributed Computing, High-Performance and Parallel Computing
+    - Others: Graphics, Web
 * Open Source Projects
   - *Projects I contribute to* ::
     + [[https://github.com/JuliaLang/julia][The Julia Programming Language]] :: a general purpose programming
@@ -89,8 +88,11 @@
     server side developer, using Java, Perl, Python.
 
 * Jobs I prefer
+Infrastructure development and research, including:
   1. Linux/UNIX System Programming;
-  1. Distributed System, High-Performance and Parallel Computing;
-  1. Database: PostgreSQL and others;
-  1. Graphics Programming;
-  1. Scripts and Utilities.
+  2. Compiler
+  3. Data Science Infrastructure
+  4. Database: PostgreSQL and others;
+  5. Distributed System, High-Performance and Parallel Computing;
+  6. Graphics Programming;
+  7. Web, Scripts and Utilities.
