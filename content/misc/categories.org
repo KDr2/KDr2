@@ -9,7 +9,7 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
-* Special Topic(*)
+* Special Topic (_)
   - [[file:../project/index.org][Projects]]
 
 #+NAME: site-cats
