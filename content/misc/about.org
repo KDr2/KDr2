@@ -50,8 +50,9 @@
   and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
   source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
 
-  I write here things that I think are worth to read, and hope they
+  I write here things that I think are worth reading, and hope they
   help. Feel free to contact me if you want.
 
+  Thers's also [[file:about-josh.org][an about page of my boy]] on this site.
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org

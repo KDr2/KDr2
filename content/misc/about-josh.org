@@ -1,0 +1,36 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: About Josh
+#+AUTHOR: KDr2
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("Josh" "math" "english")) :results raw
+
+Hi, I'm Josh (Zhuo Shi). I was born in 2015. I am pupil now, but my
+dad and myself don't see me just as a little boy and don't put any
+restriction upon my learning, so we have learned a lot of things
+together.
+
+#+CALL: image[:results value](path="main/josh-2022.jpg") :results raw
+
+I am:
+
+- A mathematics enthusiast who is always trying to explain or model
+  everything in math.
+- A bilingual (I speak Chinese and English), and may become a polyglot
+  someday.
+- An amateur real cuber - I had collected all the cubes used in WCA
+  events (actually, much more than that) and got the ability to solve
+  all of them. But I don't do blindfolded puzzles and FMC very well.
+- An amateur MineCraft player, who mostly stays in creative mode.
+
+I also know some programming languages, like Racket, Haskell, Python,
+and Javascript. But I'm still on the way of learning. [[file:../project/kittle-buffer.org][Kittle Buffer]]
+was the first project on which I collabrated with my dad, I worked as
+a feature designer and tester in the process. We are also planning to
+work on other projects not publicly released yet.
+
+I haven't learned to write articles yet, so my dad helped me write
+this page. My dad also wrote a few pages about me on this site, maybe
+you can find them under the 'essay' category.

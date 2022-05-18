@@ -103,8 +103,10 @@ tuned or contact me via email.
   Racket also has a module called ~graphics/turtles~ to do the turtle
   geometry. He is also interested in Julia, so the list should be
   updated as:
-  - Lisp, Maxima, Julia
-  - C, C++, Python
+  - Lisp(Racket).
+  - Haskell.
+  - Javascript, Python, maybe plus Julia.
+  - C, C++.
 
 * Discuss and Comment
 #+INCLUDE: ../include/comment.inc.org

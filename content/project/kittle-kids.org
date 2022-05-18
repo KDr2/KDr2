@@ -65,7 +65,7 @@
    - Haskell
    - C/C++
    - Python
-   - Maxima (or Wolfram Language)
+   - MMA (Wolfram Language) and/or Maxima
    - JavaScript(TypeScript)
    - Julia
 
