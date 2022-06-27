@@ -16,14 +16,17 @@ together.
 
 I am:
 
-- A mathematics enthusiast who is always trying to explain or model
-  everything in math.
-- A bilingual (I speak Chinese and English), and may become a polyglot
+- @@html:&#x01F4D0;@@ A mathematics enthusiast who is always trying to
+  explain or model everything in math.
+- @@html:&#x01F1E8;&#x01F1F3;@@ @@html:&#x01F1EC;&#x01F1E7;@@ A
+  bilingual (I speak Chinese and English), and may become a polyglot
   someday.
-- An amateur real cuber - I had collected all the cubes used in WCA
-  events (actually, much more than that) and got the ability to solve
-  all of them. But I don't do blindfolded puzzles and FMC very well.
-- An amateur MineCraft player, who mostly stays in creative mode.
+- @@html:&#x01F4A0;@@ An amateur real cuber - I had collected all the
+  cubes used in WCA events (actually, much more than that) and got the
+  ability to solve all of them. But I don't do blindfolded puzzles and
+  FMC very well.
+- @@html:&#x0026CF;@@ An amateur MineCraft player, who mostly stays in
+  creative mode.
 
 I also know some programming languages, like Racket, Haskell, Python,
 and Javascript. But I'm still on the way of learning. [[file:../project/kittle-buffer.org][Kittle Buffer]]
