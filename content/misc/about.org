@@ -32,7 +32,6 @@
    :CUSTOM_ID: contact_me
    :END:
    - Location: Xi'an, Shaanxi, China
-   - Skype : zhuoql@outlook.com
    - Emails :
      - zhuo@@html:&#x01F4E7;@@hexoasis.com,
        zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
