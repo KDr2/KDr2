@@ -4,6 +4,7 @@
 
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
+#+OPTIONS: num:nil
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("Josh" "math" "english")) :results raw
 
@@ -40,3 +41,14 @@ videos on my [[https://www.youtube.com/channel/UCpQgxhZoMr3DW8-qTDCDjuw][Youtube
 I haven't learned to write articles yet, so my dad helped me write
 this page. My dad also wrote a few pages about me on this site, maybe
 you can find them under the 'essay' category.
+
+* Cubes in my collection
+- Regular: 1x1, 2x2, 3x3, 4x4, 5x5, 6x6, 7x7, 11x11
+- Super Cube, 4x4 Calendar Cube, Mirror Cube, Scewb, Maple Leaf Scewb,
+  Super Ivy Cube, Fisher Cube, Windmill Cube, Qiyi Gear Cube,
+  Meffert's Gear Cube
+- Square-0, Square-1, Square-2
+- 2x2x3, 2x2x4, Floppy Ghost
+- Kilominx, Megaminx
+- Mastermorphix, Pyraminx, Jing's Pyraminx, Clover Pyraminx
+- Rubik's Clock
