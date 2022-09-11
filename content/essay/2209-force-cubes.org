@@ -1,0 +1,55 @@
+# -*- mode: org; mode: auto-fill; -*-
+#+TITLE: We made force cubes
+#+AUTHOR: KDr2
+
+#+OPTIONS: num:nil
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("KDr2" "kid" "josh" "math")) :results raw
+
+<2022-09-11 Sun>
+
+Yesterday Josh made 6 force cubes from 6 regular 3x3 stikerless
+cubes. The process was very interesting, so I decided to record it
+here.
+
+First, we prepared six regular 3x3 STICKERLESS cubes:
+
+#+CALL: image[:results value](path="2022/09/fc-6x3x3-small.jpg", width=600) :results raw
+
+Then we took them apart into many kinds of pieces: cores, center caps,
+corners, edges.
+
+#+CALL: image[:results value](path="2022/09/fc-cores-small.jpg", width=600, caption="Cores") :results raw
+
+#+CALL: image[:results value](path="2022/09/fc-center-caps-small.jpg", width=600, caption="Center Caps") :results raw
+
+#+CALL: image[:results value](path="2022/09/fc-corners-small.jpg", width=600, caption="Corners") :results raw
+
+#+CALL: image[:results value](path="2022/09/fc-edges-small.jpg", width=600, caption="Edges") :results raw
+
+Then, we sorted the center caps by color and put each group onto a
+core respectively. After that we got this:
+
+#+CALL: image[:results value](path="2022/09/fc-single-colored-cores-small.jpg", width=600, caption="Single Colored Cores") :results raw
+
+The next work was to sparate the corner pieces and edge pieces into
+smaller parts:
+
+#+CALL: image[:results value](path="2022/09/fc-separated-corners-small.jpg", width=600, caption="Separated Corners") :results raw
+#+CALL: image[:results value](path="2022/09/fc-separated-edges-small.jpg", width=600, caption="Separated Edges") :results raw
+
+and reassemble them into single colored corner/edge pieces:
+
+#+CALL: image[:results value](path="2022/09/fc-reassembled-corners-small.jpg", width=600, caption="Single Colored Corners") :results raw
+#+CALL: image[:results value](path="2022/09/fc-reassembled-edges-small.jpg", width=600, caption="Single Colored Edges") :results raw
+
+At last, we assemble the force cubes:
+
+#+CALL: image[:results value](path="2022/09/fc-force-cubes-small.jpg", width=600, caption="Force Cubes") :results raw
+
+And, Josh also got some other ideas, checkerboard cubes which can
+never be scarmbled and sandwich cubes:
+
+#+CALL: image[:results value](path="2022/09/fc-checkerboard-sandwiches-small.jpg", width=600, caption="Other Cubes") :results raw

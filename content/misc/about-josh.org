@@ -52,3 +52,4 @@ you can find them under the 'essay' category.
 - Kilominx, Megaminx
 - Mastermorphix, Pyraminx, Jing's Pyraminx, Clover Pyraminx
 - Rubik's Clock
+- [[file:../essay/2209-force-cubes.org][Force cubes made by myself]].
