@@ -26,7 +26,6 @@ expectation.
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
 - [[file:misc/about-josh.org][About Josh]]
-- [[file:misc/bookmarks.org][Bookmarks]]
 
 * Recent Posts
 #+NAME: recent-posts
