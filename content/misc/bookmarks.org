@@ -6,10 +6,10 @@
 #+BEGIN: inc-file :file "common.inc.org"
 #+END:
 #+CALL: dynamic-header() :results raw
-#+CALL: meta-keywords(kws='("KDr2" "bookmarks")) :results raw
+#+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://keep.google.com/][Keep]]| [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]]
+- [[https://keep.google.com/][Keep]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]]
 * Tech::Ores
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
@@ -29,14 +29,16 @@
   - Turing: [[https://turingjl.slack.com/][Slack]]
 - Linux: [[https://docs.kernel.org/][Kernel Docs]] | [[https://nixos.org/manual/nix/stable/][Nix]]
 * Tech::Contraptions
-- Emacs:
-  [[https://www.gnu.org/software/emacs/manual/html_node/elisp/][Emacs Lisp]] | [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Editor]] | [[https://orgmode.org/manual/index.html][Orgmode]]
+- Editor
+  - Emacs: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/][Emacs Lisp]] | [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Editor]] | [[https://orgmode.org/manual/index.html][Orgmode]]
   - VSCode: [[https://code.visualstudio.com/docs][Docs]]
-- GUI: [[https://www.gtk.org/docs/][GTK Docs]]
+- GUI:
+  - [[https://www.gtk.org/docs/][GTK Docs]]
   - Web + Browser: [[https://developer.chrome.com/][Chrome]]| [[https://developer.mozilla.org/en-US/][MDN]] | [[https://reactjs.org/docs/getting-started.html][React]] | [[https://getbootstrap.com/docs][Bootstrap]]
 - *Math*: [[https://maxima.sourceforge.io/docs/manual/maxima_0.html][Maxima]] | [[https://reference.wolfram.com/language/][Wolfram Lang]] | [[https://www.geogebra.org/][GeoGebra]]
-- PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
-  - ClickHouse: [[https://clickhouse.tech/docs/en/][Doc]]
+- DB:
+  - PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
+  - [[https://www.sqlite.org/docs.html][SQLite]] | [[https://clickhouse.tech/docs/en/][ClickHouse]]
 - ML: [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]] | [[https://www.tensorflow.org/api_docs][TensorFlow API]] | [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
 * Tech::Rare-Ores
 - TypeScript: [[https://www.typescriptlang.org/docs/][Docs]]
