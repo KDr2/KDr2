@@ -51,5 +51,6 @@ you can find them under the 'essay' category.
 - 2x2x3, 2x2x4, Floppy Ghost
 - Kilominx, Megaminx
 - Mastermorphix, Pyraminx, Jing's Pyraminx, Clover Pyraminx
+- Puppet-1, Puppet-2
 - Rubik's Clock
 - [[file:../essay/2209-force-cubes.org][Force cubes made by myself]].

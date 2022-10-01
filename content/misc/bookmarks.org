@@ -10,6 +10,7 @@
 
 * Daily
 - [[https://keep.google.com/][Keep]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]]
+- [[https://en.wiktionary.org/][EN.Wiktionary]]
 * Tech::Ores
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
@@ -17,7 +18,7 @@
   [[https://llvm.org/docs/LangRef.html][LLVM - IR Ref]] | [[https://llvm.discourse.group/][LLVM Discourse]]
 - Rust:
   [[https://doc.rust-lang.org/book/][The Book]] | [[https://doc.rust-lang.org/std/index.html][STD Lib]] | [[https://doc.rust-lang.org/reference/introduction.html][Reference]] | [[https://rustc-dev-guide.rust-lang.org/][Compiler]] |
-  [[https://rustwasm.github.io/docs/book/][RustWasm]] | [[https://doc.rust-lang.org/rust-by-example/index.html][Rust By Example]] | [[https://users.rust-lang.org/][Discourse]]
+  [[https://rust-lang.github.io/async-book][Async]] | [[https://rustwasm.github.io/docs/book/][RustWasm]] | [[https://doc.rust-lang.org/rust-by-example/index.html][Rust By Example]] | [[https://users.rust-lang.org/][Discourse]]
 - *Haskell*:
   [[https://www.haskell.org/onlinereport/haskell2010/][Report 2010]] | [[https://www.haskell.org/documentation/][Doc]] | [[https://downloads.haskell.org/~ghc/9.0.1/docs/html/users_guide/index.html][GHC]] | [[https://discourse.haskell.org/][Discourse]]
   - Agda: [[https://agda.readthedocs.io/][Docs]] | [[https://agda.github.io/agda-stdlib/][StdLib]] | [[https://plfa.github.io/][PLFA]] | [[https://homotopytypetheory.org/][HoTT]] | [[https://agda.zulipchat.com/][Zulip]]
@@ -67,7 +68,7 @@
 - [[https://ncatlab.org/nlab/show/HomePage][nLab]]
 - Math Symbols:
   https://www.rapidtables.com/math/symbols/Basic\_Math\_Symbols.html
-- Topics: Curry--Howard correspondence, HoTT, Lambda Cube
+- Topics: Curry-Howard correspondence, HoTT, Lambda Cube
 - https://games104.boomingtech.com/sc/course-list/
 - https://www.zxxk.com/
 - Dependently Typed Programming in Agda:
