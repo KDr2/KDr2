@@ -25,7 +25,7 @@ expectation.
 - [[file:project/index.org][Projects]] / [[file:misc/books.org][Books]]
 - [[file:misc/categories.org][Categories]] / [[file:misc/archives.org][Archives]]
 - [[file:misc/site-log.org][Changelog]] / [[http://kdr2.com/misc/site-log.xml][RSS]]
-- [[file:misc/about-josh.org][About Josh]]
+- [[https://joshinbrackets.com][Josh in Brackets]]
 
 * Recent Posts
 #+NAME: recent-posts

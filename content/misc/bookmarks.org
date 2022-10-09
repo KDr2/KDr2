@@ -9,7 +9,7 @@
 #+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://keep.google.com/][Keep]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]]
+- [[https://keep.google.com/][Keep]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
 - [[https://en.wiktionary.org/][EN.Wiktionary]]
 * Tech::Ores
 - *C/C++*:
@@ -63,6 +63,7 @@
 ** Games
 - [[https://playgameoflife.com/][Game of Life]]
 - [[https://minecraft.fandom.com/wiki/Minecraft_Wiki][Minecraft]]
+- [[https://jperm.net/][JPerm]]
 ** Resources
 - [[http://gen.lib.rus.ec/][Library Genesis]]
 - [[https://ncatlab.org/nlab/show/HomePage][nLab]]
@@ -70,7 +71,6 @@
   https://www.rapidtables.com/math/symbols/Basic\_Math\_Symbols.html
 - Topics: Curry-Howard correspondence, HoTT, Lambda Cube
 - https://games104.boomingtech.com/sc/course-list/
-- https://www.zxxk.com/
 - Dependently Typed Programming in Agda:
   http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf
 ** Backlog

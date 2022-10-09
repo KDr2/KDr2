@@ -55,4 +55,4 @@ never be scrambled and sandwich cubes:
 #+CALL: image[:results value](path="2022/09/fc-checkerboard-sandwiches-small.jpg", width=600, caption="Other Cubes") :results raw
 
 That's pretty much it, by the way, Josh has a big collection of cubes
-which is listed [[file:../misc/about-josh.org::* Cubes in my collection][here]].
+which is listed on [[https://joshinbrackets.com][his website]].

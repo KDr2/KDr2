@@ -8,49 +8,10 @@
 #+CALL: dynamic-header() :results raw
 #+CALL: meta-keywords(kws='("Josh" "math" "english")) :results raw
 
-Hi, I'm Josh (Zhuo Shi). I was born in 2015. I am pupil now, but my
-dad and myself don't see me just as a little boy and don't put any
-restriction upon my learning, so we have learned a lot of things
-together.
+Josh has his own homepage now: [[https://joshinbrackets.com][Josh in Brackets]].
 
-#+CALL: image[:results value](path="main/josh-2022.jpg") :results raw
-
-I am:
-
-- @@html:&#x01F4D0;@@ A mathematics enthusiast who is always trying to
-  explain or model everything in math.
-- @@html:&#x01F1E8;&#x01F1F3;@@ @@html:&#x01F1EC;&#x01F1E7;@@ A
-  bilingual (I speak Chinese and English), and may become a polyglot
-  someday.
-- @@html:&#x01F4A0;@@ An amateur real cuber - I had collected all the
-  cubes used in WCA events (actually, much more than that) and got the
-  ability to solve all of them. But I don't do blindfolded puzzles and
-  FMC very well.
-- @@html:&#x0026CF;@@ An amateur MineCraft player, who mostly stays in
-  creative mode.
-
-I also know some programming languages, like Racket, Haskell, Python,
-and Javascript. But I'm still on the way of learning. [[file:../project/kittle-buffer.org][Kittle Buffer]]
-was the first project on which I collabrated with my dad, I worked as
-a feature designer and tester in the process. We are also planning to
-work on other projects not publicly released yet.
-
-Sometimes I record videos about topics interest me, you may find these
-videos on my [[https://www.youtube.com/channel/UCpQgxhZoMr3DW8-qTDCDjuw][Youtube channel]] or [[https://depot.kdr2.com/josh/videos/][here]].
-
-I haven't learned to write articles yet, so my dad helped me write
-this page. My dad also wrote a few pages about me on this site, maybe
-you can find them under the 'essay' category.
-
-* Cubes in my collection
-- Regular: 1x1, 2x2, 3x3, 4x4, 5x5, 6x6, 7x7, 11x11
-- Super Cube, 4x4 Calendar Cube, Mirror Cube, Scewb, Maple Leaf Scewb,
-  Super Ivy Cube, Fisher Cube, Windmill Cube, Qiyi Gear Cube,
-  Meffert's Gear Cube
-- Square-0, Square-1, Square-2
-- 2x2x3, 2x2x4, Floppy Ghost
-- Kilominx, Megaminx
-- Mastermorphix, Pyraminx, Jing's Pyraminx, Clover Pyraminx
-- Puppet-1, Puppet-2
-- Rubik's Clock
-- [[file:../essay/2209-force-cubes.org][Force cubes made by myself]].
+#+BEGIN_EXPORT HTML
+<script>
+window.location.href = "https://joshinbrackets.com/";
+</script>
+#+END_EXPORT
