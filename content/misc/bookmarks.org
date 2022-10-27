@@ -9,8 +9,8 @@
 #+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://keep.google.com/][Keep]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
-- [[https://en.wiktionary.org/][EN.Wiktionary]]
+- [[https://habitica.com/][Habitica]] | [[https://medium.com/][Medium]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
+- Dictionaries: [[https://www.thefreedictionary.com/][TFD]] | [[https://en.wiktionary.org/][Wiktionary]] | [[https://www.merriam-webster.com/][Merriam-Webster]]
 * Tech::Ores
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
@@ -35,18 +35,18 @@
   - VSCode: [[https://code.visualstudio.com/docs][Docs]]
 - GUI:
   - [[https://www.gtk.org/docs/][GTK Docs]]
-  - Web + Browser: [[https://developer.chrome.com/][Chrome]]| [[https://developer.mozilla.org/en-US/][MDN]] | [[https://reactjs.org/docs/getting-started.html][React]] | [[https://getbootstrap.com/docs][Bootstrap]]
-- *Math*: [[https://maxima.sourceforge.io/docs/manual/maxima_0.html][Maxima]] | [[https://reference.wolfram.com/language/][Wolfram Lang]] | [[https://www.geogebra.org/][GeoGebra]]
+  - Web + Browser: [[https://developer.chrome.com/][Chrome]] | [[https://developer.mozilla.org/en-US/][MDN]] | [[https://reactjs.org/docs/getting-started.html][React]] | [[https://getbootstrap.com/docs][Bootstrap]]
+- *Math*: [[https://www.wolframalpha.com/][WolframAlpha]] | [[https://www.geogebra.org/][GeoGebra]] | [[https://reference.wolfram.com/language/][Wolfram Lang]] | [[https://wiki.geogebra.org/][GeoGebra Wiki]] | [[https://maxima.sourceforge.io/docs/manual/maxima_toc.html][Maxima]]
 - DB:
   - PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
   - [[https://www.sqlite.org/docs.html][SQLite]] | [[https://clickhouse.tech/docs/en/][ClickHouse]]
 - ML: [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]] | [[https://www.tensorflow.org/api_docs][TensorFlow API]] | [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
 * Tech::Rare-Ores
 - TypeScript: [[https://www.typescriptlang.org/docs/][Docs]]
-- Scheme: [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://cisco.github.io/ChezScheme/csug9.5/csug.html][Chez Scheme 9]]
-- CL: [[http://sbcl.org/manual/index.html][SBCL - User Manual]]
-- Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
 - Clojure: [[https://clojure.org/reference/documentation][REF]] | [[https://clojure.github.io/clojure/index.html][API Doc]]
+- Scheme: [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://cisco.github.io/ChezScheme/csug9.5/csug.html][Chez Scheme 9]]
+- CL: [[http://sbcl.org/manual/index.html][SBCL Manual]]
+- Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
 * Books
 - [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP JS]] | [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP Python]]
 - [[https://web.dev/learn/css/][Learn CSS]]
