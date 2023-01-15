@@ -9,8 +9,13 @@
 #+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://habitica.com/][Habitica]] | [[https://medium.com/][Medium]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
-- Dictionaries: [[https://www.thefreedictionary.com/][TFD]] | [[https://en.wiktionary.org/][Wiktionary]] | [[https://www.merriam-webster.com/][Merriam-Webster]]
+- [[https://habitica.com/][Habitica]] | [[https://keep.google.com/][Keep]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
+- Dictionaries:
+  - [[https://www.dictionary.com/][Dictionary.com]] | [[https://www.collinsdictionary.com/][Collins]] | [[https://www.dict.cc/][Dict.cc]] | [[https://en.wiktionary.org/][Wiktionary]]
+  - [[https://www.merriam-webster.com/][Merriam-Webster]] | [[https://www.thefreedictionary.com/][TFD]] | [[https://www.wordreference.com/][WordRef]]
+  - [[https://greensdictofslang.com/][Slang Dict]] | [[https://www.thefreedictionary.com/The-Farlex-Grammar-Book.htm][The Farlex Grammar Book]]
+* Languages
+- [[https://coerll.utexas.edu/dib/][DiB]]
 * Tech::Ores
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
@@ -50,7 +55,6 @@
 * Books
 - [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP JS]] | [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP Python]]
 - [[https://web.dev/learn/css/][Learn CSS]]
-- [[https://www.thefreedictionary.com/The-Farlex-Grammar-Book.htm][The Farlex Grammar Book]] | [[https://greensdictofslang.com/][Slang Dict]]
 * Hovel
 ** Read it later
 - [[https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures - adit.io]]
@@ -65,7 +69,7 @@
 - [[https://minecraft.fandom.com/wiki/Minecraft_Wiki][Minecraft]]
 - [[https://jperm.net/][JPerm]]
 ** Resources
-- [[http://gen.lib.rus.ec/][Library Genesis]]
+- [[http://gen.lib.rus.ec/][Library Genesis]] | [[https://www.gutenberg.org/][Gutenberg]]
 - [[https://ncatlab.org/nlab/show/HomePage][nLab]]
 - Math Symbols:
   https://www.rapidtables.com/math/symbols/Basic\_Math\_Symbols.html
