@@ -1,8 +1,8 @@
-
 (setq org-confirm-babel-evaluate nil)
 
 (setq org-html-home/up-format
-      (concat "<div id=\"org-div-home-and-up\">\n <a accesskey=\"h\" href=\"%s\"> Archives </a>"
+      (concat "<div id=\"org-div-home-and-up\">\n"
+              "<a accesskey=\"h\" href=\"%s\"> Archives </a>"
               "\n |\n "
               "<a accesskey=\"H\" href=\"%s\"> Categories </a>\n</div>"))
 
@@ -50,8 +50,7 @@ unwanted space when exporting org-mode to html."
            :html-postamble ,kdr2-com-html-postamble
            :headline-levels 3
            :auto-preamble t
-           :exclude "README.org\\|.*\.inc\.org\\|.*\.tgl.org"
-           )
+           :exclude "README.org\\|.*\.inc\.org\\|.*\.tgl.org")
           ("kdr2-com-rss"
            :base-directory ,kdr2-com-source-dir
            :base-extension "org"
@@ -66,6 +65,6 @@ unwanted space when exporting org-mode to html."
            :base-extension "css\\|js\\|png\\|jpg\\|jpeg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
            :publishing-directory ,(concat kdr2-com-output-dir "static/")
            :recursive t
-           :publishing-function (org-publish-attachment)
-           )
-          ("kdr2-com" :components ("kdr2-com-org" "kdr2-com-rss" "kdr2-com-static")))))
+           :publishing-function (org-publish-attachment))
+          ;; rss disabled
+          ("kdr2-com" :components ("kdr2-com-org" "kdr2-com-static")))))
