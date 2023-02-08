@@ -1,5 +1,6 @@
 ;;(time lang id file title)
-("2022-09-11 Sub 15:06" en d2209-force-cubes "essay/2209-force-cubes.org" "We made force cubes")
+("2023-02-08 Wed 09:00" en d2302-dees-chars "default/2302-howto-de-es-chars.org" "How to type German and Spanish characters")
+("2022-09-11 Sun 15:06" en d2209-force-cubes "essay/2209-force-cubes.org" "We made force cubes")
 ("2021-10-26 Tue 16:06" 中 d2110-daily "essay/2110-daily.org" "Josh Daily, 2021")
 ("2020-12-10 Thu 21:06" en d2012-equation-puzzle "essay/2012-equation-puzzle.org" "An Equation Puzzle")
 ("2020-10-28 Wed 08:06" en d2010-math "essay/2010-math.org" "Outline of math knowledge for kids")

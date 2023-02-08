@@ -4,17 +4,12 @@
  * Licence: CC
  ******************************************************************************/
 body {
-    color: #111; /*#557575;*/
+    color: #f7f6f4;
     font: 14px/1.7 Consolas, monaco, monospace, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", STHeiti, "WenQuanYi Micro Hei", sans-serif;
-    /*
-    font: 14px/1.7 sans-serif;
-    font: 14px/1.7 "Open Sans", Helvetica, Arial, sans;
-    */
     line-height: 1.6em;
     margin: 5% 15% 8%;
     min-width: 240px;
-    background: none repeat scroll 0 0 #FDF6E3;
-    /* text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
+    background: none repeat scroll 0 0 #303030;
 }
 
 #org-div-home-and-up {
@@ -119,8 +114,6 @@ h2 span.section-number-2, h3 span.section-number-3, h4 span.section-number-4 {
     height: 38px;
     line-height: 38px;
     color: #999;
-    border: 1px solid #999;
-    border-radius: 50%;
     text-align: center;
     margin-right: 10px;
 }
@@ -216,7 +209,7 @@ h1.title {
 }
 
 a:link, a:visited {
-    color: #3D648A;
+    color: rgb(217 228 246);
 }
 a:active {
     color: #3D648A;
@@ -327,7 +320,7 @@ td {
 
 code {
     display: inline-block;
-    background-color: #f2f2f2;
+    background-color: #3d648a;
     padding: 1px 5px;
     border-radius: 3px;
     line-height: normal;
@@ -350,7 +343,7 @@ code {
 }
 
 blockquote {
-    background: rgb(203, 219, 243);
+    background: rgb(57 63 73);
     padding: 3px 13px;
     border: solid 2px;
     border-radius: 10px;

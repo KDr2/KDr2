@@ -15,10 +15,10 @@
   I am interested in many domains including:
 
   - Computer science and programming
-  - Data science
-  - Child Education
+  - Cognitive Science
   - Reading and writing
-  - Psychology and mental health
+  - Child Education
+  - Data science
   - Finance
 
   #+BEGIN_EXPORT HTML
@@ -44,10 +44,9 @@
 * About This Site
   This site is built with emacs and orgmode, hosted on [[http://www.dreamhost.com/r.cgi?377047][DreamHost]].
 
-  You can find my org mode configuration at
-  https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el
-  and https://github.com/KDr2/kdr2-on-web/blob/master/script/.  The
-  source repository of this site is hosted on [[https://github.com/KDr2/kdr2-on-web][GitHub]].
+  You can find my org mode configuration [[https://github.com/KDr2/emacs.d/blob/master/src/elisp/tools/init-org.el][here]] and the build scripts
+  for this site [[https://github.com/KDr2/kdr2-on-web/blob/master/script/][here]].  The source repository of this site is hosted on
+  [[https://github.com/KDr2/kdr2-on-web][GitHub]].
 
   I write here things that I think are worth reading, and hope they
   help. Feel free to contact me if you want.

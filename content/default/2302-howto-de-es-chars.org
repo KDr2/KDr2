@@ -1,0 +1,58 @@
+# -*- mode: org; mode: auto-fill -*-
+#+TITLE: How to type German and Spanish characters
+#+AUTHOR: KDr2
+
+#+OPTIONS: ^:{}
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
+#+BEGIN: inc-file :file "common.inc.org"
+#+END:
+#+CALL: dynamic-header() :results raw
+#+CALL: meta-keywords(kws='("alt" "letter" "spanish" "german")) :results raw
+
+<2023-02-08 Wed>
+
+Now, I am learning Español(Spanish) and Deutsch(German). There are
+many special characters in these two languages, like accents and
+umlauts. So I spent a little time to find out how to type these
+characters on all my computers, and below are what I've gotten.
+
+* Windows
+I use Windows 11. First I setup the keyboard layout to use my right
+~Alt~ key as a ~Alt Gr~ key:
+
+Start -> Settings -> Time & Language -> Language -> Preferred Language
+-> Click on "English" (click "add a language" if there's no English in
+the list) -> Click "Options" on the "English" item -> Click "Add a
+keyboard" then select **United States - International**.
+
+After I've done that, I got an **ENG-INTL** input method. By switching
+to this input method, I can do:
+
+- To insert ß, press ~RAlt+s~
+- For umlauts, e.g. ü, press ~" u~
+- For accents, e.g. á, press ~' a~
+- For ñ, press ~Shift+​~ n~
+- For ¿, press ~RAlt+/~
+- For ¡, press ~RAlt+1~
+- For ', ", and /~/, press the responding key then press ~Space~
+
+* Linux
+Run ~setxkbmap -layout us -option compose:ralt~ to set the Right Alt
+key as the compose key, then:
+
+- To insert ß, press ~RAlt s s~
+- For umlauts, e.g. ü, press ~RAlt " u~ or ~RAlt+" u~
+- For accents, e.g. á, press ~RAlt ' a~ or ~RAlt+' a~
+- For ñ, press ~RAlt Shift+​~ n~ or ~RAlt+Shift+​~ n~
+- For ¿, press ~RAlt ? ?~
+- For ¡, press ~RAlt ! !~
+
+* macOS
+- To insert ß, press ~Option+s~
+- For umlauts, e.g. ä, press ~Option+u a~
+- For accents, e.g. á, press ~Option+e a~
+- For ñ, press ~Option+n n~
+- For ¿, press ~Option+?~, i.e. ~Option+Shift+/~
+- For ¡, press ~Option+1~

@@ -15,7 +15,7 @@
   - [[https://www.merriam-webster.com/][Merriam-Webster]] | [[https://www.thefreedictionary.com/][TFD]] | [[https://www.wordreference.com/][WordRef]]
   - [[https://greensdictofslang.com/][Slang Dict]] | [[https://www.thefreedictionary.com/The-Farlex-Grammar-Book.htm][The Farlex Grammar Book]]
 * Languages
-- [[https://coerll.utexas.edu/dib/][DiB]]
+- [[https://coerll.utexas.edu/dib/][DiB]] | [[https://coerll.utexas.edu/gg/][Grimm Grammar]] | [[https://studyspanish.com/][Study Spanish]]
 * Tech::Ores
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
