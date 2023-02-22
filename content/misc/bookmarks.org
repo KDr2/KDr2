@@ -9,7 +9,7 @@
 #+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://habitica.com/][Habitica]] | [[https://keep.google.com/][Keep]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
+- [[https://calendar.google.com/][Calendar]] | [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://discord.com/app][Discord]] | [[https://www.reddit.com/][Reddit]]
 - Dictionaries:
   - [[https://www.dictionary.com/][Dictionary.com]] | [[https://www.collinsdictionary.com/][Collins]] | [[https://www.dict.cc/][Dict.cc]] | [[https://en.wiktionary.org/][Wiktionary]]
   - [[https://www.merriam-webster.com/][Merriam-Webster]] | [[https://www.thefreedictionary.com/][TFD]] | [[https://www.wordreference.com/][WordRef]]
@@ -56,8 +56,6 @@
 - [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP JS]] | [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP Python]]
 - [[https://web.dev/learn/css/][Learn CSS]]
 * Hovel
-** Read it later
-- [[https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures - adit.io]]
 ** Tools
 - [[https://www.tutorialspoint.com/codingground.htm][Coding Ground]]
 - [[https://markmap.js.org/][Markmap]] | [[https://excalidraw.com/][Excalidraw]] | [[https://draw.moyu.io/][Excalidraw-ZH]] | [[https://www.gleek.io/][Gleek]] | [[https://mermaid-js.github.io/mermaid-live-editor/][Mermaid live editor]] | [[https://asciiflow.com/][ASCIIFlow]]
@@ -73,9 +71,10 @@
 - [[https://ncatlab.org/nlab/show/HomePage][nLab]]
 - Math Symbols:
   https://www.rapidtables.com/math/symbols/Basic\_Math\_Symbols.html
-- Topics: Curry-Howard correspondence, HoTT, Lambda Cube
 - https://games104.boomingtech.com/sc/course-list/
 - Dependently Typed Programming in Agda:
   http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf
 ** Backlog
+- Topics: Curry-Howard correspondence, HoTT, Lambda Cube
+- [[https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures - adit.io]]
 - Coq
