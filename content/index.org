@@ -22,6 +22,7 @@ hard to me, a person on the hard way. So please don't set any
 expectation.
 
 * Navigation
+- [[file:misc/whims.org][What am I thinking or doing]]
 - [[file:project/index.org][Projects]] . [[file:misc/books.org][Books]]
 - [[file:misc/categories.org][Categories]] . [[file:misc/archives.org][Archives]] . [[file:misc/site-log.org][Changelog]]
 - [[https://joshinbrackets.com][Josh in Brackets]]
