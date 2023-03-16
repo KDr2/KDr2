@@ -56,6 +56,7 @@
 #+MACRO: cloudinary-image-scale [[https://res.cloudinary.com/kdr2/image/upload/c_scale,w_$2/img-kdr2-com/$1]]
 #+MACRO: comment #+ATTR_HTML: :class comment
 #+MACRO: import-mermaid (eval mermaid-html)
+#+MACRO: ic @@html:<ruby>@@$1@@html:<rp>@@(@@html:</rp><rt>@@$2@@html:</rt><rp>@@)@@html:</rp></ruby>@@
 
 # # ADD LINK ############################
 #+MACRO: zcom [[http://www.amazon.com/gp/product/$1?tag=kdr2com-20][$2]]

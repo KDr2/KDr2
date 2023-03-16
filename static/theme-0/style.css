@@ -12,6 +12,19 @@ body {
     background: none repeat scroll 0 0 #303030;
 }
 
+ruby {
+    text-decoration: underline;
+    text-indent: 0px;
+}
+
+ruby > rt {
+    display: block;
+    font-size: 100%;
+    text-align: start;
+    color: green;
+    padding: 0 4px;
+}
+
 #org-div-home-and-up {
     float: right;
 }
@@ -370,6 +383,10 @@ center.image-container {
     padding: 3px 6px;
     border: dotted 1px;
     border-color: #e93030;
+}
+
+ul.comment > li {
+    margin-left: 40px;
 }
 
 .comment:before
