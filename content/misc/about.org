@@ -31,13 +31,10 @@
    :PROPERTIES:
    :CUSTOM_ID: contact_me
    :END:
-   - Location: Xi'an, Shaanxi, China
-   - Emails :
-     - zhuo@@html:&#x01F4E7;@@hexoasis.com,
-       zhuoql@@html:&#x01F4E7;@@zoho.com, for personal affairs.
-     - zhuo.dev@@html:&#x01F4E7;@@gmail.com, for development affairs,
-       e.g. mailing list, bug report.
-   - Mobile : +86 0b10111010 0o5532 0x0636
+   - Location: Xi'an, Shaanxi, China.
+   - Email: killian.zhuo@@html:&#x01F4E7;@@gmail.com, or
+     zhuo.dev@@html:&#x01F4E7;@@gmail.com.
+   - Mobile: +86 0b10111010 0o5532 0x0636
    - [[file:resume.org][Resume]]
 #+BEGIN: inc-file :file "gad.inc.org"
 #+END:

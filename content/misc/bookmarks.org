@@ -9,7 +9,7 @@
 #+CALL: meta-keywords(kws='("KDr2" "Bookmarks")) :results raw
 
 * Daily
-- [[https://calendar.google.com/][Calendar]] | [[https://discord.com/app][Discord]]
+- [[https://calendar.google.com/][Calendar]] | [[https://gmail.com][Gmail]] | [[https://discord.com/app][Discord]]
 - [[https://www.reuters.com/][Reuters]] | [[https://news.ycombinator.com/][HackerNews]] | [[https://www.reddit.com/][Reddit]]
 * Languages
 - Dictionaries:
@@ -47,12 +47,11 @@
 - ML: [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]] | [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
 - Linux: [[https://nixos.org/manual/nix/stable/][Nix]]
 * Tech::Tier 3
-- TypeScript: [[https://www.typescriptlang.org/docs/][Docs]]
 - Julia: [[https://docs.julialang.org/][Docs]] | [[https://github.com/JuliaLang/julia/issues][Issues]] | [[https://discourse.julialang.org/][Discourse]] | [[https://julialang.zulipchat.com/][Zulip]]
   - Turing: [[https://turingjl.slack.com/][Slack]]
-- Scheme: [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://cisco.github.io/ChezScheme/csug9.5/csug.html][Chez Scheme 9]]
+- TypeScript: [[https://www.typescriptlang.org/docs/][Docs]]
 - Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
-- CL: [[http://sbcl.org/manual/index.html][SBCL Manual]]
+- Scheme: [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://cisco.github.io/ChezScheme/csug9.5/csug.html][Chez Scheme 9]], CL: [[http://sbcl.org/manual/index.html][SBCL Manual]]
 - [[https://maxima.sourceforge.io/docs/manual/maxima_toc.html][Maxima]]
 * Hovel
 ** Tools
@@ -60,23 +59,9 @@
 - [[https://markmap.js.org/][Markmap]] | [[https://excalidraw.com/][Excalidraw]] | [[https://draw.moyu.io/][Excalidraw-ZH]] | [[https://www.gleek.io/][Gleek]] | [[https://mermaid-js.github.io/mermaid-live-editor/][Mermaid live editor]] | [[https://asciiflow.com/][ASCIIFlow]]
 - [[https://sorry.xuty.tk/][Sorry! GIF Generator]] | [[https://www.magiceraser.io/][Magic Eraser]] | https://www.eatmy.art/
 - https://wantwords.net/, https://wantquotes.net/
-- [[https://www.desmos.com/][Desmos]]
-** Games
-- [[https://playgameoflife.com/][Game of Life]]
-- [[https://minecraft.fandom.com/wiki/Minecraft_Wiki][Minecraft]]
-- [[https://jperm.net/][JPerm]]
 ** Resources
-- [[http://gen.lib.rus.ec/][Library Genesis]] | [[https://www.gutenberg.org/][Gutenberg]]
-- [[https://ncatlab.org/nlab/show/HomePage][nLab]]
-- Math Symbols:
-  https://www.rapidtables.com/math/symbols/Basic\_Math\_Symbols.html
-- https://games104.boomingtech.com/sc/course-list/
-- Dependently Typed Programming in Agda:
-  http://www.cse.chalmers.se/~ulfn/papers/afp08/tutorial.pdf
+- [[https://ncatlab.org/nlab/show/HomePage][nLab]] | [[https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html][Math Symbols]]
+- Games: [[https://playgameoflife.com/][Game of Life]] | [[https://minecraft.fandom.com/wiki/Minecraft_Wiki][Minecraft]] | [[https://jperm.net/][JPerm]]
 - Books
-  - [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP JS]] | [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP Python]]
-  - [[https://web.dev/learn/css/][Learn CSS]]
-** Backlog
-- Topics: Curry-Howard correspondence, HoTT, Lambda Cube
-- [[https://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html][Functors, Applicatives, And Monads In Pictures - adit.io]]
-- Coq
+  - [[http://gen.lib.rus.ec/][Library Genesis]] | [[https://www.gutenberg.org/][Gutenberg]]
+  - [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP JS]] | [[https://wizardforcel.gitbooks.io/sicp-in-python/content/][SICP Python]] | [[https://web.dev/learn/css/][Learn CSS]]
