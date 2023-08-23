@@ -24,16 +24,15 @@
   [[https://llvm.org/docs/LangRef.html][LLVM - IR Ref]] | [[https://llvm.discourse.group/][LLVM Discourse]]
 - *Racket*: [[https://docs.racket-lang.org/][Doc]] | [[https://racket.discourse.group/][Discourse]], Clojure: [[https://clojure.org/reference/documentation][REF]] | [[https://clojure.github.io/clojure/index.html][API Doc]]
 - *Python*: [[https://docs.python.org/3/][Doc]] | [[https://discuss.python.org/][Discourse]]
-- *Math*: [[https://www.wolframalpha.com/][WolframAlpha]] | [[https://reference.wolfram.com/language/][Wolfram Lang]] | [[https://www.geogebra.org/][GeoGebra]] | [[https://wiki.geogebra.org/][GeoGebra Wiki]]
+- *Math*: [[https://www.wolframalpha.com/][WolframAlpha]] | [[https://reference.wolfram.com/language/][Wolfram Lang]] | [[https://www.wolframcloud.com/][WolframCloud]] | [[https://www.geogebra.org/][GeoGebra]] | [[https://wiki.geogebra.org/][GeoGebra Wiki]]
 - *JS*: [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference][JavaScript Reference]] | [[https://webassembly.org/specs/][WASM Spec]]
 - *Haskell*:
   [[https://www.haskell.org/onlinereport/haskell2010/][Report 2010]] | [[https://www.haskell.org/documentation/][Doc]] | [[https://downloads.haskell.org/~ghc/9.0.1/docs/html/users_guide/index.html][GHC]] | [[https://discourse.haskell.org/][Discourse]]
   - Agda: [[https://agda.readthedocs.io/][Docs]] | [[https://agda.github.io/agda-stdlib/][StdLib]] | [[https://plfa.github.io/][PLFA]] | [[https://homotopytypetheory.org/][HoTT]]
   - Idris: [[https://idris2.readthedocs.io/en/latest/][Docs]] | [[https://www.idris-lang.org/docs/idris2/current/][API]]
 - Linux: [[https://docs.kernel.org/][Kernel Docs]]
-- Rust:
-  [[https://doc.rust-lang.org/book/][The Book]] | [[https://doc.rust-lang.org/std/index.html][STD Lib]] | [[https://doc.rust-lang.org/reference/introduction.html][Reference]] | [[https://rustc-dev-guide.rust-lang.org/][Compiler]] |
-  [[https://rust-lang.github.io/async-book][Async]] | [[https://rustwasm.github.io/docs/book/][RustWasm]] | [[https://doc.rust-lang.org/rust-by-example/index.html][Rust By Example]] | [[https://users.rust-lang.org/][Discourse]]
+- Rust: [[https://doc.rust-lang.org/book/][The Book]] | [[https://doc.rust-lang.org/std/index.html][STD Lib]] | [[https://doc.rust-lang.org/reference/introduction.html][Reference]] | [[https://rustc-dev-guide.rust-lang.org/][Compiler]] | [[https://rust-lang.github.io/async-book][Async]] | [[https://rustwasm.github.io/docs/book/][RustWasm]] |
+  [[https://doc.rust-lang.org/rust-by-example/index.html][Rust By Example]] | [[https://users.rust-lang.org/][Discourse]] | [[https://internals.rust-lang.org/][Internal Discourse]]
 * Tech::Tier 2
 - Editor
   - Emacs: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/][Emacs Lisp]] | [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Editor]] | [[https://orgmode.org/manual/index.html][Orgmode]]
