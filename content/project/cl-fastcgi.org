@@ -17,7 +17,7 @@ You can get it from https://github.com/KDr2/cl-fastcgi.
 
 CL-FastCGI's API is exactly the same as [[file:sb-fastcgi.org][SB-FastCGI]]'s.
 
-* Differences between  [[file:sb-fastcgi.org][SB-FastCGI]].
+* Differences between  [[file:sb-fastcgi.org][SB-FastCGI]] and CL-FastCGI.
 
 ** SB-FastCGI
    - Supports SBCL only.
