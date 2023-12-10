@@ -40,18 +40,18 @@
   - [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]] | [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
   - Julia: [[https://docs.julialang.org/][Docs]] | [[https://github.com/JuliaLang/julia/issues][Issues]] | [[https://discourse.julialang.org/][Discourse]] | [[https://julialang.zulipchat.com/][Zulip]]
   - R: [[https://cran.r-project.org/manuals.html][R-Manual]]
-- GUI:
+- Graphics and UI:
+  - [[https://typst.app/docs/][Typst]]
   - Web + Browser: [[https://developer.chrome.com/][Chrome]] | [[https://developer.mozilla.org/en-US/][MDN]] | [[https://reactjs.org/docs/getting-started.html][React]]
   - [[https://egui.rs/][EGUI]] | [[https://slint-ui.com/][Slint]] | [[https://www.gtk.org/docs/][GTK Docs]] | [[https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html][Swing]]
 - DB:
   - PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
   - [[https://www.sqlite.org/docs.html][SQLite]] | [[https://clickhouse.tech/docs/en/][ClickHouse]]
+- [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
 * Tech::Tier 3
 - Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
-- Scheme&CL: [[http://cisco.github.io/ChezScheme][Chez]] | [[http://sbcl.org/manual/index.html][SBCL]] | [[https://www.scheme.com/tspl4/][Scheme PL]]
-- Idris: [[https://idris2.readthedocs.io/en/latest/][Docs]] | [[https://www.idris-lang.org/docs/idris2/current/][API]]
-- [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
-- Turing: [[https://turingjl.slack.com/][Slack]]
+- Scheme&CL: [[http://cisco.github.io/ChezScheme][Chez]] | [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://sbcl.org/manual/index.html][SBCL]]
+- [[https://lean-lang.org/][Lean]]
 * Hovel
 ** Tools
 - [[https://www.tutorialspoint.com/codingground.htm][Coding Ground]]
