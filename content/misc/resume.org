@@ -16,7 +16,7 @@
   for any proper opportunity.
 * Personal Information
   - Name: Zhuo Qingliang, sometimes goes as Killian.
-  - Email: zhuo+job@@html:&#x01F4E7;@@hexoasis.com
+  - Email: killian.zhuo@@html:&#x01F4E7;@@gmail.com
   - Homepage: https://kdr2.com
   - Mobile: +86 0b10111010 0o5532 0x0636
   - Education: [2002-2006] [[http://www.xjtu.edu.cn][Xi'an Jiaotong University]], China.
@@ -27,17 +27,19 @@
     - Writing: Good at non-fiction writing
   - Platforms and Programming Languages
     - C/C++, Rust, Linux, Bash
-    - Python, JavaScript, Perl
+    - Scheme(Racket), Clojure, Emacs Lisp, Common Lisp
+    - Python, JavaScript
+    - Haskell, Agda
     - Julia
-    - Haskell, Agda, Idris
-    - Scheme(Racket), Common Lisp, Emacs Lisp, Clojure
+    - R, Perl
   - Domains
     - Linux System Programming
-    - Compiler
-    - Database: PostgreSQL and many others
+    - PLT, Compiler
+    - Mathematics, Type Theory
+    - Graphics, Typography
+    - Statistics
     - Data Science Infrastructure
-    - Distributed Computing, High-Performance and Parallel Computing
-    - Others: Graphics, Web
+    - Database: PostgreSQL and many others
 * Open Source Projects
   - *Projects I contribute to* ::
     + [[https://github.com/JuliaLang/julia][The Julia Programming Language]] :: a general purpose programming

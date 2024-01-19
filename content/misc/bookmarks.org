@@ -37,9 +37,9 @@
   - Emacs: [[https://www.gnu.org/software/emacs/manual/html_node/elisp/][Emacs Lisp]] | [[https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html][The Emacs Editor]] | [[https://orgmode.org/manual/index.html][Orgmode]]
   - VSCode: [[https://code.visualstudio.com/docs][Docs]]
 - Data Science & ML:
-  - [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]] | [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
+  - [[https://pytorch.org/docs/stable/index.html][PyTorch-Doc]] | [[https://discuss.pytorch.org/][PyTorch-Discourse]]
+  - [[https://numfocus.org][NumFocus Projects]]: [[https://numpy.org/doc/stable/reference/index.html][NumPy-REF]]
   - Julia: [[https://docs.julialang.org/][Docs]] | [[https://github.com/JuliaLang/julia/issues][Issues]] | [[https://discourse.julialang.org/][Discourse]] | [[https://julialang.zulipchat.com/][Zulip]]
-  - R: [[https://cran.r-project.org/manuals.html][R-Manual]]
 - Graphics and UI:
   - [[https://typst.app/docs/][Typst]]
   - Web + Browser: [[https://developer.chrome.com/][Chrome]] | [[https://developer.mozilla.org/en-US/][MDN]] | [[https://reactjs.org/docs/getting-started.html][React]]
@@ -47,10 +47,11 @@
 - DB:
   - PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
   - [[https://www.sqlite.org/docs.html][SQLite]] | [[https://clickhouse.tech/docs/en/][ClickHouse]]
-- [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
 * Tech::Tier 3
 - Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
 - Scheme&CL: [[http://cisco.github.io/ChezScheme][Chez]] | [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://sbcl.org/manual/index.html][SBCL]]
+- [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
+- R: [[https://cran.r-project.org/manuals.html][R-Manual]]
 - [[https://lean-lang.org/][Lean]]
 * Hovel
 ** Tools
