@@ -28,9 +28,8 @@ force-pub: force-export
 ##########################
 # tangle code
 ##########################
-output/script/site.js: tangle/site-js.tgl.org
-	echo '"tangle/site-js.tgl.org"' >> .tangle-files
+output/script/site.js: tangle/site.js.org
+	echo '"tangle/site.js.org"' >> .tangle-files
 
 tangle: output/script/site.js
 	@echo "code tangled"
-

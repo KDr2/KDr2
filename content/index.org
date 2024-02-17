@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: An Indistinct Mind
+#+TITLE: An Indistinct but Independent Mind
 #+AUTHOR: KDr2
 #+OPTIONS: num:nil
 #+BEGIN: inc-file :file "common.inc.org"
@@ -22,7 +22,7 @@ hard to me, a person on the hard way. So please don't set any
 expectation.
 
 * Navigation
-- [[file:misc/whims.org][What am I thinking or doing]]
+- [[file:misc/whims.org][Whims]]
 - [[file:project/index.org][Projects]] . [[file:misc/books.org][Books]]
 - [[file:misc/categories.org][Categories]] . [[file:misc/archives.org][Archives]] . [[file:misc/site-log.org][Changelog]]
 - [[https://joshinbrackets.com][Josh in Brackets]]

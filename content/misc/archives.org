@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: Archives of KDr2.com
+#+TITLE: Ar[K]ives
 #+AUTHOR: KDr2
 # #+OPTIONS: toc:nil
 #+OPTIONS: num:nil

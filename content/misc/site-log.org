@@ -1,5 +1,5 @@
 # -*- mode: org; mode: auto-fill -*-
-#+TITLE: ChangeLog of KDr2.com
+#+TITLE: ChangeLog of [K]
 #+AUTHOR: KDr2
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil

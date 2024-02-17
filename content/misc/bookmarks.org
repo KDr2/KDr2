@@ -48,16 +48,11 @@
   - PG: [[https://www.postgresql.org/docs/current/index.html][Doc]] | [[https://www.postgresql.org/list/group/1/][Mailing List]]
   - [[https://www.sqlite.org/docs.html][SQLite]] | [[https://clickhouse.tech/docs/en/][ClickHouse]]
 * Tech::Tier 3
+- [[https://lean-lang.org/][Lean]] | [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
 - Perl: [[https://perldoc.perl.org/perl][Perldoc]] | [[https://perldoc.perl.org/modules][Modules]]
 - Scheme&CL: [[http://cisco.github.io/ChezScheme][Chez]] | [[https://www.scheme.com/tspl4/][Scheme PL]] | [[http://sbcl.org/manual/index.html][SBCL]]
-- [[https://docs.scala-lang.org/][Scala]] | [[https://www.typescriptlang.org/docs/][TypeScript]]
 - R: [[https://cran.r-project.org/manuals.html][R-Manual]]
-- [[https://lean-lang.org/][Lean]]
-* Hovel
-** Tools
-- [[https://www.tutorialspoint.com/codingground.htm][Coding Ground]]
-- [[https://markmap.js.org/][Markmap]] | [[https://excalidraw.com/][Excalidraw]] | [[https://draw.moyu.io/][Excalidraw-ZH]] | [[https://www.gleek.io/][Gleek]] | [[https://mermaid-js.github.io/mermaid-live-editor/][Mermaid live editor]] | [[https://asciiflow.com/][ASCIIFlow]]
-** Resources
-- [[https://ncatlab.org/nlab/show/HomePage][nLab]] | [[https://docs.oracle.com/javase/8/docs/api/javax/swing/package-summary.html][Math Symbols]]
-- Games: [[https://playgameoflife.com/][Game of Life]] | [[https://minecraft.fandom.com/wiki/Minecraft_Wiki][Minecraft]] | [[https://jperm.net/][JPerm]]
+* Tools and Resources
+- [[https://excalidraw.com/][Excalidraw]] | [[https://draw.moyu.io/][Excalidraw-ZH]] | [[https://asciiflow.com/][ASCIIFlow]]
+- [[https://markmap.js.org/][Markmap]] | [[https://www.gleek.io/][Gleek]] | [[https://mermaid-js.github.io/mermaid-live-editor/][Mermaid live editor]]
 - Books: [[https://www.libgen.is/][Library Genesis]] | [[https://www.gutenberg.org/][Gutenberg]]

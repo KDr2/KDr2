@@ -14,7 +14,7 @@ Init site domain and search box
       var url = window.location.href;
       var domain = url.replace(/^\w+:\/\//, "").replace(/\/.*$/gi,"").toLowerCase();
       var page = url.replace(/^\w+:\/\/.*?\//i,"").replace(/#.*$/gi,"");
-      var site_name = "KDr2.com";
+      var site_name = "[K]";
       document.getElementById("site-name").innerHTML = site_name;
       document.getElementById("sitesearch").value = domain;
   }
