@@ -50,7 +50,7 @@ unwanted space when exporting org-mode to html."
            :html-postamble ,kdr2-com-html-postamble
            :headline-levels 3
            :auto-preamble t
-           :exclude "README.org\\|.*\.inc\.org\\|.*\.js\.org")
+           :exclude "README.org\\|.*\.inc\.org\\|.*\.lit\.org")
           ("kdr2-com-rss"
            :base-directory ,kdr2-com-source-dir
            :base-extension "org"

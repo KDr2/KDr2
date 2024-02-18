@@ -9,7 +9,7 @@ AUTO_PAGES = content/index.org content/misc/categories.org content/misc/archives
 %.org: script/site-metadata.el
 	@touch $@
 
-export: tangle $(AUTO_PAGES)
+export: $(AUTO_PAGES)
 	@echo "export org files"
 	$(EMACS) $(DEBUG) --batch --script script/compile.el -f export
 
@@ -24,12 +24,3 @@ pub: export
 force-pub: force-export
 	@echo "publish site"
 	script/pub
-
-##########################
-# tangle code
-##########################
-output/script/site.js: tangle/site.js.org
-	echo '"tangle/site.js.org"' >> .tangle-files
-
-tangle: output/script/site.js
-	@echo "code tangled"

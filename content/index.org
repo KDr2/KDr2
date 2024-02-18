@@ -11,15 +11,9 @@ Q. Zhuo), a nostalgist in technology, a martinet in behavior, a
 misanthrope in society, an ascetic in spirit, a logical positivist in
 philosophy, a learner in lifetime.
 
-I live with my kid and we two together lead a simple life.
-
 I am searching for a better understanding of myself and my
 surroundings. To achieve so, I dedicate my thoughts to epistemology,
-cognitive science, computer science, and linguistics. I read, think,
-practice, and write. I would like to write here about things I
-learned, if I think they are worth writing. But getting such things is
-hard to me, a person on the hard way. So please don't set any
-expectation.
+cognitive science, computer science, and linguistics.
 
 * Navigation
 - [[file:misc/whims.org][Whims]]

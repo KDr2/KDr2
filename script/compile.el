@@ -23,5 +23,4 @@
   (tangle-code))
 
 (defun force-export ()
-  (export t)
-  (tangle-code t))
+  (export t))
