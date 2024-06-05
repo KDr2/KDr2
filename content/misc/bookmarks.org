@@ -18,15 +18,15 @@
   - [[https://greensdictofslang.com/][Slang Dict]] | [[https://www.thefreedictionary.com/The-Farlex-Grammar-Book.htm][The Farlex Grammar Book]]
 - [[https://coerll.utexas.edu/dib/][DiB]] | [[https://coerll.utexas.edu/gg/][Grimm Grammar]] | [[https://studyspanish.com/][Study Spanish]]
 * Tech::Tier 1
+- *Math*: [[https://reference.wolfram.com/language/][*Wolfram Lang*]] | [[https://www.geogebra.org/][GeoGebra]] | [[https://wiki.geogebra.org/][GeoGebra Wiki]]
+- *Haskell*:
+  [[https://www.haskell.org/onlinereport/haskell2010/][Report 2010]] | [[https://www.haskell.org/documentation/][Doc]] | [[https://downloads.haskell.org/ghc/latest/docs/users_guide/][GHC]] | [[https://discourse.haskell.org/][Discourse]]
+  - Agda: [[https://agda.readthedocs.io/][Docs]] | [[https://agda.github.io/agda-stdlib/][StdLib]] | [[https://plfa.github.io/][PLFA]] | [[https://homotopytypetheory.org/][HoTT]]
+- *Lisp*: *Racket*: [[https://docs.racket-lang.org/][Doc]] | [[https://racket.discourse.group/][Discourse]], Clojure: [[https://clojure.org/reference/documentation][REF]] | [[https://clojure.github.io/clojure/index.html][API Doc]]
 - *C/C++*:
   [[https://en.cppreference.com/w/][C++Ref]] |
   [[https://godbolt.org/][GodBolt]] | [[https://gcc.gnu.org/onlinedocs/][GCC Docs]] |
   [[https://llvm.org/docs/LangRef.html][LLVM - IR Ref]] | [[https://llvm.discourse.group/][LLVM Discourse]]
-- *Math*: [[https://reference.wolfram.com/language/][*Wolfram Lang*]] | [[https://www.geogebra.org/][GeoGebra]] | [[https://wiki.geogebra.org/][GeoGebra Wiki]]
-- *Lisp*: *Racket*: [[https://docs.racket-lang.org/][Doc]] | [[https://racket.discourse.group/][Discourse]], Clojure: [[https://clojure.org/reference/documentation][REF]] | [[https://clojure.github.io/clojure/index.html][API Doc]]
-- *Haskell*:
-  [[https://www.haskell.org/onlinereport/haskell2010/][Report 2010]] | [[https://www.haskell.org/documentation/][Doc]] | [[https://downloads.haskell.org/ghc/latest/docs/users_guide/][GHC]] | [[https://discourse.haskell.org/][Discourse]]
-  - Agda: [[https://agda.readthedocs.io/][Docs]] | [[https://agda.github.io/agda-stdlib/][StdLib]] | [[https://plfa.github.io/][PLFA]] | [[https://homotopytypetheory.org/][HoTT]]
 - *Python*: [[https://docs.python.org/3/][Doc]] | [[https://discuss.python.org/][Discourse]]
 - JS: [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference][JavaScript Reference]] | [[https://webassembly.org/specs/][WASM Spec]]
 - Linux: [[https://docs.kernel.org/][Kernel]] | [[https://systemd.io/][Systemd]] | [[https://github.com/NixOS/nixpkgs][Nix]] | [[https://www.gnu.org/software/bash/manual/bash.html][Bash]]
