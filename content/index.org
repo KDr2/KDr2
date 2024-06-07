@@ -6,6 +6,12 @@
 #+END:
 #+CALL: dynamic-header() :results raw
 
+#+begin_export html
+<script>
+window.location.replace("https://killianz.com/");
+</script>
+#+end_export
+
 Simple, tough, resilient, optimistic, that's me. I'm KDr2 (Killian
 Q. Zhuo), a nostalgist in technology, a martinet in behavior, a
 misanthrope in society, an ascetic in spirit, a logical positivist in
